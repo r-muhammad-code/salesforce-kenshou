@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>document_change__c</fullName>
+    <externalId>false</externalId>
+    <label>書類対応依頼</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>輸抹戻し必要</fullName>
+                <default>false</default>
+                <label>輸抹戻し必要</label>
+            </value>
+            <value>
+                <fullName>輸抹していない</fullName>
+                <default>false</default>
+                <label>輸抹していない</label>
+            </value>
+            <value>
+                <fullName>対象外</fullName>
+                <default>false</default>
+                <label>対象外</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

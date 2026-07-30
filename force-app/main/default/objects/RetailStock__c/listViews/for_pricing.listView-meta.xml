@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>for_pricing</fullName>
+    <columns>NAME</columns>
+    <columns>Mst_model__c</columns>
+    <columns>model_year__c</columns>
+    <columns>commercial_amount__c</columns>
+    <columns>url_car_sensor__c</columns>
+    <columns>evaluation_points__c</columns>
+    <columns>passed_days__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>pricing_check__c</field>
+        <operation>equals</operation>
+        <value>確認待ち</value>
+    </filters>
+    <label>プライシング確認待ち</label>
+</ListView>

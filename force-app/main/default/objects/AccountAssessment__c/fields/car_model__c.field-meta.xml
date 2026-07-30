@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>car_model__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>車種</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>$Source.car_maker__c</field>
+            <operation>equals</operation>
+            <valueField>Mst_Models__c.maker__c</valueField>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Mst_Models__c</referenceTo>
+    <relationshipLabel>査定表</relationshipLabel>
+    <relationshipName>account_assessments_model</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

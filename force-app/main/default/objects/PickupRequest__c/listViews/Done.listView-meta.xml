@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Done</fullName>
+    <columns>ScheduledPickupDate__c</columns>
+    <columns>NAME</columns>
+    <columns>PurchaseOpportunity__c</columns>
+    <columns>Case__c</columns>
+    <columns>Directions_Date__c</columns>
+    <columns>Owner__c</columns>
+    <columns>ScheduleAdjustmentRequestDate__c</columns>
+    <columns>Mst_Models_formula__c</columns>
+    <columns>CarNo__c</columns>
+    <columns>StorageLocation__c</columns>
+    <columns>StorageLocation_CallA__c</columns>
+    <columns>StorageLocationAddress__c</columns>
+    <columns>RegularHoliday__c</columns>
+    <columns>Setup_staff__c</columns>
+    <columns>TransportCompany__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>BC__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>Change_Cancel__c</field>
+        <operation>notEqual</operation>
+        <value>依頼キャンセル</value>
+    </filters>
+    <filters>
+        <field>ScheduledPickupDate__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>段取り済みリスト</label>
+</ListView>

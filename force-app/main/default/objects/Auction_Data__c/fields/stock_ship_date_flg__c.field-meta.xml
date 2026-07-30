@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>stock_ship_date_flg__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( ISBLANK( stock_ship_date__c ), &quot;未出庫（最終）&quot;, &quot;出庫済（最終）&quot; )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>最終出庫フラグ</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

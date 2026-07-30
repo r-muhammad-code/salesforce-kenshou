@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TransferApproved_Manager</fullName>
+    <active>true</active>
+    <description>山本
+下記の人は省く
+H0000549：柳沢
+H0000791：金井
+H0000062：佐藤寛
+H0000232：森重</description>
+    <errorConditionFormula>ISCHANGED(Transfer_request_approved__c) &amp;&amp; 
+Transfer_request_approved__c = true &amp;&amp;
+AND(
+    NOT( CONTAINS( Owner:User.UserRole.Name , &quot;マネージャ&quot;) ),
+    OwnerId = $User.Id
+)
+&amp;&amp; $User.UserCode__c &lt;&gt; &quot;H0000549&quot;
+&amp;&amp; $User.UserCode__c &lt;&gt; &quot;H0000791&quot;
+&amp;&amp; $User.UserCode__c &lt;&gt; &quot;H0000062&quot;
+&amp;&amp; $User.UserCode__c &lt;&gt; &quot;H0000232&quot;</errorConditionFormula>
+    <errorMessage>自分が所有する振込依頼は承認チェックをつけられません。</errorMessage>
+</ValidationRule>

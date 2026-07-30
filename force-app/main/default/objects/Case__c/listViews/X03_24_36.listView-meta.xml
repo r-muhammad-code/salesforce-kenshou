@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X03_24_36</fullName>
+    <columns>SMS_sent_flag__c</columns>
+    <columns>Media__c</columns>
+    <columns>Owner_Fullname__c</columns>
+    <columns>Account__c</columns>
+    <columns>FirstRegistration_Year_hs__c</columns>
+    <columns>CarTypes__c</columns>
+    <columns>VehicleClassification__c</columns>
+    <columns>ReceiptRecordingDate__c</columns>
+    <columns>Season__c</columns>
+    <columns>NAME</columns>
+    <columns>PersonMobilePhone__c</columns>
+    <columns>Precautions__c</columns>
+    <columns>Web_State__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ContactDate__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>Phase__c</field>
+        <operation>notEqual</operation>
+        <value>キャンセル</value>
+    </filters>
+    <filters>
+        <field>ReceptionDateTime_to_now__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>24</value>
+    </filters>
+    <filters>
+        <field>Owner_Fullname__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>ReceptionDateTime_to_now__c</field>
+        <operation>lessThan</operation>
+        <value>36</value>
+    </filters>
+    <filters>
+        <field>utm_medium__c</field>
+        <operation>notEqual</operation>
+        <value>NOTELL</value>
+    </filters>
+    <label>【新規】すべての未接触 （受付から24～36時間）最低３回架電</label>
+</ListView>

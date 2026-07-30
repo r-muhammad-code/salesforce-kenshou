@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProcessingDivision_Change__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>処理区分変更依頼</label>
+    <referenceTo>Document_management__c</referenceTo>
+    <relationshipLabel>買取受付 (書類管理依頼)</relationshipLabel>
+    <relationshipName>ProcessingDivision_Change_Case</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

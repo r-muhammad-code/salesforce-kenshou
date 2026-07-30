@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X081</fullName>
+    <columns>NAME</columns>
+    <columns>LOT__c</columns>
+    <columns>AfterDocuments_Free__c</columns>
+    <columns>Account__c</columns>
+    <columns>CarTypes__c</columns>
+    <columns>CarNo__c</columns>
+    <columns>TransferDate__c</columns>
+    <columns>DocumentCompleteCheck__c</columns>
+    <columns>TransportationDays__c</columns>
+    <columns>Procedure_WithinTheYear__c</columns>
+    <columns>Precautions__c</columns>
+    <columns>AfterDocumentsShipmentDay__c</columns>
+    <columns>AfterDocuments_Person__c</columns>
+    <columns>AfterDocuments__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Oppotunity__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>AfterDocumentsShipmentDay__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>Phase__c</field>
+        <operation>notEqual</operation>
+        <value>キャンセル</value>
+    </filters>
+    <filters>
+        <field>Post_processingMail__c</field>
+        <operation>equals</operation>
+        <value>要</value>
+    </filters>
+    <filters>
+        <field>TransportationDays__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>VehicleClassification__c</field>
+        <operation>notEqual</operation>
+        <value>はなまるオークション/他社AA（営業）,判別不明,コールA/リユース,コールA/リユース（SMS不可）</value>
+    </filters>
+    <label>【CS】後処理　郵送要　全区分</label>
+</ListView>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Its_not_tied</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  ScheduleAdjustmentRequestDate__c &gt;= DATE(2024, 5, 1),
+  CASE(RequestCompany__c,
+    &quot;テイクオフ（神戸）&quot;, IF(CONTAINS(&quot;神戸集中ヤード:神戸第二ヤード:京都ヤード&quot;, TEXT(nearest_yard__c)), 0, 1),
+    &quot;テイクオフ（名古屋）&quot;, IF(CONTAINS(&quot;名古屋ヤード:名古屋第二ヤード:愛知東ヤード:岐阜ヤード:春日井ヤード&quot;, TEXT(nearest_yard__c)), 0, 1),
+    &quot;テイクオフ（東京）&quot;, IF(CONTAINS(&quot;栃木ヤード:千葉ヤード:首都圏ヤード:神奈川ヤード:首都圏第一ヤード&quot;, TEXT(nearest_yard__c)), 0, 1),
+    &quot;自社自走部隊&quot;, IF(CONTAINS(&quot;神戸集中ヤード:神戸第二ヤード:京都ヤード&quot;, TEXT(nearest_yard__c)), 0, 1),
+    &quot;㈱TCS　仙台支店&quot;, IF(CONTAINS(&quot;岩手ヤード:仙台ヤード:仙台第二ヤード&quot;, TEXT(nearest_yard__c)), 0, 1),
+    &quot;㈱TCS　野田支店&quot;, IF(CONTAINS(&quot;首都圏ヤード&quot;, TEXT(nearest_yard__c)), 0, 1),
+    &quot;㈱TCS　千葉支店&quot;, IF(CONTAINS(&quot;首都圏ヤード:千葉ヤード&quot;, TEXT(nearest_yard__c)), 0, 1),
+    &quot;㈱TCS　本社&quot;, IF(CONTAINS(&quot;首都圏ヤード:神奈川ヤード:千葉ヤード&quot;, TEXT(nearest_yard__c)), 0, 1),
+    &quot;㈱TCS　静岡支店&quot;, IF(CONTAINS(&quot;静岡ヤード&quot;, TEXT(nearest_yard__c)), 0, 1),
+    &quot;㈱TCS　名古屋支店&quot;, IF(CONTAINS(&quot;名古屋ヤード:名古屋第二ヤード:岐阜二ヤード:春日井ヤード&quot;, TEXT(nearest_yard__c)), 0, 1),
+    &quot;㈱TCS　神戸支店&quot;, IF(CONTAINS(&quot;神戸集中ヤード:京都ヤード&quot;, TEXT(nearest_yard__c)), 0, 1),
+    &quot;㈱TCS　福岡支店&quot;, IF(CONTAINS(&quot;福岡ヤード:南九州ヤード:鹿児島ヤード&quot;, TEXT(nearest_yard__c)), 0, 1),
+    0
+  ) = 1
+)</errorConditionFormula>
+    <errorMessage>候補業者と引取先の最寄りヤードが紐づいていません。
+候補業者または引取先の最寄りヤードを変更してください。</errorMessage>
+</ValidationRule>

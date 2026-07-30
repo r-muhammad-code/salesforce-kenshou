@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>lotno_isNumber</fullName>
+    <active>true</active>
+    <description>ロットNo数値チェック</description>
+    <errorConditionFormula>not(REGEX(  LotNo_yard__c , &quot;^\\d{0,7}$&quot;))</errorConditionFormula>
+    <errorMessage>ロットNoは７桁の数値を入力してください。</errorMessage>
+</ValidationRule>

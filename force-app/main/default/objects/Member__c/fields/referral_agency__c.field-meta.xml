@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>referral_agency__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>この会員を紹介した代理店</description>
+    <externalId>false</externalId>
+    <label>紹介代理店</label>
+    <referenceTo>Member__c</referenceTo>
+    <relationshipLabel>販売会員情報 (紹介代理店)</relationshipLabel>
+    <relationshipName>referral_agency</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

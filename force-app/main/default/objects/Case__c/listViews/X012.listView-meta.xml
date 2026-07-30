@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X012</fullName>
+    <columns>NAME</columns>
+    <columns>Media__c</columns>
+    <columns>Owner_Fullname__c</columns>
+    <columns>Account__c</columns>
+    <columns>FirstRegistration_Year_hs__c</columns>
+    <columns>CarTypes__c</columns>
+    <columns>LocationAddress_hs__c</columns>
+    <columns>VehicleClassification__c</columns>
+    <columns>ReceiptRecordingDate__c</columns>
+    <columns>Phase__c</columns>
+    <columns>ReceptionDateTime__c</columns>
+    <columns>ContactDate__c</columns>
+    <columns>PurchaseDate__c</columns>
+    <columns>Precautions__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>ReceptionDateTime__c</field>
+        <operation>equals</operation>
+        <value>THIS_MONTH</value>
+    </filters>
+    <label>02. 私の買取受付（今月）</label>
+</ListView>

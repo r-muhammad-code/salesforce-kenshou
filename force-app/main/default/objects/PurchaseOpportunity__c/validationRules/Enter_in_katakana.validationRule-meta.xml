@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enter_in_katakana</fullName>
+    <active>false</active>
+    <description>・空白OK
+・ァ-ンヴー→ 全角カタカナ
+・^ → 行の先頭
+・$ → 行の末尾
+・+ → 直前の文字の1回以上の繰り返し</description>
+    <errorConditionFormula>AND( DATEVALUE( CreatedDate) &gt;= DATE(2023,04,25),NOT(REGEX( StorageLocation_Person__c , &quot;^[ァ-ンヴー]*$&quot;)))</errorConditionFormula>
+    <errorDisplayField>StorageLocation_Person__c</errorDisplayField>
+    <errorMessage>全角カタカナで入力してください。</errorMessage>
+</ValidationRule>

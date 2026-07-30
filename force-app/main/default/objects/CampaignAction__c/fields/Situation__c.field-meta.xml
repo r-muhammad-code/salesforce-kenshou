@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Situation__c</fullName>
+    <description>佐野</description>
+    <externalId>false</externalId>
+    <label>状況</label>
+    <required>true</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>計画中</fullName>
+                <default>true</default>
+                <label>計画中</label>
+            </value>
+            <value>
+                <fullName>進行中</fullName>
+                <default>false</default>
+                <label>進行中</label>
+            </value>
+            <value>
+                <fullName>完了</fullName>
+                <default>false</default>
+                <label>完了</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

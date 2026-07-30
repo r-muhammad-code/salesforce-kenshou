@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>proxy_commission_kbn__c</fullName>
+    <externalId>false</externalId>
+    <label>代理出品手数料</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1</fullName>
+                <default>false</default>
+                <label>Ａ設定(通常→出1万成1.2万・再出品4回目以降)</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>Ｂ設定(20万以下→出5千 成1万・再出品5回目以降)</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>Ｃ設定(10万以下→出5千 成1万・再出品5回目以降)</label>
+            </value>
+            <value>
+                <fullName>5</fullName>
+                <default>false</default>
+                <label>Ｄ設定(20万以下→出5千 成1万・再出品4回目以降)</label>
+            </value>
+            <value>
+                <fullName>4</fullName>
+                <default>false</default>
+                <label>T設定（出/成 2.5万）</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

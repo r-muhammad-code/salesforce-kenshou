@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Its_not_tied_2</fullName>
+    <active>true</active>
+    <description>山本</description>
+    <errorConditionFormula>AND(
+  ScheduleAdjustmentRequestDate__c &gt;= DATE(2024, 5, 1),
+  CASE(RequestCompany__c,
+    &quot;㈱TCS　千葉支店&quot;, CASE(TEXT(nearest_yard__c), &quot;首都圏ヤード&quot;, 0, &quot;千葉ヤード&quot;, 0, &quot;首都圏臨時第一ヤード&quot;, 0, &quot;首都圏臨時第二ヤード&quot;, 0, 1),
+    &quot;㈱TCS　本社&quot;,     CASE(TEXT(nearest_yard__c), &quot;首都圏ヤード&quot;, 0, &quot;神奈川ヤード&quot;, 0, &quot;千葉ヤード&quot;, 0, &quot;首都圏臨時第一ヤード&quot;, 0, &quot;首都圏臨時第二ヤード&quot;, 0, &quot;埼玉臨時ヤード&quot;, 0, 1),
+    &quot;㈱TCS　静岡支店&quot;, CASE(TEXT(nearest_yard__c), &quot;静岡ヤード&quot;, 0, 1),
+    &quot;㈱TCS　名古屋支店&quot;, CASE(TEXT(nearest_yard__c), &quot;名古屋ヤード&quot;, 0, &quot;名古屋第二ヤード&quot;, 0, &quot;岐阜二ヤード&quot;, 0, &quot;春日井ヤード&quot;, 0, 1),
+    &quot;㈱TCS　神戸支店&quot;, CASE(TEXT(nearest_yard__c), &quot;神戸集中ヤード&quot;, 0, &quot;京都ヤード&quot;, 0, &quot;南大阪ヤード&quot;, 0 ,1),
+    &quot;㈱TCS　福岡支店&quot;, CASE(TEXT(nearest_yard__c), &quot;福岡ヤード&quot;, 0, &quot;熊本ヤード&quot;, 0, &quot;南九州ヤード&quot;, 0, &quot;鹿児島ヤード&quot;, 0, 1),
+    &quot;有限会社カイザー&quot;, CASE(TEXT(nearest_yard__c), &quot;山口ヤード&quot;, 0, &quot;福岡ヤード&quot;, 0, &quot;熊本ヤード&quot;, 0, 1),
+    &quot;まるおモータース&quot;, CASE(TEXT(nearest_yard__c), &quot;四国ヤード&quot;, 0, 1),
+    &quot;美島自動車&quot;,       CASE(TEXT(nearest_yard__c), &quot;四国ヤード&quot;, 0, 1),
+    &quot;アドーレジャパン&quot;, CASE(TEXT(nearest_yard__c), &quot;四国ヤード&quot;, 0, 1),
+    &quot;京王自動車工業&quot;,   CASE(TEXT(nearest_yard__c), &quot;首都圏ヤード&quot;, 0, &quot;千葉ヤード&quot;, 0, 1),
+    &quot;DO&quot;,               CASE(TEXT(nearest_yard__c), &quot;首都圏ヤード&quot;, 0, &quot;千葉ヤード&quot;, 0, 1),
+    &quot;佐久間オートサービス&quot;, CASE(TEXT(nearest_yard__c), &quot;首都圏ヤード&quot;, 0, &quot;千葉ヤード&quot;, 0, 1),
+    0
+  ) = 1
+)</errorConditionFormula>
+    <errorMessage>引取依頼業者と引取先の最寄りヤードが紐づいていません。
+引取依頼業者または引取先の最寄りヤードを変更してください。</errorMessage>
+</ValidationRule>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Overseas_PIC__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>松浦部長依頼分。リユース販売時に海外在住だと落札手数料と別途20,000円発生する。国内在住にしたいが、その場合担当が国内になるので、Salesforceに追加してほしいとのこと。在住地区分に「海外在住（国内支店あり）」の項目追加を提案したが、一旦Salesforceで対応してから、今後検討するとのこと</description>
+    <externalId>false</externalId>
+    <label>海外支店　担当者</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>Overseas_PIC</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

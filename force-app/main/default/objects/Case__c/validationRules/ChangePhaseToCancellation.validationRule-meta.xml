@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ChangePhaseToCancellation</fullName>
+    <active>false</active>
+    <errorConditionFormula>IsCreated__c = true &amp;&amp; 
+NOT( ISPICKVAL( VehicleClassification__c , &quot;はなまるオークション/他社AA（営業）&quot;) || ISPICKVAL( VehicleClassification__c , &quot;はなまるオークション/他社AA（コール）&quot; )) &amp;&amp; 
+ISPICKVAL( Phase__c , &quot;キャンセル&quot; )</errorConditionFormula>
+    <errorMessage>流通からキャンセル処理を行ってください</errorMessage>
+</ValidationRule>

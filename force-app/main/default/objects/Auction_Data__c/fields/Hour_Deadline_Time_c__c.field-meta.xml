@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Hour_Deadline_Time_c__c</fullName>
+    <description>その日の0:00から何分経ったか」を表す数値。オークション課用レポートに使用</description>
+    <externalId>false</externalId>
+    <formula>HOUR(TIMEVALUE(Deadline_Time__c)) * 60
++ MINUTE(TIMEVALUE(Deadline_Time__c))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>オークション終了日時（経過分）</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

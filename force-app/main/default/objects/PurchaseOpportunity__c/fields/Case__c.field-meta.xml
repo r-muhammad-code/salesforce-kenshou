@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>買取受付から買取商談を作成した場合、買取受付Noが表示され作成元の買取受付を確認できる</description>
+    <externalId>false</externalId>
+    <label>買取受付</label>
+    <referenceTo>Case__c</referenceTo>
+    <relationshipLabel>買取商談</relationshipLabel>
+    <relationshipName>CaseUnderOppotunity</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

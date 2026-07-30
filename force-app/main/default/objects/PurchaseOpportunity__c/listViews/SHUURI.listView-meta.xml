@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SHUURI</fullName>
+    <columns>NAME</columns>
+    <columns>Owner__c</columns>
+    <columns>ModelYearCarName__c</columns>
+    <columns>RepairCar__c</columns>
+    <columns>OtherAA__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RepairCar__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>OtherAA__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>修理フラグ間違い確認</label>
+</ListView>

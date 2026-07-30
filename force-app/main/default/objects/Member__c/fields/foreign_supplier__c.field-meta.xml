@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>foreign_supplier__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>海外のどこから仕入れているのか、AA名等を記載して下さい。</inlineHelpText>
+    <label>【海外】仕入場所</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>3</visibleLines>
+</CustomField>

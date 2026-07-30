@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>hanamaru_or_sococaratrading__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+  ISBLANK(Winning_Member__r.country_cd__r.Name),
+  NULL,
+  IF(
+    Winning_Member__r.country_cd__r.Name = &quot;日本&quot;,
+    &quot;はなまる扱い&quot;,
+    &quot;ソコトレ扱い&quot;
+  )
+)</formula>
+    <label>扱い条件</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

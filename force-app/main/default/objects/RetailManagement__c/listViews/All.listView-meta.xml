@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>PurchaseOpportunity__c</columns>
+    <columns>LotNo__c</columns>
+    <columns>PurchasingPerson__c</columns>
+    <columns>Stage__c</columns>
+    <columns>ModelYearPicklist__c</columns>
+    <columns>CarName__c</columns>
+    <columns>CarNo__c</columns>
+    <columns>Grade__c</columns>
+    <columns>SalesStaff__c</columns>
+    <columns>PlaceOfStorage__c</columns>
+    <columns>Buyer__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>すべて選択</label>
+</ListView>

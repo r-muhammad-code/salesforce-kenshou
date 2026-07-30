@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>tokki_keppin__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF ( INCLUDES(Assessment__r.tokki_keppin__c,&quot;52&quot; ) , &quot;カギなし,&quot;, &quot;&quot;)
+&amp; IF ( INCLUDES(Assessment__r.tokki_keppin__c,&quot;53&quot; ) , &quot;キー抜けない,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES(Assessment__r.tokki_keppin__c,&quot;54&quot; ) , &quot;メカニカルキー欠,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES(Assessment__r.tokki_keppin__c,&quot;55&quot; ) , &quot;キー破損あり,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES(Assessment__r.tokki_keppin__c,&quot;56&quot; ) , &quot;パーツ欠品,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES(Assessment__r.tokki_keppin__c,&quot;57&quot; ) , &quot;シフトノブ欠,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES(Assessment__r.tokki_keppin__c,&quot;58&quot; ) , &quot;ヘッドレスト欠,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES(Assessment__r.tokki_keppin__c,&quot;59&quot; ) , &quot;コーションプレート欠,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES(Assessment__r.tokki_keppin__c,&quot;60&quot; ) , &quot;バッテリー欠,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES(Assessment__r.tokki_keppin__c,&quot;78&quot; ) , &quot;バッテリーあがり,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES(Assessment__r.tokki_keppin__c,&quot;107&quot; ) , &quot;SDカードなし,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES(Assessment__r.tokki_keppin__c,&quot;112&quot; ) , &quot;充電ケーブルなし,&quot;,&quot;&quot; )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>特記事項（欠品／備品不具合）</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

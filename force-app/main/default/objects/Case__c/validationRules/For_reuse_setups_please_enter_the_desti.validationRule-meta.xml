@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>For_reuse_setups_please_enter_the_desti</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(ISBLANK(TEXT( RequestCompany__c )))&amp;&amp; ISBLANK(landing__c)&amp;&amp; ScheduleAdjustmentRequestDate__c &gt;= DATE(2024, 5, 1)</errorConditionFormula>
+    <errorDisplayField>landing__c</errorDisplayField>
+    <errorMessage>リユース段取の場合は搬入先を入力してください</errorMessage>
+</ValidationRule>

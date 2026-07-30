@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>scheduled_pickup_date_with_dayofweek__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISBLANK( PurchaseOpportunity__r.ScheduledPickupDate__c ), &quot;&quot;,
+TEXT( PurchaseOpportunity__r.ScheduledPickupDate__c )
+&amp; &quot;（&quot;
+&amp; CASE(WEEKDAY( PurchaseOpportunity__r.ScheduledPickupDate__c ),
+1, &quot;日&quot;,
+2, &quot;月&quot;,
+3, &quot;火&quot;,
+4, &quot;水&quot;,
+5, &quot;木&quot;,
+6, &quot;金&quot;, &quot;土&quot;
+)
+&amp; &quot;）&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>引取予定日(曜日)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

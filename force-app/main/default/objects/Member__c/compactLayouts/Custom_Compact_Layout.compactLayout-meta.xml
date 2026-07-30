@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Custom_Compact_Layout</fullName>
+    <fields>Name</fields>
+    <fields>client_base_id__c</fields>
+    <fields>sale_tant_cd__c</fields>
+    <fields>tel_no__c</fields>
+    <fields>nkin_jkyo_kbn__c</fields>
+    <fields>client_tant_nm__c</fields>
+    <fields>mobile_tel_no__c</fields>
+    <fields>used_lang_kbn__c</fields>
+    <label>Custom Compact Layout</label>
+</CompactLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>tokki_outer__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF ( INCLUDES(  Assessment__r.tokki_outer__c  ,&quot;13&quot; ) , &quot;右フロントドライブシャフト抜け	,&quot;, &quot;&quot;)
+&amp; IF ( INCLUDES( Assessment__r.tokki_outer__c  ,&quot;14&quot; ) , &quot;右リアドライブシャフト抜け	,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES( Assessment__r.tokki_outer__c  ,&quot;15&quot; ) , &quot;左フロントドライブシャフト抜け,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES( Assessment__r.tokki_outer__c  ,&quot;16&quot; ) , &quot;左リアドライブシャフト抜け	,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES( Assessment__r.tokki_outer__c  ,&quot;17&quot; ) , &quot;つり跡あり,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES( Assessment__r.tokki_outer__c  ,&quot;0&quot; ) , &quot;色替え,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES( Assessment__r.tokki_outer__c  ,&quot;18&quot; ) , &quot;ボディ色あせ,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES( Assessment__r.tokki_outer__c  ,&quot;19&quot; ) , &quot;ボンネット開かず,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES( Assessment__r.tokki_outer__c  ,&quot;20&quot; ) , &quot;ボディ全体傷あり,&quot;,&quot;&quot; )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>特記事項（外装）</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

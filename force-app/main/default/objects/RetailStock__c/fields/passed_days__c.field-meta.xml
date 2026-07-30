@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>passed_days__c</fullName>
+    <description>・成約済、他社オク売却済み、完了、の時はNull
+・委託の場合は掲載後日数
+・ユーザ下取りの場合は入庫後日数、入庫日がなければエラー888
+・その他の場合は支払後日数、支払日がなければエラー999</description>
+    <externalId>false</externalId>
+    <formula>CASE(phase__c,
+    &quot;成約済&quot;, null,
+    &quot;他社オク売却済み&quot;, null,
+    &quot;完了&quot;, null,
+    CASE(purchase_type__c,
+        &quot;委託&quot;, TODAY() - pucblication_date__c,
+        &quot;ユーザ下取&quot;, IF(ISBLANK(receiving_stock_date__c), 888, TODAY() - receiving_stock_date__c),
+        IF(NOT(ISBLANK(PurchaseOpportunity__r.RepairRequestDate__c)),
+            IF(ISBLANK(PurchaseOpportunity__r.RepairCompletedDate__c), 777, TODAY() - PurchaseOpportunity__r.RepairCompletedDate__c),
+            IF(ISBLANK(payment_date__c), 999, TODAY() - payment_date__c)
+        )
+    )
+)
+- exclude_days__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>委託の場合は掲載後の日数、ユーザ下取りの場合は入庫後日数、それ以外の場合は支払後日数が表示されます。
+888の場合は入庫日未入力、999の場合は支払日未入力です。</inlineHelpText>
+    <label>経過日数</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

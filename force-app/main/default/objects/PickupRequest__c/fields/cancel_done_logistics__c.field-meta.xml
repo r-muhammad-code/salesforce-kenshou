@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cancel_done_logistics__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>物流/リサイクル推進部にてキャンセル処理を行なった場合はこちらにチェックを付ける。山本</description>
+    <externalId>false</externalId>
+    <label>キャンセル処理済み（物流/リサイクル推進部）</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

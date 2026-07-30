@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>last_ship_flg__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>dataspider連携項目。小売在庫での最終出庫日管理に使用。</description>
+    <externalId>false</externalId>
+    <label>最終出庫フラグ</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

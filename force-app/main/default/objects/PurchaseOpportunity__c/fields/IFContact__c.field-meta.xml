@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IFContact__c</fullName>
+    <description>法人管理システムから連携される。法人案件の窓口担当者名が入力される</description>
+    <externalId>false</externalId>
+    <inlineHelpText>法人のみ使用。法人システム上で取り込む取引先担当者名。こちらの名前を見てセールスフォース上の取引先担当者へ割り当ててください。</inlineHelpText>
+    <label>連携用担当者名</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

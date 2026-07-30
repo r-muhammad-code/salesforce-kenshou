@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>View7</fullName>
+    <columns>NAME</columns>
+    <columns>ScheduledPickupDate__c</columns>
+    <columns>CarName__c</columns>
+    <columns>CarNo__c</columns>
+    <columns>StorageLocationAddress__c</columns>
+    <columns>Setup_staff__c</columns>
+    <columns>TransportCompany__c</columns>
+    <columns>Change_Cancel__c</columns>
+    <columns>RequestDestination__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Cancel_Done__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>ScheduledPickupDate__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>Change_Cancel__c</field>
+        <operation>equals</operation>
+        <value>依頼キャンセル</value>
+    </filters>
+    <label>キャンセル済リスト（仮）</label>
+</ListView>

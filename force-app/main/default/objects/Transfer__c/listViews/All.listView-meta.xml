@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>client_kgai_bank_account_id__c</columns>
+    <columns>kgai_branch_nm__c</columns>
+    <columns>kgai_bank_account_kb__c</columns>
+    <columns>kgai_bank_account_no__c</columns>
+    <columns>kgai_bank_account_nm__c</columns>
+    <columns>note__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>すべてのレコード</label>
+</ListView>

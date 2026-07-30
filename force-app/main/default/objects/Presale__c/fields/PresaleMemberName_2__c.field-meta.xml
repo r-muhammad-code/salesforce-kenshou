@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PresaleMemberName_2__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>2番手預かり業者情報</label>
+    <referenceTo>Member__c</referenceTo>
+    <relationshipLabel>先売り依頼 (2番手預かり業者情報)</relationshipLabel>
+    <relationshipName>PresaleMemberName_2</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Age_gender_isblank</fullName>
+    <active>false</active>
+    <description>媒体：LINE以外　フェーズ：キャンセル以外で接触日が入っており年齢性別が空白の場合にエラー　山本</description>
+    <errorConditionFormula>DATEVALUE( CreatedDate )&gt;=DATE(2023,06,27) &amp;&amp;
+NOT( OR( ISPICKVAL(Media__c , &quot;催事（ららぽーと和泉）&quot;),ISPICKVAL(Media__c , &quot;LINE&quot;)))  &amp;&amp; NOT( ISBLANK( ContactDate__c )) &amp;&amp; ISBLANK( TEXT( age_gender__c ))</errorConditionFormula>
+    <errorDisplayField>age_gender__c</errorDisplayField>
+    <errorMessage>『年齢性別』を入力してください。</errorMessage>
+</ValidationRule>

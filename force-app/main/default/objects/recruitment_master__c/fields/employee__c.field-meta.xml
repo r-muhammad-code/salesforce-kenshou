@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>employee__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <inlineHelpText>この項目に紐づく方の退職予定日が更新されたので、本レコードは作成されました。</inlineHelpText>
+    <label>退職予定者（社員マスタ）</label>
+    <referenceTo>employee__c</referenceTo>
+    <relationshipLabel>募集マスタ</relationshipLabel>
+    <relationshipName>employee</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

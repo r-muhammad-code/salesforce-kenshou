@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OpportunityActivity</fullName>
+    <fields>Name</fields>
+    <fields>StartDateTime__c</fields>
+    <label>商談行動</label>
+</CompactLayout>

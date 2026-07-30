@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Requestform__c</fullName>
+    <description>買取商談の依頼書送信日（サポート送信分）か、引取依頼の依頼書送信日（物流送信分）の日付どちらかが入ったら反映させる。与儀</description>
+    <externalId>false</externalId>
+    <formula>BLANKVALUE(PurchaseOpportunity__r.Requestform__c, PurchaseOpportunity__r.PickupRequest_toLogistics__r.Requestform__c)</formula>
+    <label>依頼書送信日</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

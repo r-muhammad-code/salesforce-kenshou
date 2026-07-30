@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>disp_flg__c</fullName>
+    <defaultValue>&quot;1&quot;</defaultValue>
+    <externalId>false</externalId>
+    <label>表示区分</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>disp_flg</valueSetName>
+    </valueSet>
+</CustomField>

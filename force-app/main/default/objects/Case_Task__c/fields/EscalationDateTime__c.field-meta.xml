@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EscalationDateTime__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>対応タスクの対応期限
+※土日祝を除いて、届いてから3時間以内</inlineHelpText>
+    <label>エスカレーション期限</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

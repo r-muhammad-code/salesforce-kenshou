@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NumberRemoved__c</fullName>
+    <description>佐野作成(喜多依頼分)
+20251003 小野瀬修正</description>
+    <externalId>false</externalId>
+    <formula>IF(NOT(ISBLANK(Case__c)) &amp;&amp; Case__r.NumberRemoved__c,TRUE,
+IF( NOT(ISBLANK(Case__c)) &amp;&amp; ISPICKVAL(Case__r.Transportation__c, &quot;直搬入&quot;) &amp;&amp; OR(ISPICKVAL(Case__r.ProcessingDivision__c, &quot;抹消済&quot;), ISPICKVAL(Case__r.ProcessingDivision__c, &quot;直出し名変&quot;)), FALSE,
+IF( NOT(ISBLANK(Case__c)) &amp;&amp; ISPICKVAL(Case__r.Transportation__c, &quot;直搬入&quot;), TRUE,
+IF( NOT(ISBLANK(PurchaseOpportunity__c)) &amp;&amp; PurchaseOpportunity__r.NumberRemoved__c, TRUE, FALSE))))</formula>
+    <label>ナンバー外し</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

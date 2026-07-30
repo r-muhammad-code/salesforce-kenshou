@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Shipping_Company__c</fullName>
+    <externalId>false</externalId>
+    <label>船社</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>STAROCEAN</fullName>
+                <default>false</default>
+                <label>STAROCEAN</label>
+            </value>
+            <value>
+                <fullName>CNC</fullName>
+                <default>false</default>
+                <label>CNC</label>
+            </value>
+            <value>
+                <fullName>SITC</fullName>
+                <default>false</default>
+                <label>SITC</label>
+            </value>
+            <value>
+                <fullName>ONE</fullName>
+                <default>false</default>
+                <label>ONE</label>
+            </value>
+            <value>
+                <fullName>TS LINES</fullName>
+                <default>false</default>
+                <label>TS LINES</label>
+            </value>
+            <value>
+                <fullName>WAN HAI</fullName>
+                <default>false</default>
+                <label>WAN HAI</label>
+            </value>
+            <value>
+                <fullName>OOCL</fullName>
+                <default>false</default>
+                <label>OOCL</label>
+            </value>
+            <value>
+                <fullName>INTERASIA</fullName>
+                <default>false</default>
+                <label>INTERASIA</label>
+            </value>
+            <value>
+                <fullName>COSCO</fullName>
+                <default>false</default>
+                <label>COSCO</label>
+            </value>
+            <value>
+                <fullName>MSC</fullName>
+                <default>false</default>
+                <label>MSC</label>
+            </value>
+            <value>
+                <fullName>MAERSK</fullName>
+                <default>false</default>
+                <label>MAERSK</label>
+            </value>
+            <value>
+                <fullName>ZIM</fullName>
+                <default>false</default>
+                <label>ZIM</label>
+            </value>
+            <value>
+                <fullName>SINOTRANS</fullName>
+                <default>false</default>
+                <label>SINOTRANS</label>
+            </value>
+            <value>
+                <fullName>EverGreen</fullName>
+                <default>false</default>
+                <label>EverGreen</label>
+            </value>
+            <value>
+                <fullName>Yang Ming</fullName>
+                <default>false</default>
+                <label>Yang Ming</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

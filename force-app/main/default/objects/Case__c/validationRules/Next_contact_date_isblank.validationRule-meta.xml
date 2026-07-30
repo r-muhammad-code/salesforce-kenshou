@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Next_contact_date_isblank</fullName>
+    <active>true</active>
+    <description>フェーズ：キャンセル以外で接触日が入ってるのに次回接触日時が入っていない場合にエラー　山本</description>
+    <errorConditionFormula>DATEVALUE(CreatedDate)&gt;=DATE(2023,06,27) &amp;&amp;
+NOT( ISBLANK( ContactDate__c )) &amp;&amp; ISBLANK( Next_contact_date__c ) &amp;&amp; NOT( ISPICKVAL( Phase__c ,&quot;キャンセル&quot;))&amp;&amp; IsCreated__c = false &amp;&amp;
+ sococara_retailing_connected__c = false</errorConditionFormula>
+    <errorDisplayField>Next_contact_date__c</errorDisplayField>
+    <errorMessage>『次回接触日時』を入力してください。</errorMessage>
+</ValidationRule>

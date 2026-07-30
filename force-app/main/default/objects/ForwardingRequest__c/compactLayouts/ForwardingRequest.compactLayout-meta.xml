@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ForwardingRequest</fullName>
+    <fields>Name</fields>
+    <fields>ForwardingRequestDate__c</fields>
+    <fields>ForwardingScheduledDate__c</fields>
+    <label>回送依頼</label>
+</CompactLayout>

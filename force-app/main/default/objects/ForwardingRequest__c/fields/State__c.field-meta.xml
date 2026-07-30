@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>State__c</fullName>
+    <description>山本</description>
+    <externalId>false</externalId>
+    <formula>IF ( NOT( ISBLANK(  Opportunity__c ) ) ,TEXT( Opportunity__r.State__c  ),
+CASE(  Case__r.CarClass__c  , &quot;事故車&quot; , &quot;事故車&quot; ,&quot;故障車&quot; , &quot;故障車&quot; , &quot;冠水車&quot; ,&quot;水害車&quot; ,&quot;中古車&quot; , &quot;中古車&quot; , &quot;&quot;) )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>状態</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

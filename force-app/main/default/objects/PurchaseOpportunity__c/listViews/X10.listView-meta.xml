@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X10</fullName>
+    <columns>NAME</columns>
+    <columns>LotNo__c</columns>
+    <columns>Account__c</columns>
+    <columns>PhaseDateText__c</columns>
+    <columns>ModelYearCarName__c</columns>
+    <columns>Owner__c</columns>
+    <columns>RequestDate__c</columns>
+    <columns>AssessmentDate__c</columns>
+    <columns>PurchaseDate__c</columns>
+    <columns>TakeUpDate__c</columns>
+    <columns>ScheduledPickupDate__c</columns>
+    <columns>TransferDate__c</columns>
+    <columns>ProcessingDivision__c</columns>
+    <columns>AvailableDate__c</columns>
+    <columns>DocumentOKCheck__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>Phase__c</field>
+        <operation>notEqual</operation>
+        <value>全完了,キャンセル</value>
+    </filters>
+    <label>00. 私の進行中の買取商談</label>
+</ListView>

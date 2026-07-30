@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SupervisorReport__c</fullName>
+    <description>磯兼</description>
+    <externalId>false</externalId>
+    <label>上長報告有無</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>係長報告済</fullName>
+                <default>false</default>
+                <label>係長報告済</label>
+            </value>
+            <value>
+                <fullName>課長代理以上報告済</fullName>
+                <default>false</default>
+                <label>課長代理以上報告済</label>
+            </value>
+            <value>
+                <fullName>本部長報告済</fullName>
+                <default>false</default>
+                <label>本部長報告済</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

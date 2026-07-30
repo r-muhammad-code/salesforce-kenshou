@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SalesManagement_NotCompatible_SalesManagement</fullName>
+    <columns>NAME</columns>
+    <columns>Pickup_Preferred_date__c</columns>
+    <columns>LotNo__c</columns>
+    <columns>PO_Owner__c</columns>
+    <columns>State__c</columns>
+    <columns>Mst_Models__c</columns>
+    <columns>CarNo__c</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>Account__c</field>
+        <operation>notEqual</operation>
+        <value>センリャク　テスト</value>
+    </filters>
+    <filters>
+        <field>LotNo__c</field>
+        <operation>notContain</operation>
+        <value>テスト</value>
+    </filters>
+    <label>営業管理未対応キュー（所有者変更リスト）</label>
+    <queue>SalesManagement_NotCompatible</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

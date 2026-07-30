@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Completed_OwnerChangeRequest</fullName>
+    <columns>NAME</columns>
+    <columns>Request_Date__c</columns>
+    <columns>Request_completedate__c</columns>
+    <columns>Opportunity_DocManagement__c</columns>
+    <columns>Case__c</columns>
+    <columns>Opportunity_owner__c</columns>
+    <columns>Model_year__c</columns>
+    <columns>Car_model__c</columns>
+    <columns>Car_No__c</columns>
+    <columns>LotNo_Formula__c</columns>
+    <columns>Request_to_DocManagement_Scan__c</columns>
+    <columns>Request_to_DocManagement_Remarks__c</columns>
+    <columns>OwnerChangeRequest_Approved__c</columns>
+    <columns>DocManagement_Name__c</columns>
+    <columns>Docmgmt_memo__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Request__c</field>
+        <operation>equals</operation>
+        <value>車庫申請</value>
+    </filters>
+    <filters>
+        <field>Request_completedate__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>完了済みの車庫申請依頼</label>
+</ListView>

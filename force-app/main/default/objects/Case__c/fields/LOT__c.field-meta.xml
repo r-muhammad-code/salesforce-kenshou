@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LOT__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+    OR(
+        TEXT( VehicleClassification__c ) = &quot;リユースオークション&quot;,
+        TEXT( VehicleClassification__c ) = &quot;直接商談&quot;,
+        TEXT( VehicleClassification__c ) = &quot;直売&quot;,
+        TEXT( VehicleClassification__c ) = &quot;コールA/リユース&quot;,
+        TEXT( VehicleClassification__c ) = &quot;コールA/リユース（SMS不可）&quot;,
+        TEXT( VehicleClassification__c ) = &quot;コールA/他社AA&quot;,
+        TEXT( VehicleClassification__c ) = &quot;コールA/他社AA（SMS不可）&quot;
+    ),
+    PurchaseReception_LOT__c,
+    LotNo__c
+)</formula>
+    <label>LOT</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

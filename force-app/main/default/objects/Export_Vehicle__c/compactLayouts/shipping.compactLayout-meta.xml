@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>shipping</fullName>
+    <fields>Name</fields>
+    <fields>model__c</fields>
+    <fields>chassis_number__c</fields>
+    <fields>booking_no__c</fields>
+    <fields>stock_num__c</fields>
+    <fields>country__c</fields>
+    <fields>destination_port__c</fields>
+    <label>輸出管理用</label>
+</CompactLayout>

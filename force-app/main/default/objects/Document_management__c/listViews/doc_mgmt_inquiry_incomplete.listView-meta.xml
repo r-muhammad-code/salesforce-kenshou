@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>doc_mgmt_inquiry_incomplete</fullName>
+    <columns>NAME</columns>
+    <columns>LotNo_Formula__c</columns>
+    <columns>doc_mgmt_inquiry__c</columns>
+    <columns>Request_Date__c</columns>
+    <columns>Request_completedate__c</columns>
+    <columns>DocManagement_Name__c</columns>
+    <columns>Opportunity_owner__c</columns>
+    <columns>cancel__c</columns>
+    <columns>Opportunity_DocManagement__c</columns>
+    <columns>Mst_Models_formula__c</columns>
+    <columns>Car_No__c</columns>
+    <columns>Request_to_DocManagement_Remarks__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>doc_mgmt_inquiry__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>Request_completedate__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>cancel__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>CancelDate__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>PO_Account__c</field>
+        <operation>notEqual</operation>
+        <value>センリャク テスト</value>
+    </filters>
+    <label>未完了の書類管理からの問い合わせ</label>
+</ListView>

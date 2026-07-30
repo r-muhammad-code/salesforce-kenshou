@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CS_PIC__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(
+  West_East__c,
+  &quot;東日本&quot;, &quot;伊東&quot;,
+  &quot;西日本&quot;, &quot;杉田&quot;,
+  &quot;未設定&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>CS担当</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

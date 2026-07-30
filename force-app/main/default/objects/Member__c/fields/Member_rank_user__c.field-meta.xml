@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Member_rank_user__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+    ISBLANK(First_Auction_Date_in_User_Storage__c),
+    &quot;新規&quot;,
+    IF(
+        Last_Auction_Date_in_User_Storage__c &gt;= TODAY() - 180,
+        &quot;既存&quot;,
+        &quot;過去既存&quot;
+    )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>ユーザー保管　会員ランク</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

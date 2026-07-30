@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X002</fullName>
+    <columns>Amount_content__c</columns>
+    <columns>NAME</columns>
+    <columns>requesting_company_name__c</columns>
+    <columns>store__c</columns>
+    <columns>asses_date__c</columns>
+    <columns>car_model__c</columns>
+    <columns>shadai_no__c</columns>
+    <columns>auc_submit_price__c</columns>
+    <columns>expiration_date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>result__c</field>
+        <operation>equals</operation>
+        <value>成約</value>
+    </filters>
+    <label>【002.共有】成約済み取引先査定表</label>
+</ListView>

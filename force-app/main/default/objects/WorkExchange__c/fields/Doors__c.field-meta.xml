@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Doors__c</fullName>
+    <externalId>false</externalId>
+    <label>ドア数</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>3枚</fullName>
+                <default>false</default>
+                <label>3枚</label>
+            </value>
+            <value>
+                <fullName>4枚</fullName>
+                <default>false</default>
+                <label>4枚</label>
+            </value>
+            <value>
+                <fullName>5枚</fullName>
+                <default>false</default>
+                <label>5枚</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

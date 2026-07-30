@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>View_all_field</fullName>
+    <columns>MasterLabel</columns>
+    <columns>disolay_num__c</columns>
+    <columns>DeveloperName</columns>
+    <columns>NamespacePrefix</columns>
+    <filterScope>Everything</filterScope>
+    <label>全項目</label>
+    <language>ja</language>
+</ListView>

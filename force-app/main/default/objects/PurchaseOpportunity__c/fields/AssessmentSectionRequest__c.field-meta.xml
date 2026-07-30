@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AssessmentSectionRequest__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>査定課に依頼する案件は依頼内容を選択</inlineHelpText>
+    <label>査定課依頼</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>値段出しのみ</fullName>
+                <default>false</default>
+                <label>値段出しのみ</label>
+            </value>
+            <value>
+                <fullName>値段出しと提示</fullName>
+                <default>false</default>
+                <label>値段出しと提示</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

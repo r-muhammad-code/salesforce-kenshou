@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>stock_ship_date__c</fullName>
+    <description>stock_ship_historyから、stock_ship_categoryが2（出庫）かつ、last_ship_flgが1（最終出庫）のstock_ship_dateを取得</description>
+    <externalId>false</externalId>
+    <label>最終出庫日</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

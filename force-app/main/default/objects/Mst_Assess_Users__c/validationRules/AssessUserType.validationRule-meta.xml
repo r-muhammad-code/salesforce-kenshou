@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AssessUserType</fullName>
+    <active>true</active>
+    <description>ユーザ種別</description>
+    <errorConditionFormula>OR
+(
+  AND
+  (
+    NOT( ISBLANK( contact__c )),
+    TEXT( assess_user_type__c ) = &quot;&quot;
+  ),
+  AND
+  (
+    ISBLANK( contact__c ),
+    NOT( TEXT( assess_user_type__c ) = &quot;&quot;)
+  )
+)</errorConditionFormula>
+    <errorDisplayField>assess_user_type__c</errorDisplayField>
+    <errorMessage>取引先担当者を選択した場合、ユーザ種別を選択してください。</errorMessage>
+</ValidationRule>

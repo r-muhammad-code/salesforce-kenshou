@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>foreign_purchase_volume__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>SSS＝1,001台～
+SS＝501～1,000台
+S＝101～500台
+A＝51～100台
+B＝21～50台
+C＝6～20台
+D＝0～5台</inlineHelpText>
+    <label>他国からの購入規模</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>SSS</fullName>
+                <default>false</default>
+                <label>SSS</label>
+            </value>
+            <value>
+                <fullName>SS</fullName>
+                <default>false</default>
+                <label>SS</label>
+            </value>
+            <value>
+                <fullName>S</fullName>
+                <default>false</default>
+                <label>S</label>
+            </value>
+            <value>
+                <fullName>A</fullName>
+                <default>false</default>
+                <label>A</label>
+            </value>
+            <value>
+                <fullName>B</fullName>
+                <default>false</default>
+                <label>B</label>
+            </value>
+            <value>
+                <fullName>C</fullName>
+                <default>false</default>
+                <label>C</label>
+            </value>
+            <value>
+                <fullName>D</fullName>
+                <default>false</default>
+                <label>D</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Model_relation__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>DWHからは車種コードを連携し、レコードトリガーフローで埋め込んでいる</description>
+    <externalId>false</externalId>
+    <label>車種（参照）</label>
+    <referenceTo>Mst_Models__c</referenceTo>
+    <relationshipLabel>オークション出品データ</relationshipLabel>
+    <relationshipName>Model_relation</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

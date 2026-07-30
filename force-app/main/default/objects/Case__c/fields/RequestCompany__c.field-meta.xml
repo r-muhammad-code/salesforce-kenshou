@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RequestCompany__c</fullName>
+    <description>喜多</description>
+    <externalId>false</externalId>
+    <inlineHelpText>リユース段取の場合は引取依頼業者ではなく、こちらを使用</inlineHelpText>
+    <label>候補業者</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ゼロ</fullName>
+                <default>false</default>
+                <label>ゼロ</label>
+            </value>
+            <value>
+                <fullName>テイクオフ（神戸）</fullName>
+                <default>false</default>
+                <label>テイクオフ（神戸）</label>
+            </value>
+            <value>
+                <fullName>テイクオフ（名古屋）</fullName>
+                <default>false</default>
+                <label>テイクオフ（名古屋）</label>
+            </value>
+            <value>
+                <fullName>テイクオフ（東京）</fullName>
+                <default>false</default>
+                <label>テイクオフ（東京）</label>
+            </value>
+            <value>
+                <fullName>自社自走部隊</fullName>
+                <default>false</default>
+                <label>自社自走部隊</label>
+            </value>
+            <value>
+                <fullName>㈱TCS　仙台支店</fullName>
+                <default>false</default>
+                <label>㈱TCS　仙台支店</label>
+            </value>
+            <value>
+                <fullName>㈱TCS　野田支店</fullName>
+                <default>false</default>
+                <label>㈱TCS　野田支店</label>
+            </value>
+            <value>
+                <fullName>㈱TCS　千葉支店</fullName>
+                <default>false</default>
+                <label>㈱TCS　千葉支店</label>
+            </value>
+            <value>
+                <fullName>㈱TCS　本社</fullName>
+                <default>false</default>
+                <label>㈱TCS　本社</label>
+            </value>
+            <value>
+                <fullName>㈱TCS　静岡支店</fullName>
+                <default>false</default>
+                <label>㈱TCS　静岡支店</label>
+            </value>
+            <value>
+                <fullName>㈱TCS　名古屋支店</fullName>
+                <default>false</default>
+                <label>㈱TCS　名古屋支店</label>
+            </value>
+            <value>
+                <fullName>㈱TCS　神戸支店</fullName>
+                <default>false</default>
+                <label>㈱TCS　神戸支店</label>
+            </value>
+            <value>
+                <fullName>㈱TCS　福岡支店</fullName>
+                <default>false</default>
+                <label>㈱TCS　福岡支店</label>
+            </value>
+            <value>
+                <fullName>旧フロー_ゼロ</fullName>
+                <default>false</default>
+                <label>FAX対応_ゼロ</label>
+            </value>
+            <value>
+                <fullName>株式会社鹿児島車輌</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>株式会社鹿児島車輌</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

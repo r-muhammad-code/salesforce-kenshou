@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>other_assessment_status__c</fullName>
+    <externalId>false</externalId>
+    <label>他社査定状況</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>相見積もりはしていない</fullName>
+                <default>false</default>
+                <label>相見積もりはしていない</label>
+            </value>
+            <value>
+                <fullName>1社 相見積もり中</fullName>
+                <default>false</default>
+                <label>1社 相見積もり中</label>
+            </value>
+            <value>
+                <fullName>2社 相見積もり中</fullName>
+                <default>false</default>
+                <label>2社 相見積もり中</label>
+            </value>
+            <value>
+                <fullName>3社以上 相見積もり中</fullName>
+                <default>false</default>
+                <label>3社以上 相見積もり中</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

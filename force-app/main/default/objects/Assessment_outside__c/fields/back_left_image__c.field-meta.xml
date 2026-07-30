@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>back_left_image__c</fullName>
+    <externalId>false</externalId>
+    <formula>HYPERLINK($Label.PictureArrangeURL1 &amp; asset_mngno__c &amp; $Label.PictureArrangeURL2 &amp;  Assessment__r.left_back_url__c  , IMAGE(Assessment__r.left_back_url__c, &quot;左後&quot; ) ,&quot;_blank&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>左後画像</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

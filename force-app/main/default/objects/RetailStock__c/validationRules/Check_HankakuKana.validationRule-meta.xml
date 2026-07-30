@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_HankakuKana</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(REGEX( payment_name__c , &quot;^[ｦ-ﾟA-Z0-9\\-\\.\\)\\( ]*$&quot;)) ||
+REGEX(payment_name__c , &quot;.*[ｧｨｩｪｫｯｬｭｮ].*&quot;)</errorConditionFormula>
+    <errorDisplayField>payment_name__c</errorDisplayField>
+    <errorMessage>入金名義は半角ｶﾀｶﾅと記号「.」「-」「)」「(」のみ入力可能です。半角ｶﾀｶﾅの小文字は入力不可です。</errorMessage>
+</ValidationRule>

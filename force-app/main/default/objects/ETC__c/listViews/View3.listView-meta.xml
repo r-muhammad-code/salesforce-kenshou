@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>View3</fullName>
+    <columns>Canceled__c</columns>
+    <columns>ControlNo__c</columns>
+    <columns>NAME</columns>
+    <columns>User__c</columns>
+    <columns>Base__c</columns>
+    <columns>remarks__c</columns>
+    <columns>spare__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Canceled__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>spare__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>使用中カード一覧</label>
+</ListView>

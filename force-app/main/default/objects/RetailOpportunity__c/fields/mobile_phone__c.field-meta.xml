@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>mobile_phone__c</fullName>
+    <description>買取商談に携帯電話が反映されるようになれば不要。
+削除後、マーケ北口さんが確認しているレポートで項目の差し替えが必要。山本</description>
+    <externalId>false</externalId>
+    <formula>customer__r.MobilePhone__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>携帯電話</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Customer_Deposit__c</fullName>
+    <externalId>false</externalId>
+    <label>デポジット</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>着金済み</fullName>
+                <default>false</default>
+                <label>着金済み</label>
+            </value>
+            <value>
+                <fullName>請求済み　未着金</fullName>
+                <default>false</default>
+                <label>請求済み　未着金</label>
+            </value>
+            <value>
+                <fullName>請求無し</fullName>
+                <default>false</default>
+                <label>請求無し</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

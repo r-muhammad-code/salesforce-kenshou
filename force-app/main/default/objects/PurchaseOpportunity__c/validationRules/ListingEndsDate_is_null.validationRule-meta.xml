@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ListingEndsDate_is_null</fullName>
+    <active>false</active>
+    <errorConditionFormula>ISPICKVAL( Destination_classification__c ,&quot;自社出品&quot;)&amp;&amp;
+
+ ISBLANK( ListingEndsDate__c )</errorConditionFormula>
+    <errorDisplayField>ListingEndsDate__c</errorDisplayField>
+    <errorMessage>出品終了日が入力されていません。</errorMessage>
+</ValidationRule>

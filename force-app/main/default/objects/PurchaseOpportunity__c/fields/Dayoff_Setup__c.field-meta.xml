@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dayoff_Setup__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>山本</description>
+    <externalId>false</externalId>
+    <inlineHelpText>高粗利車両且つ土日に日程確定しないといけない至急引取案件の場合はチェックをつけてください。リユース事業と物流をメンションしてChatterが送られます。</inlineHelpText>
+    <label>リユース事業部に指示書作成を依頼する（休日至急）</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

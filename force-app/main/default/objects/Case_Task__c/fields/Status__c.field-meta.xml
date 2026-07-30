@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <description>ケースと連動。こちらで編集したら向こうにデータを返すため、項目を追加したらケース側の状況にも項目を同じように追加しなければならない。　　あ</description>
+    <externalId>false</externalId>
+    <label>状況</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>未対応（New）</fullName>
+                <default>false</default>
+                <label>未対応（New）</label>
+            </value>
+            <value>
+                <fullName>進行中（In Progress）</fullName>
+                <default>false</default>
+                <label>進行中（In Progress）</label>
+            </value>
+            <value>
+                <fullName>一時保留（On Hold）</fullName>
+                <default>false</default>
+                <label>一時保留（On Hold）</label>
+            </value>
+            <value>
+                <fullName>顧客からの返信待ち（Waiting for Customer）</fullName>
+                <default>false</default>
+                <label>顧客からの返信待ち（Waiting for Customer）</label>
+            </value>
+            <value>
+                <fullName>引き継ぎ（Escalated）</fullName>
+                <default>false</default>
+                <label>引き継ぎ（Escalated）</label>
+            </value>
+            <value>
+                <fullName>返信あり（Response Received）</fullName>
+                <default>false</default>
+                <label>返信あり（Response Received）</label>
+            </value>
+            <value>
+                <fullName>他の案件と統合（Merged）</fullName>
+                <default>false</default>
+                <label>他の案件と統合（Merged）</label>
+            </value>
+            <value>
+                <fullName>クレーム対応中（Dispute in Review）</fullName>
+                <default>false</default>
+                <label>クレーム対応中（Dispute in Review）</label>
+            </value>
+            <value>
+                <fullName>個別依頼分</fullName>
+                <default>false</default>
+                <label>個別依頼分</label>
+            </value>
+            <value>
+                <fullName>完了（Closed）</fullName>
+                <default>false</default>
+                <label>完了（Closed）</label>
+            </value>
+            <value>
+                <fullName>対応不要（No action required）</fullName>
+                <default>false</default>
+                <label>対応不要（No action required）</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

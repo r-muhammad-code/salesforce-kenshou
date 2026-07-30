@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GroundClearance_isblank</fullName>
+    <active>false</active>
+    <description>山本</description>
+    <errorConditionFormula>OR( NOT( ISBLANK(  ForwardingRequestDate__c )) ,
+  NOT(  ISBLANK( ScheduleAdjustmentRequestDate__c )))  &amp;&amp;
+    ISBLANK( TEXT(  BC__c )) &amp;&amp;
+            ISPICKVAL(  State__c  , &quot;中古車&quot;) &amp;&amp;
+              ISBLANK( TEXT(  GroundClearance__c ))</errorConditionFormula>
+    <errorDisplayField>GroundClearance__c</errorDisplayField>
+    <errorMessage>最低地上高を選択してください。</errorMessage>
+</ValidationRule>

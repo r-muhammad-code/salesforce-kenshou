@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>tokki_other__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF ( INCLUDES(Assessment__r.tokki_other__c,&quot;61&quot; ) , &quot;レンタアップ,&quot;, &quot;&quot;)
+&amp; IF ( INCLUDES(Assessment__r.tokki_other__c,&quot;62&quot; ) , &quot;コーションプレート損傷有,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES(Assessment__r.tokki_other__c,&quot;63&quot; ) , &quot;コーションプレート確認できず,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES(Assessment__r.tokki_other__c,&quot;64&quot; ) , &quot;消火器散布あり,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES(Assessment__r.tokki_other__c,&quot;65&quot; ) , &quot;銀粉付着あり,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES(Assessment__r.tokki_other__c,&quot;66&quot; ) , &quot;車体番号損傷あり,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES(Assessment__r.tokki_other__c,&quot;67&quot; ) , &quot;水位：フロアぐらい,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES(Assessment__r.tokki_other__c,&quot;68&quot; ) , &quot;水位：シート座席下ぐらい,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES(Assessment__r.tokki_other__c,&quot;69&quot; ) , &quot;水位：シート座席上ぐらい,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES(Assessment__r.tokki_other__c,&quot;70&quot; ) , &quot;水位：ハンドル下ぐらい,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES(Assessment__r.tokki_other__c,&quot;71&quot; ) , &quot;水位：ダッシュボードぐらい,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES(Assessment__r.tokki_other__c,&quot;72&quot; ) , &quot;水位：天井まで,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES(Assessment__r.tokki_other__c,&quot;73&quot; ) , &quot;水位：不明,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES(Assessment__r.tokki_other__c,&quot;74&quot; ) , &quot;淡水と思われる,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES(Assessment__r.tokki_other__c,&quot;75&quot; ) , &quot;海水と思われる,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES(Assessment__r.tokki_other__c,&quot;76&quot; ) , &quot;水質不明,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES(Assessment__r.tokki_other__c,&quot;79&quot; ) , &quot;冠水歴あり,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES(Assessment__r.tokki_other__c,&quot;109&quot; ) , &quot;バッテリー容量24kwh,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES(Assessment__r.tokki_other__c,&quot;110&quot; ) , &quot;バッテリー容量30kwh,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES(Assessment__r.tokki_other__c,&quot;300&quot; ) , &quot;シフト：トクＳ（２ペダル）,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES(Assessment__r.tokki_other__c,&quot;301&quot; ) , &quot;シフト：トクＳ（３ペダル）,&quot;,&quot;&quot; )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>特記事項（その他）</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

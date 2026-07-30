@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enter_collection_request_company</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL(RequestDestination__c,&quot;リユース&quot; ) &amp;&amp; ISBLANK(  CandidateVendor__c  ) &amp;&amp;  NOT(ISBLANK( InstructionMakingDate__c) ) &amp;&amp; ScheduleAdjustmentRequestDate__c &gt;= DATE(2024, 5, 1)</errorConditionFormula>
+    <errorDisplayField>CandidateVendor__c</errorDisplayField>
+    <errorMessage>指示書作成日を入力するには引取依頼業者を入力してください</errorMessage>
+</ValidationRule>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Summary_AccountCode_MVR__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( AccountName_MVR__c =&quot;ソコカラセレクト岸和田&quot;,&quot;SR&quot;,
+IF( AND( PurchaseOpportunity__r.Account__r.IsPerson__c =TRUE , ISPICKVAL( PurchaseOpportunity__r.Personal_transfer_flag__c ,&quot;適格請求書発行事業者（CC1001/CC2001）&quot;)), &quot;CC1001&quot; ,
+IF( PurchaseOpportunity__r.Account__r.IsPerson__c =TRUE ,&quot;CC1&quot; ,
+IF( ISPICKVAL( PurchaseOpportunity__r.Personal_transfer_flag__c ,&quot;適格請求書発行事業者（CC1001/CC2001）&quot;) , &quot;CC2001&quot; ,
+IF( AND( NOT( ISPICKVAL( PurchaseOpportunity__r.Account__r.Segment__c , &quot;ディーラー個人&quot;) ), NOT( ISPICKVAL( PurchaseOpportunity__r.Account__r.Segment__c , &quot;担当者振込（ディーラー以外）&quot;) ) ) &amp;&amp; CONTAINS( PurchaseOpportunity__r.Account__r.Name , &quot;【個人】&quot; ) ||
+ISPICKVAL( PurchaseOpportunity__r.Personal_transfer_flag__c ,&quot;免税事業者（CC1/CC2）&quot; ), &quot;CC2&quot; ,
+PurchaseOpportunity__r.Account__r.SummaryAccountCode__c ) ) ) ))</formula>
+    <label>集計先コード（MVR）</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

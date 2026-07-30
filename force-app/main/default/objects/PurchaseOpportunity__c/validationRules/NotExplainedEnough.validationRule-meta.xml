@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NotExplainedEnough</fullName>
+    <active>false</active>
+    <errorConditionFormula>OR( AND ( ISPICKVAL( Request_Detail__c , &quot;車庫申請&quot;) , 
+                ISPICKVAL( Request_to_DocManagement_Scan__c , &quot;未&quot;) ) , 
+       ISPICKVAL( Request_Detail__c , &quot;現在登録証発行申請&quot;) )  &amp;&amp; 
+ ISBLANK( Request_to_DocManagement_Remarks__c )</errorConditionFormula>
+    <errorMessage>車庫申請：説明が入力されていません。
+現在登録申請：必要理由が入力されていません。</errorMessage>
+</ValidationRule>

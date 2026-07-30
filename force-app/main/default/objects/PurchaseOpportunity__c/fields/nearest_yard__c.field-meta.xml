@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>nearest_yard__c</fullName>
+    <description>佐野作成(喜多依頼分)</description>
+    <externalId>false</externalId>
+    <label>引取先の最寄りヤード</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>RequestCompany__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetName>nearest_yard</valueSetName>
+        <valueSettings>
+            <controllingFieldValue>㈱TCS　名古屋支店</controllingFieldValue>
+            <controllingFieldValue>プロテクト</controllingFieldValue>
+            <controllingFieldValue>旧フロー_ゼロ</controllingFieldValue>
+            <controllingFieldValue>テイクオフ（名古屋）</controllingFieldValue>
+            <controllingFieldValue>ゼロ</controllingFieldValue>
+            <valueName>名古屋ヤード</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>㈱TCS　名古屋支店</controllingFieldValue>
+            <controllingFieldValue>旧フロー_ゼロ</controllingFieldValue>
+            <controllingFieldValue>テイクオフ（名古屋）</controllingFieldValue>
+            <controllingFieldValue>ゼロ</controllingFieldValue>
+            <valueName>名古屋第二ヤード</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>㈱TCS　名古屋支店</controllingFieldValue>
+            <controllingFieldValue>プロテクト</controllingFieldValue>
+            <controllingFieldValue>旧フロー_ゼロ</controllingFieldValue>
+            <controllingFieldValue>テイクオフ（名古屋）</controllingFieldValue>
+            <controllingFieldValue>ゼロ</controllingFieldValue>
+            <valueName>愛知東ヤード</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>㈱TCS　名古屋支店</controllingFieldValue>
+            <controllingFieldValue>プロテクト</controllingFieldValue>
+            <controllingFieldValue>旧フロー_ゼロ</controllingFieldValue>
+            <controllingFieldValue>テイクオフ（名古屋）</controllingFieldValue>
+            <controllingFieldValue>ゼロ</controllingFieldValue>
+            <valueName>岐阜ヤード</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>㈱TCS　名古屋支店</controllingFieldValue>
+            <controllingFieldValue>プロテクト</controllingFieldValue>
+            <controllingFieldValue>テイクオフ（名古屋）</controllingFieldValue>
+            <controllingFieldValue>ゼロ</controllingFieldValue>
+            <valueName>春日井ヤード</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>㈱アライロジスティックス</controllingFieldValue>
+            <controllingFieldValue>旧フロー_ゼロ</controllingFieldValue>
+            <controllingFieldValue>ゼロ</controllingFieldValue>
+            <controllingFieldValue>㈱TCS　仙台支店</controllingFieldValue>
+            <valueName>仙台ヤード</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>㈱アライロジスティックス</controllingFieldValue>
+            <controllingFieldValue>旧フロー_ゼロ</controllingFieldValue>
+            <controllingFieldValue>テイクオフ（東京）</controllingFieldValue>
+            <controllingFieldValue>ゼロ</controllingFieldValue>
+            <valueName>栃木ヤード</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>㈱アライロジスティックス</controllingFieldValue>
+            <controllingFieldValue>京王自動車工業</controllingFieldValue>
+            <controllingFieldValue>DO</controllingFieldValue>
+            <controllingFieldValue>旧フロー_ゼロ</controllingFieldValue>
+            <controllingFieldValue>テイクオフ（東京）</controllingFieldValue>
+            <controllingFieldValue>ゼロ</controllingFieldValue>
+            <controllingFieldValue>㈱TCS　千葉支店</controllingFieldValue>
+            <controllingFieldValue>㈱TCS　本社</controllingFieldValue>
+            <controllingFieldValue>佐久間オートサービス</controllingFieldValue>
+            <valueName>千葉ヤード</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>㈱アライロジスティックス</controllingFieldValue>
+            <controllingFieldValue>京王自動車工業</controllingFieldValue>
+            <controllingFieldValue>DO</controllingFieldValue>
+            <controllingFieldValue>旧フロー_ゼロ</controllingFieldValue>
+            <controllingFieldValue>テイクオフ（東京）</controllingFieldValue>
+            <controllingFieldValue>ゼロ</controllingFieldValue>
+            <controllingFieldValue>㈱TCS　野田支店</controllingFieldValue>
+            <controllingFieldValue>㈱TCS　千葉支店</controllingFieldValue>
+            <controllingFieldValue>㈱TCS　本社</controllingFieldValue>
+            <controllingFieldValue>佐久間オートサービス</controllingFieldValue>
+            <valueName>首都圏ヤード</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>㈱アライロジスティックス</controllingFieldValue>
+            <controllingFieldValue>旧フロー_ゼロ</controllingFieldValue>
+            <controllingFieldValue>テイクオフ（東京）</controllingFieldValue>
+            <controllingFieldValue>ゼロ</controllingFieldValue>
+            <controllingFieldValue>㈱TCS　本社</controllingFieldValue>
+            <valueName>神奈川ヤード</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>㈱アライロジスティックス</controllingFieldValue>
+            <controllingFieldValue>旧フロー_ゼロ</controllingFieldValue>
+            <controllingFieldValue>ゼロ</controllingFieldValue>
+            <controllingFieldValue>㈱TCS　静岡支店</controllingFieldValue>
+            <valueName>静岡ヤード</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>㈱アライロジスティックス</controllingFieldValue>
+            <controllingFieldValue>旧フロー_ゼロ</controllingFieldValue>
+            <controllingFieldValue>ゼロ</controllingFieldValue>
+            <valueName>長野ヤード</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>㈱TCS　神戸支店</controllingFieldValue>
+            <controllingFieldValue>プロテクト</controllingFieldValue>
+            <controllingFieldValue>旧フロー_ゼロ</controllingFieldValue>
+            <controllingFieldValue>テイクオフ（神戸）</controllingFieldValue>
+            <controllingFieldValue>ゼロ</controllingFieldValue>
+            <valueName>神戸集中ヤード</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>㈱TCS　神戸支店</controllingFieldValue>
+            <controllingFieldValue>プロテクト</controllingFieldValue>
+            <controllingFieldValue>旧フロー_ゼロ</controllingFieldValue>
+            <controllingFieldValue>テイクオフ（神戸）</controllingFieldValue>
+            <controllingFieldValue>ゼロ</controllingFieldValue>
+            <valueName>京都ヤード</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>㈱TCS　神戸支店</controllingFieldValue>
+            <controllingFieldValue>ゼロ</controllingFieldValue>
+            <valueName>南大阪ヤード</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>㈱TCS　福岡支店</controllingFieldValue>
+            <controllingFieldValue>有限会社カイザー</controllingFieldValue>
+            <controllingFieldValue>旧フロー_ゼロ</controllingFieldValue>
+            <controllingFieldValue>ゼロ</controllingFieldValue>
+            <valueName>福岡ヤード</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>㈱TCS　福岡支店</controllingFieldValue>
+            <controllingFieldValue>有限会社カイザー</controllingFieldValue>
+            <controllingFieldValue>ゼロ</controllingFieldValue>
+            <valueName>熊本ヤード</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>㈱TCS　福岡支店</controllingFieldValue>
+            <controllingFieldValue>旧フロー_ゼロ</controllingFieldValue>
+            <controllingFieldValue>ゼロ</controllingFieldValue>
+            <valueName>南九州ヤード</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>㈱TCS　福岡支店</controllingFieldValue>
+            <controllingFieldValue>旧フロー_ゼロ</controllingFieldValue>
+            <controllingFieldValue>ゼロ</controllingFieldValue>
+            <valueName>鹿児島ヤード</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>有限会社カイザー</controllingFieldValue>
+            <controllingFieldValue>旧フロー_ゼロ</controllingFieldValue>
+            <controllingFieldValue>ゼロ</controllingFieldValue>
+            <valueName>山口ヤード</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>まるおモータース</controllingFieldValue>
+            <controllingFieldValue>美島自動車</controllingFieldValue>
+            <controllingFieldValue>アドーレジャパン</controllingFieldValue>
+            <controllingFieldValue>旧フロー_ゼロ</controllingFieldValue>
+            <controllingFieldValue>ゼロ</controllingFieldValue>
+            <valueName>四国ヤード</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>旧フロー_ゼロ</controllingFieldValue>
+            <controllingFieldValue>ゼロ</controllingFieldValue>
+            <valueName>北海道ヤード</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>旧フロー_ゼロ</controllingFieldValue>
+            <controllingFieldValue>ゼロ</controllingFieldValue>
+            <controllingFieldValue>㈱TCS　仙台支店</controllingFieldValue>
+            <valueName>岩手ヤード</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>旧フロー_ゼロ</controllingFieldValue>
+            <controllingFieldValue>ゼロ</controllingFieldValue>
+            <controllingFieldValue>㈱TCS　仙台支店</controllingFieldValue>
+            <valueName>仙台第二ヤード</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>旧フロー_ゼロ</controllingFieldValue>
+            <controllingFieldValue>ゼロ</controllingFieldValue>
+            <valueName>秋田ヤード</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>旧フロー_ゼロ</controllingFieldValue>
+            <controllingFieldValue>ゼロ</controllingFieldValue>
+            <valueName>新潟ヤード</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>旧フロー_ゼロ</controllingFieldValue>
+            <controllingFieldValue>ゼロ</controllingFieldValue>
+            <valueName>水戸ヤード</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>旧フロー_ゼロ</controllingFieldValue>
+            <controllingFieldValue>ゼロ</controllingFieldValue>
+            <valueName>金沢ヤード</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>旧フロー_ゼロ</controllingFieldValue>
+            <controllingFieldValue>ゼロ</controllingFieldValue>
+            <valueName>群馬ヤード</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>旧フロー_ゼロ</controllingFieldValue>
+            <controllingFieldValue>テイクオフ（神戸）</controllingFieldValue>
+            <controllingFieldValue>ゼロ</controllingFieldValue>
+            <valueName>神戸第二ヤード</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>旧フロー_ゼロ</controllingFieldValue>
+            <controllingFieldValue>ゼロ</controllingFieldValue>
+            <valueName>鳥取ヤード</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>旧フロー_ゼロ</controllingFieldValue>
+            <controllingFieldValue>ゼロ</controllingFieldValue>
+            <valueName>岡山ヤード</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>旧フロー_ゼロ</controllingFieldValue>
+            <controllingFieldValue>ゼロ</controllingFieldValue>
+            <valueName>広島ヤード</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>旧フロー_ゼロ</controllingFieldValue>
+            <controllingFieldValue>ゼロ</controllingFieldValue>
+            <valueName>福岡第二ヤード</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>旧フロー_ゼロ</controllingFieldValue>
+            <controllingFieldValue>ゼロ</controllingFieldValue>
+            <valueName>北九州臨時ヤード</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>旧フロー_ゼロ</controllingFieldValue>
+            <controllingFieldValue>テイクオフ（東京）</controllingFieldValue>
+            <controllingFieldValue>ゼロ</controllingFieldValue>
+            <controllingFieldValue>㈱TCS　野田支店</controllingFieldValue>
+            <controllingFieldValue>㈱TCS　千葉支店</controllingFieldValue>
+            <controllingFieldValue>㈱TCS　本社</controllingFieldValue>
+            <valueName>首都圏臨時第一ヤード</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>旧フロー_ゼロ</controllingFieldValue>
+            <controllingFieldValue>ゼロ</controllingFieldValue>
+            <controllingFieldValue>㈱TCS　仙台支店</controllingFieldValue>
+            <controllingFieldValue>㈱TCS　野田支店</controllingFieldValue>
+            <controllingFieldValue>㈱TCS　千葉支店</controllingFieldValue>
+            <controllingFieldValue>㈱TCS　本社</controllingFieldValue>
+            <valueName>首都圏臨時第二ヤード</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ゼロ</controllingFieldValue>
+            <valueName>愛媛ヤード</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ゼロ</controllingFieldValue>
+            <controllingFieldValue>㈱TCS　本社</controllingFieldValue>
+            <valueName>埼玉臨時ヤード</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>パブリックレッカー</controllingFieldValue>
+            <valueName>沖縄ヤード</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

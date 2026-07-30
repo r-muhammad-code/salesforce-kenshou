@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JBOY__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>過去に使用していた項目、ジェイボーイ出品する際はチェックを付ける</description>
+    <externalId>false</externalId>
+    <inlineHelpText>ジェイボーイで他社オクに出品する場合は✔</inlineHelpText>
+    <label>削除予定_ジェイボーイ出品</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

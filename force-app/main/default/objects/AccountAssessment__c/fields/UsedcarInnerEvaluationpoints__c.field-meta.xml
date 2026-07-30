@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UsedcarInnerEvaluationpoints__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>Ａ:加修の必要がない、または必要性の低いもの
+
+Ｂ:軽微な加修を必要とするもの
+(1.破れ、焦げ、擦れ、ビス穴が数か所あるもの
+2.焦げ穴、ダッシュボードの浮きがあるもの
+3.簡単に取れる汚れがあるもの)
+
+Ｃ:加修を必要とするもの、または不具合内容が商品価値を下げるもの
+(1.焦げ、焦げ穴、擦れ、破れ、目立つビス穴、ダッシュボードの浮き、ひび割れなどが多数あるもの
+2.全体に汚れがあるもの)
+
+Ｄ:大きな加修を必要とするもの
+(1.多数の焦げ穴、破れなどがあるもの
+2.ダッシュボードが大きく変形したもの
+3.ひどい汚れがあるもの)
+
+Ｅ:全体に大きな加修を必要とするもの
+(1.ダッシュボードなどに目立つ大きなひび割れや加工跡があるもの
+2.内装、シートなどにひどい汚れ、破れまたはヘタリなどのあるもの
+3.室内に強い異臭があるもの)</inlineHelpText>
+    <label>中古車査定時内装評価点</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>A</fullName>
+                <default>false</default>
+                <label>A</label>
+            </value>
+            <value>
+                <fullName>B</fullName>
+                <default>false</default>
+                <label>B</label>
+            </value>
+            <value>
+                <fullName>C</fullName>
+                <default>false</default>
+                <label>C</label>
+            </value>
+            <value>
+                <fullName>D</fullName>
+                <default>false</default>
+                <label>D</label>
+            </value>
+            <value>
+                <fullName>E</fullName>
+                <default>false</default>
+                <label>E</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

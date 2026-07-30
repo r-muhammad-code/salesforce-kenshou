@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SAM_last_bit_Date__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+    /* 両方に値がある場合 */
+    AND(
+        NOT(ISBLANK(Last_Bidding_Date_in_User_Storage__c)),
+        NOT(ISBLANK(Last_Bidding_Date_in_Yard_Storage__c))
+    ),
+    /* (真) 日付が大きい方（新しい方）を取得 */
+    IF(
+        Last_Bidding_Date_in_User_Storage__c &gt; Last_Bidding_Date_in_Yard_Storage__c,
+        Last_Bidding_Date_in_User_Storage__c,
+        Last_Bidding_Date_in_Yard_Storage__c
+    ),
+    /* (偽) どちらかが空なら、空でない方を採用（両方空なら空を返す） */
+    BLANKVALUE(Last_Bidding_Date_in_User_Storage__c, Last_Bidding_Date_in_Yard_Storage__c)
+)</formula>
+    <label>SAM最終入札日時</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>View2</fullName>
+    <columns>NAME</columns>
+    <columns>CheckDate__c</columns>
+    <columns>User__c</columns>
+    <columns>CompanyVehicle__c</columns>
+    <columns>RegistrationNo__c</columns>
+    <columns>VehicleInspectionCertificate__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>VehicleInspectionCertificate__c</field>
+        <operation>equals</operation>
+        <value>×</value>
+    </filters>
+    <label>車検証なし</label>
+</ListView>

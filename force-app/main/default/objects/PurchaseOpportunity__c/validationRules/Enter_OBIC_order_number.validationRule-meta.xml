@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enter_OBIC_order_number</fullName>
+    <active>true</active>
+    <description>ゼロ・ヤードシステム連携から開始。BC区分が選択されている場合を除外。よぎ</description>
+    <errorConditionFormula>ISBLANK(OBIC_ordernum__c) &amp;&amp;
+Directions__c &amp;&amp;
+ScheduleAdjustmentRequestDate__c &gt;= DATE(2024, 5, 1) &amp;&amp;
+ISBLANK(TEXT(BC__c))</errorConditionFormula>
+    <errorDisplayField>OBIC_ordernum__c</errorDisplayField>
+    <errorMessage>指示書作成チェックをするには、OBIC受注番号を入力してください</errorMessage>
+</ValidationRule>

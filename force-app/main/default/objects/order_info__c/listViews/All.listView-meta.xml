@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>process_number__c</columns>
+    <columns>process_delivery_status__c</columns>
+    <columns>process_departure_name__c</columns>
+    <columns>process_destination_name__c</columns>
+    <columns>process_pickup_date__c</columns>
+    <columns>process_delivery_date__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>すべて選択</label>
+</ListView>

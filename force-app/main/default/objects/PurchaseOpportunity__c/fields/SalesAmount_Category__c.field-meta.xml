@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SalesAmount_Category__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(  SalesAmount__c  &gt;= 2000000 , &quot;a200万円以上&quot;,
+IF( SalesAmount__c &gt;= 1000000 ,&quot;b100～199万円&quot;,
+IF( SalesAmount__c &gt;= 700000 ,&quot;c70～99万円&quot;,
+IF( SalesAmount__c &gt;= 400000 ,&quot;d40～69万円&quot;,
+IF( SalesAmount__c &gt;=100000 ,&quot;e10～39万円&quot;,
+IF( AND(SalesAmount__c&gt;0 , SalesAmount__c &lt; 100000) ,&quot;f10万円未満&quot;, null ))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>売上金額の価格帯</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

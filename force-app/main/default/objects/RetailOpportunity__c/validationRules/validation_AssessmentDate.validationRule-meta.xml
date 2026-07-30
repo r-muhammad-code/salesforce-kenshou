@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>validation_AssessmentDate</fullName>
+    <active>true</active>
+    <description>所有者がキューのまま、もしくは車種と査定担当者が入力されていない時、査定日は入力できない</description>
+    <errorConditionFormula>AND(OR(
+ISBLANK( Mst_Models__c ),
+ISBLANK( assessment_user__c ),
+ISBLANK( Owner:User.Id )
+), NOT(ISBLANK( assessment_date__c )))</errorConditionFormula>
+    <errorMessage>・所有者を変更してください
+・査定者を入力してください
+・査定車両情報を入力してください</errorMessage>
+</ValidationRule>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>If_the_order_result_is_not_confirmed</fullName>
+    <active>true</active>
+    <description>喜多
+ヤードシステムエラー制御のため</description>
+    <errorConditionFormula>ISBLANK( PossiblePickUpDate__c ) &amp;&amp; NOT(ISBLANK( ReFAX__c ))</errorConditionFormula>
+    <errorDisplayField>ReFAX__c</errorDisplayField>
+    <errorMessage>ReFAX確認日は受注結果が確定しないと入力できません</errorMessage>
+</ValidationRule>

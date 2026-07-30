@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>bank_acct_form_collected__c</fullName>
+    <description>口座情報の取引先の「登録口座」が空欄でなければTrueを返す。与儀</description>
+    <externalId>false</externalId>
+    <formula>NOT( ISBLANK(  PaymentAccount__r.Account__r.registered_account__c ))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>振込口座登録依頼書回収済み</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

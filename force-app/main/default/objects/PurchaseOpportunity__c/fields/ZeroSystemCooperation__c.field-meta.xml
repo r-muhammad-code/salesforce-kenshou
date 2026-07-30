@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZeroSystemCooperation__c</fullName>
+    <description>ゼロシステム連携した引取依頼を判断する為にチェックを付ける</description>
+    <externalId>false</externalId>
+    <formula>PickupRequest_toLogistics__r.ZeroSystemCooperation__c</formula>
+    <label>ゼロシステム連携</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

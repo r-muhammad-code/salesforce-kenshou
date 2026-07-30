@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Profits_Retail__c</fullName>
+    <description>山本</description>
+    <externalId>false</externalId>
+    <formula>IF( ISPICKVAL(PurchaseType__c,&quot;買い上げ&quot;), SalesAmount__c - ( OtherAA_PredictedSaleAmount__c + RecyclingFee__c )+50000,
+IF( ISPICKVAL(PurchaseType__c,&quot;折半&quot;) || ISPICKVAL(PurchaseType__c,&quot;委託&quot;),(SalesAmount__c - BasePrice_taxexcluded__c ) +( BasePrice_taxexcluded__c - OtherAA_PredictedSaleAmount__c) * 0.8 - RecyclingFee__c +40000,
+IF( ISPICKVAL(PurchaseType__c,&quot;AA&quot;) || ISPICKVAL(PurchaseType__c,&quot;買取&quot;), SalesAmount__c - TotalPayment_ExcludingTax__c ,
+IF( ISPICKVAL(PurchaseType__c,&quot;リユースAA&quot;), SalesAmount__c - ( OtherAA_PredictedSaleAmount__c + RecyclingFee__c + 5000 ),0 ))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>小売り粗利</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

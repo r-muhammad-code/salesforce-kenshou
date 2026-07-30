@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CS_DeliveryAddress__c</fullName>
+    <description>CS依頼の後処理依頼と必要書類案内依頼で入力された送付先住所が転記される。与儀</description>
+    <externalId>false</externalId>
+    <label>送付先住所（CS）</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

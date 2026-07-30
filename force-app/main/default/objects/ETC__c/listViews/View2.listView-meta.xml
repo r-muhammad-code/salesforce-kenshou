@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>View2</fullName>
+    <columns>ControlNo__c</columns>
+    <columns>NAME</columns>
+    <columns>User_text__c</columns>
+    <columns>Base__c</columns>
+    <columns>RegistrationNo__c</columns>
+    <columns>CarNo__c</columns>
+    <columns>spare__c</columns>
+    <columns>remarks__c</columns>
+    <columns>expiration_date__c</columns>
+    <columns>Canceled__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Canceled__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>保有中のカード（＝解約済以外）</label>
+</ListView>

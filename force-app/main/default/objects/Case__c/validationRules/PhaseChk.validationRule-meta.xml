@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PhaseChk</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( ISBLANK( Oppotunity__c ) ,
+IF(TEXT(Phase__c) =&apos;引き継ぎ完了&apos;,TRUE,IF(TEXT(Phase__c) =&apos;買取&apos;,TRUE,FALSE))
+ )</errorConditionFormula>
+    <errorMessage>買取商談が作成されていません。</errorMessage>
+</ValidationRule>

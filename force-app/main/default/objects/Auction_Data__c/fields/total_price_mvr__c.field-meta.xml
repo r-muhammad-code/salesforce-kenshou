@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>total_price_mvr__c</fullName>
+    <externalId>false</externalId>
+    <formula>operations_fee_mvr__c * 1.1 + ope_fee__c + 
+IF(
+  special_kbn__c = &quot;永久抹消&quot;, 
+  0, 
+  recyclingfee__c
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>提示金額の税込金額+諸経費で算出。
+永抹案件の場合はリサイクル料金を加算しない。</inlineHelpText>
+    <label>合計金額（リサイクル分）</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

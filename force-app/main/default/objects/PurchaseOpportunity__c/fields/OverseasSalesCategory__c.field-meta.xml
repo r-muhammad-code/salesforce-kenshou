@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OverseasSalesCategory__c</fullName>
+    <description>海外販売で使用
+表示ラベルは仮で設定しています。山本</description>
+    <externalId>false</externalId>
+    <inlineHelpText>代理売却は過去分のみ</inlineHelpText>
+    <label>海外販売区分</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>オークション落札</fullName>
+                <default>false</default>
+                <label>オークション落札</label>
+            </value>
+            <value>
+                <fullName>オファー</fullName>
+                <default>false</default>
+                <label>オファー</label>
+            </value>
+            <value>
+                <fullName>海外買い上げ（ストック分）</fullName>
+                <default>false</default>
+                <label>海外買い上げ（ストック分）</label>
+            </value>
+            <value>
+                <fullName>海外買い上げ（販売確定分）</fullName>
+                <default>false</default>
+                <label>海外買い上げ（販売確定分）</label>
+            </value>
+            <value>
+                <fullName>代理売却</fullName>
+                <default>false</default>
+                <label>代理売却</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

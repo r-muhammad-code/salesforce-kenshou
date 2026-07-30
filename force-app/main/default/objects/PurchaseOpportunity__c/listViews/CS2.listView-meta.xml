@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CS2</fullName>
+    <columns>NAME</columns>
+    <columns>Account__c</columns>
+    <columns>PhaseDateText__c</columns>
+    <columns>ModelYearCarName__c</columns>
+    <columns>Owner__c</columns>
+    <columns>AssessmentDate__c</columns>
+    <columns>PurchaseDate__c</columns>
+    <columns>TransportCompany__c</columns>
+    <columns>TakeUpDate__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Phase__c</field>
+        <operation>notEqual</operation>
+        <value>全完了,キャンセル</value>
+    </filters>
+    <filters>
+        <field>Owner__c</field>
+        <operation>contains</operation>
+        <value>福田,北川,長田,桝本,村上 志琴,後藤 康太,吉田 志</value>
+    </filters>
+    <filters>
+        <field>PurchaseDate__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>SalesAmount__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>TransportCompany__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>TakeUpDate__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>【CS】書類作成</label>
+</ListView>

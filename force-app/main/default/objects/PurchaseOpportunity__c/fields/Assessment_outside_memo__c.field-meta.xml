@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assessment_outside_memo__c</fullName>
+    <description>社外共有用査定表に表示する場合のみ使用</description>
+    <externalId>false</externalId>
+    <inlineHelpText>社外共有用査定表に表示する場合のみ使用</inlineHelpText>
+    <label>社外共有用査定表メモ</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

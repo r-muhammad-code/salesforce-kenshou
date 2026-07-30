@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X019</fullName>
+    <columns>NAME</columns>
+    <columns>Media__c</columns>
+    <columns>Owner_Fullname__c</columns>
+    <columns>Cancellation_reason__c</columns>
+    <columns>CancellationReasonDetail__c</columns>
+    <columns>Cancel_SomeReason__c</columns>
+    <columns>InChargeOf_Pricing_Picklist__c</columns>
+    <columns>Amount__c</columns>
+    <columns>Account__c</columns>
+    <columns>FirstRegistration_Year_hs__c</columns>
+    <columns>CarTypes__c</columns>
+    <columns>LocationAddress_hs__c</columns>
+    <columns>VehicleClassification__c</columns>
+    <columns>ReceiptRecordingDate__c</columns>
+    <columns>Phase__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Phase__c</field>
+        <operation>equals</operation>
+        <value>キャンセル</value>
+    </filters>
+    <filters>
+        <field>Cancel_SomeReason__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>ReceiptRecordingDate__c</field>
+        <operation>equals</operation>
+        <value>LAST_MONTH,THIS_MONTH</value>
+    </filters>
+    <filters>
+        <field>Cancellation_reason__c</field>
+        <operation>equals</operation>
+        <value>概算・時期未定（値付けに確認）,使われていないアナ,別人,案件重複,商談前買取不可</value>
+    </filters>
+    <filters>
+        <field>Oppotunity__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>01.すべての買取受付（先月,今月）　※概算☑漏れ</label>
+</ListView>

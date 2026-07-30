@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approve_or_Return</fullName>
+    <active>true</active>
+    <errorConditionFormula>Transfer_request_approved__c = true &amp;&amp; Transfer_request_return__c = true</errorConditionFormula>
+    <errorDisplayField>Transfer_request_approved__c</errorDisplayField>
+    <errorMessage>承認チェックと差戻チェックはどちらかしか付けられません。
+一度差戻をしている場合は、差戻チェックを外してから承認してください。</errorMessage>
+</ValidationRule>

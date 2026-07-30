@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Phase_Completed</fullName>
+    <active>true</active>
+    <description>成約済、他社オク売却済、以外から完了になるのを禁止する</description>
+    <errorConditionFormula>AND(
+ISCHANGED(phase__c),
+ISPICKVAL(phase__c, &quot;完了&quot;),
+
+NOT(
+OR(
+ISPICKVAL(PRIORVALUE(phase__c), &quot;成約済&quot;),
+ISPICKVAL(PRIORVALUE(phase__c), &quot;他社オク売却済み&quot;)
+)
+)
+)</errorConditionFormula>
+    <errorMessage>小売在庫は、成約済もしくは他社オク売却済みのいずれかからのみ完了にできます</errorMessage>
+</ValidationRule>

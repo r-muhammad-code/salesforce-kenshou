@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RecordingMonth_forDB__c</fullName>
+    <description>山本</description>
+    <externalId>false</externalId>
+    <formula>IF(
+    DeliveryDate__c &lt; DATE(2024, 4, 1),
+    /* 2024年4月以前 */
+    IF(
+        ISPICKVAL(HowToSell__c, &quot;小売&quot;),
+        SalesReceiptMonthSummary__c,
+        IF(
+            ISPICKVAL(HowToSell__c, &quot;業販&quot;),
+            SalesRecordingMonth_OBIC__c,
+            IF(
+                OR(
+                    NOT(ISPICKVAL(HowToSell__c, &quot;小売&quot;)),
+                    NOT(ISPICKVAL(HowToSell__c, &quot;業販&quot;))
+                ) &amp;&amp; AccountSegment__c == &quot;オークション&quot;,
+                SalesRecordingMonth_OBIC__c, 
+                0
+            )
+        )
+    ),
+    /* 2024年4月以降 */
+    IF(
+        ISPICKVAL(HowToSell__c, &quot;小売&quot;),
+        DeliveryMonth__c,
+        IF(
+            ISPICKVAL(HowToSell__c, &quot;業販&quot;),
+            SalesRecordingMonth_OBIC__c,
+            IF(
+                OR(
+                    NOT(ISPICKVAL(HowToSell__c, &quot;小売&quot;)),
+                    NOT(ISPICKVAL(HowToSell__c, &quot;業販&quot;))
+                ) &amp;&amp; AccountSegment__c == &quot;オークション&quot;,
+                SalesRecordingMonth_OBIC__c, 
+                0
+            )
+        )
+    )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>計上月</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CustomConpactLayout</fullName>
+    <fields>Name</fields>
+    <fields>maker_name_eizi__c</fields>
+    <fields>inum__c</fields>
+    <label>カスタムコンパクトレイアウト</label>
+</CompactLayout>

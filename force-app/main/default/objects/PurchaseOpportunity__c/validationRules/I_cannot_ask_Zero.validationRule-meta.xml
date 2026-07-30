@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>I_cannot_ask_Zero</fullName>
+    <active>false</active>
+    <description>ゼロ連携後に有効化</description>
+    <errorConditionFormula>OR(ISPICKVAL( RequestCompany__c ,&quot;旧フロー_ゼロ&quot;),ISPICKVAL( RequestCompany__c ,&quot;ゼロ&quot;)) &amp;&amp;Privatehome__c&amp;&amp;  BatteryDead__c &amp;&amp; ScheduleAdjustmentRequestDate__c &gt;= DATE(2024, 5, 29)</errorConditionFormula>
+    <errorDisplayField>RequestCompany__c</errorDisplayField>
+    <errorMessage>個人宅でバッテリー上がりの場合、ゼロには依頼できません</errorMessage>
+</ValidationRule>

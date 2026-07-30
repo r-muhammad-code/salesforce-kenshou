@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X063</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
+    <columns>Account__c</columns>
+    <columns>FirstRegistration_Year_hs__c</columns>
+    <columns>CarTypes__c</columns>
+    <columns>Next_contact_date__c</columns>
+    <columns>StrictAdherence__c</columns>
+    <columns>Owner_Fullname__c</columns>
+    <columns>NAME</columns>
+    <columns>PersonMobilePhone__c</columns>
+    <columns>Precautions__c</columns>
+    <columns>VehicleClassification__c</columns>
+    <columns>InChargeOf_Pricing_Picklist__c</columns>
+    <columns>Amount__c</columns>
+    <columns>Desired_amount_hs__c</columns>
+    <columns>Is_Project__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Phase__c</field>
+        <operation>equals</operation>
+        <value>受付,保留</value>
+    </filters>
+    <filters>
+        <field>VehicleClassification__c</field>
+        <operation>notEqual</operation>
+        <value>はなまるオークション/他社AA（営業）</value>
+    </filters>
+    <filters>
+        <field>PurchaseDate__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>Next_contact_date__c</field>
+        <operation>equals</operation>
+        <value>TOMORROW</value>
+    </filters>
+    <label>【保留】次回接触が翌日の保留中</label>
+</ListView>

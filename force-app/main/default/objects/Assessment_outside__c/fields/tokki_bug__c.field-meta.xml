@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>tokki_bug__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF ( INCLUDES(Assessment__r.tokki_bug__c,&quot;38&quot; ) , &quot;電源入らず,&quot;, &quot;&quot;)
+&amp; IF ( INCLUDES(Assessment__r.tokki_bug__c,&quot;39&quot; ) , &quot;PS不良,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES(Assessment__r.tokki_bug__c,&quot;40&quot; ) , &quot;PW不良,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES(Assessment__r.tokki_bug__c,&quot;41&quot; ) , &quot;白煙あり,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES(Assessment__r.tokki_bug__c,&quot;42&quot; ) , &quot;ナビ映らず,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES(Assessment__r.tokki_bug__c,&quot;43&quot; ) , &quot;ハンドル操作できず,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES(Assessment__r.tokki_bug__c,&quot;44&quot; ) , &quot;自走は多少前後に動く程度,&quot;,&quot;&quot; )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>特記事項（不具合）</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

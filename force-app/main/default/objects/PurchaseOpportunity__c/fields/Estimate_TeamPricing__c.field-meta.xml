@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Estimate_TeamPricing__c</fullName>
+    <description>佐野
+プライシングチームが売り金額相談の回答内容を残すための項目
+2025/06/18　プライシングチーム売り予想→AA相場に変更
+2025/07/02　AA相場→提示上限金額に変更</description>
+    <externalId>false</externalId>
+    <inlineHelpText>プライシングチーム査定時のオークション相場を記載。期限は入力後30日間まで。</inlineHelpText>
+    <label>提示上限金額</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

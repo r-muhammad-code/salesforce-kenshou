@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>View</fullName>
+    <columns>NAME</columns>
+    <columns>Base__c</columns>
+    <columns>User_text__c</columns>
+    <columns>Carmodel__c</columns>
+    <columns>RegistrationNo__c</columns>
+    <columns>CarNo__c</columns>
+    <columns>OwnershipCompany__c</columns>
+    <columns>Vehicle_inspection__c</columns>
+    <columns>remarks__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Sold__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>現在はなまるが実際に所有している車輌</label>
+    <sharedTo>
+        <role>Legal</role>
+    </sharedTo>
+</ListView>

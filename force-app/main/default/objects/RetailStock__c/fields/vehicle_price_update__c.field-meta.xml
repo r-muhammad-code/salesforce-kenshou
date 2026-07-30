@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>vehicle_price_update__c</fullName>
+    <externalId>false</externalId>
+    <formula>ROUND(
+    IF(OR(passed_days__c &gt; 500, ISBLANK(passed_days__c), ISPICKVAL(purchase_type__c, &quot;委託&quot;)),
+        publication_vehicle_price__c,
+        vehicle_price_initial__c-((total_price_initial__c - PurchaseOpportunity__r.ProposedPrice__c)*
+            IF(passed_days__c &gt;= 40, 0.4, TRUNC(passed_days__c / 100, 1))
+        )
+    )
+,-3)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>車両本体価格_要更新額</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

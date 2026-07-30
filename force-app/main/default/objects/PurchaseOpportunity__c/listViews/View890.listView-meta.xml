@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>View890</fullName>
+    <booleanFilter>1 AND 2 AND 3</booleanFilter>
+    <columns>NAME</columns>
+    <columns>Account__c</columns>
+    <columns>Phase__c</columns>
+    <columns>ModelYearCarName__c</columns>
+    <columns>Owner__c</columns>
+    <columns>AssessmentDate__c</columns>
+    <columns>CancelDate__c</columns>
+    <columns>CancelReason__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Phase__c</field>
+        <operation>equals</operation>
+        <value>キャンセル</value>
+    </filters>
+    <filters>
+        <field>Owner__c</field>
+        <operation>equals</operation>
+        <value>田中 知子,藪内 舞,細川 歩,八十原 佳織,福田 雅己,松下 夏季,池田 麻由,渡部 ありな,池田 伊織,近藤 葵須佳,上田 拓磨,窪田 千雪,中村 瑞希,庄野 郁海,渋谷 美宇</value>
+    </filters>
+    <filters>
+        <field>CancelReason__c</field>
+        <operation>contains</operation>
+        <value>修理の為,他社,全損の為,依頼元不成約の為,オークション,その他</value>
+    </filters>
+    <label>リユース事業部キャンセルした買取商談</label>
+    <sharedTo>
+        <role>CallCenter</role>
+    </sharedTo>
+</ListView>

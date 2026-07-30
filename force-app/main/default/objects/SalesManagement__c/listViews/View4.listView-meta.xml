@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>View4</fullName>
+    <columns>NAME</columns>
+    <columns>LotNo__c</columns>
+    <columns>Owner__c</columns>
+    <columns>PO_Owner__c</columns>
+    <columns>ModelYearCarName__c</columns>
+    <columns>RegistrationNo__c</columns>
+    <columns>CarNo__c</columns>
+    <columns>Document_status__c</columns>
+    <columns>DocumentOKCheck__c</columns>
+    <columns>All_History__c</columns>
+    <columns>Document_set_up_Remarks__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Pickup_status__c</field>
+        <operation>notEqual</operation>
+        <value>完了</value>
+    </filters>
+    <filters>
+        <field>LotNo__c</field>
+        <operation>notContain</operation>
+        <value>テスト</value>
+    </filters>
+    <filters>
+        <field>Document_status__c</field>
+        <operation>notEqual</operation>
+        <value>案件キャンセル</value>
+    </filters>
+    <label>書類進捗確認</label>
+</ListView>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>JA</fullName>
+    <columns>NAME</columns>
+    <columns>ReceiptRecordingDate__c</columns>
+    <columns>CarTypes__c</columns>
+    <columns>PurchaseDate__c</columns>
+    <columns>DocumentCompleteCheck__c</columns>
+    <columns>TransferDate__c</columns>
+    <columns>Precautions__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Media__c</field>
+        <operation>equals</operation>
+        <value>JA茨城,JA茨城GS</value>
+    </filters>
+    <filters>
+        <field>PurchaseDate__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>10/12/2025</value>
+    </filters>
+    <filters>
+        <field>TransferDate__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>PurchaseDate__c</field>
+        <operation>lessOrEqual</operation>
+        <value>12/31/2025</value>
+    </filters>
+    <label>JA茨城</label>
+</ListView>

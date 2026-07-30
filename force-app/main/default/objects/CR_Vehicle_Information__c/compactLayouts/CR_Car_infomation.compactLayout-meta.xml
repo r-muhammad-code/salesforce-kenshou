@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CR_Car_infomation</fullName>
+    <fields>Name</fields>
+    <fields>Container_Number__c</fields>
+    <fields>Maker__c</fields>
+    <fields>Models__c</fields>
+    <fields>Auction_Data__c</fields>
+    <fields>Lot_Number1__c</fields>
+    <label>CR　車両/パーツ情報</label>
+</CompactLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProcessingDivision_IsBlank</fullName>
+    <active>false</active>
+    <errorConditionFormula>ISPICKVAL( Request_Detail__c , &quot;車庫申請&quot;) &amp;&amp; 
+ ISBLANK( TEXT ( ProcessingDivision__c) )</errorConditionFormula>
+    <errorMessage>処理区分が入力されていません。</errorMessage>
+</ValidationRule>

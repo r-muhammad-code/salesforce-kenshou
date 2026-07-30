@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Called__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>引取依頼作成画面で表示、営業が引取依頼業者に連絡して既に日程を抑えている場合はチェックを付ける</description>
+    <externalId>false</externalId>
+    <inlineHelpText>ゼロ/テイクオフへ引取日の予約が完了したらチェックをつけてください。</inlineHelpText>
+    <label>電話連絡済み</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

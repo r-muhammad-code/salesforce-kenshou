@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DeficitAmount__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(OR( Buyer__c=&quot;過去調整用&quot;, Buyer__c =&quot;利益折半&quot;),0,
+IF( Profits__c &lt;=0,Profits__c,0))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>赤字金額</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

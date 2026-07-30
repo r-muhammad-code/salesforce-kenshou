@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Alerts_OtherAA__c</fullName>
+    <description>山本</description>
+    <externalId>false</externalId>
+    <formula>AND(
+  NOT(ISBLANK( PossiblePickUpDate__c )),
+ TEXT(  landing__r.Mst_Yard_Classification__c)  = &quot;他社オークション&quot;,
+  ISBLANK(TEXT(  OtherAA_Place__c ) ),
+  ISBLANK(OtherAA_Installation_Date__c )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Alerts_OtherAA</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

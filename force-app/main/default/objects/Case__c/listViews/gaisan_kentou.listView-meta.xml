@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>gaisan_kentou</fullName>
+    <columns>Owner_Fullname__c</columns>
+    <columns>Account__c</columns>
+    <columns>FirstRegistration_Year_hs__c</columns>
+    <columns>CarTypes__c</columns>
+    <columns>Next_contact_date__c</columns>
+    <columns>ReceiptRecordingDate__c</columns>
+    <columns>Media__c</columns>
+    <columns>NAME</columns>
+    <columns>PersonMobilePhone__c</columns>
+    <columns>Phase__c</columns>
+    <columns>Precautions__c</columns>
+    <columns>Case_history__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ApproximateReason__c</field>
+        <operation>equals</operation>
+        <value>次車検討中</value>
+    </filters>
+    <filters>
+        <field>Inspection_year_hs__c</field>
+        <operation>lessOrEqual</operation>
+        <value>2027年/令和9年</value>
+    </filters>
+    <filters>
+        <field>Inspection_month_hs__c</field>
+        <operation>lessOrEqual</operation>
+        <value>7月</value>
+    </filters>
+    <label>【概算】次車検討中リスト</label>
+</ListView>

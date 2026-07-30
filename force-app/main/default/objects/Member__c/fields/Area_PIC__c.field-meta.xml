@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Area_PIC__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(
+  West_East__c,
+  &quot;東日本&quot;, &quot;稲岡 / 冨士原 / 玉木&quot;,
+  &quot;西日本&quot;, &quot;嘉手苅 / 迎山 / 中村&quot;,
+  &quot;未設定&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>エリア担当</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

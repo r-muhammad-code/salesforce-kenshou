@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>View60</fullName>
+    <columns>NAME</columns>
+    <columns>ReceptionDateTime__c</columns>
+    <columns>Cancellation_reason__c</columns>
+    <columns>Phase__c</columns>
+    <columns>Cancel_SomeReason__c</columns>
+    <columns>Owner_Fullname__c</columns>
+    <columns>FirstRegistration_Year_hs__c</columns>
+    <columns>CarTypes__c</columns>
+    <columns>PurchaseDate__c</columns>
+    <columns>Amount__c</columns>
+    <columns>Desired_amount_hs__c</columns>
+    <columns>VehicleClassification__c</columns>
+    <columns>Is_Project__c</columns>
+    <columns>Web_State__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Is_Project__c</field>
+        <operation>equals</operation>
+        <value>S＋（100万以上）,コールS</value>
+    </filters>
+    <filters>
+        <field>Phase__c</field>
+        <operation>equals</operation>
+        <value>保留,廃車保留,出品待ち,出品中,商談中,売却,全完了,キャンセル</value>
+    </filters>
+    <filters>
+        <field>Cancellation_reason__c</field>
+        <operation>notEqual</operation>
+        <value>買取不可,現金以外不可,案件重複</value>
+    </filters>
+    <filters>
+        <field>InChargeOf_Pricing_Picklist__c</field>
+        <operation>equals</operation>
+        <value>足立,木野,中,阿部,藪内,田中,熊谷,森田,細川,窪田,渡部,嶋田,橋本,奥井,坂口,宮定,上田,柏木</value>
+    </filters>
+    <filters>
+        <field>ReceptionDateTime__c</field>
+        <operation>lessThan</operation>
+        <value>8/1/2026 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>ReceptionDateTime__c</field>
+        <operation>greaterThan</operation>
+        <value>6/30/2026 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>Cancel_SomeReason__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <label>コールＳ案件（案件数）</label>
+</ListView>

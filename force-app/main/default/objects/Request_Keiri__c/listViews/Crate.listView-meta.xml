@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Crate</fullName>
+    <columns>NAME</columns>
+    <columns>Request_Content_Keiri__c</columns>
+    <columns>Lot_number__c</columns>
+    <columns>CarName__c</columns>
+    <columns>PurchaseOpportunity__c</columns>
+    <columns>PO_Owner__c</columns>
+    <columns>Authorizer__c</columns>
+    <columns>Request_to_Accounting_Remarks__c</columns>
+    <columns>Transfer_request_approved__c</columns>
+    <columns>Keiri_Manager__c</columns>
+    <columns>Memo__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Request_Content_Keiri__c</field>
+        <operation>notEqual</operation>
+        <value>,振込依頼</value>
+    </filters>
+    <filters>
+        <field>Keiri_completion_day__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>Request_to_Accounting_Remarks__c</field>
+        <operation>notContain</operation>
+        <value>テスト</value>
+    </filters>
+    <filters>
+        <field>AbandonCollectionStatus__c</field>
+        <operation>equals</operation>
+        <value>,経理処理待ち,エラー対応_経理処理待ち</value>
+    </filters>
+    <label>営業→経理</label>
+</ListView>

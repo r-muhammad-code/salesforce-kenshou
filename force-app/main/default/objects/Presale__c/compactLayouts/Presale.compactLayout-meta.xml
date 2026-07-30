@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Presale</fullName>
+    <fields>Name</fields>
+    <fields>Assessment__c</fields>
+    <fields>Lot_CorporationID__c</fields>
+    <fields>car_model__c</fields>
+    <fields>PresaleRequestedDate__c</fields>
+    <fields>PresaleAmountPresentationDeadline__c</fields>
+    <fields>PresaleDesiredAmount__c</fields>
+    <fields>OwnerId</fields>
+    <fields>PresaleMemberOwner__c</fields>
+    <fields>PresaleAmountPresentation__c</fields>
+    <label>先売り依頼</label>
+</CompactLayout>

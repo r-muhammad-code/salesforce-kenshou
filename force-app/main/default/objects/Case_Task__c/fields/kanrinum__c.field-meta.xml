@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>kanrinum__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>ケースから連携。メールに管理番号を含まれていた場合、こちらに連携</description>
+    <externalId>false</externalId>
+    <inlineHelpText>問い合わせ時に含まれていた、管理番号</inlineHelpText>
+    <label>オークション出品データ</label>
+    <referenceTo>Auction_Data__c</referenceTo>
+    <relationshipLabel>対応タスク（販売）</relationshipLabel>
+    <relationshipName>dWOf</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

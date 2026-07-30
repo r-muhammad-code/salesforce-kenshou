@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SalesSupport</fullName>
+    <fields>Name</fields>
+    <fields>PurchaseOpportunity__c</fields>
+    <fields>Request_type__c</fields>
+    <fields>OwnerId</fields>
+    <fields>Department__c</fields>
+    <fields>Request_Date__c</fields>
+    <label>営業サポート依頼</label>
+</CompactLayout>

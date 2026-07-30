@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Custom_invoice_info_layout</fullName>
+    <fields>lot_num__c</fields>
+    <fields>kanri_num__c</fields>
+    <fields>Member__c</fields>
+    <fields>Auction_data__c</fields>
+    <fields>oneprice_relation__c</fields>
+    <fields>auctiondata_carname__c</fields>
+    <label>カスタム</label>
+</CompactLayout>

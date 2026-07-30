@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X021</fullName>
+    <columns>Media__c</columns>
+    <columns>Owner_Fullname__c</columns>
+    <columns>Account__c</columns>
+    <columns>FirstRegistration_Year_hs__c</columns>
+    <columns>CarTypes__c</columns>
+    <columns>VehicleClassification__c</columns>
+    <columns>Phase__c</columns>
+    <columns>ReceptionDateTime__c</columns>
+    <columns>ReceiptRecordingDate__c</columns>
+    <columns>NAME</columns>
+    <columns>Oppotunity__c</columns>
+    <columns>PurchaseDate__c</columns>
+    <columns>Prompt_Decision__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>ReceptionDateTime__c</field>
+        <operation>equals</operation>
+        <value>LAST_MONTH</value>
+    </filters>
+    <filters>
+        <field>PurchaseDate__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>VehicleClassification__c</field>
+        <operation>notEqual</operation>
+        <value>はなまるオークション/他社AA（営業）</value>
+    </filters>
+    <label>02. 私の成約案件（先月）</label>
+</ListView>

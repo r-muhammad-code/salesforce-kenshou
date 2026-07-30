@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pricing_DateTime__c</fullName>
+    <description>プライシング担当が値付けをした日時
+佐野</description>
+    <externalId>false</externalId>
+    <inlineHelpText>提示上限金額が入力されたら自動更新</inlineHelpText>
+    <label>値付け対応日時</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

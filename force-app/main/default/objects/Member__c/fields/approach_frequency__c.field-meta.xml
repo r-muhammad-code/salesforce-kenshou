@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>approach_frequency__c</fullName>
+    <externalId>false</externalId>
+    <label>アプローチ頻度</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>常に</fullName>
+                <default>false</default>
+                <label>常に</label>
+            </value>
+            <value>
+                <fullName>対象車両のみ</fullName>
+                <default>false</default>
+                <label>対象車両のみ</label>
+            </value>
+            <value>
+                <fullName>顧客任せ</fullName>
+                <default>false</default>
+                <label>顧客任せ</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

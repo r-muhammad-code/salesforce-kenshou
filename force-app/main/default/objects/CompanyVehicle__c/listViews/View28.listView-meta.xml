@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>View28</fullName>
+    <columns>NAME</columns>
+    <columns>drive_recorder__c</columns>
+    <columns>Sold__c</columns>
+    <columns>Base__c</columns>
+    <columns>Base_formula__c</columns>
+    <columns>User__c</columns>
+    <columns>Carmodel__c</columns>
+    <columns>RegistrationNo__c</columns>
+    <columns>remarks__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Sold__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>drive_recorder__c</field>
+        <operation>equals</operation>
+        <value>,不要</value>
+    </filters>
+    <label>ドラレコ確認用</label>
+</ListView>

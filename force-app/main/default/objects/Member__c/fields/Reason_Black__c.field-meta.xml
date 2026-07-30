@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reason_Black__c</fullName>
+    <description>顧客台帳のみの項目
+ブラックの定義付けと、それらを確認するために使用。
+以下ブラックの規定
+・長期未入金の強制キャンセルを本登録後3回した場合
+・永抹期限を1回でも超過
+・B車輌の搬出期限を守れなかった人
+　→オークション課により売却時に都度確認を行うため、その時点で陸送を強制的に手配する</description>
+    <externalId>false</externalId>
+    <label>ブラック設定理由</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>未入金1回目</fullName>
+                <default>false</default>
+                <label>未入金1回目</label>
+            </value>
+            <value>
+                <fullName>未入金2回目</fullName>
+                <default>false</default>
+                <label>未入金2回目</label>
+            </value>
+            <value>
+                <fullName>未入金3回以上</fullName>
+                <default>false</default>
+                <label>未入金3回以上</label>
+            </value>
+            <value>
+                <fullName>永抹期限超過のため</fullName>
+                <default>false</default>
+                <label>永抹期限超過のため</label>
+            </value>
+            <value>
+                <fullName>B車輌搬出期限超過のため</fullName>
+                <default>false</default>
+                <label>B車輌搬出期限超過のため</label>
+            </value>
+            <value>
+                <fullName>取引NG</fullName>
+                <default>false</default>
+                <label>取引NG</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

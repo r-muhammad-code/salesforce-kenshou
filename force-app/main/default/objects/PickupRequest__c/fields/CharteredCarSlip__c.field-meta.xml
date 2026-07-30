@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CharteredCarSlip__c</fullName>
+    <description>佐野作成(喜多依頼分)
+傭車先の伝票番号
+ゼロに配送依頼した場合に設定される</description>
+    <externalId>false</externalId>
+    <label>傭車先伝票番号</label>
+    <length>30</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

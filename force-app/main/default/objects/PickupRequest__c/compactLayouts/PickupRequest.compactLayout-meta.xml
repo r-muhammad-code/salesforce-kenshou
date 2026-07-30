@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PickupRequest</fullName>
+    <fields>Name</fields>
+    <fields>ScheduleAdjustmentRequestDate__c</fields>
+    <fields>ScheduledPickupDate__c</fields>
+    <fields>Setup_staff__c</fields>
+    <fields>BringinginYard_Formula__c</fields>
+    <label>引取依頼</label>
+</CompactLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Demolition_contractor__c</fullName>
+    <externalId>false</externalId>
+    <formula>NOT( ISBLANK( sales_regular_holiday__c ) ) ||
+NOT( ISBLANK( owned_truck__c ) ) ||
+NOT( ISBLANK( area_biko__c ) ) ||
+NOT( ISBLANK( limit_rlue__c ) ) ||
+NOT( ISBLANK( etc_yard_um__c ) )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>解体業者</label>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

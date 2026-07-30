@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Role_Category__c</fullName>
+    <externalId>false</externalId>
+    <label>ステージ</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1: マネージャー</fullName>
+                <default>false</default>
+                <label>1: マネージャー</label>
+            </value>
+            <value>
+                <fullName>2: メンバー</fullName>
+                <default>false</default>
+                <label>2: メンバー</label>
+            </value>
+            <value>
+                <fullName>3: アルバイト</fullName>
+                <default>false</default>
+                <label>3: アルバイト</label>
+            </value>
+            <value>
+                <fullName>4: 派遣</fullName>
+                <default>false</default>
+                <label>4: 派遣</label>
+            </value>
+            <value>
+                <fullName>5: フリーランス</fullName>
+                <default>false</default>
+                <label>5: フリーランス</label>
+            </value>
+            <value>
+                <fullName>6: 役員</fullName>
+                <default>false</default>
+                <label>6: 役員</label>
+            </value>
+            <value>
+                <fullName>7: 執行役員</fullName>
+                <default>false</default>
+                <label>7: 執行役員</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

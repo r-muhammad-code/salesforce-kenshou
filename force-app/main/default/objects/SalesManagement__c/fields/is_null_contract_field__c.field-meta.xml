@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>is_null_contract_field__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(CONTAINS(TEXT(Contract__c), &quot;はなまる&quot;),
+
+MID(
+IF(ISBLANK(ContractCompany__c), &quot;、取引先&quot;, &quot;&quot;) &amp;
+IF(ISBLANK(Contract_date__c), &quot;、契約日&quot;, &quot;&quot;) &amp;
+IF(ISBLANK(ModelYearPickList__c), &quot;、年式&quot;, &quot;&quot;) &amp;
+IF(ISBLANK(CarNo__c), &quot;、車台番号&quot;, &quot;&quot;) &amp;
+IF(ISBLANK(run_dist__c), &quot;、走行距離&quot;, &quot;&quot;) &amp;
+IF(ISBLANK(TEXT(Navigation__c)), &quot;、ナビ&quot;, &quot;&quot;) &amp;
+IF(ISBLANK(TEXT(AW__c)), &quot;、AW&quot;, &quot;&quot;) &amp;
+IF(ISBLANK(Equipment__c), &quot;、装備品&quot;, &quot;&quot;) &amp;
+IF(ISBLANK(TEXT(meter__c)), &quot;、メーター&quot;, &quot;&quot;) &amp;
+IF(ISBLANK(TEXT(Tax_payment__c)), &quot;、納税&quot;, &quot;&quot;) &amp;
+IF(ISBLANK(TEXT(Repair_history__c)), &quot;、修復歴&quot;, &quot;&quot;) &amp;
+IF(ISBLANK(TEXT(Defect__c)), &quot;、不具合&quot;, &quot;&quot;) &amp;
+IF(ISBLANK(TEXT(Liability__c)), &quot;、自賠責&quot;, &quot;&quot;) &amp;
+IF(ISBLANK(TEXT(Crown_water__c)), &quot;、冠水歴&quot;, &quot;&quot;) &amp;
+IF(ISBLANK(TEXT(Purchase_condition__c)), &quot;、買取条件&quot;, &quot;&quot;) &amp;
+IF(ISBLANK(AssessmentDate__c), &quot;、査定日&quot;, &quot;&quot;) &amp;
+IF(ISBLANK(TotalPayment__c), &quot;、支払合計&quot;, &quot;&quot;)
+, 2, 999)
+
+, &quot;&quot;
+)</formula>
+    <label>売契不足項目</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

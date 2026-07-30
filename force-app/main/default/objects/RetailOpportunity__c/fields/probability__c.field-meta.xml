@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>probability__c</fullName>
+    <externalId>false</externalId>
+    <label>成約確度</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>S(条件合意済み)</fullName>
+                <default>false</default>
+                <label>S(条件合意済み)</label>
+            </value>
+            <value>
+                <fullName>A(最終検討中)</fullName>
+                <default>false</default>
+                <label>A(最終検討中)</label>
+            </value>
+            <value>
+                <fullName>B(他社と相見積もり中・車種検討中)</fullName>
+                <default>false</default>
+                <label>B(他社と相見積もり中・車種検討中)</label>
+            </value>
+            <value>
+                <fullName>C(相場把握・見学)</fullName>
+                <default>false</default>
+                <label>C(相場把握・見学)</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

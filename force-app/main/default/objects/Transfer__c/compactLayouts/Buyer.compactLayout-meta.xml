@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Buyer</fullName>
+    <fields>Name</fields>
+    <fields>bank_nm__c</fields>
+    <fields>branch_nm__c</fields>
+    <fields>bank_account_kb__c</fields>
+    <fields>bank_account_no__c</fields>
+    <fields>bank_account_nm__c</fields>
+    <label>仕入営業</label>
+</CompactLayout>

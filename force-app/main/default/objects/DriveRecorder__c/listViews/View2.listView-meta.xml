@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>View2</fullName>
+    <columns>ControlNo__c</columns>
+    <columns>Onboard_equipmentType__c</columns>
+    <columns>Constant_recording__c</columns>
+    <columns>NAME</columns>
+    <columns>Vehicle_affiliation__c</columns>
+    <columns>RegistrationNo__c</columns>
+    <columns>RegistrationNo_beforetransfer__c</columns>
+    <columns>remarks__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Canceled__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Vehicle_affiliation__c</field>
+        <operation>equals</operation>
+        <value>本社</value>
+    </filters>
+    <filters>
+        <field>Onboard_equipmentType__c</field>
+        <operation>equals</operation>
+        <value>KENWOOD</value>
+    </filters>
+    <filters>
+        <field>RegistrationNo__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>本社在庫</label>
+</ListView>

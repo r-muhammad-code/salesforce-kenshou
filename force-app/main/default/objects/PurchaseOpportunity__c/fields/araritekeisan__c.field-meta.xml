@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>araritekeisan__c</fullName>
+    <description>OBICに売りが入るまでに、営業が給料計算などで使用したい場合に手計算した粗利を入力する</description>
+    <externalId>false</externalId>
+    <inlineHelpText>売却時、粗利を手計算にて入力してください</inlineHelpText>
+    <label>粗利（手計算）</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

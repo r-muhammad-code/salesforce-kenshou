@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CS_taskList_formula__c</fullName>
+    <description>山本</description>
+    <externalId>false</externalId>
+    <formula>TRIM(
+    SUBSTITUTE(
+        SUBSTITUTE(
+            IF(INCLUDES(CS_tasklist__c, &quot;朝一確認&quot;), &quot;A 朝一確認;&quot;, &quot;&quot;) &amp;
+            IF(INCLUDES(CS_tasklist__c, &quot;トラブル・クレーム案件&quot;), &quot;B トラブル・クレーム案件;&quot;, &quot;&quot;) &amp;
+            IF(INCLUDES(CS_tasklist__c, &quot;長期書類未着&quot;), &quot;C 長期書類未着;&quot;, &quot;&quot;) &amp;
+            IF(INCLUDES(CS_tasklist__c, &quot;売契送信・3通目確認・直売→旧C変更&quot;), &quot;D 売契送信・3通目確認・直売→旧C変更;&quot;, &quot;&quot;) &amp;
+            IF(INCLUDES(CS_tasklist__c, &quot;書類発送&quot;), &quot;E 書類発送;&quot;, &quot;&quot;) &amp;
+            IF(INCLUDES(CS_tasklist__c, &quot;至急随時&quot;), &quot;F 至急随時;&quot;, &quot;&quot;) &amp;
+            IF(INCLUDES(CS_tasklist__c, &quot;架電系&quot;), &quot;G 架電系;&quot;, &quot;&quot;) &amp;
+            IF(INCLUDES(CS_tasklist__c, &quot;他部署確認中&quot;), &quot;H 他部署確認中;&quot;, &quot;&quot;) &amp;
+            IF(INCLUDES(CS_tasklist__c, &quot;受付戻り・死亡書類確認&quot;), &quot;I 受付戻り・死亡書類確認;&quot;, &quot;&quot;) &amp;
+            IF(INCLUDES(CS_tasklist__c, &quot;販売タスク&quot;), &quot;J 販売タスク;&quot;, &quot;&quot;) &amp;
+            IF(INCLUDES(CS_tasklist__c, &quot;開封依頼＆追跡番号確認依頼&quot;), &quot;K 開封依頼＆追跡番号確認依頼;&quot;, &quot;&quot;) &amp;
+            IF(INCLUDES(CS_tasklist__c, &quot;MD＆LINE返信要or返信待ち&quot;), &quot;L MD＆LINE返信要or返信待ち;&quot;, &quot;&quot;) &amp;
+            IF(INCLUDES(CS_tasklist__c, &quot;後追い架電&quot;), &quot;M 後追い架電;&quot;, &quot;&quot;) &amp;
+            IF(INCLUDES(CS_tasklist__c, &quot;書類OK待ち（検収書・引き書・陸チャレetc）&quot;), &quot;N 書類OK待ち（検収書・引き書・陸チャレetc）;&quot;, &quot;&quot;) &amp;
+            IF(INCLUDES(CS_tasklist__c, &quot;振込&quot;), &quot;O 振込;&quot;, &quot;&quot;) &amp;
+            IF(INCLUDES(CS_tasklist__c, &quot;ナンバー後追い・その他&quot;), &quot;Q ナンバー後追い・その他;&quot;, &quot;&quot;) &amp;
+            IF(INCLUDES(CS_tasklist__c, &quot;S付進捗&quot;), &quot;P S付進捗;&quot;, &quot;&quot;) &amp;
+            IF(INCLUDES(CS_tasklist__c, &quot;金額変更・各種キャンセル処理・台帳削除&quot;), &quot;R 金額変更・各種キャンセル処理・台帳削除;&quot;, &quot;&quot;),
+            &quot;;;&quot;, &quot;;&quot;
+        ),
+        &quot;; &quot;, &quot;;&quot;
+    )
+)</formula>
+    <label>CSタスク(数式)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

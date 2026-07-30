@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Is_Resigned_This_FY__c</fullName>
+    <description>今日が2026年6月（月&gt;=4）の場合：
+   ↓
+2026年4月1日 〜 2027年3月31日 の範囲で退職日があるかチェック
+
+今日が2026年2月（月&lt;4）の場合：
+   ↓
+2025年4月1日 〜 2026年3月31日 の範囲で退職日があるかチェック</description>
+    <externalId>false</externalId>
+    <formula>AND(
+  NOT(ISBLANK(termination_date__c)),
+  IF(
+    MONTH(TODAY()) &gt;= 4,
+    AND(
+      termination_date__c &gt;= DATE(YEAR(TODAY()), 4, 1),
+      termination_date__c &lt;= DATE(YEAR(TODAY()) + 1, 3, 31)
+    ),
+    AND(
+      termination_date__c &gt;= DATE(YEAR(TODAY()) - 1, 4, 1),
+      termination_date__c &lt;= DATE(YEAR(TODAY()), 3, 31)
+    )
+  )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>退職日が今年度の場合はチェックが入る。</inlineHelpText>
+    <label>今年度退職フラグ</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

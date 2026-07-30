@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Dismantler_PIC__c</columns>
+    <columns>Dismantler_Requested_Companies_ID__c</columns>
+    <columns>Freon_Recovery_Codes__c</columns>
+    <columns>Dismantling_Codes__c</columns>
+    <columns>Dismantler_Locations__c</columns>
+    <columns>Dismantler_Numbers__c</columns>
+    <columns>Fax_Numbers_Dismantler__c</columns>
+    <columns>Dismantler_Notes__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>すべてのレコード</label>
+</ListView>

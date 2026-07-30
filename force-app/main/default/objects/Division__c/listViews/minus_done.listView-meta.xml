@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>minus_done</fullName>
+    <columns>NAME</columns>
+    <columns>PurchaseOpportunity__c</columns>
+    <columns>owner__c</columns>
+    <columns>Half__c</columns>
+    <columns>Division_comment__c</columns>
+    <columns>Division_amount_plus__c</columns>
+    <columns>Lot_minus__c</columns>
+    <columns>Division_processed_minus__c</columns>
+    <columns>SalesDate__c</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Division_processed_minus__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Lot_minus__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>SalesDate__c</field>
+        <operation>lessOrEqual</operation>
+        <value>LAST_MONTH</value>
+    </filters>
+    <label>折半処理（-）　処理済みチェックリスト</label>
+</ListView>

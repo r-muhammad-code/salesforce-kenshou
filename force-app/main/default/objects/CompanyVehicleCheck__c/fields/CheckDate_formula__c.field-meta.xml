@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CheckDate_formula__c</fullName>
+    <description>山本</description>
+    <externalId>false</externalId>
+    <formula>IF(
+    DAY(CheckDate__c) &lt;= 20,
+    DATE(YEAR(CheckDate__c), MONTH(CheckDate__c) - 1, DAY(CheckDate__c)),
+    CheckDate__c
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>チェック日の計上日を表示</inlineHelpText>
+    <label>チェック日（計上）</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

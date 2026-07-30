@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LeagalCheck__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>法務で売買契約書を確認したらチェックをつける</description>
+    <externalId>false</externalId>
+    <inlineHelpText>法務部が使用</inlineHelpText>
+    <label>法務課チェック（編集NG）</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

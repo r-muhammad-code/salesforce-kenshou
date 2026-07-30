@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X016</fullName>
+    <columns>NAME</columns>
+    <columns>Media__c</columns>
+    <columns>Owner_Fullname__c</columns>
+    <columns>FirstRegistration_Year_hs__c</columns>
+    <columns>CarTypes__c</columns>
+    <columns>VehicleClassification__c</columns>
+    <columns>ReceptionDate__c</columns>
+    <columns>Phase__c</columns>
+    <columns>ContactDate__c</columns>
+    <columns>PurchaseDate__c</columns>
+    <columns>InChargeOf_Pricing_Picklist__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ReceptionDateTime__c</field>
+        <operation>equals</operation>
+        <value>LAST_MONTH</value>
+    </filters>
+    <filters>
+        <field>Cancel_SomeReason__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>売却意思なし☑</label>
+</ListView>

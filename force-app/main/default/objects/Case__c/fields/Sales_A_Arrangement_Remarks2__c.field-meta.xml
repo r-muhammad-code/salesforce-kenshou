@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_A_Arrangement_Remarks2__c</fullName>
+    <description>佐野
+元のテキストエリア(255)と差し替え</description>
+    <externalId>false</externalId>
+    <label>営業A取次備考</label>
+    <length>32768</length>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>LongTextArea</type>
+    <visibleLines>12</visibleLines>
+</CustomField>

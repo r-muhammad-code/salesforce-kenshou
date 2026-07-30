@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>eGift_Sent__c</fullName>
+    <description>弁護士会など、紹介をもらった際に紹介元にeギフトを送信する場合は入力</description>
+    <externalId>false</externalId>
+    <label>eギフト送信</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>要</fullName>
+                <default>false</default>
+                <label>要</label>
+            </value>
+            <value>
+                <fullName>不要</fullName>
+                <default>false</default>
+                <label>不要</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

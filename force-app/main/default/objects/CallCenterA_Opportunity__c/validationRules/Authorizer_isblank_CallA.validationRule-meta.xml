@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Authorizer_isblank_CallA</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL(  Request_Detail__c  , &quot;現在登録証発行申請&quot;)  &amp;&amp;
+ISBLANK(  Authorizer_CallA_DocMgmt__c  )</errorConditionFormula>
+    <errorDisplayField>Authorizer_CallA_DocMgmt__c</errorDisplayField>
+    <errorMessage>承認者が入力されていません。</errorMessage>
+</ValidationRule>

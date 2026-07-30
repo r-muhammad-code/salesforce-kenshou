@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Opportunity__c</columns>
+    <columns>Case__c</columns>
+    <columns>Owner__c</columns>
+    <columns>ForwardingRequestDate__c</columns>
+    <columns>Forwarding_staff__c</columns>
+    <columns>ForwardingScheduledDate__c</columns>
+    <columns>DeliveryDate__c</columns>
+    <columns>ForwardingCompany__c</columns>
+    <columns>Mst_Models_formula__c</columns>
+    <columns>CarNo__c</columns>
+    <columns>OtherAA_List__c</columns>
+    <columns>PlaceOfDeparture__c</columns>
+    <columns>PlaceOfDestination__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>すべて選択</label>
+</ListView>

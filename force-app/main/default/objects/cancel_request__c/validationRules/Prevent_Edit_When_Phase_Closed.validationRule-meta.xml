@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Edit_When_Phase_Closed</fullName>
+    <active>false</active>
+    <description>キャンセル依頼オブジェクトのキャンセルフェーズが「受付」、「各部署対応中」の場合以外はオブジェクトの編集を不可にする制御</description>
+    <errorConditionFormula>AND(
+  NOT(ISPICKVAL(Cansel_phase__c, &apos;受付&apos;)),
+  NOT(ISPICKVAL(Cansel_phase__c, &apos;各部署対応中&apos;)),
+  NOT(ISPICKVAL(Cansel_phase__c, &apos;業務課再出品チェック待ち&apos;)),
+  NOT(
+    AND(
+      ISCHANGED(Cansel_phase__c),
+      OR(
+        ISPICKVAL(Cansel_phase__c, &apos;キャンセル自体を撤回（購入を継続するため）&apos;),
+        ISPICKVAL(Cansel_phase__c, &apos;誤依頼のため対応不要（重複して依頼してしまった等）&apos;)
+      )
+    )
+  )
+)</errorConditionFormula>
+    <errorMessage>キャンセルフェーズが「受付」または「各部署対応中」以外の場合、レコードは編集できません。</errorMessage>
+</ValidationRule>

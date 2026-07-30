@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>color__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE ( TEXT ( Assessment__r.color__c ) , &quot;0&quot;, &quot;パール系&quot; , &quot;1&quot;, &quot;ホワイト系&quot; , &quot;2&quot;, &quot;イエロー系&quot; , &quot;3&quot;, &quot;オレンジ系&quot; , &quot;4&quot;, &quot;レッド系&quot; , &quot;5&quot;, &quot;ピンク系&quot; , &quot;6&quot;, &quot;パープル系&quot; , &quot;7&quot;, &quot;ブルー系&quot; , &quot;8&quot;, &quot;グリーン系&quot; , &quot;9&quot;, &quot;ブラウン系&quot; , &quot;10&quot;, &quot;ベージュ系&quot; , &quot;11&quot;, &quot;ゴールド系&quot; , &quot;12&quot;, &quot;シルバー系&quot; , &quot;13&quot;, &quot;グレー系&quot; ,&quot;14&quot;, &quot;ブラック系&quot; ,&quot;15&quot;, &quot;現車&quot; ,&quot;&quot; )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>カラー</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

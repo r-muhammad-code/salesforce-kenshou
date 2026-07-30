@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RetailStock_under_opportunity__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>販売提案在庫</label>
+    <referenceTo>RetailStock__c</referenceTo>
+    <relationshipLabel>リテール商談 (販売候補車両)</relationshipLabel>
+    <relationshipName>RetailOpportunity_under_opportunity</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

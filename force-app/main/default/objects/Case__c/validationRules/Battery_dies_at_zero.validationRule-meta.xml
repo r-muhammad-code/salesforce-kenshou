@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Battery_dies_at_zero</fullName>
+    <active>false</active>
+    <description>ゼロ連携開始後に有効化</description>
+    <errorConditionFormula>ISPICKVAL( RequestDestination__c,&quot;リユース&quot; ) &amp;&amp;  BatteryDead__c=TRUE  &amp;&amp; ScheduleAdjustmentRequestDate__c &gt;= DATE(2024, 5, 29)</errorConditionFormula>
+    <errorMessage>リユース段取ではバッテリ上がりは依頼できません</errorMessage>
+</ValidationRule>

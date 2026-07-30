@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>wait_enter_accessment_data</fullName>
+    <columns>NAME</columns>
+    <columns>customer__c</columns>
+    <columns>Mst_Makers__c</columns>
+    <columns>Mst_Models__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>assessment_date__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>opportunity_type__c</field>
+        <operation>equals</operation>
+        <value>買取のみ,買取・販売</value>
+    </filters>
+    <label>査定情報入力待ち</label>
+</ListView>

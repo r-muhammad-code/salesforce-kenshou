@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Recommended_offer_amount__c</fullName>
+    <description>さの</description>
+    <externalId>false</externalId>
+    <inlineHelpText>市場相場、需要、利益率などを考慮して設定した目安の提示金額。
+現地でいくら提示したらいいかわからないなどの時に参考にしてください。</inlineHelpText>
+    <label>推奨提示金額</label>
+    <precision>10</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

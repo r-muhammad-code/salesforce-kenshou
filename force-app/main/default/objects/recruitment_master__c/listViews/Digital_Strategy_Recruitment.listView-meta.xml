@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Digital_Strategy_Recruitment</fullName>
+    <columns>NAME</columns>
+    <columns>recruitment_status__c</columns>
+    <columns>recruitment_reason__c</columns>
+    <columns>employment_type__c</columns>
+    <columns>job_category__c</columns>
+    <columns>Role_Category__c</columns>
+    <columns>job_description_manager_section__c</columns>
+    <columns>hr_input_section__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>department_master__c</field>
+        <operation>equals</operation>
+        <value>デジタル戦略部</value>
+    </filters>
+    <label>デジタル戦略部　募集中一覧</label>
+</ListView>

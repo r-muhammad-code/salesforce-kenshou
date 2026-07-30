@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ModelYear_Japanese__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( TEXT( ModelYearPickList__c ),
+&quot;2026&quot;, &quot;2026年/令和8年&quot;,
+&quot;2025&quot;, &quot;2025年/令和7年&quot;,
+&quot;2024&quot;, &quot;2024年/令和6年&quot;,
+&quot;2023&quot;, &quot;2023年/令和5年&quot;,
+&quot;2022&quot;, &quot;2022年/令和4年&quot;,
+&quot;2021&quot;, &quot;2021年/令和3年&quot;,
+&quot;2020&quot;, &quot;2020年/令和2年&quot;,
+&quot;2019&quot;, &quot;2019年/平成31年（令和元年）&quot;,
+&quot;2018&quot;, &quot;2018年/平成30年&quot;,
+&quot;2017&quot;, &quot;2017年/平成29年&quot;,
+&quot;2016&quot;, &quot;2016年/平成28年&quot;,
+&quot;2015&quot;, &quot;2015年/平成27年&quot;,
+&quot;2014&quot;, &quot;2014年/平成26年&quot;,
+&quot;2013&quot;, &quot;2013年/平成25年&quot;,
+&quot;2012&quot;, &quot;2012年/平成24年&quot;,
+&quot;2011&quot;, &quot;2011年/平成23年&quot;,
+&quot;2010&quot;, &quot;2010年/平成22年&quot;,
+&quot;2009&quot;, &quot;2009年/平成21年&quot;,
+&quot;2008&quot;, &quot;2008年/平成20年&quot;,
+&quot;2007&quot;, &quot;2007年/平成19年&quot;,
+&quot;2006&quot;, &quot;2006年/平成18年&quot;,
+&quot;2005&quot;, &quot;2005年/平成17年&quot;,
+&quot;2004&quot;, &quot;2004年/平成16年&quot;,
+&quot;2003&quot;, &quot;2003年/平成15年&quot;,
+&quot;2002&quot;, &quot;2002年/平成14年&quot;,
+&quot;2001&quot;, &quot;2001年/平成13年&quot;,
+&quot;2000&quot;, &quot;2000年/平成12年&quot;,
+&quot;1999&quot;, &quot;1999年/平成11年&quot;,
+&quot;1998&quot;, &quot;1998年/平成10年&quot;,
+&quot;1997&quot;, &quot;1997年/平成9年&quot;,
+&quot;1996&quot;, &quot;1996年/平成8年&quot;,
+&quot;1995&quot;, &quot;1995年/平成7年&quot;,
+&quot;1994&quot;, &quot;1994年/平成6年&quot;,
+&quot;1993&quot;, &quot;1993年/平成5年&quot;,
+&quot;1992&quot;, &quot;1992年/平成4年&quot;,
+&quot;1991&quot;, &quot;1991年/平成3年&quot;,
+&quot;1990&quot;, &quot;1990年/平成2年&quot;,
+&quot;1989&quot;, &quot;1989年/昭和64年（平成元年）&quot;,
+&quot;1988&quot;, &quot;1988年/昭和63年&quot;,
+&quot;1987&quot;, &quot;1987年/昭和62年&quot;,
+&quot;1986&quot;, &quot;1986年/昭和61年&quot;,
+&quot;1985&quot;, &quot;1985年/昭和60年&quot;,
+&quot;1984&quot;, &quot;1984年/昭和59年&quot;,
+&quot;1983&quot;, &quot;1983年/昭和58年&quot;,
+&quot;1982&quot;, &quot;1982年/昭和57年&quot;,
+&quot;1981&quot;, &quot;1981年/昭和56年&quot;,
+&quot;1980&quot;, &quot;1980年/昭和55年&quot;,
+&quot;1979&quot;, &quot;1979年/昭和54年&quot;,
+&quot;1978&quot;, &quot;1978年/昭和53年&quot;,
+&quot;1977&quot;, &quot;1977年/昭和52年&quot;,
+&quot;1976&quot;, &quot;1976年/昭和51年&quot;,
+&quot;1975&quot;, &quot;1975年/昭和50年　以前&quot;,
+&quot;不明&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>年式（和暦）</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

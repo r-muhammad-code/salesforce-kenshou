@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Automobiletaxrefund__c</fullName>
+    <description>自動車税還付する、しない、還付あれば還付を選択する</description>
+    <externalId>false</externalId>
+    <label>自動車税還付</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>還付する</fullName>
+                <default>false</default>
+                <label>還付する</label>
+            </value>
+            <value>
+                <fullName>還付しない</fullName>
+                <default>false</default>
+                <label>還付しない</label>
+            </value>
+            <value>
+                <fullName>還付書類あれば還付</fullName>
+                <default>false</default>
+                <label>還付書類あれば還付</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

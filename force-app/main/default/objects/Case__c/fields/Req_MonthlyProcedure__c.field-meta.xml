@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Req_MonthlyProcedure__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>月内手続き依頼</label>
+    <referenceTo>Document_management__c</referenceTo>
+    <relationshipLabel>買取受付 (月内手続き申請依頼)</relationshipLabel>
+    <relationshipName>Req_MonthlyProcedure</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

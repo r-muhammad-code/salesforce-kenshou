@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Repair_delivery</fullName>
+    <active>true</active>
+    <errorConditionFormula>(NOT(CONTAINS(Sales_Comments__c, &quot;修理回送&quot;))|| ISBLANK( Sales_Comments__c)) &amp;&amp; 
+
+   INCLUDES(PlaceOfDestination__r.DepartureArrivalArea__c, &quot;修理業者&quot;) 
+&amp;&amp;
+ ForwardingRequestDate__c  &gt;= DATE(2024, 7, 2)</errorConditionFormula>
+    <errorMessage>目的地が修理業者の場合は﻿「修理回送：修理申請システム未使用理由」を必ず入力してください</errorMessage>
+</ValidationRule>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>AI査定データを取得するためにスケジュールApexで作成されるプラットフォームイベント。
+API連携用Apexを実行するプラットフォームイベントトリガフローを起動する。</description>
+    <eventType>HighVolume</eventType>
+    <label>DataLineAPI_Request</label>
+    <publishBehavior>PublishImmediately</publishBehavior>
+</CustomObject>

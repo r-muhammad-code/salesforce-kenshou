@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>View81</fullName>
+    <columns>NAME</columns>
+    <columns>PurchaseOpportunity__c</columns>
+    <columns>Department__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>Urgent__c</columns>
+    <columns>Request_type__c</columns>
+    <columns>Transfer_day_A__c</columns>
+    <columns>Request_Detail__c</columns>
+    <columns>Account__c</columns>
+    <columns>Car_name__c</columns>
+    <columns>Request_Date__c</columns>
+    <columns>SupportName_del__c</columns>
+    <columns>LotNo__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>CompleteDate__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>Department__c</field>
+        <operation>contains</operation>
+        <value>仙台,札幌,盛岡,水戸</value>
+    </filters>
+    <filters>
+        <field>SalesManagement__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>仙台・札幌・盛岡・水戸</label>
+</ListView>

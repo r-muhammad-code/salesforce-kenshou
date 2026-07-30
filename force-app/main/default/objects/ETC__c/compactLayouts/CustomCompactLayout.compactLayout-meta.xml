@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CustomCompactLayout</fullName>
+    <fields>Name</fields>
+    <fields>ControlNo__c</fields>
+    <fields>expiration_date__c</fields>
+    <fields>Base__c</fields>
+    <fields>User__c</fields>
+    <label>カスタムコンパクトレイアウト</label>
+</CompactLayout>

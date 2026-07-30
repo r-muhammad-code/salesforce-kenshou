@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AFK</fullName>
+    <columns>Winning_Member__c</columns>
+    <columns>Nearest_Arrival_Date__c</columns>
+    <columns>NAME</columns>
+    <columns>Container_Number__c</columns>
+    <columns>Models__c</columns>
+    <columns>Chassis_Number__c</columns>
+    <columns>Yard__c</columns>
+    <columns>value_date__c</columns>
+    <columns>Transport_Arrangement_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Dismantling_CompanyDis_pulldown__c</field>
+        <operation>equals</operation>
+        <value>AFKトレーディング</value>
+    </filters>
+    <label>AFKトレーディング</label>
+</ListView>

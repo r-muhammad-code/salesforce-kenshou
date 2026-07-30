@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CreatedMonth__c</fullName>
+    <description>買取商談の作成された月を表示
+ダッシュボード等で使用。作成山本</description>
+    <externalId>false</externalId>
+    <formula>MONTH( DATEVALUE( CreatedDate ) )</formula>
+    <label>買取商談作成月</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

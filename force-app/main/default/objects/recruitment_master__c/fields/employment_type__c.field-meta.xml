@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>employment_type__c</fullName>
+    <externalId>false</externalId>
+    <label>雇用形態</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1:正社員</fullName>
+                <default>false</default>
+                <label>1:正社員</label>
+            </value>
+            <value>
+                <fullName>3:アルバイト社員</fullName>
+                <default>false</default>
+                <label>3:アルバイト社員</label>
+            </value>
+            <value>
+                <fullName>4:派遣社員</fullName>
+                <default>false</default>
+                <label>4:派遣社員</label>
+            </value>
+            <value>
+                <fullName>6:嘱託職員</fullName>
+                <default>false</default>
+                <label>6:嘱託職員</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

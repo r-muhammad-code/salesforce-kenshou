@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Compact_Layout_for_proxy</fullName>
+    <fields>lot_num__c</fields>
+    <fields>model__c</fields>
+    <fields>rec_status__c</fields>
+    <fields>exhibit_count__c</fields>
+    <fields>member_name__c</fields>
+    <label>販売用代理出品コンパクトレイアウト</label>
+</CompactLayout>

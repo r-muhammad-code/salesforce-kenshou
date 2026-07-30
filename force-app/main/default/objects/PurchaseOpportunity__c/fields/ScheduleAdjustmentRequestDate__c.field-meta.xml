@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ScheduleAdjustmentRequestDate__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>この項目を入力して保存することで、引取依頼が作成されます。</inlineHelpText>
+    <label>引取依頼作成日</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

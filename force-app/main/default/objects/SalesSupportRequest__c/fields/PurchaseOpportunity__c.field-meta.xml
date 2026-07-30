@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PurchaseOpportunity__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>作成：山本</description>
+    <externalId>false</externalId>
+    <label>買取商談</label>
+    <referenceTo>PurchaseOpportunity__c</referenceTo>
+    <relationshipLabel>営業サポート依頼</relationshipLabel>
+    <relationshipName>SalesSupportRequest</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

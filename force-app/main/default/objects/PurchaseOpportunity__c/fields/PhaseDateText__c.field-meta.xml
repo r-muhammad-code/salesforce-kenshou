@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PhaseDateText__c</fullName>
+    <description>フェーズと、フェーズを設定した日付（買取日、全完了日など）が合わせて表示される項目</description>
+    <externalId>false</externalId>
+    <formula>TEXT(Phase__c) &amp; IF(ISBLANK( PhaseDate__c ), NULL, &apos;・&apos; &amp; PhaseDate__c)</formula>
+    <label>フェーズ・日付</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

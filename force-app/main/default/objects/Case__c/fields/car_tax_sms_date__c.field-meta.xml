@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>car_tax_sms_date__c</fullName>
+    <description>フロー：SMS自動送信_自動車税還付案内通知　で使用される。
+SMS送信された後に一括でSMS送信日が入力される。山本</description>
+    <externalId>false</externalId>
+    <label>自動車税還付案内SMS送信日</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enter_the_desiredpickup_date</fullName>
+    <active>false</active>
+    <description>喜多</description>
+    <errorConditionFormula>AND( ISPICKVAL( RequestDestination__c ,&quot;営業&quot;) , ISBLANK( Pickup_Preferred_date__c )) &amp;&amp; ScheduleAdjustmentRequestDate__c &gt;= DATE(2023,01,22)</errorConditionFormula>
+    <errorDisplayField>Pickup_Preferred_date__c</errorDisplayField>
+    <errorMessage>引取希望日1に手配の際に決まった引取日を入力してください。</errorMessage>
+</ValidationRule>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Vehicle_inspection_information</fullName>
+    <active>true</active>
+    <description>与儀</description>
+    <errorConditionFormula>ISBLANK(Vehicle_inspection__c) &amp;&amp; NOT(No_vehicle_inspection__c)</errorConditionFormula>
+    <errorMessage>車検情報を入力するか、車検なしにチェックを付けてください。</errorMessage>
+</ValidationRule>

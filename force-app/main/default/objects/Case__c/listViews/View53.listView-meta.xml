@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>View53</fullName>
+    <columns>CarTypes__c</columns>
+    <columns>LOT__c</columns>
+    <columns>NAME</columns>
+    <columns>SalesReuseTeamTask_datetime__c</columns>
+    <columns>SalesReuseTeamTask__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>VehicleClassification__c</field>
+        <operation>notEqual</operation>
+        <value>営業A</value>
+    </filters>
+    <filters>
+        <field>SalesReuseTeamTask_datetime__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>▼▼リユース対応チームタスク▼▼</label>
+</ListView>

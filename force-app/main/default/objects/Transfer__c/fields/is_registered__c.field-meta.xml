@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>is_registered__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>仕入営業で取引先から登録口座を回収できたらチェックがつけられる
+振込申請依頼時に登録口座と同じを選ばれた場合、本項目にチェックがついているレコードがセットされるようになる
+項目レベルセキュリティでチェックつけられるプロファイルを限定しているので注意。山本</description>
+    <externalId>false</externalId>
+    <label>登録口座</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

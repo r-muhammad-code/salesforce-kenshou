@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ContactDateTime__c</fullName>
+    <description>買取受付から買取商談を作成した際に入力される。営業A案件の場合は営業が入力する</description>
+    <externalId>false</externalId>
+    <label>接触日時</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

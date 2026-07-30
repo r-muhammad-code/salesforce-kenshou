@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>winning_fee__c</fullName>
+    <description>今後落札手数料の金額が変更されることを加味して、売却時に出品データを更新（write_sales_tanto）のフローで更新。</description>
+    <externalId>false</externalId>
+    <label>落札手数料</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

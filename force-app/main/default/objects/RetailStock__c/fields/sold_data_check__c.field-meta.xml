@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sold_data_check__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(TEXT( sales_type__c ) = &quot;AA&quot;, False,
+IF(TEXT( sales_type__c ) = &quot;長在&quot;, False,
+IF(TEXT( sales_type__c ) = &quot;解体&quot;, False,
+OR(
+    ISBLANK( retail_sales_date__c ),
+    ISBLANK( delivery_date__c ),
+    TEXT( reason_for_sales__c ) = &quot;&quot;,
+    TEXT( sales_type__c ) = &quot;&quot;
+))))</formula>
+    <label>売上情報未入力チェック</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

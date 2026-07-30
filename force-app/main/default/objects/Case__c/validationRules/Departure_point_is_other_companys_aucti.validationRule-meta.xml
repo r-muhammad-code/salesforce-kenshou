@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Departure_point_is_other_companys_aucti</fullName>
+    <active>true</active>
+    <errorConditionFormula>(NOT(CONTAINS( Comments__c , &quot;他社オク回送：&quot;) ) || ISBLANK( Comments__c))&amp;&amp;  INCLUDES( PlaceOfDeparture__r.DepartureArrivalArea__c  ,&quot;他社オークション&quot;)&amp;&amp;
+ ForwardingRequestDate__c  &gt;= DATE(2024, 7, 2)</errorConditionFormula>
+    <errorMessage>出発地が他社オクの場合は「他社回送：出品状況」を必ず入力してください</errorMessage>
+</ValidationRule>

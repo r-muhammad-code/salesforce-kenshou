@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Country_Registration</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+    AND(
+        ISNEW(),
+        NOT(Sansan_check__c),
+        ISBLANK(country__c)
+    ),
+    AND(
+        NOT(ISNEW()),
+        ISBLANK(country__c)
+    )
+)</errorConditionFormula>
+    <errorDisplayField>country__c</errorDisplayField>
+    <errorMessage>最終目的地の入力が必要です。
+Final destination input is required.</errorMessage>
+</ValidationRule>

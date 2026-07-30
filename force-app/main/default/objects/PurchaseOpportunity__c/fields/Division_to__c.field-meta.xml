@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Division_to__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>喜多</description>
+    <externalId>false</externalId>
+    <inlineHelpText>2人以上に折半の場合でも1人を入力してください。</inlineHelpText>
+    <label>折半先</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>PurchaseOpportunity_Division_to</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

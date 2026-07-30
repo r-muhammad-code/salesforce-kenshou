@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>source_for_marketing__c</fullName>
+    <description>マーケ分析のために使用</description>
+    <externalId>false</externalId>
+    <label>経由</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>カーセンサー経由　直来店</fullName>
+                <default>false</default>
+                <label>カーセンサー経由　直来店</label>
+            </value>
+            <value>
+                <fullName>カーセンサー経由　電話商談</fullName>
+                <default>false</default>
+                <label>カーセンサー経由　電話商談</label>
+            </value>
+            <value>
+                <fullName>グーネット経由　直来店</fullName>
+                <default>false</default>
+                <label>グーネット経由　直来店</label>
+            </value>
+            <value>
+                <fullName>グーネット経由　電話商談</fullName>
+                <default>false</default>
+                <label>グーネット経由　電話商談</label>
+            </value>
+            <value>
+                <fullName>カーセンサーを見て</fullName>
+                <default>false</default>
+                <label>カーセンサーを見て</label>
+            </value>
+            <value>
+                <fullName>グーネットを見て</fullName>
+                <default>false</default>
+                <label>グーネットを見て</label>
+            </value>
+            <value>
+                <fullName>展示車を見て</fullName>
+                <default>false</default>
+                <label>展示車を見て</label>
+            </value>
+            <value>
+                <fullName>前を通ったので</fullName>
+                <default>false</default>
+                <label>前を通ったので</label>
+            </value>
+            <value>
+                <fullName>その他</fullName>
+                <default>false</default>
+                <label>その他</label>
+            </value>
+            <value>
+                <fullName>不明</fullName>
+                <default>false</default>
+                <label>不明</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

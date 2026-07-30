@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ChukosyabuNyusatsu__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>中古車部等での入札会、または商談余地の無い案件の場合チェックをつける</description>
+    <externalId>false</externalId>
+    <inlineHelpText>中古車部等での入札会、または商談余地の無い案件の場合チェック</inlineHelpText>
+    <label>中古車部入札案件等</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BatteryDead__c</fullName>
+    <description>山本</description>
+    <externalId>false</externalId>
+    <formula>IF( NOT( ISBLANK(  PurchaseOpportunity__c )),PurchaseOpportunity__r.BatteryDead__c , Case__r.BatteryDead__c)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>バッテリ上がり（走行可）</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

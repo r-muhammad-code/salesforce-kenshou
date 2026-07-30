@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OtherAA</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR( RepairCar__c = True , HanamaruAA_Exhibited__c = True ) &amp;&amp; OtherAA__c = True</errorConditionFormula>
+    <errorDisplayField>OtherAA__c</errorDisplayField>
+    <errorMessage>修理車両、自社流れ→他社はここにチェックを入れないでください</errorMessage>
+</ValidationRule>

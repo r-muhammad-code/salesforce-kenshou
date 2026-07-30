@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>relation_oneprice__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>関連するワンプライス車両　申込管理</label>
+    <referenceTo>ss_offer_info__c</referenceTo>
+    <relationshipLabel>陸送情報</relationshipLabel>
+    <relationshipName>relation_oneprice</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

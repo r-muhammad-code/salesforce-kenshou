@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Models__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>車種</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Mst_Models__c.disp_flg__c</field>
+            <operation>equals</operation>
+            <value>表示する</value>
+        </filterItems>
+        <filterItems>
+            <field>Mst_Models__c.maker__r.disp_flg__c</field>
+            <operation>equals</operation>
+            <value>表示する</value>
+        </filterItems>
+        <isOptional>false</isOptional>
+    </lookupFilter>
+    <referenceTo>Mst_Models__c</referenceTo>
+    <relationshipLabel>おこし</relationshipLabel>
+    <relationshipName>Models_repair1</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>View</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7</booleanFilter>
+    <columns>Account__c</columns>
+    <columns>VehicleClassification__c</columns>
+    <columns>Phase__c</columns>
+    <columns>CarTypes__c</columns>
+    <columns>Owner_Fullname__c</columns>
+    <columns>PurchaseDate__c</columns>
+    <columns>LotNo__c</columns>
+    <columns>Oppotunity__c</columns>
+    <columns>NAME</columns>
+    <columns>Reception_task_deadline_datetime__c</columns>
+    <columns>reception_task__c</columns>
+    <columns>Precautions__c</columns>
+    <columns>CS_task__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>VehicleClassification__c</field>
+        <operation>equals</operation>
+        <value>はなまるオークション/他社AA（コール）,直接商談,旧フロー,直売,コールA/リユース,コールA/リユース（SMS不可）,コールA/他社AA</value>
+    </filters>
+    <filters>
+        <field>Account__c</field>
+        <operation>notContain</operation>
+        <value>テスト</value>
+    </filters>
+    <filters>
+        <field>Phase__c</field>
+        <operation>notContain</operation>
+        <value>廃車保留,売却,全完了,キャンセル</value>
+    </filters>
+    <filters>
+        <field>PurchaseDate__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>PossiblePickUpDate__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>PickupRequest_toMVR__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>PickupRequest_toLogistics__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>【受付】契約済　引取依頼まだ</label>
+</ListView>

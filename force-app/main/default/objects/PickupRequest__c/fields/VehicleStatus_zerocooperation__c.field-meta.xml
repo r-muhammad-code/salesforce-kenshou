@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VehicleStatus_zerocooperation__c</fullName>
+    <description>佐野作成(喜多依頼分)</description>
+    <externalId>false</externalId>
+    <formula>TEXT(0)&amp;IF( Case__r.LoadingSpecification__c =TRUE || PurchaseOpportunity__r.LoadingSpecification__c=TRUE ,TEXT(1),TEXT(0))&amp;TEXT(0)&amp;TEXT(0)&amp;IF( Case__r.BatteryDead__c =TRUE || PurchaseOpportunity__r.BatteryDead__c=TRUE,TEXT(1),TEXT(0))&amp;IF(ISPICKVAL( Case__r.CarClass__c ,&quot;事故車&quot;) || ISPICKVAL(PurchaseOpportunity__r.VehicleCondition__c,&quot;事故車&quot;),TEXT(1),TEXT(0))&amp;TEXT(0)&amp;TEXT(0)&amp;TEXT(0)&amp;TEXT(0)&amp;TEXT(0)&amp;TEXT(0)&amp;TEXT(0)&amp;TEXT(0)</formula>
+    <label>車両状態（ゼロ連携用）</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

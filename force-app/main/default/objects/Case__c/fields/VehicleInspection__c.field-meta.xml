@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VehicleInspection__c</fullName>
+    <externalId>false</externalId>
+    <label>車検有無</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>車検あり（名変可）</fullName>
+                <default>false</default>
+                <label>車検あり（名変可）</label>
+            </value>
+            <value>
+                <fullName>車検あり（抹消条件）</fullName>
+                <default>false</default>
+                <label>車検あり（抹消条件）</label>
+            </value>
+            <value>
+                <fullName>車検切れ</fullName>
+                <default>false</default>
+                <label>車検切れ</label>
+            </value>
+            <value>
+                <fullName>抹消済み</fullName>
+                <default>false</default>
+                <label>抹消済み</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

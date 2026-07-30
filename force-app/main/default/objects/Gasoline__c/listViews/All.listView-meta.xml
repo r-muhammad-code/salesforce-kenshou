@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>Canceled__c</columns>
+    <columns>NAME</columns>
+    <columns>shared_management__c</columns>
+    <columns>User__c</columns>
+    <columns>spare__c</columns>
+    <columns>Base__c</columns>
+    <columns>expiration_date__c</columns>
+    <columns>remarks__c</columns>
+    <columns>Available_rent__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>すべて選択</label>
+</ListView>

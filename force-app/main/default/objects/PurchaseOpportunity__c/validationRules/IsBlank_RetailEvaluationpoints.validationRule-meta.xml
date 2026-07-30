@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsBlank_RetailEvaluationpoints</fullName>
+    <active>false</active>
+    <description>中古車で買取日が入っており小売り判断評価点が空（リユース案件/法人案件省く）</description>
+    <errorConditionFormula>DATEVALUE( CreatedDate )&gt;=DATE(2023,07,27) &amp;&amp;
+OR( ABC__c=&quot;はなまるオークション/他社AA（営業）&quot; ,ABC__c =&quot;営業A&quot;,ISBLANK( ABC__c )) &amp;&amp;
+ippanhoujinn__c = &quot;一般&quot;&amp;&amp;
+NOT( ISBLANK( PurchaseDate__c )) &amp;&amp;
+ISPICKVAL( State__c ,&quot;中古車&quot;)&amp;&amp;
+ISBLANK( TEXT( RetailEvaluationpoints__c ))</errorConditionFormula>
+    <errorMessage>小売り判断評価点を入力してください。</errorMessage>
+</ValidationRule>

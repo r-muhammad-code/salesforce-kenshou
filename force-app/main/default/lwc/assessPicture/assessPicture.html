@@ -1,0 +1,22 @@
+<template>
+    <lightning-card>
+        <div class="card-header">
+            <lightning-icon icon-name="custom:custom38" size="medium" alternative-text="Image Icon"></lightning-icon>
+            <span class="card-title">査定画像</span>
+        </div>
+        <div class="error-message" if:true={errorMessage}>
+            <p class="error-title">エラーメッセージ</p>
+            <p class="error">{errorMessage}</p>
+        </div>
+        <div class="image-container">
+            <template if:true={resultList.length}>
+                <template for:each={resultList} for:item="item">
+                    <div key={item.ImageName} class="image-item">
+                        <p>{item.DispName}</p>
+                        <img src={item.Url} alt={item.DispName} onclick={onClickImage} data-url={item.Url} />
+                    </div>
+                </template>
+            </template>
+        </div>
+    </lightning-card>
+</template>

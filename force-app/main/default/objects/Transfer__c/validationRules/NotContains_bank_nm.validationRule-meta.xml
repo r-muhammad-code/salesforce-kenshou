@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NotContains_bank_nm</fullName>
+    <active>true</active>
+    <description>山本</description>
+    <errorConditionFormula>RecordType.DeveloperName = &quot;Buyer&quot; &amp;&amp;CONTAINS( bank_nm__c ,&quot;銀行&quot;)</errorConditionFormula>
+    <errorMessage>銀行名は「銀行」までの名称のみ入力してください</errorMessage>
+</ValidationRule>

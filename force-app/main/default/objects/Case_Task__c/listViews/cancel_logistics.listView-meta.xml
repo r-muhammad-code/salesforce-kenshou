@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>cancel_logistics</fullName>
+    <columns>NAME</columns>
+    <columns>main_category__c</columns>
+    <columns>kanrinum__c</columns>
+    <columns>ss_offer_info__c</columns>
+    <columns>auctiondata_car__c</columns>
+    <columns>sub_category__c</columns>
+    <columns>Createddate__c</columns>
+    <columns>ASAP__c</columns>
+    <columns>task_oya__c</columns>
+    <columns>Status__c</columns>
+    <columns>logistics_company__c</columns>
+    <columns>Memo__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>kanrinum__c</field>
+        <operation>notEqual</operation>
+        <value>⚠️注意⚠️テスト管理番号</value>
+    </filters>
+    <filters>
+        <field>Title__c</field>
+        <operation>contains</operation>
+        <value>車両キャンセル（物流タスク）</value>
+    </filters>
+    <filters>
+        <field>Createddate__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>6/3/2026 12:00 AM</value>
+    </filters>
+    <label>物流　キャンセルタスク</label>
+    <sharedTo>
+        <role>Logistics</role>
+    </sharedTo>
+</ListView>

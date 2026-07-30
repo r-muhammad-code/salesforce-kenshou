@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VehicleClassification_Media_isblank</fullName>
+    <active>true</active>
+    <description>作成：山本</description>
+    <errorConditionFormula>NOT( Owner:Queue.QueueName =&quot;メール受付未対応キュー&quot; )&amp;&amp; ISBLANK( TEXT( Media__c )) &amp;&amp; ISBLANK( TEXT( VehicleClassification__c ))</errorConditionFormula>
+    <errorMessage>『媒体』と『ABC区分』を入力してください。</errorMessage>
+</ValidationRule>

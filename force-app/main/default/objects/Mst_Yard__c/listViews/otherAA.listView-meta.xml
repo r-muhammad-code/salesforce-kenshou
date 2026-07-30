@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>otherAA</fullName>
+    <columns>NAME</columns>
+    <columns>Yard_code__c</columns>
+    <columns>DeliveryPostalCode__c</columns>
+    <columns>DeliveryAddress__c</columns>
+    <columns>DeliveryPhonenumber__c</columns>
+    <columns>DeliveryDestinationPerson__c</columns>
+    <columns>DestinationNotes__c</columns>
+    <columns>CREATEDBY_USER</columns>
+    <columns>CREATED_DATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Mst_Yard_Classification__c</field>
+        <operation>equals</operation>
+        <value>他社オークション</value>
+    </filters>
+    <label>他社オークション</label>
+</ListView>

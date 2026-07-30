@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Personal_transfer_flag__c</fullName>
+    <description>1回限りの振込において、振込先が免税事業者or適格請求書発行事業者かどうかの選択リスト</description>
+    <externalId>false</externalId>
+    <label>1回限りの振込</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>免税事業者（CC1/CC2）</fullName>
+                <default>false</default>
+                <label>免税事業者（CC1/CC2）</label>
+            </value>
+            <value>
+                <fullName>適格請求書発行事業者（CC1001/CC2001）</fullName>
+                <default>false</default>
+                <label>適格請求書発行事業者（CC1001/CC2001）</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

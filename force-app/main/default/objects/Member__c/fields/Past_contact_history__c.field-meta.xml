@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Past_contact_history__c</fullName>
+    <externalId>false</externalId>
+    <formula>&quot;https://www.hanamaru870.jp/clientinfo/clientinfoWinServlet?url=%2fclientinfo%2fclientinfoPtnServlet%2fclinfo0040%3fnp%3d11%26dumyFrame%3dy%26clinfo0010_client_base_id%3d&quot; &amp; client_base_id__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>過去コンタクト履歴</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SalesA_Aichi</fullName>
+    <columns>NAME</columns>
+    <columns>ModelYearCarName__c</columns>
+    <columns>Account__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Owner__c</field>
+        <operation>equals</operation>
+        <value>奥 駿太,中 裕次郎</value>
+    </filters>
+    <filters>
+        <field>Phase__c</field>
+        <operation>notEqual</operation>
+        <value>買取,全完了,キャンセル</value>
+    </filters>
+    <filters>
+        <field>IsCallCenter__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>営業A愛知県</label>
+    <sharedTo>
+        <role>CallCenter</role>
+        <role>ReuseMG</role>
+        <role>Reuse_parttimejob</role>
+    </sharedTo>
+</ListView>

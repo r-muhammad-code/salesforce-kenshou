@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SococaraRetailing_judge__c</fullName>
+    <description>山本</description>
+    <externalId>false</externalId>
+    <formula>IF(
+/* 買取日が2024/9/1～2024/11/17までで、ロールにリテール事業部またはCコネクトを含み、所有者が高野(H0002411)と一致しない場合は1を返す */
+AND(Opportunity__r.PurchaseDate__c &gt;=DATE(2024,09,01) ,Opportunity__r.PurchaseDate__c &lt;= DATE(2024,11,17),
+OR( CONTAINS(Owner:User.UserRole.Name, &quot;リテール事業部&quot;),CONTAINS(Owner:User.UserRole.Name, &quot;Cコネクト&quot;),CONTAINS(  Owner:User.Department ,&quot;Cコネクト&quot;)),
+Owner:User.UserCode__c &lt;&gt;&quot;H0002411&quot;) ,1,
+
+IF(
+/* 買取日が2024/11/18～2025/4/11までで、ロールにリテール事業部またはCコネクトを含み、
+所有者が北川(H0002290)長田(H0002291)高野(H0002411)桝本(H0002731)と一致しない場合は1を返す */
+
+AND(Opportunity__r.PurchaseDate__c &gt;=DATE(2024,11,18) ,Opportunity__r.PurchaseDate__c &lt;= DATE(2025,4,10) ,
+OR( CONTAINS(Owner:User.UserRole.Name, &quot;リテール事業部&quot;),CONTAINS(Owner:User.UserRole.Name, &quot;Cコネクト&quot;)),
+AND( Owner:User.UserCode__c &lt;&gt;&quot;H0002411&quot;,
+Owner:User.UserCode__c &lt;&gt;&quot;H0002731&quot;,
+Owner:User.UserCode__c &lt;&gt;&quot;H0002290&quot;,
+Owner:User.UserCode__c &lt;&gt;&quot;H0002291&quot;)),1 ,
+
+IF( 
+/*買取日が2025/4/11以降で、ロールにリテール事業部を含み、ソコリテ売契で結んでいる場合は1を返す*/
+AND(Opportunity__r.PurchaseDate__c &gt;=DATE(2025,4,11) , 
+    CONTAINS(Owner:User.UserRole.Name, &quot;リテール事業部&quot;),
+    CONTAINS(Contract__c,&quot;ソコリテ売契&quot;)),1,
+0)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>ソコリテ判断</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

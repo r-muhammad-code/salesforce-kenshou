@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GradeSerch__c</fullName>
+    <description>山本</description>
+    <externalId>false</externalId>
+    <formula>IF(OR( Maker__r.Name = &quot;レクサス&quot;, Maker__r.Name = &quot;トヨタ&quot;), HYPERLINK( &quot;https://www.toyota.co.jp/grade/dc/search&quot;,&quot;トヨタ グレード検索&quot; ,&quot;_blank&quot;) ,
+IF( Maker__r.Name = &quot;ホンダ&quot;, HYPERLINK( &quot;https://grade.customer.honda.co.jp/apps/grade/hccg0010101/agree&quot;,&quot;ホンダ グレード検索&quot; ,&quot;_blank&quot;) ,
+IF( Maker__r.Name = &quot;スズキ&quot;, HYPERLINK( &quot;https://sgre.suzuki.co.jp/SearchGrade&quot;,&quot;スズキ グレード検索&quot; ,&quot;_blank&quot;) ,
+IF( Maker__r.Name = &quot;スバル&quot;, HYPERLINK( &quot;https://grade-search.subaru.co.jp/luw/?_ga=2.45286692.1029334452.1770886190-1825882457.1770886190&quot;,&quot;スバル グレード検索&quot; ,&quot;_blank&quot;) ,
+IF( Maker__r.Name = &quot;ダイハツ&quot;, HYPERLINK( &quot;https://inquiry.daihatsu.co.jp/gradeweb/Default.aspx&quot;,&quot;ダイハツ グレード検索&quot; ,&quot;_blank&quot;) ,
+IF( Maker__r.Name = &quot;マツダ&quot;, HYPERLINK( &quot;https://www2.mazda.co.jp/grade-search/search.html&quot;,&quot;マツダ グレード検索&quot; ,&quot;_blank&quot;) ,
+IF( Maker__r.Name = &quot;三菱&quot;, HYPERLINK( &quot;https://www.mitsubishi-motors.co.jp/reference/gradesearch.html&quot;,&quot;三菱 グレード検索&quot; ,&quot;_blank&quot;) ,
+IF( Maker__r.Name = &quot;日産&quot;, HYPERLINK( &quot;https://grade-search.nissan.co.jp/GRADE/search.html&quot;,&quot;日産 グレード検索&quot; ,&quot;_blank&quot;) , null))))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>グレード検索</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

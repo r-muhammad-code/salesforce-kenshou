@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CarSize__c</fullName>
+    <description>引取依頼作成画面で表示。引取依頼の場合、長さ6ｍ以上、幅2ｍ以上、高さ2.3ｍ以上、重量2.5ｔ以上は物流の段取にて手配が必要なため入力する</description>
+    <externalId>false</externalId>
+    <inlineHelpText>引取依頼の場合、長さ6ｍ以上、幅2ｍ以上、高さ2.3ｍ以上、重量2.5ｔ以上は物流の段取にて手配</inlineHelpText>
+    <label>削除予定_車輌サイズ</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

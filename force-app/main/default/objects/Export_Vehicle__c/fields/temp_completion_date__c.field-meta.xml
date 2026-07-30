@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>temp_completion_date__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>この日付から1か月を経過したものは更新対象から除外されます。</inlineHelpText>
+    <label>一時完了日</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

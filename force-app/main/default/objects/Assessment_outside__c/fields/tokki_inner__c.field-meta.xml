@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>tokki_inner__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF ( INCLUDES( Assessment__r.tokki_inner__c ,&quot;6&quot; ) , &quot;室内ばらし,&quot;, &quot;&quot;)
+&amp; IF ( INCLUDES(Assessment__r.tokki_inner__c ,&quot;7&quot; ) , &quot;室内汚れあり,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES(Assessment__r.tokki_inner__c ,&quot;8&quot; ) , &quot;室内異臭あり,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES(Assessment__r.tokki_inner__c ,&quot;9&quot; ) , &quot;室内雨水汚れ,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES(Assessment__r.tokki_inner__c ,&quot;10&quot; ) , &quot;室内ペットの毛あり,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES(Assessment__r.tokki_inner__c ,&quot;11&quot; ) , &quot;室内ガラス飛散あり,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES(Assessment__r.tokki_inner__c ,&quot;12&quot; ) , &quot;シートカバーあり,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES(Assessment__r.tokki_inner__c ,&quot;102&quot; ) , &quot;右リアシートベルト×,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES(Assessment__r.tokki_inner__c ,&quot;103&quot; ) , &quot;左リアシートベルト×,&quot;,&quot;&quot; )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>特記事項（内装）</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

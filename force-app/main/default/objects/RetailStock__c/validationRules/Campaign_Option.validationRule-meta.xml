@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Campaign_Option</fullName>
+    <active>true</active>
+    <errorConditionFormula>INCLUDES(option_discount_target__c, &quot;その他&quot;)&lt;&gt;NOT(ISBLANK(option_discount_target_other__c))</errorConditionFormula>
+    <errorDisplayField>option_discount_target__c</errorDisplayField>
+    <errorMessage>オプション値引対象に&quot;その他&quot;が含まれる場合は、その他の内容を入力してください。
+オプション値引対象(その他)を入力する場合は、オプション値引対象で&quot;その他&quot;を選択してください。</errorMessage>
+</ValidationRule>

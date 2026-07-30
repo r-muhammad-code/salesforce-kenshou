@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NotExplainedEnough_CallA</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR ( ISPICKVAL(  Request_Detail__c  , &quot;現在登録証発行申請&quot;),
+ISPICKVAL( Request_Detail__c  , &quot;月内手続き申請&quot;) ) &amp;&amp;
+ISBLANK(  Description_toDocManagement__c  )</errorConditionFormula>
+    <errorDisplayField>Description_toDocManagement__c</errorDisplayField>
+    <errorMessage>現在登録申請：必要理由が入力されていません。
+月内手続き申請：追跡番号、配送業者、発送元業者、申請理由が入力されていません。</errorMessage>
+</ValidationRule>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CS10</fullName>
+    <booleanFilter>1 AND 2 AND  4 AND (3 OR 5)</booleanFilter>
+    <columns>Account__c</columns>
+    <columns>CarTypes__c</columns>
+    <columns>VehicleClassification__c</columns>
+    <columns>PickUpDate__c</columns>
+    <columns>RegistrationNo_OK__c</columns>
+    <columns>DocumentCompleteCheck__c</columns>
+    <columns>LOT__c</columns>
+    <columns>NAME</columns>
+    <columns>New_CS_task_list__c</columns>
+    <columns>CS_TaskDateTime__c</columns>
+    <columns>CS_task__c</columns>
+    <columns>Precautions__c</columns>
+    <columns>Case_history__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ContactDate__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>VehicleClassification__c</field>
+        <operation>notEqual</operation>
+        <value>営業A</value>
+    </filters>
+    <filters>
+        <field>CS_TaskDateTime__c</field>
+        <operation>lessOrEqual</operation>
+        <value>TOMORROW</value>
+    </filters>
+    <filters>
+        <field>CS_task__c</field>
+        <operation>contains</operation>
+        <value>随時</value>
+    </filters>
+    <filters>
+        <field>CS_TaskDateTime__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>【CS】随時リスト</label>
+</ListView>

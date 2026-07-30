@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>View57</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 4 AND 5</booleanFilter>
+    <columns>NAME</columns>
+    <columns>Reception_task_deadline_datetime__c</columns>
+    <columns>StrictAdherence__c</columns>
+    <columns>PersonMobilePhone__c</columns>
+    <columns>Owner_Fullname__c</columns>
+    <columns>InChargeOf_Pricing_Picklist__c</columns>
+    <columns>PurchaseDate__c</columns>
+    <columns>reception_task__c</columns>
+    <columns>Precautions__c</columns>
+    <columns>CarTypes__c</columns>
+    <columns>Account__c</columns>
+    <columns>VehicleClassification__c</columns>
+    <columns>Phase__c</columns>
+    <columns>LOT__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ContactDate__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>VehicleClassification__c</field>
+        <operation>notEqual</operation>
+        <value>営業A</value>
+    </filters>
+    <filters>
+        <field>Reception_task_deadline_datetime__c</field>
+        <operation>lessOrEqual</operation>
+        <value>TOMORROW</value>
+    </filters>
+    <filters>
+        <field>List_created_date__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>reception_task__c</field>
+        <operation>contains</operation>
+        <value>買取商談</value>
+    </filters>
+    <label>▼▼受付タスク▼▼買取商談作成要</label>
+</ListView>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Mst_Yard__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>与儀</description>
+    <externalId>false</externalId>
+    <label>搬入先</label>
+    <lookupFilter>
+        <active>true</active>
+        <booleanFilter>1 OR 2 OR 3</booleanFilter>
+        <filterItems>
+            <field>Mst_Yard__c.Mst_Yard_Classification__c</field>
+            <operation>equals</operation>
+            <value>自社ヤード</value>
+        </filterItems>
+        <filterItems>
+            <field>Mst_Yard__c.Mst_Yard_Classification__c</field>
+            <operation>equals</operation>
+            <value>港</value>
+        </filterItems>
+        <filterItems>
+            <field>Mst_Yard__c.Mst_Yard_Classification__c</field>
+            <operation>equals</operation>
+            <value>修理業者</value>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>Mst_Yard__c</referenceTo>
+    <relationshipName>Mst_Yards</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Contact_Us__c</fullName>
+    <description>MVRの日程調整待ちリストに表示するために作成。
+買取受付に値があり、初回返答済みがtrueであればCSを表示
+買取商談の所有者の拠点が空白でなければ（Cコネクト課であれば）CSを表示
+営業管理に値があれば営業管理を表示
+営業管理に値がなく、買取商談に値があれば営業を表示
+買取受付に値があり、初回返答済みがfalseであれば受付を表示。山本</description>
+    <externalId>false</externalId>
+    <formula>IF(
+    OR(
+        /* --- 1. ケースの初回返信済み --- */
+        AND(NOT(ISBLANK(Case__c)), First_Replyed__c),
+
+        /* --- 2. 買取案件の特定条件（最新ルール） --- */
+        AND(
+            NOT(ISBLANK(PurchaseOpportunity__c)),
+            OR(
+                /* 桝本さん・吉田さんはいつでも対象（空白含む） */
+                OR(Account_MVR__c = &quot;桝本 成也&quot;, Account_MVR__c = &quot;吉田 志&quot;),
+
+                /* 近畿エリアはいつでも対象（空白含む） */
+                $UserRole.Name = &quot;近畿エリア&quot;,
+
+                /* 関東エリア：2026/5/1以降（空白含む） */
+                AND(
+                    $UserRole.Name = &quot;関東エリア&quot;,
+                    OR(PurchaseOpportunity__r.PurchaseDate__c &gt;= DATE(2026, 5, 1), ISBLANK(PurchaseOpportunity__r.PurchaseDate__c))
+                ),
+
+                /* 中部・九州・その他「エリア」ロール：2026/5/26以降（空白含む） */
+                AND(
+                    CONTAINS($UserRole.Name, &quot;エリア&quot;),
+                    OR(PurchaseOpportunity__r.PurchaseDate__c &gt;= DATE(2026, 5, 26), ISBLANK(PurchaseOpportunity__r.PurchaseDate__c))
+                )
+            )
+        )
+    ),
+    &quot;CS&quot;,
+    IF(
+        NOT(ISBLANK(SalesManagement__c)),
+        &quot;営業管理&quot;,
+        IF(
+            NOT(ISBLANK(PurchaseOpportunity__c)),
+            &quot;営業&quot;,
+            IF(
+                NOT(ISBLANK(Case__c)),
+                &quot;受付&quot;,
+                &quot;&quot;
+            )
+        )
+    )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>買取受付に値があり、初回返答済みがtrueであればCSを表示
+買取商談の所有者の拠点が空白でなければ（Cコネクト課であれば）CSを表示
+営業管理に値があれば営業管理を表示
+営業管理に値がなく、買取商談に値があれば営業を表示
+買取受付に値があり、初回返答済みがfalseであれば受付を表示</inlineHelpText>
+    <label>問い合わせ先</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DestinationIsSales_IsblankLanding</fullName>
+    <active>false</active>
+    <description>段取対応部署が営業の場合、搬入先が空白だとエラー。山本</description>
+    <errorConditionFormula>AND( ISPICKVAL( RequestDestination__c ,&quot;営業&quot;) , ISBLANK( landing__c )) &amp;&amp;  ScheduleAdjustmentRequestDate__c  &gt;=  DATE(2023,01,22)</errorConditionFormula>
+    <errorDisplayField>landing__c</errorDisplayField>
+    <errorMessage>営業段取の場合は必ず搬入先を入力してください。</errorMessage>
+</ValidationRule>

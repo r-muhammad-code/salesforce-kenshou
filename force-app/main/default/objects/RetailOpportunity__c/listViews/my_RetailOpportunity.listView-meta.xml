@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>my_RetailOpportunity</fullName>
+    <columns>NAME</columns>
+    <columns>visit_date__c</columns>
+    <columns>customer__c</columns>
+    <columns>phase_for_purchase__c</columns>
+    <columns>Mst_Models__c</columns>
+    <columns>phase_for_sell__c</columns>
+    <columns>RetailStock_under_opportunity__c</columns>
+    <filterScope>Mine</filterScope>
+    <label>私のリテール商談</label>
+</ListView>

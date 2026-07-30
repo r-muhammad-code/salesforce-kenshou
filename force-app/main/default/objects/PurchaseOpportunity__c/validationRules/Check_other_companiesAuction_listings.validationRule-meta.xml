@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_other_companiesAuction_listings</fullName>
+    <active>true</active>
+    <description>引取依頼画面でオークション開催日を入力させるため</description>
+    <errorConditionFormula>ISPICKVAL(landing__r.Mst_Yard_Classification__c, &quot;他社オークション&quot;) &amp;&amp;
+NOT(OtherAA__c) &amp;&amp;
+NOT(RepairCar__c) &amp;&amp;
+ISBLANK( ForwardingRequest__c ) &amp;&amp; 
+ScheduleAdjustmentRequestDate__c &gt;= DATE(2024, 06,01)</errorConditionFormula>
+    <errorDisplayField>OtherAA__c</errorDisplayField>
+    <errorMessage>搬入先が他社の場合は他社オク出品にチェックをつけてください</errorMessage>
+</ValidationRule>

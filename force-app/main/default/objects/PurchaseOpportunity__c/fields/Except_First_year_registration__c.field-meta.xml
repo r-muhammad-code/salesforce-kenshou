@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Except_First_year_registration__c</fullName>
+    <description>車検証情報入力タブに表示、車検証に初年度月が記載されていなかった場合にチェックをつける
+2025/05/21　数式変更　佐野
+元の数式
+IF( ISBLANK( TEXT( First_year_registration__c ) ) , true , false )
+新しい数式
+IF( VehicleVerification_Entered__c = true &amp;&amp; ISBLANK( TEXT( First_year_registration__c ) ) , true , false )</description>
+    <externalId>false</externalId>
+    <formula>IF( VehicleVerification_Entered__c = true &amp;&amp; ISBLANK( TEXT( First_year_registration__c ) ) , true , false )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>初年度月除外</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

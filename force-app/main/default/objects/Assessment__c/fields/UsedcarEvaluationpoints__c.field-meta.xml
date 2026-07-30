@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UsedcarEvaluationpoints__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>S点:10,000㎞未満、内装Ａ、ほぼ無傷、無補修であるもの、初度登録より１２カ月まで。
+6点:30,000㎞未満、内装Ａ、ほぼ無傷、無補修で加修の必要のないもの、エンジン、足回りが良好、初度登録より３６カ月まで。
+5点:50,000㎞未満、内装Ａ、目立たない傷凹みはあるがほぼ加修の必要がないもの、外装部品の交換跡がないもの、エンジン、足回りが良好。
+4.5点：100,000㎞未満、内装Ｂ以上、内外装ともに軽微な補修で５点に準ずるもの。	 
+4点：150,000㎞未満、内装Ｃ以上、目立つ傷、凹み、錆、焦げ、破れがあり加修が必要なもの。	 
+3.5点：内装Ｄ以上、大小の板金、加修を必要とする箇所が数か所あるもの、多数の焦げ穴、破れなどがあるもの。	 
+3点：内装Ｅ、全補修、交換、張替などを必要とするもの。
+2点：商品価値の低いもの、粗悪車。
+1点：冠水歴車、消火剤散布歴車。	 
+R点：修復歴車。
+×点：事故現状車、レプリカ、特殊車。</inlineHelpText>
+    <label>中古車査定時評価点</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>S</fullName>
+                <default>false</default>
+                <label>S</label>
+            </value>
+            <value>
+                <fullName>6</fullName>
+                <default>false</default>
+                <label>6</label>
+            </value>
+            <value>
+                <fullName>5</fullName>
+                <default>false</default>
+                <label>5</label>
+            </value>
+            <value>
+                <fullName>4.5</fullName>
+                <default>false</default>
+                <label>4.5</label>
+            </value>
+            <value>
+                <fullName>4</fullName>
+                <default>false</default>
+                <label>4</label>
+            </value>
+            <value>
+                <fullName>3.5</fullName>
+                <default>false</default>
+                <label>3.5</label>
+            </value>
+            <value>
+                <fullName>3</fullName>
+                <default>false</default>
+                <label>3</label>
+            </value>
+            <value>
+                <fullName>2</fullName>
+                <default>false</default>
+                <label>2</label>
+            </value>
+            <value>
+                <fullName>1</fullName>
+                <default>false</default>
+                <label>1</label>
+            </value>
+            <value>
+                <fullName>R</fullName>
+                <default>false</default>
+                <label>R</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

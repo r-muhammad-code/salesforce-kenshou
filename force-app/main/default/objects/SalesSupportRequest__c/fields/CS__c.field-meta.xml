@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CS__c</fullName>
+    <description>CS移行のため数式修正。与儀
+2025/7/26以降買取分で買取商談所有者が北川、桝本の場合または、
+2025/9/1以降買取分で買取商談所有者ロールが近畿エリアを含む場合はCS対応分とする。
+Cコネ業務をCSに移行するために作成。
+CSが確認する依頼ダッシュボード、サポートが見るリストビュー等で検索条件に利用される。山本</description>
+    <externalId>false</externalId>
+    <formula>NOT(
+    OR(
+        PurchaseOpportunity__r.Owner__c = &quot;桝本 成也&quot;,
+        PurchaseOpportunity__r.Owner__c = &quot;吉田 志&quot;,
+
+        PurchaseOpportunity__r.Role__c = &quot;近畿エリア&quot;,
+
+        AND(
+            PurchaseOpportunity__r.Role__c = &quot;関東エリア&quot;,
+            PurchaseOpportunity__r.PurchaseDate__c &gt;= DATE(2026, 5, 1)
+        ),
+
+        AND(
+            CONTAINS(PurchaseOpportunity__r.Role__c, &quot;エリア&quot;),
+            PurchaseOpportunity__r.PurchaseDate__c &gt;= DATE(2026, 5, 26)
+        )
+    )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>CS対象</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

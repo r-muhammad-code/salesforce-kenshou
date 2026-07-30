@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>bank_account_nm_Rule</fullName>
+    <active>true</active>
+    <description>カンマ追加。与儀
+レコードタイプ：支店営業のみ適用する。山本</description>
+    <errorConditionFormula>RecordType.DeveloperName = &quot;Buyer&quot; &amp;&amp; (
+    NOT(REGEX(bank_account_nm__c, &quot;^[ｦ-ﾟA-Z0-9\\-\\.\\)\\( /,]*$&quot;)) ||
+    REGEX(bank_account_nm__c, &quot;.*[ｧｨｩｪｫｯｬｭｮ].*&quot;)
+)</errorConditionFormula>
+    <errorMessage>口座名義は半角ｶﾀｶﾅ（大文字）、英大文字、数字、および記号（ . , - ( ) / ）のみ入力可能です。半角ｶﾀｶﾅの小文字は入力できません。</errorMessage>
+</ValidationRule>

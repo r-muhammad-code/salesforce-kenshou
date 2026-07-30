@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>When_create_AssessOutside_Type_is_null</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT( ISBLANK( Assessment_outside_owner__c ) ) &amp;&amp;  OR( ISBLANK( car_type__c ), ISBLANK ( car_grade__c )) &amp;&amp; ISBLANK( assess_tokki__c )</errorConditionFormula>
+    <errorMessage>型式またはグレードを入力して下さい。
+記入出来ない場合は特記事項に入力して下さい。</errorMessage>
+</ValidationRule>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>opportunity_type__c</fullName>
+    <externalId>false</externalId>
+    <label>商談内容</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>買取のみ</fullName>
+                <default>false</default>
+                <label>買取のみ</label>
+            </value>
+            <value>
+                <fullName>販売のみ</fullName>
+                <default>false</default>
+                <label>販売のみ</label>
+            </value>
+            <value>
+                <fullName>買取・販売</fullName>
+                <default>false</default>
+                <label>買取・販売</label>
+            </value>
+            <value>
+                <fullName>その他</fullName>
+                <default>false</default>
+                <label>その他</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

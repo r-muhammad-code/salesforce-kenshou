@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>landing__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>喜多</description>
+    <externalId>false</externalId>
+    <label>搬入先</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Mst_Yard__c.Name</field>
+            <operation>notContain</operation>
+            <value>使用停止,使用禁止</value>
+        </filterItems>
+        <filterItems>
+            <field>Mst_Yard__c.Yard_code__c</field>
+            <operation>notContain</operation>
+            <value>XXX,999998,999999</value>
+        </filterItems>
+        <filterItems>
+            <field>Mst_Yard__c.Name</field>
+            <operation>notContain</operation>
+            <value>J-BOY</value>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>Mst_Yard__c</referenceTo>
+    <relationshipLabel>買取受付 (搬入先)</relationshipLabel>
+    <relationshipName>case_landing</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

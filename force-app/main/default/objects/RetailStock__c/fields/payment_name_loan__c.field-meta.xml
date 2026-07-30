@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>payment_name_loan__c</fullName>
+    <externalId>false</externalId>
+    <label>入金名義(ローン会社)</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ｶ)ｵﾘｺﾌﾟﾛﾀﾞｸﾄﾌｱｲﾅﾝｽ</fullName>
+                <default>false</default>
+                <label>ｶ)ｵﾘｺﾌﾟﾛﾀﾞｸﾄﾌｱｲﾅﾝｽ</label>
+            </value>
+            <value>
+                <fullName>ﾌﾟﾚﾐｱ(ｶ</fullName>
+                <default>false</default>
+                <label>ﾌﾟﾚﾐｱ(ｶ</label>
+            </value>
+            <value>
+                <fullName>ｶ)ｼﾞﾔﾂｸｽ</fullName>
+                <default>false</default>
+                <label>ｶ)ｼﾞﾔﾂｸｽ</label>
+            </value>
+            <value>
+                <fullName>ｶ) ｱﾌﾟﾗｽ</fullName>
+                <default>false</default>
+                <label>ｶ) ｱﾌﾟﾗｽ</label>
+            </value>
+            <value>
+                <fullName>SMBCﾌｱｲﾅﾝｽｻ-ﾋﾞｽ(ｶ</fullName>
+                <default>false</default>
+                <label>SMBCﾌｱｲﾅﾝｽｻ-ﾋﾞｽ(ｶ</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

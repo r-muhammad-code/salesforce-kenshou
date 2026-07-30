@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HanamaruAA_Exhibited__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>自社オク流れ→他社出品に変更になる際にチェックを付ける</description>
+    <externalId>false</externalId>
+    <inlineHelpText>自社オークション流れ→他社オク出品車は✔入力</inlineHelpText>
+    <label>はなまるAA出品済み</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

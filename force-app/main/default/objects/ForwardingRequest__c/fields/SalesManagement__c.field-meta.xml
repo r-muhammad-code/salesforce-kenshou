@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SalesManagement__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>山本</description>
+    <externalId>false</externalId>
+    <label>営業管理</label>
+    <referenceTo>SalesManagement__c</referenceTo>
+    <relationshipLabel>回送依頼</relationshipLabel>
+    <relationshipName>ForwardingRequest_sm</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

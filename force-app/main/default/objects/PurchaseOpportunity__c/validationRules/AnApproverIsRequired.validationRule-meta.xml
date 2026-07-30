@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AnApproverIsRequired</fullName>
+    <active>true</active>
+    <description>佐野
+
+20251201 リテール事業部分を追加 小野瀬</description>
+    <errorConditionFormula>IsCallCenter__c = TRUE
+&amp;&amp;
+OR( ABC__c = &quot;はなまるオークション/他社AA（営業）&quot; ,
+ABC__c = &quot;営業A&quot; )
+&amp;&amp;
+OR( ISPICKVAL( Phase__c , &quot;買取&quot;) ,
+ISPICKVAL( Phase__c , &quot;全完了&quot;) ,
+ISPICKVAL( Phase__c , &quot;キャンセル&quot;))
+&amp;&amp;
+ISBLANK( Approver__c )
+&amp;&amp;
+DATEVALUE( CreatedDate ) &gt;= DATE( 2024,02,06 )
+&amp;&amp;
+NOT(OR(
+Role__c =&quot;リユース部&quot;,
+Role__c =&quot;リユース部アルバイト&quot;,
+Role__c =&quot;リテール事業部&quot;,
+Role__c =&quot;リテール事業部マネージャ&quot;
+))</errorConditionFormula>
+    <errorMessage>決裁者を入力してください</errorMessage>
+</ValidationRule>

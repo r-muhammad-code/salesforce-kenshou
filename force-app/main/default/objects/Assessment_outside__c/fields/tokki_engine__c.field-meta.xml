@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>tokki_engine__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF ( INCLUDES(   Assessment__r.tokki_engine__c ,&quot;21&quot; ) , &quot;エンジンブロック割れ,&quot;, &quot;&quot;)
+&amp; IF ( INCLUDES( Assessment__r.tokki_engine__c ,&quot;22&quot; ) , &quot;エンジンルーム内より異音,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES( Assessment__r.tokki_engine__c ,&quot;23&quot; ) , &quot;エンジンより異音,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES( Assessment__r.tokki_engine__c ,&quot;24&quot; ) , &quot;アイドリング不安定,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES( Assessment__r.tokki_engine__c ,&quot;25&quot; ) , &quot;エンジンかかるがすぐ止まる,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES( Assessment__r.tokki_engine__c ,&quot;26&quot; ) , &quot;エンジンかかるが吹けあがる,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES( Assessment__r.tokki_engine__c ,&quot;27&quot; ) , &quot;エンジンマウント割れ,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES( Assessment__r.tokki_engine__c ,&quot;28&quot; ) , &quot;エンジンルーム内ばらしあり,&quot;,&quot;&quot; )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>特記事項（エンジン）</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Destination_truck__c</fullName>
+    <description>九條</description>
+    <externalId>false</externalId>
+    <label>出品先</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>トラック王国　北関東展示場</fullName>
+                <default>false</default>
+                <label>トラック王国　北関東展示場</label>
+            </value>
+            <value>
+                <fullName>トラック王国　神奈川展示場</fullName>
+                <default>false</default>
+                <label>トラック王国　神奈川展示場</label>
+            </value>
+            <value>
+                <fullName>トラック王国　中部展示場</fullName>
+                <default>false</default>
+                <label>トラック王国　中部展示場</label>
+            </value>
+            <value>
+                <fullName>トラック王国　関西展示場</fullName>
+                <default>false</default>
+                <label>トラック王国　関西展示場</label>
+            </value>
+            <value>
+                <fullName>トラック王国　福岡展示場</fullName>
+                <default>false</default>
+                <label>トラック王国　福岡展示場</label>
+            </value>
+            <value>
+                <fullName>トラックランド栃木</fullName>
+                <default>false</default>
+                <label>トラックランド栃木</label>
+            </value>
+            <value>
+                <fullName>トラックランド京都</fullName>
+                <default>false</default>
+                <label>トラックランド京都</label>
+            </value>
+            <value>
+                <fullName>自社ヤード出品</fullName>
+                <default>false</default>
+                <label>自社ヤード出品</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

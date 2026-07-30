@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Listing_team_request_rist</fullName>
+    <columns>NAME</columns>
+    <columns>Listingrequest_status__c</columns>
+    <columns>LotNo__c</columns>
+    <columns>ModelYearPickList__c</columns>
+    <columns>Mst_Models__c</columns>
+    <columns>CarNo__c</columns>
+    <columns>Yard_Assessment__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Listingrequest_status__c</field>
+        <operation>equals</operation>
+        <value>未対応,対応中</value>
+    </filters>
+    <label>出品チーム依頼対応待ちリスト</label>
+    <sharedTo>
+        <role>Sales_Support</role>
+    </sharedTo>
+</ListView>

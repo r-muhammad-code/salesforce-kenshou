@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>obic_contract_check_date__c</fullName>
+    <description>買取商談のOBIC売買契約書チェック連携日が表示される。山本</description>
+    <externalId>false</externalId>
+    <formula>PurchaseOpportunity__r.obic_contract_check_date__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>OBIC売買契約書チェック連携日</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

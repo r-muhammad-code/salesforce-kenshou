@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AccountAssessmentCompactLayout</fullName>
+    <fields>Name</fields>
+    <fields>asset_mngno__c</fields>
+    <fields>asses_tanto_read__c</fields>
+    <fields>car_model__c</fields>
+    <fields>Phase__c</fields>
+    <fields>asses_date__c</fields>
+    <fields>hanamaru_responsible__c</fields>
+    <label>取引先査定表コンパクトレイアウト</label>
+</CompactLayout>

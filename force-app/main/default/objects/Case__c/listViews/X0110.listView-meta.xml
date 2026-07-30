@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X0110</fullName>
+    <columns>NAME</columns>
+    <columns>ReceiptRecordingDate__c</columns>
+    <columns>Next_contact_date__c</columns>
+    <columns>Owner_Fullname__c</columns>
+    <columns>Phase__c</columns>
+    <columns>Cancel_SomeReason__c</columns>
+    <columns>Cancellation_reason__c</columns>
+    <columns>PurchaseDate__c</columns>
+    <columns>InChargeOf_Pricing_Picklist__c</columns>
+    <columns>Amount__c</columns>
+    <columns>Desired_amount_hs__c</columns>
+    <columns>CarClass__c</columns>
+    <columns>FirstRegistration_Year_hs__c</columns>
+    <columns>CarTypes__c</columns>
+    <columns>VehicleClassification__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ContactDate__c</field>
+        <operation>equals</operation>
+        <value>TODAY</value>
+    </filters>
+    <filters>
+        <field>InChargeOf_Pricing_Picklist__c</field>
+        <operation>notEqual</operation>
+        <value>森田,阿部,田中,藪内,森,足立,熊谷,木野,福田,浅野,北條,細川,上田,窪田,渡部,池田麻由,嶋田,橋本</value>
+    </filters>
+    <label>01.すべての買取受付（今月接触分）</label>
+</ListView>

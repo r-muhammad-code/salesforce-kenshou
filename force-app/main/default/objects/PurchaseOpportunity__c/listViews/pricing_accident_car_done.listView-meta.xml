@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pricing_accident_car_done</fullName>
+    <columns>Sameday_response_required__c</columns>
+    <columns>Irregular_Decision__c</columns>
+    <columns>Passed_restoration_history_test__c</columns>
+    <columns>NAME</columns>
+    <columns>Request_Date_and_Time__c</columns>
+    <columns>AssessmentDate__c</columns>
+    <columns>Phase__c</columns>
+    <columns>Owner__c</columns>
+    <columns>Account__c</columns>
+    <columns>ModelYearCarName__c</columns>
+    <columns>Assessment__c</columns>
+    <columns>URL_AdditionalImage__c</columns>
+    <columns>AssessmentMethod__c</columns>
+    <columns>Pricing_Manager__c</columns>
+    <columns>Pricing_Instructions__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Request_Date_and_Time__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>Estimate_TeamPricing__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>State__c</field>
+        <operation>notEqual</operation>
+        <value>中古車</value>
+    </filters>
+    <label>【値付け済/現状車】プライシングリストビュー</label>
+    <sharedTo>
+        <group>pricing_group</group>
+    </sharedTo>
+</ListView>

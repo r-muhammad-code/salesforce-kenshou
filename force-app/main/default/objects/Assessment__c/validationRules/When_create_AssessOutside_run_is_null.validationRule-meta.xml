@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>When_create_AssessOutside_run_is_null</fullName>
+    <active>true</active>
+    <description>走行距離とメーター表示が入っていない時、エラー表示させる。</description>
+    <errorConditionFormula>NOT( ISBLANK( Assessment_outside_owner__c )) &amp;&amp; ISBLANK( run_dist__c ) &amp;&amp; NOT( OR( ISPICKVAL( meter_disp__c ,&quot;1&quot; ) , ISPICKVAL( meter_disp__c ,&quot;4&quot; )))</errorConditionFormula>
+    <errorDisplayField>run_dist__c</errorDisplayField>
+    <errorMessage>走行距離またはメーター表示を入力して下さい。</errorMessage>
+</ValidationRule>

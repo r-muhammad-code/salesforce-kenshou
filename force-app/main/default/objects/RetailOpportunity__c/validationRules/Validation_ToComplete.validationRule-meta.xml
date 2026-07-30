@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Validation_ToComplete</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+AND(
+ISPICKVAL( phase_for_purchase__c , &quot;完了&quot;),
+ISPICKVAL(PRIORVALUE(phase_for_purchase__c ), &quot;不成約&quot;)
+),
+AND(
+ISPICKVAL( phase_for_sell__c , &quot;完了&quot;),
+ISPICKVAL(PRIORVALUE(phase_for_sell__c ), &quot;不成約&quot;)
+)
+)</errorConditionFormula>
+    <errorMessage>不成約から完了にはできません。
+変更する場合は一度成約にしてください。</errorMessage>
+</ValidationRule>

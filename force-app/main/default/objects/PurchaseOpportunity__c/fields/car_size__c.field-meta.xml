@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>car_size__c</fullName>
+    <description>指示書にサポートが記載する際に使用。
+車検証情報入力で長さ、幅、高さ、車両重量のいずれかが入力されていれば入力されている物だけを繋げて表示する。
+オーダー自動作成がスタートすれば削除検討する。山本</description>
+    <externalId>false</externalId>
+    <formula>IF( NOT(ISBLANK(CarSize__c)), CarSize__c ,
+    IF( vehicle_length__c &gt; 0, &quot;長さ&quot; &amp; TEXT(vehicle_length__c), &quot;&quot; ) &amp;
+    IF( vehicle_width__c  &gt; 0, &quot;幅&quot;   &amp; TEXT(vehicle_width__c),  &quot;&quot; ) &amp;
+    IF( vehicle_height__c &gt; 0, &quot;高さ&quot; &amp; TEXT(vehicle_height__c), &quot;&quot; ) &amp;
+    IF( vehicle_weight__c &gt; 0, &quot;車両重量&quot; &amp; TEXT(vehicle_weight__c), &quot;&quot; )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>引取依頼の場合、長さ6ｍ以上、幅2ｍ以上、高さ2.3ｍ以上、重量2.5ｔ以上は物流の段取にて手配。長さ、幅、高さ、車両重量のいずれかが入力されていれば入力されている物だけを繋げて表示します。</inlineHelpText>
+    <label>車輌サイズ</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

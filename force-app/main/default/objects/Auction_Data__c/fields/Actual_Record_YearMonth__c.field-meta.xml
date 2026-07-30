@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Actual_Record_YearMonth__c</fullName>
+    <description>買取商談に紐づく、買取実績の「売上計上年月(営業実績)」から取得</description>
+    <externalId>false</externalId>
+    <formula>Sales_Opportunity__r.SalesMonthSummary__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>買取商談に紐づく、買取実績の「売上計上年月(営業実績)」から取得</inlineHelpText>
+    <label>実績計上年月</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

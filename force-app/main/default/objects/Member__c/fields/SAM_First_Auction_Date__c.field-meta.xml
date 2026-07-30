@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SAM_First_Auction_Date__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+  BLANKVALUE(First_Auction_Date_in_Yard_Storage__c, DATE(3999, 12, 31)) &lt;=
+  BLANKVALUE(First_Auction_Date_in_User_Storage__c, DATE(3999, 12, 31)),
+  
+  IF(
+    BLANKVALUE(First_Auction_Date_in_Yard_Storage__c, DATE(3999, 12, 31)) &lt;=
+    BLANKVALUE(First_Auction_Date_in_oneprice__c, DATE(3999, 12, 31)),
+    First_Auction_Date_in_Yard_Storage__c,
+    First_Auction_Date_in_oneprice__c
+  ),
+  
+  IF(
+    BLANKVALUE(First_Auction_Date_in_User_Storage__c, DATE(3999, 12, 31)) &lt;=
+    BLANKVALUE(First_Auction_Date_in_oneprice__c, DATE(3999, 12, 31)),
+    First_Auction_Date_in_User_Storage__c,
+    First_Auction_Date_in_oneprice__c
+  )
+)</formula>
+    <label>SAM初回落札日</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

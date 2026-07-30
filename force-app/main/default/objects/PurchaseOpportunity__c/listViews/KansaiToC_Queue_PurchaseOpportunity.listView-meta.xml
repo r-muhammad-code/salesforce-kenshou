@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>KansaiToC_Queue_PurchaseOpportunity</fullName>
+    <filterScope>Queue</filterScope>
+    <label>関西現車査定キュー</label>
+    <queue>KansaiToC_Queue</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

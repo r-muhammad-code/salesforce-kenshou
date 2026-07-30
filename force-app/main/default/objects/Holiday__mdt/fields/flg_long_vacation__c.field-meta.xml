@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>flg_long_vacation__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>オークション出品を停止する長期休暇期間に該当するか判断するフラグ</description>
+    <externalId>false</externalId>
+    <fieldManageability>DeveloperControlled</fieldManageability>
+    <label>長期休暇フラグ</label>
+    <type>Checkbox</type>
+</CustomField>

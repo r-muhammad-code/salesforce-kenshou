@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>View18</fullName>
+    <columns>NAME</columns>
+    <columns>Media__c</columns>
+    <columns>Owner_Fullname__c</columns>
+    <columns>Account__c</columns>
+    <columns>FirstRegistration_Year_hs__c</columns>
+    <columns>CarTypes__c</columns>
+    <columns>VehicleClassification__c</columns>
+    <columns>Phase__c</columns>
+    <columns>ReceptionDate__c</columns>
+    <columns>ContactDate__c</columns>
+    <columns>Precautions__c</columns>
+    <columns>Next_contact_date__c</columns>
+    <columns>PurchaseDate__c</columns>
+    <columns>Reception_task_deadline_datetime__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>ContactDate__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>Phase__c</field>
+        <operation>equals</operation>
+        <value>受付,保留</value>
+    </filters>
+    <filters>
+        <field>VehicleClassification__c</field>
+        <operation>equals</operation>
+        <value>はなまるオークション/他社AA（営業）,はなまるオークション/他社AA（コール）,リユースオークション,直売,旧フローBC,旧フローコールA,判別不明,直接商談</value>
+    </filters>
+    <label>06. 私の保留中</label>
+</ListView>

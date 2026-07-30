@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ReFAX__c</fullName>
+    <description>ゼロ/テイクオフなど陸送外注業者からReFAXを確認した際に日付を入力</description>
+    <externalId>false</externalId>
+    <label>ReFAX確認日</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

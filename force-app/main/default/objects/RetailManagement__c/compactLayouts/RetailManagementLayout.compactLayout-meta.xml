@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RetailManagementLayout</fullName>
+    <fields>Name</fields>
+    <fields>OwnerId</fields>
+    <fields>LotNo__c</fields>
+    <fields>Stage__c</fields>
+    <fields>ResultPickList__c</fields>
+    <label>小売管理コンパクトレイアウト</label>
+</CompactLayout>

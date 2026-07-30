@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sameday_response_required__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>佐野
+物件相談ボタンより当日対応必要の依頼が来た際は、フローでチェックを入れる</description>
+    <externalId>false</externalId>
+    <label>当日対応案件</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

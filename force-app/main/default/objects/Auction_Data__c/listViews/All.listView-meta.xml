@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Model_text__c</columns>
+    <columns>Chassis_Number__c</columns>
+    <columns>put_corner__c</columns>
+    <columns>firstsyuppin_date__c</columns>
+    <columns>Deadline_Time__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Processing_Category__c</columns>
+    <columns>Winning_Member__c</columns>
+    <columns>sales_category__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Document_Send_Date__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>すべて選択</label>
+</ListView>

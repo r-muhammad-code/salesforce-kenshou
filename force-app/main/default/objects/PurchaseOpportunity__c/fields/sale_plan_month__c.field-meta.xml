@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sale_plan_month__c</fullName>
+    <description>営業管理引継ぎ画面で入力される、2025実績スライドから使用。山本</description>
+    <externalId>false</externalId>
+    <label>売却予定月</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>4月</fullName>
+                <default>false</default>
+                <label>4月</label>
+            </value>
+            <value>
+                <fullName>5月</fullName>
+                <default>false</default>
+                <label>5月</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

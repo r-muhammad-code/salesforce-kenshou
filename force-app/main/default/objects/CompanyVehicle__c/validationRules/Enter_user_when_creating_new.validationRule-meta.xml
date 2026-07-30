@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enter_user_when_creating_new</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISNEW() &amp;&amp; NOT( ISBLANK( User__c ) )</errorConditionFormula>
+    <errorDisplayField>User__c</errorDisplayField>
+    <errorMessage>新規作成時に使用者は入力できません。使用者が必要な場合は保存後に入力してください。</errorMessage>
+</ValidationRule>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>other_detail_error</fullName>
+    <active>true</active>
+    <errorConditionFormula>text(auc_buy_condition__c)&lt;&gt;&quot;3&quot; &amp;&amp;  NOT(ISBLANK(other_details__c) )</errorConditionFormula>
+    <errorDisplayField>other_details__c</errorDisplayField>
+    <errorMessage>その他詳細は買取条件でその他を選択した時に入力してください</errorMessage>
+</ValidationRule>

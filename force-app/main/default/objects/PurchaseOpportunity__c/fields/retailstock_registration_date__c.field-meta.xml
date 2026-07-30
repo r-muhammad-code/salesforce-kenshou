@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>retailstock_registration_date__c</fullName>
+    <description>買取商談を元に作成する小売在庫レコードが作成された日</description>
+    <externalId>false</externalId>
+    <label>小売在庫登録日</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

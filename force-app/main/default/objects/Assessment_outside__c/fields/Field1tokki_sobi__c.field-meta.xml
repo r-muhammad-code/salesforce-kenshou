@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Field1tokki_sobi__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF ( INCLUDES(Assessment__r.tokki_sobi__c,&quot;1&quot; ) , &quot;HID,&quot;, &quot;&quot;)
+&amp; IF ( INCLUDES(Assessment__r.tokki_sobi__c,&quot;2&quot; ) , &quot;PW運転席のみ,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES(Assessment__r.tokki_sobi__c,&quot;3&quot; ) , &quot;PWフロントのみ,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES(Assessment__r.tokki_sobi__c,&quot;4&quot; ) , &quot;フリップダウンモニター,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES(Assessment__r.tokki_sobi__c,&quot;5&quot; ) , &quot;バックモニターあり,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES(Assessment__r.tokki_sobi__c,&quot;100&quot; ) , &quot;	充電ケーブルあり,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES(Assessment__r.tokki_sobi__c,&quot;101&quot; ) , &quot;	ガラスルーフ,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES(Assessment__r.tokki_sobi__c,&quot;104&quot; ) , &quot;LEDヘッドライト,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES(Assessment__r.tokki_sobi__c,&quot;106&quot; ) , &quot;SDカードあり,&quot;,&quot;&quot; )
+&amp; IF ( INCLUDES(Assessment__r.tokki_sobi__c,&quot;108&quot; ) , &quot;ECOモードあり,&quot;,&quot;&quot; )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>特記事項（装備）</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

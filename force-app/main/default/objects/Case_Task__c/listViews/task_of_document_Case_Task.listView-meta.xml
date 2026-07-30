@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>task_of_document_Case_Task</fullName>
+    <columns>NAME</columns>
+    <columns>main_category__c</columns>
+    <columns>kanrinum__c</columns>
+    <columns>ss_offer_info__c</columns>
+    <columns>auctiondata_car__c</columns>
+    <columns>sub_category__c</columns>
+    <columns>Createddate__c</columns>
+    <columns>ASAP__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>destination_department_sales__c</field>
+        <operation>equals</operation>
+        <value>書類管理</value>
+    </filters>
+    <filters>
+        <field>task_oya__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>notEqual</operation>
+        <value>完了（Closed）</value>
+    </filters>
+    <label>書類管理タスク</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

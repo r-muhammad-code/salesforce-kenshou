@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>model_name_eizi__c</columns>
+    <columns>inum__c</columns>
+    <columns>maker__c</columns>
+    <columns>maker_code__c</columns>
+    <columns>disp_flg__c</columns>
+    <columns>row_num__c</columns>
+    <columns>reserve1__c</columns>
+    <columns>reserve2__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>すべて選択</label>
+</ListView>

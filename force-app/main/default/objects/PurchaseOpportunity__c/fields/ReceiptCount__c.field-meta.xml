@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ReceiptCount__c</fullName>
+    <description>査定依頼日が入力されていたら1を表示する（査定依頼があって買取商談を作成した場合査定依頼日を入力するルールがある）</description>
+    <externalId>false</externalId>
+    <formula>IF ( ISBLANK( RequestDate__c ), 0, 1)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>依頼カウント</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

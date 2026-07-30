@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsblankLotNo_torimenpo</fullName>
+    <active>false</active>
+    <errorConditionFormula>ISPICKVAL( Request_Detail__c,&quot;取メン保保管依頼&quot; ) &amp;&amp; ISBLANK(  Lot_CorporationID__c  )</errorConditionFormula>
+    <errorMessage>取メン保保管依頼は【ロット番号】を入力してください。</errorMessage>
+</ValidationRule>

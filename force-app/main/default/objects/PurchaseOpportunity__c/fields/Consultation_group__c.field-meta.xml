@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Consultation_group__c</fullName>
+    <description>物件相談ボタン内で表示、案件の金額提示や売り予想の相談をする際に、ここで相談先を選択する</description>
+    <externalId>false</externalId>
+    <inlineHelpText>トラック物件相談グループ （トラック全般の相談）
+プライシング（中古車の相談）
+事故車物件相談グループ （事故車の相談）
+タイ＆マレーシア相談グループ(タイかマレーシア向け車両の相談)
+
+2つ以上のグループをメンションしたい場合はお手数ですが、保存後にコメントにてメンションください。</inlineHelpText>
+    <label>相談先グループ</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>トラック物件相談グループ</fullName>
+                <default>false</default>
+                <label>トラック物件相談グループ</label>
+            </value>
+            <value>
+                <fullName>リユース案件営業A車両商談グループ</fullName>
+                <default>false</default>
+                <label>プライシング</label>
+            </value>
+            <value>
+                <fullName>事故車物件相談グループ</fullName>
+                <default>false</default>
+                <label>事故車物件相談グループ</label>
+            </value>
+            <value>
+                <fullName>マレーシア＆タイ物件相談グループ</fullName>
+                <default>false</default>
+                <label>マレーシア＆タイ物件相談グループ</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

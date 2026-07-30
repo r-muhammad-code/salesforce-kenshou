@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CS_task_ValidationRule</fullName>
+    <active>true</active>
+    <description>CSタスクとCSタスク期限日は両方入力するか、両方とも空白にしてください。</description>
+    <errorConditionFormula>AND(
+    DATEVALUE(CreatedDate) &gt;= DATE(2025, 2, 1),
+    OR(
+        AND(
+            ISBLANK(TEXT(New_CS_task_list__c)),
+            NOT(ISBLANK(CS_TaskDateTime__c))
+        ),
+        AND(
+            NOT(ISBLANK(TEXT(New_CS_task_list__c))),
+            ISBLANK(CS_TaskDateTime__c)
+        )
+    )
+)</errorConditionFormula>
+    <errorMessage>CSタスクとCSタスク期限日は両方入力するか、両方とも空白にしてください。</errorMessage>
+</ValidationRule>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>client_base_id__c</columns>
+    <columns>tel_no__c</columns>
+    <columns>nkin_jkyo_kbn__c</columns>
+    <columns>client_tant_nm__c</columns>
+    <columns>mobile_tel_no__c</columns>
+    <columns>used_lang_kbn__c</columns>
+    <columns>client_tant_nm2__c</columns>
+    <columns>mobile_tel_no2__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>すべてのレコード</label>
+</ListView>

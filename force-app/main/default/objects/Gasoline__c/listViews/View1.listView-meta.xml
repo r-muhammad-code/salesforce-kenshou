@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>View1</fullName>
+    <columns>NAME</columns>
+    <columns>Available_rent__c</columns>
+    <columns>ControlNo__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>NAME</field>
+        <operation>startsWith</operation>
+        <value>3</value>
+    </filters>
+    <filters>
+        <field>Available_rent__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>テスト貸出可能</label>
+</ListView>

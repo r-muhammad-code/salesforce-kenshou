@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NEW</fullName>
+    <columns>NAME</columns>
+    <columns>Reception_task_deadline_datetime__c</columns>
+    <columns>StrictAdherence__c</columns>
+    <columns>Is_Project__c</columns>
+    <columns>PersonMobilePhone__c</columns>
+    <columns>Owner_Fullname__c</columns>
+    <columns>New_task_list__c</columns>
+    <columns>reception_task__c</columns>
+    <columns>Precautions__c</columns>
+    <columns>CarTypes__c</columns>
+    <columns>Account__c</columns>
+    <columns>VehicleClassification__c</columns>
+    <columns>VehicleInspection__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ContactDate__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>VehicleClassification__c</field>
+        <operation>notEqual</operation>
+        <value>営業A</value>
+    </filters>
+    <filters>
+        <field>Reception_task_deadline_datetime__c</field>
+        <operation>lessOrEqual</operation>
+        <value>TODAY</value>
+    </filters>
+    <label>NEW▼▼受付タスク▼▼</label>
+</ListView>

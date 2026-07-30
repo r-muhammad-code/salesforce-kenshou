@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ZERO_FAX__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>ゼロシステム連携で引取依頼をすることができない案件を判断する為にチェックを付ける</description>
+    <externalId>false</externalId>
+    <inlineHelpText>ゼロシステム連携ができず、初回依頼をFAX対応したものはこちらをチェック</inlineHelpText>
+    <label>ゼロFAX対応（特例用）</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

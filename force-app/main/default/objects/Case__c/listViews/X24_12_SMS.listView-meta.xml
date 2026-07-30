@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X24_12_SMS</fullName>
+    <columns>Owner_Fullname__c</columns>
+    <columns>Account__c</columns>
+    <columns>FirstRegistration_Year_hs__c</columns>
+    <columns>CarTypes__c</columns>
+    <columns>Next_contact_date__c</columns>
+    <columns>ReceiptRecordingDate__c</columns>
+    <columns>Media__c</columns>
+    <columns>NAME</columns>
+    <columns>PersonMobilePhone__c</columns>
+    <columns>Phase__c</columns>
+    <columns>Precautions__c</columns>
+    <columns>Case_history__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ApproximateReason__c</field>
+        <operation>equals</operation>
+        <value>手放しまだ先</value>
+    </filters>
+    <label>【概算】手放しまだ先リスト</label>
+</ListView>

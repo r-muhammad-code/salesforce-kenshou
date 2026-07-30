@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X03_3_7</fullName>
+    <columns>Media__c</columns>
+    <columns>Owner_Fullname__c</columns>
+    <columns>Account__c</columns>
+    <columns>FirstRegistration_Year_hs__c</columns>
+    <columns>CarTypes__c</columns>
+    <columns>VehicleClassification__c</columns>
+    <columns>Phase__c</columns>
+    <columns>ReceiptRecordingDate__c</columns>
+    <columns>NAME</columns>
+    <columns>Precautions__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ContactDate__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>Phase__c</field>
+        <operation>equals</operation>
+        <value>キャンセル</value>
+    </filters>
+    <filters>
+        <field>Cancel_SomeReason__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>ReceiptRecordingDate__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>N_DAYS_AGO:7</value>
+    </filters>
+    <label>【架電禁止】すべての未接触キャンセル （受付日より3日以上7日以内）</label>
+</ListView>

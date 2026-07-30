@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Maker_Model_Type_Grade_is_not_match</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(
+    AND(
+      NOT(ISBLANK(Makers__c)),
+      NOT(ISBLANK(Models__c)),
+      Makers__r.inum__c != Models__r.maker_code__c 
+    ),
+    AND(
+      NOT(ISBLANK(Makers__c)),
+      NOT(ISBLANK(Types__c)),
+      Makers__r.inum__c != Types__r.maker_code__c 
+    ),
+    AND(
+      NOT(ISBLANK(Makers__c)),
+      NOT(ISBLANK(Grades__c)),
+      Makers__r.inum__c != Grades__r.maker_code__c 
+    ),
+    AND(
+      NOT(ISBLANK(Models__c)),
+      NOT(ISBLANK(Types__c)),
+      Models__r.inum__c != Types__r.model_code__c 
+    ),
+    AND(
+      NOT(ISBLANK(Models__c)),
+      NOT(ISBLANK(Grades__c)),
+      Models__r.inum__c != Grades__r.model_code__c 
+    ),
+    AND(
+      NOT(ISBLANK(Types__c)),
+      NOT(ISBLANK(Grades__c)),
+      Types__r.model_code__c != Grades__r.model_code__c 
+    )
+  )</errorConditionFormula>
+    <errorMessage>メーカー・車種・型式・グレードのいずれかが一致しません。</errorMessage>
+</ValidationRule>

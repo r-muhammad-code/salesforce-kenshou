@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SupervisorApproval_OnlyAssignedUser</fullName>
+    <active>true</active>
+    <description>上長承認_承認依頼先ユーザー以外の更新禁止</description>
+    <errorConditionFormula>AND(
+  ISCHANGED(Supervisor_approval__c),
+  $User.Id &lt;&gt; Approval_request_destination__c
+)</errorConditionFormula>
+    <errorDisplayField>Approval_request_destination__c</errorDisplayField>
+    <errorMessage>上長承認の項目は承認依頼先に指定されたユーザーのみが更新可能です。</errorMessage>
+</ValidationRule>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Accident_Levels__c</fullName>
+    <externalId>false</externalId>
+    <label>事故の程度</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>軽いあたり（修復歴つかない程度）のみ</fullName>
+                <default>false</default>
+                <label>軽いあたり（修復歴つかない程度）のみ</label>
+            </value>
+            <value>
+                <fullName>軽いあたり（修復歴あり）まで</fullName>
+                <default>false</default>
+                <label>軽いあたり（修復歴あり）まで</label>
+            </value>
+            <value>
+                <fullName>中あたりまで</fullName>
+                <default>false</default>
+                <label>中あたりまで</label>
+            </value>
+            <value>
+                <fullName>きつい当たり（フレーム曲がり）でもOK</fullName>
+                <default>false</default>
+                <label>きつい当たり（フレーム曲がり）でもOK</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

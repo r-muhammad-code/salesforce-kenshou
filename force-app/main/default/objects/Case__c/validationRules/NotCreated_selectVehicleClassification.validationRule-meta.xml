@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NotCreated_selectVehicleClassification</fullName>
+    <active>true</active>
+    <description>判別不明では買取商談が作成できない。山本</description>
+    <errorConditionFormula>DATEVALUE(CreatedDate)&gt;=DATE(2023,07,26) &amp;&amp;
+NOT(ISBLANK( OpportunityOwner__c)) &amp;&amp;
+ISPICKVAL(VehicleClassification__c , &quot;判別不明&quot;)</errorConditionFormula>
+    <errorMessage>”判別不明”以外のABC区分を選択してください。</errorMessage>
+</ValidationRule>

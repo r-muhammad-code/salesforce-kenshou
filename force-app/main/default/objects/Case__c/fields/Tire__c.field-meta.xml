@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Tire__c</fullName>
+    <externalId>false</externalId>
+    <label>タイヤ　★</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>SelfPropulsion__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>転がる</fullName>
+                <default>false</default>
+                <label>転がる</label>
+            </value>
+            <value>
+                <fullName>転がらない</fullName>
+                <default>false</default>
+                <label>転がらない</label>
+            </value>
+            <value>
+                <fullName>不明</fullName>
+                <default>false</default>
+                <label>不明</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>否</controllingFieldValue>
+            <valueName>転がる</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>否</controllingFieldValue>
+            <valueName>転がらない</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>否</controllingFieldValue>
+            <valueName>不明</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

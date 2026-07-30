@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Completed_Other_Inquiries_DocManagement</fullName>
+    <columns>LotNo_Formula__c</columns>
+    <columns>NAME</columns>
+    <columns>Opportunity_owner__c</columns>
+    <columns>Request_Date__c</columns>
+    <columns>Request_completedate__c</columns>
+    <columns>Opportunity_DocManagement__c</columns>
+    <columns>Case__c</columns>
+    <columns>Model_year__c</columns>
+    <columns>Car_No__c</columns>
+    <columns>Car_model__c</columns>
+    <columns>Urgent__c</columns>
+    <columns>Request_to_DocManagement_Remarks__c</columns>
+    <columns>DocManagement_Name__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Request__c</field>
+        <operation>equals</operation>
+        <value>開封依頼,その他問い合わせ</value>
+    </filters>
+    <filters>
+        <field>Request_completedate__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>完了済みのその他問い合わせ</label>
+</ListView>

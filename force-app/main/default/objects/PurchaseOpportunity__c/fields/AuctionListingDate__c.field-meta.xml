@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AuctionListingDate__c</fullName>
+    <description>引取依頼作成画面で表示、ゼロ連携をして引取依頼を投げる際にオークション開催日を情報提供する必要があるため</description>
+    <externalId>false</externalId>
+    <label>オークション開催日</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>Member__c</columns>
+    <columns>auctiondata_carname__c</columns>
+    <columns>lot_num__c</columns>
+    <columns>invoice_amount__c</columns>
+    <columns>invoice_amount_dollar__c</columns>
+    <columns>payment_deadline__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>すべて選択</label>
+</ListView>

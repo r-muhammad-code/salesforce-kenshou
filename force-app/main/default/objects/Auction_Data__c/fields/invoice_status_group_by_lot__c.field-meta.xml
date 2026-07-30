@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>invoice_status_group_by_lot__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>ロットに対する請求書の処理状態が
+・すべて入金済→入金済み
+・1つでも未入金・一部入金・申請中・請求待ちがある場合→未入金あり
+・すべて取消→取消
+・取消と入金済みだけがある場合→入金済み
+※はなまる→ソコトレの請求は除く</inlineHelpText>
+    <label>請求処理状態</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

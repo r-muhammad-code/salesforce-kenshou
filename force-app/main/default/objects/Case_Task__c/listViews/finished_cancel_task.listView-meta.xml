@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>finished_cancel_task</fullName>
+    <columns>NAME</columns>
+    <columns>kanrinum__c</columns>
+    <columns>auctiondata_lot__c</columns>
+    <columns>auctiondata_car__c</columns>
+    <columns>auctiondata_Chassis__c</columns>
+    <columns>Status__c</columns>
+    <columns>Member__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Title__c</field>
+        <operation>equals</operation>
+        <value>車両キャンセル（貿易タスク）</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>完了（Closed）</value>
+    </filters>
+    <filters>
+        <field>kanrinum__c</field>
+        <operation>notEqual</operation>
+        <value>⚠️注意⚠️テスト管理番号</value>
+    </filters>
+    <label>車両キャンセル（貿易タスク）　対応済み分</label>
+</ListView>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_be_selected_for_logistics_setup</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL( RequestDestination__c ,&quot;物流&quot;) &amp;&amp;  Dayoff_Setup__c</errorConditionFormula>
+    <errorMessage>物流段取の場合、リユース事業部に指示書作成を依頼する（休日至急）は選択できません。チェックを外してください</errorMessage>
+</ValidationRule>

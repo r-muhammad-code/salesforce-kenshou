@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Vehicle_purchase_cost__c</fullName>
+    <description>与儀
+税別/リ別両方チェックないとき→提示金額-リサイクル料金/1.1
+両方チェックあるとき→提示金額まま
+税別✓あり→提示金額-リサイクル料金
+リ別✓あり→提示金額/1.1</description>
+    <externalId>false</externalId>
+    <formula>IF(
+    AND(NOT(TaxExcluded__c), NOT(ByRecyclingFee__c)),
+        (ProposedPrice__c - RecyclingFee__c) / 1.1,
+
+    IF(
+        AND(TaxExcluded__c, ByRecyclingFee__c),
+            ProposedPrice__c,
+
+        IF(
+            AND(TaxExcluded__c, NOT(ByRecyclingFee__c)),
+                ProposedPrice__c - RecyclingFee__c,
+                ProposedPrice__c / 1.1
+        )
+    )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>仕入車両代</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

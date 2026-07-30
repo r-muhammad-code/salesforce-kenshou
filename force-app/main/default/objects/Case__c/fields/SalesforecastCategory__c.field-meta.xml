@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SalesforecastCategory__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( Desired_amount_hs__c  &gt;=500000,&quot;g.500,000円～&quot;,
+IF( Desired_amount_hs__c  &gt;=400000,&quot;f.400,000円～499,999円&quot;,
+IF( Desired_amount_hs__c  &gt;=300000,&quot;e.300,000円～399,999円&quot;,
+IF( Desired_amount_hs__c  &gt;=200000,&quot;d,200,000円～299,999円&quot;,
+IF( Desired_amount_hs__c  &gt;=100000,&quot;c.100,000円～199,999円&quot;,
+IF( Desired_amount_hs__c  &gt;=50001,&quot;b.50,001円～99,999円&quot;,
+IF( AND( Desired_amount_hs__c &gt;0,Desired_amount_hs__c  &gt;=0),&quot;a.0～50,000円&quot;,null)))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>売り予想 価格帯</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

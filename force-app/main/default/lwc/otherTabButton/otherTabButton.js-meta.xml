@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>50.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="propButtonLabel" label="ボタンラベル" type="String" required="true" description="ボタンに表示するラベルを入力してください。"/>
+            <property name="propUrl" label="遷移先URL" type="String" required="true" description="遷移先のURLを指定してください。"/>
+            <property name="propUseID" label="レコードIDを含める" type="Boolean" required="true" default="true" description="GETパラメータにレコードIDを含める場合チェックしてください。"/>
+            <property name="propAllowProfileIds" label="有効なプロファイルID" type="String" default="" description="ボタンを使用可能なプロファイルIDを設定してください。複数指定する場合はカンマ区切りで入力してください。"/>
+            <property name="recordId" type="String" label="Record Id" description="Automatically bind the page's record id to the component variable" default="{!recordId}"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

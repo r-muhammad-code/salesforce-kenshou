@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PurchaseOpportunity__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>小売商談で買取成約した車輌の買取商談レコード</description>
+    <externalId>false</externalId>
+    <label>買取商談</label>
+    <referenceTo>PurchaseOpportunity__c</referenceTo>
+    <relationshipLabel>リテール商談(買取)</relationshipLabel>
+    <relationshipName>RetailOpportunity</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NotExplainedEnough</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    NOT( ISBLANK( collection_request_date__c)  ) ,
+    ISBLANK( StorageLocationAddress__c )  || 
+         ISBLANK( StorageLocationPerson__c  )  || 
+               ISBLANK(  StorageLocation__c )  || 
+                       ISBLANK(  StorageLocationTell__c  ) )</errorConditionFormula>
+    <errorDisplayField>collection_request_date__c</errorDisplayField>
+    <errorMessage>「保管先名」「保管先住所」「保管先担当者」「保管先連絡先」を入力してください。</errorMessage>
+</ValidationRule>

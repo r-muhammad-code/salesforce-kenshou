@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Using_old_master</fullName>
+    <active>false</active>
+    <errorConditionFormula>NOT( OpportunityOwner__c = null ) &amp;&amp;  ISPICKVAL( Maker__r.disp_flg__c , &quot;表示しない&quot; ) &amp;&amp; ISBLANK( Oppotunity__c )</errorConditionFormula>
+    <errorMessage>古いマスタが使用されています。</errorMessage>
+</ValidationRule>

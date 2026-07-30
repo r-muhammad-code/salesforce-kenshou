@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>export_ptn_no__c</columns>
+    <columns>loading_method_kbn__c</columns>
+    <columns>loading_shape_kbn__c</columns>
+    <columns>payment_method_kbn__c</columns>
+    <columns>inspection_kbn__c</columns>
+    <columns>marine_insurance_kbn__c</columns>
+    <columns>ssha_stei__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>すべてのレコード</label>
+</ListView>

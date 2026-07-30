@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>first_bit_member_name__c</fullName>
+    <description>DetaSpiderからは会員IDを連携。
+フローで会員名を出している。</description>
+    <externalId>false</externalId>
+    <inlineHelpText>売却後に連携</inlineHelpText>
+    <label>1番手会員名（テキスト）</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

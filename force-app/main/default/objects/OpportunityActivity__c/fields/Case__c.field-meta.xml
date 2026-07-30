@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Case__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>山本</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Case_OpportunityActivity</inlineHelpText>
+    <label>買取受付</label>
+    <referenceTo>Case__c</referenceTo>
+    <relationshipLabel>商談行動</relationshipLabel>
+    <relationshipName>Case_OpportunityActivity</relationshipName>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

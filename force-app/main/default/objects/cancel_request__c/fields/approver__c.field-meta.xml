@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>approver__c</fullName>
+    <description>その他や請求・取引内容変更のため不要があるため、参照項目は不可</description>
+    <externalId>false</externalId>
+    <label>承認者</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>金井 宏之</fullName>
+                <default>false</default>
+                <label>金井 宏之</label>
+            </value>
+            <value>
+                <fullName>熊谷 裕史</fullName>
+                <default>false</default>
+                <label>熊谷 裕史</label>
+            </value>
+            <value>
+                <fullName>村竹 顕</fullName>
+                <default>false</default>
+                <label>村竹 顕</label>
+            </value>
+            <value>
+                <fullName>山田 裕太</fullName>
+                <default>false</default>
+                <label>山田 裕太</label>
+            </value>
+            <value>
+                <fullName>山本 雄大</fullName>
+                <default>false</default>
+                <label>山本 雄大</label>
+            </value>
+            <value>
+                <fullName>橘​ 亮太</fullName>
+                <default>false</default>
+                <label>橘​ 亮太</label>
+            </value>
+            <value>
+                <fullName>南 信次</fullName>
+                <default>false</default>
+                <label>南 信次</label>
+            </value>
+            <value>
+                <fullName>請求・取引内容変更のため不要</fullName>
+                <default>false</default>
+                <label>請求・取引内容変更のため不要</label>
+            </value>
+            <value>
+                <fullName>その他</fullName>
+                <default>false</default>
+                <label>その他</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

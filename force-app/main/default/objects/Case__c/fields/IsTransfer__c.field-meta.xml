@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsTransfer__c</fullName>
+    <externalId>false</externalId>
+    <formula>OR(
+AND(
+OR(Text( VehicleClassification__c )= &apos;はなまるオークション/他社AA（コール）&apos;,Text( VehicleClassification__c )=&apos;コールA/リユース&apos;,Text( VehicleClassification__c )=&apos;コールA/リユース（SMS不可）&apos;, Text( VehicleClassification__c )=&apos;コールA/他社AA&apos;, Text( VehicleClassification__c )=&apos;コールA/他社AA（SMS不可）&apos;, Text( VehicleClassification__c )=&apos;コールA/ソコカラ&apos;, Text( VehicleClassification__c )=&apos;コールA/ソコカラ（SMS不可）&apos;)
+,
+WaitingCallA__c
+,
+WaitingOpp__c
+)
+,
+AND(
+Text( VehicleClassification__c )=&apos;リユースオークション&apos;
+,
+WaitingOpp__c
+)
+,
+AND(
+Text( VehicleClassification__c )=&apos;直接商談&apos;
+,
+WaitingOpp__c
+)
+,
+AND(
+OR(Text( VehicleClassification__c )= &apos;直売&apos;,Text( VehicleClassification__c )=&apos;直売（SMS不可）&apos;)
+,
+WaitingOpp__c
+)
+)</formula>
+    <label>連携対象</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

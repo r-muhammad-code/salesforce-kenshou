@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>purchase_amount__c</fullName>
+    <description>買取商談に紐づく買取実績から取得。</description>
+    <externalId>false</externalId>
+    <formula>Sales_Opportunity__r.PurchaseExperience__r.PurchaseAmount__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>買取商談に紐づく買取実績から取得。</inlineHelpText>
+    <label>仕入金額（買取実績）</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

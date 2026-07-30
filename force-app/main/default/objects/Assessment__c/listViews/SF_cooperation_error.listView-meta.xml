@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SF_cooperation_error</fullName>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>asset_mngno__c</columns>
+    <columns>tanto_manage_bumon__c</columns>
+    <columns>asses_tanto__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>suspended_flg__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>SF同期不具合のヤード査定表</label>
+</ListView>

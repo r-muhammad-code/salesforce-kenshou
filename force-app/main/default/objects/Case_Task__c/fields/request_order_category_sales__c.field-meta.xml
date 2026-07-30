@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>request_order_category_sales__c</fullName>
+    <description>更新</description>
+    <externalId>false</externalId>
+    <label>受けた依頼のカテゴリ</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>会員対応依頼</fullName>
+                <default>false</default>
+                <label>会員対応依頼</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

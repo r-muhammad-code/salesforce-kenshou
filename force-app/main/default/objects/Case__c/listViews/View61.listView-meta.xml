@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>View61</fullName>
+    <columns>NAME</columns>
+    <columns>ReceptionDateTime__c</columns>
+    <columns>Cancellation_reason__c</columns>
+    <columns>Cancel_SomeReason__c</columns>
+    <columns>Owner_Fullname__c</columns>
+    <columns>FirstRegistration_Year_hs__c</columns>
+    <columns>CarTypes__c</columns>
+    <columns>Phase__c</columns>
+    <columns>PurchaseDate__c</columns>
+    <columns>Amount__c</columns>
+    <columns>Desired_amount_hs__c</columns>
+    <columns>Is_Project__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>InChargeOf_Pricing_Picklist__c</field>
+        <operation>equals</operation>
+        <value>上田</value>
+    </filters>
+    <filters>
+        <field>ReceptionDateTime__c</field>
+        <operation>greaterThan</operation>
+        <value>9/20/2024 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>Owner_Fullname__c</field>
+        <operation>notContain</operation>
+        <value>上田</value>
+    </filters>
+    <label>上田　値付け案件</label>
+</ListView>

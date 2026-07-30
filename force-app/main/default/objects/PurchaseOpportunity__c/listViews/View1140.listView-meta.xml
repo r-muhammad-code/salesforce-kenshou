@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>View1140</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND 4 AND 5 AND 6 AND 7</booleanFilter>
+    <columns>NAME</columns>
+    <columns>ModelYearCarName__c</columns>
+    <columns>Owner__c</columns>
+    <columns>Estimate__c</columns>
+    <columns>PurchaseDate__c</columns>
+    <columns>CollectionDate__c</columns>
+    <columns>ProcessingDivision__c</columns>
+    <columns>OtherAA_Place__c</columns>
+    <columns>SalesScheduledDate__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Phase__c</field>
+        <operation>equals</operation>
+        <value>買取</value>
+    </filters>
+    <filters>
+        <field>ModelYearPickList__c</field>
+        <operation>equals</operation>
+        <value>2016,2016年/平成28年</value>
+    </filters>
+    <filters>
+        <field>State__c</field>
+        <operation>equals</operation>
+        <value>中古車</value>
+    </filters>
+    <filters>
+        <field>Buyer__c</field>
+        <operation>notContain</operation>
+        <value>USS,ジェイボーイ</value>
+    </filters>
+    <filters>
+        <field>OtherAA__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>PurchaseDate__c</field>
+        <operation>greaterThan</operation>
+        <value>1/1/2021</value>
+    </filters>
+    <filters>
+        <field>OtherAA_SaleDate__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>ケニア　中古車案件</label>
+    <sharedTo></sharedTo>
+</ListView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>registerdAtYear__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>必ず西暦４ケタを入力して下さい。他のオブジェクトと連携する際にエラーが発生します。</inlineHelpText>
+    <label>初年度年（西暦で記入）</label>
+    <length>4</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>uriage_date__c</fullName>
+    <description>【目的】
+hdb_d_uriageから会計売上日を取得したい。
+
+【問題】
+OBIC会計から都度抽出したデータをぶち込んでるだけなので、1ロットに対して、複数のレコードが存在。そのため一度売上がたった後に、再度売り直しみたいな変な流れのものがあったときにうまく取得出来ない可能性がある（信用できるデータではない）。
+通常のパターンは、キャンセル再販になると新ロットを生むので、おそらく上記問題が今は無いハズ！！
+※補足：そのためにこのチャットでお伝えした、旧ロットが必要になるって感じですね。
+【対処法】一旦今回はそのロットに対する会計売上日を取得したいだけ。複数生まれた場合でも、一番最新の日付のみを取得する方向で対応。→今回の使い方だったら、この対応でおそらく問題ないことも確認済み。　ただあくまでも信用出来ないデータだよってことは伝えておくこと（中澤部長、田中部長）</description>
+    <externalId>false</externalId>
+    <inlineHelpText>1ロットに対して、複数レコード存在するため、同じロット内の一番新しい日付を反映。
+大元のデータ自体が綺麗ではないので、100％あっているデータではないことをご認識の上、ご使用ください。</inlineHelpText>
+    <label>会計売上日</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

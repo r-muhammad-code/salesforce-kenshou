@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TotalPayment__c</fullName>
+    <description>インボイス制度開始に合わせ、2023/10/1以降は自動車税相当額を課税対象として計算</description>
+    <externalId>false</externalId>
+    <formula>IF( PurchaseDate__c &lt; DATE( 2023, 10, 1 ) ,
+IF( ByRecyclingFee__c = true ,
+IF( TaxExcluded__c = true , ProposedPrice__c *1.1 , ProposedPrice__c ) + RecyclingFee__c + IF( CarTax_Excluded__c = true , CarTax__c , 0 ) +  invoice_amount__c ,
+IF( TaxExcluded__c = true , ProposedPrice__c *1.1 , ProposedPrice__c ) + IF( CarTax_Excluded__c = true , CarTax__c , 0 ) +  invoice_amount__c  ) ,
+IF( ByRecyclingFee__c = true ,
+IF( TaxExcluded__c = true , ProposedPrice__c *1.1 , ProposedPrice__c ) + RecyclingFee__c + IF( CarTax_Excluded__c = true , CarTax__c *1.1 , 0 ) +  invoice_amount__c  ,
+IF( TaxExcluded__c = true , ProposedPrice__c *1.1 , ProposedPrice__c ) + IF( CarTax_Excluded__c = true , CarTax__c *1.1 , 0 ) +  invoice_amount__c  ) )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>「税別」「リサイクル料金別」「自動車税相当額別」にチェックが入れば、それぞれの金額が足されて算出されます。</inlineHelpText>
+    <label>支払合計</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

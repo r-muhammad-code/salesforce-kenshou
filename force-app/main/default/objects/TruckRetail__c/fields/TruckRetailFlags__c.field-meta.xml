@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TruckRetailFlags__c</fullName>
+    <description>九條</description>
+    <externalId>false</externalId>
+    <label>トラック小売りフラグ</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>する</fullName>
+                <default>false</default>
+                <label>する</label>
+            </value>
+            <value>
+                <fullName>しない</fullName>
+                <default>false</default>
+                <label>しない</label>
+            </value>
+            <value>
+                <fullName>保留</fullName>
+                <default>false</default>
+                <label>保留</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

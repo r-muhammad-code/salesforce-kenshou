@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>HanamaruAA_VirtualGrossProfit__c</fullName>
+    <description>はなまるAA入札金額で仮に売却した場合の仮想粗利　他社オク売却または修理→他社オク売却した際の利益検証に利用</description>
+    <externalId>false</externalId>
+    <formula>HanamaruAA_Bid__c  -  ProposedPrice__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>はなまるAA入札金額で仮に売却した場合の仮想粗利　他社オク売却または修理→他社オク売却した際の利益検証に利用</inlineHelpText>
+    <label>はなまるAA売却時仮想粗利</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

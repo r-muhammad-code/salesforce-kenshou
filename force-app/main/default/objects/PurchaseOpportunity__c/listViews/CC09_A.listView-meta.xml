@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CC09_A</fullName>
+    <columns>NAME</columns>
+    <columns>Receptionist__c</columns>
+    <columns>Account__c</columns>
+    <columns>ABC__c</columns>
+    <columns>ModelYearCarName__c</columns>
+    <columns>Owner__c</columns>
+    <columns>Phase__c</columns>
+    <columns>RequestDate__c</columns>
+    <columns>AssessmentDate__c</columns>
+    <columns>TakeUpDate__c</columns>
+    <columns>ListingEndsDate__c</columns>
+    <columns>CancelDate__c</columns>
+    <columns>CompletionDate__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>IsCallCenter__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <filters>
+        <field>ABC__c</field>
+        <operation>equals</operation>
+        <value>営業A車輌</value>
+    </filters>
+    <label>CC09.私の営業取次ぎ買取商談(営業A)</label>
+    <sharedTo>
+        <role>CallCenter</role>
+    </sharedTo>
+</ListView>

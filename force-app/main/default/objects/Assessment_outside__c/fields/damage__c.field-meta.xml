@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>damage__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF (  INCLUDES(Assessment__r.damage__c,&quot;1&quot; )  , &quot;フロント,&quot;, &quot;&quot;)
+ &amp; IF ( INCLUDES(Assessment__r.damage__c,&quot;2&quot; )  , &quot;サイド,&quot;,&quot;&quot; )
+ &amp; IF ( INCLUDES(Assessment__r.damage__c,&quot;3&quot; )  , &quot;リア,&quot;,&quot;&quot; )
+ &amp; IF ( INCLUDES(Assessment__r.damage__c,&quot;4&quot; )  , &quot;横転,&quot;,&quot;&quot; )
+ &amp; IF ( INCLUDES(Assessment__r.damage__c,&quot;5&quot; )  , &quot;水害,&quot;,&quot;&quot; )
+ &amp; IF ( INCLUDES(Assessment__r.damage__c,&quot;6&quot; )  , &quot;盗難発見,&quot;,&quot;&quot; )
+ &amp; IF ( INCLUDES(Assessment__r.damage__c,&quot;7&quot; )  , &quot;火災,&quot;,&quot;&quot; )
+ &amp; IF ( INCLUDES(Assessment__r.damage__c,&quot;8&quot; )  , &quot;エンジンブロー,&quot;,&quot;&quot; )
+ &amp; IF ( INCLUDES(Assessment__r.damage__c,&quot;9&quot; )  , &quot;ミッショントラブル,&quot;,&quot;&quot; )
+ &amp; IF ( INCLUDES(Assessment__r.damage__c,&quot;10&quot; )  , &quot;ルーフ,&quot;,&quot;&quot; )
+ &amp; IF ( INCLUDES(Assessment__r.damage__c,&quot;11&quot; )  , &quot;下打ち,&quot;,&quot;&quot; )
+ &amp; IF ( INCLUDES(Assessment__r.damage__c,&quot;12&quot; )  , &quot;故障車,&quot;,&quot;&quot; )
+ &amp; IF ( INCLUDES(Assessment__r.damage__c,&quot;13&quot; )  , &quot;オーバーヒート,&quot;,&quot;&quot; )
+ &amp; IF ( INCLUDES(Assessment__r.damage__c,&quot;14&quot; )  , &quot;中古車,&quot;,&quot;&quot; )
+ &amp; IF ( INCLUDES(Assessment__r.damage__c,&quot;15&quot; )  , &quot;雹害,&quot;,&quot;&quot; )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>ダメージ</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Gross_Profit__c</fullName>
+    <description>預かり金額-提示金額</description>
+    <externalId>false</externalId>
+    <formula>IF(
+    ISPICKVAL(PresaleResults__c, &quot;成約&quot;),
+   tax_include__c -  Offered_Price__c  ,
+    0
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>預かり金額-提示金額＝粗利
+※先売り営業結果が成約の場合のみ計算</inlineHelpText>
+    <label>粗利</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

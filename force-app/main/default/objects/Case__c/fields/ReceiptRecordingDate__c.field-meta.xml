@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ReceiptRecordingDate__c</fullName>
+    <description>山本</description>
+    <externalId>false</externalId>
+    <formula>IF( TIMEVALUE( ReceptionDateTime__c ) + 3600000 * 9  &gt;= TIMEVALUE(&quot;21:01:00.000&quot;),
+DATEVALUE( ReceptionDateTime__c )+1,
+DATEVALUE( ReceptionDateTime__c ))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>受付計上日</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

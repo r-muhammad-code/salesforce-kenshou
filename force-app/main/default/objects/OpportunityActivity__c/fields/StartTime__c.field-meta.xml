@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>StartTime__c</fullName>
+    <description>山本</description>
+    <externalId>false</externalId>
+    <formula>TEXT( HOUR( TIMEVALUE( StartDateTime__c ) ) + 9 ) &amp; &quot;:&quot; &amp; IF( MINUTE( TIMEVALUE( StartDateTime__c ) ) &lt; 10 , &quot;0&quot; &amp; TEXT( MINUTE( TIMEVALUE( StartDateTime__c ) ) ) , TEXT( MINUTE( TIMEVALUE( StartDateTime__c ) ) ) )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>開始時間</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

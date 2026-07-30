@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ReuseProjectQueue_PurchaseOpportunity</fullName>
+    <filterScope>Queue</filterScope>
+    <label>リユース案件営業A車両商談キュー</label>
+    <queue>ReuseProjectQueue</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Remarks_column_isblank</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL( Request_Detail__c , &quot;現在登録証発行申請&quot;) &amp;&amp;
+ISBLANK(  RegistrationNo__c  )</errorConditionFormula>
+    <errorDisplayField>Request_Detail__c</errorDisplayField>
+    <errorMessage>登録番号が入力されていません。</errorMessage>
+</ValidationRule>

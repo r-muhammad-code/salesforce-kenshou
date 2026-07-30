@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>auction_mvr__c</fullName>
+    <externalId>false</externalId>
+    <label>オークション課指示（リサイクル）</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>永抹出来るか不明、最終預かり</fullName>
+                <default>false</default>
+                <label>永抹出来るか不明、最終預かり</label>
+            </value>
+            <value>
+                <fullName>％オク　提示金額で確認</fullName>
+                <default>false</default>
+                <label>％オク　提示金額で確認</label>
+            </value>
+            <value>
+                <fullName>％オク　提示金額不可なら最終預かり</fullName>
+                <default>false</default>
+                <label>％オク　提示金額不可なら最終預かり</label>
+            </value>
+            <value>
+                <fullName>購入希望しないだが、最終預かり</fullName>
+                <default>false</default>
+                <label>購入希望しないだが、最終預かり</label>
+            </value>
+            <value>
+                <fullName>提示金額不可なら最終預かり</fullName>
+                <default>false</default>
+                <label>提示金額不可なら最終預かり</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

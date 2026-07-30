@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PurchaseAmount__c</fullName>
+    <description>買取実績の仕入金額または仕入金額（小売/海外）の金額が表示される</description>
+    <externalId>false</externalId>
+    <formula>IF ( TEXT(Retail_Overseas_category__c ) &lt;&gt; &quot;&quot;, PurchaseAmount_retail_overseas__c , PurchasehAmount_OBIC__c )</formula>
+    <label>仕入金額(営業実績)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

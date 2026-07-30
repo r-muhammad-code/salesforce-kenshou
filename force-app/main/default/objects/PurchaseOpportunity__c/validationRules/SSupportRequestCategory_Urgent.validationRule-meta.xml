@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SSupportRequestCategory_Urgent</fullName>
+    <active>false</active>
+    <description>山本</description>
+    <errorConditionFormula>AND( ISPICKVAL(Request_type__c , &quot;仕入入力依頼&quot;) ,  Urgent__c =false  )</errorConditionFormula>
+    <errorMessage>仕入入力依頼の際は、至急チェックを必ずつけてください。</errorMessage>
+</ValidationRule>

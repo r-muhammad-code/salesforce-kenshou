@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>West_East__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(
+  TEXT(todofken_cd__c),
+  &quot;1&quot;, &quot;東日本&quot;,
+  &quot;2&quot;, &quot;東日本&quot;,
+  &quot;3&quot;, &quot;東日本&quot;,
+  &quot;4&quot;, &quot;東日本&quot;,
+  &quot;5&quot;, &quot;東日本&quot;,
+  &quot;6&quot;, &quot;東日本&quot;,
+  &quot;7&quot;, &quot;東日本&quot;,
+  &quot;8&quot;, &quot;東日本&quot;,
+  &quot;9&quot;, &quot;東日本&quot;,
+  &quot;10&quot;, &quot;東日本&quot;,
+  &quot;11&quot;, &quot;東日本&quot;,
+  &quot;12&quot;, &quot;東日本&quot;,
+  &quot;13&quot;, &quot;東日本&quot;,
+  &quot;14&quot;, &quot;東日本&quot;,
+  &quot;15&quot;, &quot;東日本&quot;,
+  &quot;16&quot;, &quot;東日本&quot;,
+  &quot;17&quot;, &quot;東日本&quot;,
+  &quot;18&quot;, &quot;東日本&quot;,
+  &quot;19&quot;, &quot;東日本&quot;,
+  &quot;20&quot;, &quot;東日本&quot;,
+  &quot;21&quot;, &quot;西日本&quot;,
+  &quot;22&quot;, &quot;西日本&quot;,
+  &quot;23&quot;, &quot;西日本&quot;,
+  &quot;24&quot;, &quot;西日本&quot;,
+  &quot;25&quot;, &quot;西日本&quot;,
+  &quot;26&quot;, &quot;西日本&quot;,
+  &quot;27&quot;, &quot;西日本&quot;,
+  &quot;28&quot;, &quot;西日本&quot;,
+  &quot;29&quot;, &quot;西日本&quot;,
+  &quot;30&quot;, &quot;西日本&quot;,
+  &quot;31&quot;, &quot;西日本&quot;,
+  &quot;32&quot;, &quot;西日本&quot;,
+  &quot;33&quot;, &quot;西日本&quot;,
+  &quot;34&quot;, &quot;西日本&quot;,
+  &quot;35&quot;, &quot;西日本&quot;,
+  &quot;36&quot;, &quot;西日本&quot;,
+  &quot;37&quot;, &quot;西日本&quot;,
+  &quot;38&quot;, &quot;西日本&quot;,
+  &quot;39&quot;, &quot;西日本&quot;,
+  &quot;40&quot;, &quot;西日本&quot;,
+  &quot;41&quot;, &quot;西日本&quot;,
+  &quot;42&quot;, &quot;西日本&quot;,
+  &quot;43&quot;, &quot;西日本&quot;,
+  &quot;44&quot;, &quot;西日本&quot;,
+  &quot;45&quot;, &quot;西日本&quot;,
+  &quot;46&quot;, &quot;西日本&quot;,
+  &quot;47&quot;, &quot;西日本&quot;,
+  &quot;不明&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>東日本/西日本</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

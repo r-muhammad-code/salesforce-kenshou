@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Drive_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>駆動</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>希望なし</fullName>
+                <default>false</default>
+                <label>希望なし</label>
+            </value>
+            <value>
+                <fullName>2WD</fullName>
+                <default>false</default>
+                <label>2WD</label>
+            </value>
+            <value>
+                <fullName>4WD</fullName>
+                <default>false</default>
+                <label>4WD</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>4</visibleLines>
+</CustomField>

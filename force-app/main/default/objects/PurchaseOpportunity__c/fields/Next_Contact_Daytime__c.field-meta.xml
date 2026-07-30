@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Next_Contact_Daytime__c</fullName>
+    <description>佐野
+営業A案件の案件管理用。阿部事業部長依頼。</description>
+    <externalId>false</externalId>
+    <label>次回接触日時</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>DateTime</type>
+</CustomField>

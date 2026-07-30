@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Retired__c</fullName>
+    <description>ユーザーの有効チェックボックスがTrueであればFalseを返す、FalseであればTrueを返す。山本</description>
+    <externalId>false</externalId>
+    <formula>IF( driver__r.IsActive ,False,True)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>退職済み</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

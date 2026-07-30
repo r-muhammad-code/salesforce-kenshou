@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ownership_release_doc_submission_date__c</fullName>
+    <description>OBICにある同名項目の日付が連携バッチにて反映される。
+出力期間は所有権解除送付日から15日間。
+書類OK日（DocumentOKCheck）の連携バッチで出力されている。山本</description>
+    <externalId>false</externalId>
+    <label>所有権解除送付日</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

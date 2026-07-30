@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CasePurpose__c</fullName>
+    <description>山本</description>
+    <externalId>false</externalId>
+    <label>受付目的</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>初回商談</fullName>
+                <default>false</default>
+                <label>初回商談</label>
+            </value>
+            <value>
+                <fullName>保留商談</fullName>
+                <default>false</default>
+                <label>保留商談</label>
+            </value>
+            <value>
+                <fullName>商談以外</fullName>
+                <default>false</default>
+                <label>商談以外</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

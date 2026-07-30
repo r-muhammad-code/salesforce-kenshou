@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Custom_Compact_Layout</fullName>
+    <fields>Name</fields>
+    <fields>Dismantler_PIC__c</fields>
+    <fields>Dismantler_Requested_Companies_ID__c</fields>
+    <fields>Freon_Recovery_Codes__c</fields>
+    <fields>Dismantling_Codes__c</fields>
+    <fields>Dismantler_Locations__c</fields>
+    <fields>Dismantler_Numbers__c</fields>
+    <fields>Fax_Numbers_Dismantler__c</fields>
+    <fields>Dismantler_Notes__c</fields>
+    <label>Custom Compact Layout</label>
+</CompactLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>obic_contract_check_date__c</fullName>
+    <description>連携項目。OBICの売買契約書チェックを連携した日が取り込まれる。山本
+集計管理に記録されたデータをSalesforceに取り込んでいる。</description>
+    <externalId>false</externalId>
+    <label>OBIC売買契約書チェック連携日</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

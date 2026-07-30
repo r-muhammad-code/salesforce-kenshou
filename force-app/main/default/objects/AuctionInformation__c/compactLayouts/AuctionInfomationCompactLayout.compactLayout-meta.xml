@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AuctionInfomationCompactLayout</fullName>
+    <fields>ControlNumber__c</fields>
+    <fields>car_model__c</fields>
+    <fields>car_type__c</fields>
+    <fields>registerdAtYear__c</fields>
+    <fields>jiso__c</fields>
+    <fields>SoldData__c</fields>
+    <fields>auc_sales_price__c</fields>
+    <label>オークション情報コンパクトレイアウト</label>
+</CompactLayout>

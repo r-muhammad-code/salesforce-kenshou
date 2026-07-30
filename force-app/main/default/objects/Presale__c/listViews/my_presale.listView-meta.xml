@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>my_presale</fullName>
+    <columns>NAME</columns>
+    <columns>Assessment__c</columns>
+    <columns>PresaleRequestedDate__c</columns>
+    <columns>PresaleDesiredAmount__c</columns>
+    <columns>PresaleAmountPresentationDeadline__c</columns>
+    <columns>PresaleMemberOwner__c</columns>
+    <columns>PresaleAmountPresentation__c</columns>
+    <filterScope>Mine</filterScope>
+    <label>【仕入営業用】私の先売り依頼</label>
+</ListView>

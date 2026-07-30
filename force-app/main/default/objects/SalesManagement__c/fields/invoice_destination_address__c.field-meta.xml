@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>invoice_destination_address__c</fullName>
+    <externalId>false</externalId>
+    <formula>invoice_destination_postal_code__c &amp; BR() &amp;
+invoice_destination_prefecture__c &amp; &quot; &quot; &amp;
+invoice_destination_city__c &amp; BR() &amp;
+invoice_destination_town__c</formula>
+    <label>請求書送付先住所</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

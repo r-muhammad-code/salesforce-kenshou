@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>kobe</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND (4 OR 5)</booleanFilter>
+    <columns>RECORDTYPE</columns>
+    <columns>NAME</columns>
+    <columns>asset_mngno__c</columns>
+    <columns>car_maker__c</columns>
+    <columns>car_model__c</columns>
+    <columns>tanto_manage_bumon__c</columns>
+    <columns>asses_tanto__c</columns>
+    <columns>store__c</columns>
+    <columns>account__c</columns>
+    <columns>oppotunity__c</columns>
+    <columns>asses_date__c</columns>
+    <columns>SendDateToAuctionSite__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Assessment__c.yard</value>
+    </filters>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>greaterOrEqual</operation>
+        <value>2/22/2022 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>lessOrEqual</operation>
+        <value>3/10/2022 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>car_model__c</field>
+        <operation>contains</operation>
+        <value>ワゴンR</value>
+    </filters>
+    <filters>
+        <field>car_model__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>神戸ヤード査定表</label>
+</ListView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>User_Hire_category__c</fullName>
+    <description>買取商談所有者の入社カテゴリが表示される。新卒/中途</description>
+    <externalId>false</externalId>
+    <formula>TEXT( Owner:User.Hire_Category__c )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>ユーザ入社カテゴリ</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

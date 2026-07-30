@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>variety_classification__c</fullName>
+    <description>山本</description>
+    <externalId>false</externalId>
+    <formula>CASE( Carmodel__r.variety_classification__c ,
+&quot;10&quot;,&quot;普通車&quot;,
+&quot;20&quot;,&quot;軽自動車&quot;,
+&quot;30&quot;,&quot;大型車(2t以上)&quot;,
+&quot;31&quot;,&quot;超小型車（車輌総重量3.5t未満）&quot;,
+&quot;32&quot;,&quot;小型車（車輌総重量3.5t以上、7.5t未満）&quot;,
+&quot;33&quot;,&quot;中型車（車輌総重量7.5t以上、18t未満）&quot;,
+&quot;34&quot;,&quot;大型車（車輌総重量18t以上）&quot;,
+&quot;35&quot;,&quot;トレーラヘッド&quot;,
+&quot;36&quot;,&quot;トレーラ&quot;,
+&quot;37&quot;,&quot;バス&quot;,
+&quot;40&quot;,&quot;バイク&quot;,
+&quot;50&quot;,&quot;重機・建機&quot;,
+&quot;55&quot;,&quot;農機&quot;,
+&quot;60&quot;,&quot;費用項目&quot;,
+&quot;70&quot;,&quot;自動車パーツ&quot;,
+&quot;85&quot;,&quot;その他商品&quot;,&quot;&quot;)</formula>
+    <label>品種分類</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

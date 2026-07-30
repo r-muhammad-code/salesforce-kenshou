@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RepairQualifiersrAccompany__c</fullName>
+    <description>佐野</description>
+    <externalId>false</externalId>
+    <inlineHelpText>修復歴テスト合格者と同行する予定で値付けをする場合は同行予定を選択。同行後に同行済みを選択する。</inlineHelpText>
+    <label>修復歴合格者同行</label>
+    <required>false</required>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>修復歴合格者同行予定</fullName>
+                <default>false</default>
+                <label>修復歴合格者同行予定</label>
+            </value>
+            <value>
+                <fullName>修復歴合格者同行済み</fullName>
+                <default>false</default>
+                <label>修復歴合格者同行済み</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

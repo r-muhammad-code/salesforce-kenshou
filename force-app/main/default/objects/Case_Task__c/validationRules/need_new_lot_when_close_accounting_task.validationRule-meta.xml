@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>need_new_lot_when_close_accounting_task</fullName>
+    <active>true</active>
+    <description>経理タスクを完了にするとき、新ロットの入力が無い場合は保存できないように制御</description>
+    <errorConditionFormula>AND(
+  ISPICKVAL(Status__c, &quot;完了（Closed）&quot;),
+  Title__c = &quot;車両キャンセル（経理タスク）&quot;,
+  destination_department_sales__c = &quot;経理&quot;,
+  create_new_lot__c = &quot;必要&quot;,
+  ISBLANK(new_lot__c)
+)</errorConditionFormula>
+    <errorDisplayField>new_lot__c</errorDisplayField>
+    <errorMessage>車両キャンセル（経理タスク）の状況を完了に変更する場合、新ロットの入力は必須となります。</errorMessage>
+</ValidationRule>

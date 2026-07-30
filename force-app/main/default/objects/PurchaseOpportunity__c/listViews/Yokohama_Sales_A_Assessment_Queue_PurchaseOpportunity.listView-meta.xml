@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Yokohama_Sales_A_Assessment_Queue_PurchaseOpportunity</fullName>
+    <filterScope>Queue</filterScope>
+    <label>横浜営業A査定キュー</label>
+    <queue>Yokohama_Sales_A_Assessment_Queue</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

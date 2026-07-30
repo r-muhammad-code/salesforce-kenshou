@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LeagalCheck_ContractCompletedDate__c</fullName>
+    <description>軽自動車ではなまる申請依頼書のみで処理する場合、売契締結済みかどうかで書類管理が書類ＯＫをつける。
+書類管理の判断基準するため、以下いずれかが入力されていればTrueを返す。
+・買取受付＞売契完了日
+・買取商談＞法務課チェック日
+・買取商談＞法務課チェック（過去案件）
+・営業管理＞売契・注文書の確認日
+山本</description>
+    <externalId>false</externalId>
+    <formula>OR(
+    NOT(ISBLANK(Case__r.ContractCompletedDate__c)), 
+    NOT(ISBLANK(LeagalCheckDate__c)),
+    NOT(ISBLANK(Conclusion_date__c)),
+    LeagalCheck__c
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>法務課チェック・売契完了日</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

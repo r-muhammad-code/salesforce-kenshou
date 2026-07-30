@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Next_Contact_tomorrow</fullName>
+    <columns>Next_Contact_Daytime__c</columns>
+    <columns>NAME</columns>
+    <columns>ModelYearCarName__c</columns>
+    <columns>Department__c</columns>
+    <columns>Owner__c</columns>
+    <columns>AssessmentDate__c</columns>
+    <columns>Estimate__c</columns>
+    <columns>ProposedPrice__c</columns>
+    <columns>Approver__c</columns>
+    <columns>URL_AdditionalImage__c</columns>
+    <columns>Memo__c</columns>
+    <columns>Case__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Next_Contact_Daytime__c</field>
+        <operation>greaterThan</operation>
+        <value>TODAY</value>
+    </filters>
+    <filters>
+        <field>Phase__c</field>
+        <operation>equals</operation>
+        <value>受付,保留</value>
+    </filters>
+    <filters>
+        <field>PurchaseDate__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>ABC__c</field>
+        <operation>contains</operation>
+        <value>営業</value>
+    </filters>
+    <filters>
+        <field>Department__c</field>
+        <operation>notContain</operation>
+        <value>コネクト</value>
+    </filters>
+    <filters>
+        <field>Owner__c</field>
+        <operation>notEqual</operation>
+        <value>宮定 雄大,福田 雅己,北川 翔也,長田 雄大,桝本 成也,村上 志琴,後藤 康太,吉田 志,八柳 秀,松岡 優弥,田代 雄一郎,木村 勇気,太田 鉄之,高野 乃椰,角田 秀斗,森 勇介,丸山 和紀</value>
+    </filters>
+    <label>【営業A】次回接触が翌日の保留リスト</label>
+</ListView>

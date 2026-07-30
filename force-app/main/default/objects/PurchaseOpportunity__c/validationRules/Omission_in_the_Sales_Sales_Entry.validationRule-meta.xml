@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Omission_in_the_Sales_Sales_Entry</fullName>
+    <active>true</active>
+    <description>佐野
+金井課長依頼分</description>
+    <errorConditionFormula>DATEVALUE( CreatedDate ) &gt;= DATE( 2024,05,25 )
+&amp;&amp;
+ISBLANK(StockNo__c) = FALSE
+&amp;&amp;
+OR( ISPICKVAL(Yard__c,&quot;&quot;), ISNULL(ComplaintsReceptionDate__c) ,
+ISPICKVAL(Complaints_Kinds__c,&quot;&quot;) , ISPICKVAL(Complaints_Responsibility__c,&quot;&quot;) ,
+ISNULL(SaleDate__c) , ISPICKVAL(ComplaintsCorrespondenceDivision__c,&quot;&quot;) )</errorConditionFormula>
+    <errorMessage>販売営業記入欄に入力漏れがあります。( 候補: ヤード , クレーム受付日 , クレーム種別 , クレーム責任の帰属 , 車輌売却日 , クレーム対応区分 )</errorMessage>
+</ValidationRule>

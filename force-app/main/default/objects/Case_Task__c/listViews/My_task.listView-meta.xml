@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_task</fullName>
+    <columns>NAME</columns>
+    <columns>Title__c</columns>
+    <columns>Status__c</columns>
+    <columns>Member__c</columns>
+    <columns>Origin__c</columns>
+    <columns>EscalationDateTime__c</columns>
+    <columns>contact_delay_flag__c</columns>
+    <filterScope>Mine</filterScope>
+    <label>私のタスク一覧</label>
+</ListView>

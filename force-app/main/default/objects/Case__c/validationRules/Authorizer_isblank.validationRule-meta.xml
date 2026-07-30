@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Authorizer_isblank</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR( ISPICKVAL( Request_Detail__c , &quot;現在登録証発行申請&quot;) ,
+  ISPICKVAL( Request_Detail__c , &quot;車庫申請&quot;) )  &amp;&amp; 
+ ISBLANK(Authorizer__c  )</errorConditionFormula>
+    <errorDisplayField>Authorizer__c</errorDisplayField>
+    <errorMessage>承認者が入力されていません。</errorMessage>
+</ValidationRule>

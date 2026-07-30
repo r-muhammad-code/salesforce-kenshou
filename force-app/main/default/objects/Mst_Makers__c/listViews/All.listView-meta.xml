@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>row_num__c</columns>
+    <columns>country_name__c</columns>
+    <columns>country__c</columns>
+    <columns>NAME</columns>
+    <columns>maker_name_eizi__c</columns>
+    <columns>maker__c</columns>
+    <columns>reserve1__c</columns>
+    <columns>reserve2__c</columns>
+    <columns>inum__c</columns>
+    <columns>disp_flg__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>すべて選択</label>
+</ListView>

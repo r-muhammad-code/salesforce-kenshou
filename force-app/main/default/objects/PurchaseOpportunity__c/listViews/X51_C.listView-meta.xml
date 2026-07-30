@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X51_C</fullName>
+    <columns>Owner__c</columns>
+    <columns>CarExhibition__c</columns>
+    <columns>NAME</columns>
+    <columns>ModelYearCarName__c</columns>
+    <columns>PurchaseDate__c</columns>
+    <columns>TakeUpDate__c</columns>
+    <columns>AvailableDate__c</columns>
+    <columns>Estimate__c</columns>
+    <columns>ProposedPrice__c</columns>
+    <columns>CarNo__c</columns>
+    <columns>OtherAA_Place__c</columns>
+    <columns>ProcessingDivision__c</columns>
+    <columns>Evaluationpoints_Prospect__c</columns>
+    <columns>Phase__c</columns>
+    <columns>Role__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Phase__c</field>
+        <operation>equals</operation>
+        <value>買取</value>
+    </filters>
+    <filters>
+        <field>Role__c</field>
+        <operation>equals</operation>
+        <value>関東エリア</value>
+    </filters>
+    <filters>
+        <field>CarExhibition__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>AccountSegment__c</field>
+        <operation>equals</operation>
+        <value>リユース</value>
+    </filters>
+    <label>51. Cコネ関東出品前チェック</label>
+</ListView>

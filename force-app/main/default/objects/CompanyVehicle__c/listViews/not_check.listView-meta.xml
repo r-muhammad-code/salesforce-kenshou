@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>not_check</fullName>
+    <columns>NAME</columns>
+    <columns>Base__c</columns>
+    <columns>User__c</columns>
+    <columns>Carmodel__c</columns>
+    <columns>CarNo__c</columns>
+    <columns>RegistrationNo__c</columns>
+    <columns>OwnershipCompany__c</columns>
+    <columns>remarks__c</columns>
+    <columns>ETC__c</columns>
+    <columns>Gasoline__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LastCheckDate__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>spare__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Sold__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Base_formula__c</field>
+        <operation>notContain</operation>
+        <value>ヤード</value>
+    </filters>
+    <label>社用車チェック未対応分</label>
+</ListView>

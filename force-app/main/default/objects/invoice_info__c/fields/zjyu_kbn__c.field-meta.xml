@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>zjyu_kbn__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(
+    TEXT(Member__r.zjyu_kbn__c),
+    &quot;1&quot;, &quot;国内在住&quot;,
+    &quot;2&quot;, &quot;海外在住&quot;,
+    &quot;&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>会員の在住区分</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

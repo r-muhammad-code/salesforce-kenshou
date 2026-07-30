@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X03</fullName>
+    <columns>NAME</columns>
+    <columns>Account__c</columns>
+    <columns>ModelYearCarName__c</columns>
+    <columns>PurchaseDate__c</columns>
+    <columns>TakeUpDate__c</columns>
+    <columns>BeforeContact__c</columns>
+    <columns>TransferDate__c</columns>
+    <columns>DocumentOKCheck__c</columns>
+    <columns>landing__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>Phase__c</field>
+        <operation>equals</operation>
+        <value>買取</value>
+    </filters>
+    <label>03.私の買取した買取商談（決定物件リスト）</label>
+</ListView>

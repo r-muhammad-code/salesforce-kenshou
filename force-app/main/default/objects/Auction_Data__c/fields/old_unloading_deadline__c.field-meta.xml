@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>old_unloading_deadline__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>ペナルティ発生時のみ表示される</inlineHelpText>
+    <label>ペナルティ発生時の搬出期限</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

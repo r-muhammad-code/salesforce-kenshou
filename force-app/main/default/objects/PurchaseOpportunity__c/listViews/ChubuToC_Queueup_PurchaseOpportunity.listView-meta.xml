@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ChubuToC_Queueup_PurchaseOpportunity</fullName>
+    <filterScope>Queue</filterScope>
+    <label>中部現車査定キュー</label>
+    <queue>ChubuToC_Queueup</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

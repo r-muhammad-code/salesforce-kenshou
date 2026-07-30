@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ReuseProjectQueue_Case</fullName>
+    <columns>NAME</columns>
+    <columns>WebName__c</columns>
+    <columns>Phone__c</columns>
+    <columns>Web_Address__c</columns>
+    <columns>CarModel__c</columns>
+    <columns>WebModelYear__c</columns>
+    <columns>WebMileage__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>VehicleClassification__c</field>
+        <operation>equals</operation>
+        <value>はなまるオークション/他社AA（営業）</value>
+    </filters>
+    <filters>
+        <field>Phase__c</field>
+        <operation>equals</operation>
+        <value>キャンセル</value>
+    </filters>
+    <filters>
+        <field>ReceptionDateTime__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>4/1/2025 12:00 AM</value>
+    </filters>
+    <filters>
+        <field>Web_Address__c</field>
+        <operation>contains</operation>
+        <value>大阪府,京都府,奈良県,兵庫県,和歌山県,滋賀県</value>
+    </filters>
+    <label>リユース案件営業A車両商談キャンセル案件</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>storage_pref__c</fullName>
+    <description>買取受付の保管場所住所もしくは買取受付の保管先住所から都道府県を切り出し。山本</description>
+    <externalId>false</externalId>
+    <formula>IF(
+    NOT(ISBLANK(Case__c)),
+    Case__r.LocationAddress_State_hs__c ,
+    LEFT(PurchaseOpportunity__r.StorageLocationAddress__c, IF(MID(PurchaseOpportunity__r.StorageLocationAddress__c, 4, 1) = &quot;県&quot;, 4, 3))
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>都道府県（保管先）</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

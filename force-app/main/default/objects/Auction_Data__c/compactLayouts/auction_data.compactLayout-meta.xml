@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>auction_data</fullName>
+    <fields>Model__c</fields>
+    <fields>Lot_Number__c</fields>
+    <fields>Chassis_Number__c</fields>
+    <fields>Winning_Member__c</fields>
+    <label>オークション出品データ</label>
+</CompactLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>stayList</fullName>
+    <columns>NAME</columns>
+    <columns>PurchaseOpportunity__c</columns>
+    <columns>Case__c</columns>
+    <columns>ScheduleAdjustmentRequestDate__c</columns>
+    <columns>Owner__c</columns>
+    <columns>CarName__c</columns>
+    <columns>CarNo__c</columns>
+    <columns>StorageLocation__c</columns>
+    <columns>StorageLocation_CallA__c</columns>
+    <columns>StorageLocationAddress__c</columns>
+    <columns>RegularHoliday__c</columns>
+    <columns>Setup_staff__c</columns>
+    <columns>StorageLocation_Person__c</columns>
+    <columns>Storage_Location_Address__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>BC__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>ScheduledPickupDate__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>Owner__c</field>
+        <operation>notContain</operation>
+        <value>中川 祐里,山本 沙耶,システム管理者</value>
+    </filters>
+    <filters>
+        <field>Cancel_Done__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Change_Cancel__c</field>
+        <operation>equals</operation>
+        <value>引取保留</value>
+    </filters>
+    <label>引取保留リスト</label>
+</ListView>

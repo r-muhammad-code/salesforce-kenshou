@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PaymentAccount_notChange</fullName>
+    <active>true</active>
+    <description>システム管理者プロファイルのみ編集可能。山本</description>
+    <errorConditionFormula>AND( 
+     $User.ProfileName__c  &lt;&gt; &quot;システム管理者&quot;,
+    ISPICKVAL(PaymentProcessingCategory__c, &quot;1&quot;), 
+    OR( 
+        ISCHANGED(PaymentAccount__c), 
+        ISCHANGED(Transfer_money_A__c), 
+        ISCHANGED(bank_account_nm__c), 
+        ISCHANGED(bank_nm__c),
+        ISCHANGED( branch_nm__c ),
+        ISCHANGED( bank_account_no__c )
+    )
+)</errorConditionFormula>
+    <errorMessage>確定後に口座情報または振込金額を変更する場合は、キャンセル依頼をし再度振込依頼を出してください。</errorMessage>
+</ValidationRule>

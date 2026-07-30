@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Approver__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>商談・提示金額の相談者/決裁した人を選択する　※決裁者無しは空白</description>
+    <externalId>false</externalId>
+    <inlineHelpText>商談・提示金額の相談者/決裁した人を選択してください。　※決裁者無しは空白</inlineHelpText>
+    <label>決裁者</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>OpportunityApprover</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

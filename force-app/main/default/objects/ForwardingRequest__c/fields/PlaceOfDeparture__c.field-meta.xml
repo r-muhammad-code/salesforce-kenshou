@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PlaceOfDeparture__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>山本</description>
+    <externalId>false</externalId>
+    <label>出発地</label>
+    <lookupFilter>
+        <active>true</active>
+        <filterItems>
+            <field>Mst_Yard__c.Name</field>
+            <operation>notContain</operation>
+            <value>使用禁止_</value>
+        </filterItems>
+        <isOptional>true</isOptional>
+    </lookupFilter>
+    <referenceTo>Mst_Yard__c</referenceTo>
+    <relationshipLabel>出発地</relationshipLabel>
+    <relationshipName>Forwarding_Departure</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

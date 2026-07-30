@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SetTransferdateCompletiondate</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISPICKVAL(Request_Content_Keiri__c, &quot;振込依頼&quot;) &amp;&amp;
+NOT(ISBLANK(Keiri_completion_day__c)) &amp;&amp; ISBLANK(TransferDate__c) ||
+ISBLANK(Keiri_completion_day__c) &amp;&amp;NOT( ISBLANK(TransferDate__c))</errorConditionFormula>
+    <errorMessage>振込依頼の場合、対応完了日（営業→経理）と振込日はセットで入力してください</errorMessage>
+</ValidationRule>

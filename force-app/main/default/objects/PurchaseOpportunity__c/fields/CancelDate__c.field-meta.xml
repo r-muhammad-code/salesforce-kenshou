@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CancelDate__c</fullName>
+    <description>フェーズをキャンセルにしたら自動でその日付が入力される</description>
+    <externalId>false</externalId>
+    <inlineHelpText>未入力でフェーズがキャンセルの時、当日が自動的にセットされます。</inlineHelpText>
+    <label>キャンセル日</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

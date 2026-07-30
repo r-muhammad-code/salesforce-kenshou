@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PickupRequest_error</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+    $User.Username != &quot;salesforce@hanamaru870.co.jp&quot;,
+    ScheduleAdjustmentRequestDate__c&gt;=DATE(2022,03,15)  &amp;&amp; IF( Privatehome__c = TRUE , ISBLANK( StorageLocationAddress__c ) , ISBLANK( StorageLocation__c ) )
+)</errorConditionFormula>
+    <errorMessage>保管先名を入力、もしくは個人宅にチェックを入れてください。
+個人宅にチェックを入れている場合は、保管先住所を入力してください。</errorMessage>
+</ValidationRule>

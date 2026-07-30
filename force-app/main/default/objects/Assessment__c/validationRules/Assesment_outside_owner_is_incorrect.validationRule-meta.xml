@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assesment_outside_owner_is_incorrect</fullName>
+    <active>false</active>
+    <errorConditionFormula>Assessment_outside_owner__r.Assessment_outside_owner__c = false &amp;&amp; NOT( ISBLANK( Bid_limit__c ))</errorConditionFormula>
+    <errorDisplayField>Assessment_outside_owner__c</errorDisplayField>
+    <errorMessage>正しいユーザを選択してください。</errorMessage>
+</ValidationRule>

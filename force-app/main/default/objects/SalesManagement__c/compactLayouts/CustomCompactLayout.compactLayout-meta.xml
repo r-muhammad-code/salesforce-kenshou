@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CustomCompactLayout</fullName>
+    <fields>Name</fields>
+    <fields>OwnerId</fields>
+    <fields>LotNo__c</fields>
+    <fields>Pickup_status__c</fields>
+    <fields>Document_status__c</fields>
+    <fields>Transfer_status__c</fields>
+    <fields>PurchaseOpportunity__c</fields>
+    <label>カスタムコンパクトレイアウト</label>
+</CompactLayout>

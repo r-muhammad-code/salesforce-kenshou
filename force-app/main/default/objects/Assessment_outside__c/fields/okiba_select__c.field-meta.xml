@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>okiba_select__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE ( TEXT ( Assessment__r.okiba_select__c ) , &quot;0&quot;, &quot;---&quot; , &quot;1&quot;, &quot;神戸集中ヤード&quot; , &quot;2&quot;, &quot;福岡ヤード&quot; , &quot;3&quot;, &quot;名古屋ヤード&quot; ,&quot;4&quot;, &quot;名古屋第二ヤード&quot; , &quot;5&quot;, &quot;神奈川ヤード&quot; , &quot;6&quot;, &quot;首都圏ヤード&quot; , &quot;7&quot;, &quot;仙台ヤード&quot; ,&quot;8&quot;, &quot;鳥取ヤード&quot; , &quot;9&quot;, &quot;広島ヤード&quot; , &quot;10&quot;, &quot;金沢ヤード&quot; , &quot;11&quot;, &quot;栃木ヤード&quot; ,&quot;12&quot;, &quot;静岡ヤード&quot; , &quot;13&quot;, &quot;南九州ヤード&quot; , &quot;14&quot;, &quot;新潟ヤード&quot; , &quot;15&quot;, &quot;北海道ヤード&quot; ,&quot;16&quot;, &quot;長野ヤード&quot; , &quot;17&quot;, &quot;岩手ヤード&quot; , &quot;18&quot;, &quot;四国ヤード&quot; , &quot;19&quot;, &quot;岡山ヤード&quot; , &quot;20&quot;, &quot;千葉ヤード&quot; , &quot;21&quot;, &quot;神戸第二ヤード&quot; , &quot;22&quot;, &quot;水戸ヤード&quot; , &quot;23&quot;, &quot;山口ヤード&quot; , &quot;24&quot;, &quot;沖縄ヤード&quot; , &quot;25&quot;, &quot;その他&quot; , &quot;&quot; )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>置場</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

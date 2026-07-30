@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AssessUserContact</fullName>
+    <active>true</active>
+    <description>取引先ユーザの取引先担当者</description>
+    <errorConditionFormula>OR
+(
+  AND
+  (
+    TEXT( emp_kind__c ) = &apos;2&apos;,
+    ISBLANK( contact__c )
+  ),
+  AND
+  (
+    TEXT( emp_kind__c ) &lt;&gt; &apos;2&apos;,
+    NOT( ISBLANK( contact__c ) )
+  )
+)</errorConditionFormula>
+    <errorDisplayField>contact__c</errorDisplayField>
+    <errorMessage>社員区分が取引先の場合に、該当の取引先担当者（コミュニティユーザ）を選択して下さい。</errorMessage>
+</ValidationRule>

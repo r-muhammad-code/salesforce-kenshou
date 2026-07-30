@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Profits__c</fullName>
+    <description>山本</description>
+    <externalId>false</externalId>
+    <formula>IF ( TEXT(Retail_Overseas_category__c ) &lt;&gt; &quot;&quot;, Profits_retail_overseas__c , Profits_OBIC__c )</formula>
+    <label>利益(営業実績)</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

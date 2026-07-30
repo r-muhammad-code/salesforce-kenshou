@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Difference_Upper_Selling__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+    OR(ISBLANK(Price_and_Expenses__c), Price_and_Expenses__c = 0),
+    0,  
+    Price_and_Expenses__c - Upper_Selling_Price__c  
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>差額（売り上）</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

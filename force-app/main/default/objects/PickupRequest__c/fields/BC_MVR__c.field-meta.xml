@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BC_MVR__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( BC__c , &quot;B&quot;, &quot;Bあり&quot;, &quot;Bプラス&quot;,&quot;Bあり&quot;,&quot;C&quot;,&quot;C&quot;,null)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>BC区分（MVR）</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

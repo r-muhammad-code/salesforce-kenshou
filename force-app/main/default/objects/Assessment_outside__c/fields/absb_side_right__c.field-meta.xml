@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>absb_side_right__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE ( TEXT ( Assessment__r.absb_side_right__c ) , &quot;1&quot;, &quot;なし&quot; , &quot;2&quot;, &quot;〇&quot; , &quot;4&quot;, &quot;×&quot; , &quot;5&quot; , &quot;不明&quot; , &quot;&quot; )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>サイド右</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

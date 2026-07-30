@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>kanri_num__c</fullName>
+    <description>ss_info_detailはロット情報を持っていないので、紐づけ不可。
+invoice_infoのsales_info_seqと紐づく、sales_info内のkanri_numはss_info_detailのss_kanri_numが一致するので、
+ここの管理番号欄にはユーザー、ヤード、ワンプラの管理番号が入る。フローでこれと一致するワンプラ情報を取得</description>
+    <externalId>false</externalId>
+    <label>管理番号</label>
+    <length>255</length>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

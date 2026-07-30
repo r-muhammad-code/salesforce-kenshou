@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>jiso__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE ( TEXT ( Assessment__r.jiso__c ) , &quot;2&quot;, &quot;可&quot; , &quot;6&quot;, &quot;少し可（積載車積込可）&quot; , &quot;7&quot;, &quot;少し可（積載車積込不可）&quot; , &quot;8&quot; , &quot;自走少し可（積載車積込OK船積不動扱い）&quot; , &quot;4&quot; , &quot;不可（転がる）&quot; , &quot;5&quot; , &quot;不可（転がらない）&quot; , &quot;&quot; )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>自走</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

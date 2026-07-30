@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sales_tax__c</fullName>
+    <description>買取金額からリサイクル料金を引いた金額の消費税相当額が表示される。山本</description>
+    <externalId>false</externalId>
+    <formula>FLOOR(Taxable_amount__c - (  Amount__c -  RecyclingFee__c )/1.1 )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>内税（消費税額）</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

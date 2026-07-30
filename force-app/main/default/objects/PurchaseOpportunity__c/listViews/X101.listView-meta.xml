@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X101</fullName>
+    <columns>NAME</columns>
+    <columns>Account__c</columns>
+    <columns>Phase__c</columns>
+    <columns>ModelYearCarName__c</columns>
+    <columns>Owner__c</columns>
+    <columns>AssessmentDate__c</columns>
+    <columns>Next_Contact_Daytime__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>Phase__c</field>
+        <operation>equals</operation>
+        <value>保留</value>
+    </filters>
+    <label>10. 私の保留在庫リスト</label>
+</ListView>

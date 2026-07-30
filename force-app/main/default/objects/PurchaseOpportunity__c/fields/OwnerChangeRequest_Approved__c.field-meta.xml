@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OwnerChangeRequest_Approved__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>車庫申請を承認したらチェックをつける、現在は使用していない</description>
+    <externalId>false</externalId>
+    <label>車庫申請承認済み</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

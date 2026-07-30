@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>RECORDTYPE</columns>
+    <columns>NAME</columns>
+    <columns>asset_mngno__c</columns>
+    <columns>car_maker__c</columns>
+    <columns>car_model__c</columns>
+    <columns>tanto_manage_bumon__c</columns>
+    <columns>asses_tanto__c</columns>
+    <columns>store__c</columns>
+    <columns>account__c</columns>
+    <columns>oppotunity__c</columns>
+    <columns>asses_date__c</columns>
+    <columns>SendDateToAuctionSite__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>すべて選択</label>
+</ListView>

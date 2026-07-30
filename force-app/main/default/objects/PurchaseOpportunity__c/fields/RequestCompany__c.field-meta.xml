@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RequestCompany__c</fullName>
+    <description>喜多</description>
+    <externalId>false</externalId>
+    <label>引取依頼業者</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>RequestDestination__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ゼロ</fullName>
+                <default>false</default>
+                <label>ゼロ</label>
+            </value>
+            <value>
+                <fullName>テイクオフ（東京）</fullName>
+                <default>false</default>
+                <label>テイクオフ（東京）</label>
+            </value>
+            <value>
+                <fullName>テイクオフ（名古屋）</fullName>
+                <default>false</default>
+                <label>テイクオフ（名古屋）</label>
+            </value>
+            <value>
+                <fullName>テイクオフ（神戸）</fullName>
+                <default>false</default>
+                <label>テイクオフ（神戸）</label>
+            </value>
+            <value>
+                <fullName>㈱TCS　仙台支店</fullName>
+                <default>false</default>
+                <label>㈱TCS　仙台支店</label>
+            </value>
+            <value>
+                <fullName>㈱TCS　野田支店</fullName>
+                <default>false</default>
+                <label>㈱TCS　野田支店</label>
+            </value>
+            <value>
+                <fullName>㈱TCS　千葉支店</fullName>
+                <default>false</default>
+                <label>㈱TCS　千葉支店</label>
+            </value>
+            <value>
+                <fullName>㈱TCS　本社</fullName>
+                <default>false</default>
+                <label>㈱TCS　本社</label>
+            </value>
+            <value>
+                <fullName>㈱TCS　静岡支店</fullName>
+                <default>false</default>
+                <label>㈱TCS　静岡支店</label>
+            </value>
+            <value>
+                <fullName>㈱TCS　名古屋支店</fullName>
+                <default>false</default>
+                <label>㈱TCS　名古屋支店</label>
+            </value>
+            <value>
+                <fullName>㈱TCS　神戸支店</fullName>
+                <default>false</default>
+                <label>㈱TCS　神戸支店</label>
+            </value>
+            <value>
+                <fullName>㈱TCS　福岡支店</fullName>
+                <default>false</default>
+                <label>㈱TCS　福岡支店</label>
+            </value>
+            <value>
+                <fullName>有限会社カイザー</fullName>
+                <default>false</default>
+                <label>有限会社カイザー</label>
+            </value>
+            <value>
+                <fullName>旧フロー_ゼロ</fullName>
+                <default>false</default>
+                <label>旧フロー_ゼロ</label>
+            </value>
+            <value>
+                <fullName>まるおモータース</fullName>
+                <default>false</default>
+                <label>まるおモータース</label>
+            </value>
+            <value>
+                <fullName>美島自動車</fullName>
+                <default>false</default>
+                <label>美島自動車</label>
+            </value>
+            <value>
+                <fullName>アドーレジャパン</fullName>
+                <default>false</default>
+                <label>アドーレジャパン</label>
+            </value>
+            <value>
+                <fullName>京王自動車工業</fullName>
+                <default>false</default>
+                <label>京王自動車工業</label>
+            </value>
+            <value>
+                <fullName>DO</fullName>
+                <default>false</default>
+                <label>DO</label>
+            </value>
+            <value>
+                <fullName>佐久間オートサービス</fullName>
+                <default>false</default>
+                <label>佐久間オートサービス</label>
+            </value>
+            <value>
+                <fullName>㈱アライロジスティックス</fullName>
+                <default>false</default>
+                <label>㈱アライロジスティックス</label>
+            </value>
+            <value>
+                <fullName>プロテクト</fullName>
+                <default>false</default>
+                <label>プロテクト</label>
+            </value>
+            <value>
+                <fullName>パブリックレッカー</fullName>
+                <default>false</default>
+                <label>パブリックレッカー</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>営業</controllingFieldValue>
+            <valueName>ゼロ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>営業</controllingFieldValue>
+            <valueName>テイクオフ（東京）</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>営業</controllingFieldValue>
+            <valueName>テイクオフ（名古屋）</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>営業</controllingFieldValue>
+            <valueName>テイクオフ（神戸）</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>営業</controllingFieldValue>
+            <valueName>㈱TCS　仙台支店</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>営業</controllingFieldValue>
+            <valueName>㈱TCS　野田支店</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>営業</controllingFieldValue>
+            <valueName>㈱TCS　千葉支店</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>営業</controllingFieldValue>
+            <valueName>㈱TCS　本社</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>営業</controllingFieldValue>
+            <valueName>㈱TCS　静岡支店</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>営業</controllingFieldValue>
+            <valueName>㈱TCS　名古屋支店</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>営業</controllingFieldValue>
+            <valueName>㈱TCS　神戸支店</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>営業</controllingFieldValue>
+            <valueName>㈱TCS　福岡支店</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>営業</controllingFieldValue>
+            <valueName>有限会社カイザー</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>営業</controllingFieldValue>
+            <valueName>まるおモータース</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>営業</controllingFieldValue>
+            <valueName>美島自動車</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>営業</controllingFieldValue>
+            <valueName>アドーレジャパン</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>営業</controllingFieldValue>
+            <valueName>京王自動車工業</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>営業</controllingFieldValue>
+            <valueName>DO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>営業</controllingFieldValue>
+            <valueName>佐久間オートサービス</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>営業</controllingFieldValue>
+            <valueName>㈱アライロジスティックス</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>営業</controllingFieldValue>
+            <valueName>プロテクト</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>営業</controllingFieldValue>
+            <valueName>パブリックレッカー</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

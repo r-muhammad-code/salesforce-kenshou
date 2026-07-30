@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ISBLANK_OpportunityOwnerORAccount</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND (NOT( ISBLANK( OpportunityOwner__c ) ) , ISBLANK( account__c ) )</errorConditionFormula>
+    <errorDisplayField>account__c</errorDisplayField>
+    <errorMessage>取引先が入力されていません。</errorMessage>
+</ValidationRule>

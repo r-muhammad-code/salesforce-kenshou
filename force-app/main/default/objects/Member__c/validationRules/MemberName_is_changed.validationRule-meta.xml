@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MemberName_is_changed</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISCHANGED( Name ) &amp;&amp; NOT( $User.Username = &quot;salesforce@hanamaru870.co.jp&quot; )</errorConditionFormula>
+    <errorDisplayField>Name</errorDisplayField>
+    <errorMessage>会員名は変更できません。</errorMessage>
+</ValidationRule>

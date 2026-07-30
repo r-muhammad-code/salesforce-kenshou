@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X004</fullName>
+    <columns>Amount_content__c</columns>
+    <columns>NAME</columns>
+    <columns>requesting_company_name__c</columns>
+    <columns>store__c</columns>
+    <columns>asses_date__c</columns>
+    <columns>car_model__c</columns>
+    <columns>shadai_no__c</columns>
+    <columns>auc_submit_price__c</columns>
+    <columns>expiration_date__c</columns>
+    <columns>AmountExpirationDateRemainingDays__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>result__c</field>
+        <operation>equals</operation>
+    </filters>
+    <label>【004.共有】全ての未成約の取引先査定表</label>
+</ListView>

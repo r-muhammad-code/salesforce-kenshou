@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>This_is_not_an_approval_for_repair_costs</fullName>
+    <active>false</active>
+    <description>修理代は経理依頼で依頼しなくなったため停止20250416山本</description>
+    <errorConditionFormula>ISPICKVAL( Request_Content_Keiri__c ,&quot;振込依頼&quot;) &amp;&amp; Approva_repairCosts__c</errorConditionFormula>
+    <errorDisplayField>Transfer_request_approved__c</errorDisplayField>
+    <errorMessage>営業や営業サポートから承認を求めるChatterが届いた際には、FBの振込依頼及び修理代の振込依頼に関わらず、こちらにチェックをしてください。</errorMessage>
+</ValidationRule>

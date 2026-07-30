@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Transportation__c</fullName>
+    <externalId>false</externalId>
+    <label>陸送</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>直搬入</fullName>
+                <default>false</default>
+                <label>直搬入</label>
+            </value>
+            <value>
+                <fullName>ヤード</fullName>
+                <default>false</default>
+                <label>ヤード</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

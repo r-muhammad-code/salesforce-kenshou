@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BC__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>A車輌は入力不要です。一般案件で解体提携車輌の場合は、BCの区分を入力してください。この項目入力することでMVRへ引取依頼が飛びます。</inlineHelpText>
+    <label>BC区分</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Bプラス</fullName>
+                <default>false</default>
+                <label>Bプラス</label>
+            </value>
+            <value>
+                <fullName>B</fullName>
+                <default>false</default>
+                <label>B</label>
+            </value>
+            <value>
+                <fullName>C</fullName>
+                <default>false</default>
+                <label>C</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

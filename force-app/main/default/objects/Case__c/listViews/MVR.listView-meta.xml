@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MVR</fullName>
+    <booleanFilter>1 AND 2 AND  (4 OR 5) AND 6 AND ( 3 OR 7 OR 8 )</booleanFilter>
+    <columns>NAME</columns>
+    <columns>Account__c</columns>
+    <columns>VehicleClassification__c</columns>
+    <columns>Phase__c</columns>
+    <columns>CarTypes__c</columns>
+    <columns>Owner_Fullname__c</columns>
+    <columns>LotNo__c</columns>
+    <columns>CandidateVendor__c</columns>
+    <columns>PurchaseDate__c</columns>
+    <columns>PossiblePickUpDate__c</columns>
+    <columns>PickUpDate__c</columns>
+    <columns>InstructionLimitDate__c</columns>
+    <columns>InstructionMakingDate__c</columns>
+    <columns>DocumentAttachmentShippingDate__c</columns>
+    <columns>Precautions__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>VehicleClassification__c</field>
+        <operation>equals</operation>
+        <value>直売,旧フローBC,直接商談</value>
+    </filters>
+    <filters>
+        <field>Account__c</field>
+        <operation>notContain</operation>
+        <value>テスト</value>
+    </filters>
+    <filters>
+        <field>ManagerContactDate__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>InstructionMakingDate__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>DocumentAttachmentShippingDate__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>Phase__c</field>
+        <operation>notContain</operation>
+        <value>廃車保留,売却,全完了,キャンセル</value>
+    </filters>
+    <filters>
+        <field>PurchaseDate__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>Oppotunity__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>MVRリミット確認用　直売/旧フロー</label>
+</ListView>

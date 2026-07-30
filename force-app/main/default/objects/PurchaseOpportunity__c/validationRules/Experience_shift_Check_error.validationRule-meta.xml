@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Experience_shift_Check_error</fullName>
+    <active>false</active>
+    <description>山本</description>
+    <errorConditionFormula>AND(
+    Experience_shift__c = TRUE, 
+    ISBLANK(Estimate__c)
+)</errorConditionFormula>
+    <errorMessage>売り予想を入力してから実績スライド分にチェックをつけてください。</errorMessage>
+</ValidationRule>

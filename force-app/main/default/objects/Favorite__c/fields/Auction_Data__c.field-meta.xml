@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Auction_Data__c</fullName>
+    <externalId>false</externalId>
+    <label>オークション出品データ</label>
+    <referenceTo>Auction_Data__c</referenceTo>
+    <relationshipLabel>お気に入り情報</relationshipLabel>
+    <relationshipName>Auction_Data</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <trackTrending>false</trackTrending>
+    <type>MasterDetail</type>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

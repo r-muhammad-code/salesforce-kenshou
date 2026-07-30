@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X1</fullName>
+    <columns>NAME</columns>
+    <columns>Opportunity_Owner__c</columns>
+    <columns>Bid_limit__c</columns>
+    <columns>registerdAtYear__c</columns>
+    <columns>car_model__c</columns>
+    <columns>Assessment_outside_memo__c</columns>
+    <columns>Bid_amount__c</columns>
+    <columns>Purchase_condition__c</columns>
+    <columns>bit_ranking__c</columns>
+    <columns>No1bit__c</columns>
+    <columns>No2bit__c</columns>
+    <columns>No3bit__c</columns>
+    <columns>No4bit__c</columns>
+    <columns>No5bit__c</columns>
+    <columns>bit_category__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>bit_ranking__c</field>
+        <operation>equals</operation>
+        <value>1位</value>
+    </filters>
+    <label>005.1位の結果発表済み</label>
+</ListView>

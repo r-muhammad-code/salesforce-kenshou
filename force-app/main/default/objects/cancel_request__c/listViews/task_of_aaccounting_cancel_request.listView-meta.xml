@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>task_of_aaccounting_cancel_request</fullName>
+    <columns>NAME</columns>
+    <columns>kanrinum1__c</columns>
+    <columns>Lot_Number__c</columns>
+    <columns>oneprice1__c</columns>
+    <columns>Model__c</columns>
+    <columns>Member_ID__c</columns>
+    <columns>member__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>Cansel_phase__c</columns>
+    <columns>accounting_memo__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>kanrinum1__c</field>
+        <operation>notEqual</operation>
+        <value>⚠️注意⚠️テスト管理番号</value>
+    </filters>
+    <filters>
+        <field>Cansel_phase__c</field>
+        <operation>equals</operation>
+        <value>経理返金対応中</value>
+    </filters>
+    <label>経理タスク</label>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

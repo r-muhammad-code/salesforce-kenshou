@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>same_user</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  NOT(ISBLANK(Approval_request_destination__c)),
+  Approval_request_destination__c = CreatedById
+)</errorConditionFormula>
+    <errorDisplayField>Approval_request_destination__c</errorDisplayField>
+    <errorMessage>この項目は作成者自身を承認者にすることは出来ません。
+別のユーザーを割り当ててください。</errorMessage>
+</ValidationRule>

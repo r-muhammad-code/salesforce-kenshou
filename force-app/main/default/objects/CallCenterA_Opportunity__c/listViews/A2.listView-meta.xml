@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>A2</fullName>
+    <columns>NAME</columns>
+    <columns>Case__c</columns>
+    <columns>Owner_Fullname__c</columns>
+    <columns>Account__c</columns>
+    <columns>FirstRegistration_Year_hs__c</columns>
+    <columns>CarName__c</columns>
+    <columns>Phase__c</columns>
+    <columns>LotNo__c</columns>
+    <columns>PurchaseDate__c</columns>
+    <columns>PickUpDate__c</columns>
+    <columns>DocumentAttachmentShippingDate__c</columns>
+    <columns>TransferDate__c</columns>
+    <columns>AfterDocumentsShipmentDay__c</columns>
+    <columns>ListingEndsDate__c</columns>
+    <columns>Precautions__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Phase__c</field>
+        <operation>notEqual</operation>
+        <value>全完了,キャンセル</value>
+    </filters>
+    <filters>
+        <field>Owner_Fullname__c</field>
+        <operation>notEqual</operation>
+        <value>中川 祐里</value>
+    </filters>
+    <label>全ての進行中のコールA商談</label>
+    <sharedTo>
+        <role>CallCenter</role>
+    </sharedTo>
+</ListView>

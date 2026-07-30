@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sale_contracted_rule</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL( phase_for_sell__c , &quot;成約&quot;),
+ISPICKVAL( RetailStock_under_opportunity__r.payment_type__c , &quot;&quot; ),
+ISPICKVAL( RetailStock_fixed_sales__r.payment_type__c , &quot;&quot; )
+)</errorConditionFormula>
+    <errorMessage>販売フェーズを成約にする時は「販売成約」を実行してください。</errorMessage>
+</ValidationRule>

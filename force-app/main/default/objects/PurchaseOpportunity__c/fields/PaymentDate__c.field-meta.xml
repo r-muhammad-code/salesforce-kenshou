@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PaymentDate__c</fullName>
+    <description>OBICの支払日を拾ってくる項目
+2024/10/03より集計管理から連携
+佐野</description>
+    <externalId>false</externalId>
+    <label>支払い日</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

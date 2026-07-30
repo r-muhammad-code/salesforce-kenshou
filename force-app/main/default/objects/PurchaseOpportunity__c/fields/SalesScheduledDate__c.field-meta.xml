@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SalesScheduledDate__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>着地粗利予想の為に必要です。日付の正確性は必要ありませんが、月は正確に選んでください。売上月が変わる場合は、判明した段階でこちらの予定日も変更してください。</inlineHelpText>
+    <label>売上予定日</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

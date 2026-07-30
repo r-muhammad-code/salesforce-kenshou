@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Buyer</fullName>
+    <columns>NAME</columns>
+    <columns>client_kgai_bank_account_id__c</columns>
+    <columns>bank_nm__c</columns>
+    <columns>branch_nm__c</columns>
+    <columns>bank_account_kb__c</columns>
+    <columns>bank_account_no__c</columns>
+    <columns>bank_account_nm__c</columns>
+    <columns>note_japan_transfer__c</columns>
+    <columns>Account__c</columns>
+    <columns>Contact__c</columns>
+    <columns>is_registered__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Transfer__c.Buyer</value>
+    </filters>
+    <label>仕入営業</label>
+</ListView>

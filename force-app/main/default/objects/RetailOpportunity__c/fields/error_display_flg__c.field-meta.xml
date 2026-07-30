@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>error_display_flg__c</fullName>
+    <description>2026/1/20 リユース引継ぎ時のキャンセル時のエラー表示に使用</description>
+    <externalId>false</externalId>
+    <label>【要削除】エラー表示フラグ</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>クローズ理由要入力</fullName>
+                <default>false</default>
+                <label>クローズ理由要入力</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

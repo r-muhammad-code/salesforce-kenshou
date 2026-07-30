@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>EigyoAssessmentView</fullName>
+    <columns>RECORDTYPE</columns>
+    <columns>NAME</columns>
+    <columns>asset_mngno__c</columns>
+    <columns>car_maker__c</columns>
+    <columns>car_model__c</columns>
+    <columns>shadai_no__c</columns>
+    <columns>tanto_manage_bumon__c</columns>
+    <columns>asses_tanto__c</columns>
+    <columns>store__c</columns>
+    <columns>account__c</columns>
+    <columns>oppotunity__c</columns>
+    <columns>asses_date__c</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>damage__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Assessment__c.sales</value>
+    </filters>
+    <filters>
+        <field>CREATED_DATE</field>
+        <operation>greaterThan</operation>
+        <value>1/1/2023 12:00 AM</value>
+    </filters>
+    <label>営業査定表</label>
+</ListView>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>first_bit_price__c</fullName>
+    <description>sa_bid_infoには自動入札の価格しか保持していない。
+実際の1番手の金額を持って来るには、sa_auc_infoのcurrent_priceを持ってくる必要がある。
+
+winner_flgがついているものは売却している、していないに関わらずトップの会員にはTrueとなるので、このフラグが付いている会員にかんしては、sa_auc_infoのcurrent_priceを持ってくる。
+
+ただ、今後この項目も欲しいと言われる可能性があるので、今のものは（自動入札）を付けて置いておいて、新しく1番手入札金額の項目を作成する</description>
+    <externalId>false</externalId>
+    <label>1番手入札金額</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

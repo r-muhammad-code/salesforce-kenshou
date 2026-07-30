@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>WEB</fullName>
+    <columns>NAME</columns>
+    <columns>WebName__c</columns>
+    <columns>WebMaker__c</columns>
+    <columns>CarModel__c</columns>
+    <columns>From__c</columns>
+    <columns>Phone__c</columns>
+    <columns>WebModelYear__c</columns>
+    <columns>utm_campaign__c</columns>
+    <columns>utm_content__c</columns>
+    <columns>utm_medium__c</columns>
+    <columns>utm_source__c</columns>
+    <columns>utm_term__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>From__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>WEB</label>
+    <sharedTo>
+        <group>Web2Case</group>
+    </sharedTo>
+</ListView>

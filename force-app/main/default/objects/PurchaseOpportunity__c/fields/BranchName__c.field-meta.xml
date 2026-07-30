@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>BranchName__c</fullName>
+    <description>買取商談所有者の支店・部署を表示。山本</description>
+    <externalId>false</externalId>
+    <formula>IF( CONTAINS(Role__c , &quot;マネージャ&quot;), SUBSTITUTE(Role__c, &quot;マネージャ&quot;,&quot;&quot;) ,
+IF( CONTAINS(Role__c , &quot;アルバイト&quot;), SUBSTITUTE(Role__c, &quot;アルバイト&quot;,&quot;&quot;) ,
+IF(  CONTAINS(Role__c , &quot;エリア&quot;),TEXT( Owner:User.Base__c ),
+Role__c)))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>支店名</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

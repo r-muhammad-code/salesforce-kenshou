@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>New_PIC__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>下記フローで取得
+初回落札日が更新されたら新規時担当者を更新
+https://hanamaru870.lightning.force.com/builder_platform_interaction/flowBuilder.app?flowId=301Nn00000YRgKXIA1</description>
+    <externalId>false</externalId>
+    <label>新規時担当</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>New_PIC</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

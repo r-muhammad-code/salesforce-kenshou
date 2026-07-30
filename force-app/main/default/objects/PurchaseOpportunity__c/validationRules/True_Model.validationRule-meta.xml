@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>True_Model</fullName>
+    <active>true</active>
+    <description>喜多</description>
+    <errorConditionFormula>AND(
+     $User.Username != &quot;salesforce@hanamaru870.co.jp&quot;,
+   OR(
+      ISPICKVAL(Shakensho_Abnormality_run__c, &apos;無&apos;),
+      ISPICKVAL(Shakensho_Abnormality_run__c, &apos;有&apos;)
+   ),
+   OR(
+      ISBLANK(Mst_Models__c),
+      ISBLANK(Mst_Types__c)
+   )
+)</errorConditionFormula>
+    <errorMessage>走行距離システム依頼の場合は、車種と型式を必ず入れてください</errorMessage>
+</ValidationRule>

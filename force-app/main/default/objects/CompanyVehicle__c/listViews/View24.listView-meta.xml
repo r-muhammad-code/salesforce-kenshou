@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>View24</fullName>
+    <columns>NAME</columns>
+    <columns>Carmodel__c</columns>
+    <columns>RegistrationNo__c</columns>
+    <columns>CarNo__c</columns>
+    <columns>User_text__c</columns>
+    <columns>Base_formula__c</columns>
+    <columns>OwnershipCompany__c</columns>
+    <columns>run_dist__c</columns>
+    <columns>remarks__c</columns>
+    <columns>Vehicle_inspection__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Sold__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>VehicleDepartmentOwned__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>NAME</field>
+        <operation>notEqual</operation>
+        <value>0000000000</value>
+    </filters>
+    <filters>
+        <field>remarks__c</field>
+        <operation>notEqual</operation>
+        <value>売却予定</value>
+    </filters>
+    <label>営業車のみ</label>
+</ListView>

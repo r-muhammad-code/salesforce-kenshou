@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Enter_OBIC_order_number</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(ISPICKVAL(RequestDestination__c,&quot;MVR&quot;)) &amp;&amp;  ISBLANK(OBIC_ordernum__c) &amp;&amp;  NOT(ISBLANK(InstructionMakingDate__c)) &amp;&amp; ScheduleAdjustmentRequestDate__c &gt;= DATE(2024, 5, 1)</errorConditionFormula>
+    <errorDisplayField>OBIC_ordernum__c</errorDisplayField>
+    <errorMessage>指示書作成日を入力するにはOBIC受注番号を入力してください</errorMessage>
+</ValidationRule>

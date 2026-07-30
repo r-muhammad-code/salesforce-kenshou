@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>sococara_select_queue_PurchaseOpportunity</fullName>
+    <filterScope>Queue</filterScope>
+    <label>ソコカラセレクト未対応キュー</label>
+    <queue>sococara_select_queue</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>NXI</fullName>
+    <columns>NAME</columns>
+    <columns>LAST_UPDATE</columns>
+    <columns>Owner_Fullname__c</columns>
+    <columns>Name_Case__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Id_Account__c</field>
+        <operation>equals</operation>
+        <value>0016F00003p0GP2QAM</value>
+    </filters>
+    <label>すべて選択（検証NXI）</label>
+</ListView>

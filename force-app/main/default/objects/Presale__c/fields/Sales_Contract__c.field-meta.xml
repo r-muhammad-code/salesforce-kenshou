@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Contract__c</fullName>
+    <description>営業案件の場合のみ。Cコネの場合は明確に判別できる項目なし。
+西さん説明済み。</description>
+    <externalId>false</externalId>
+    <formula>IF(
+PurchaseOpportunity__r.NonBaikei__c,
+&quot;売契不要企業&quot;,
+IF(
+ISBLANK(PurchaseOpportunity__r.Conclusion_date__c),
+&quot;未締結&quot;,
+&quot;締結済み&quot;
+)
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>売契締結</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OBIC_BillOne__c</fullName>
+    <externalId>false</externalId>
+    <label>OBIC/BillOne</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Inquiry_Content_Keiri__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>OBIC</fullName>
+                <default>false</default>
+                <label>OBIC</label>
+            </value>
+            <value>
+                <fullName>BillOne</fullName>
+                <default>false</default>
+                <label>BillOne</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>FBの不備​</controllingFieldValue>
+            <valueName>OBIC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>FBの不備​</controllingFieldValue>
+            <valueName>BillOne</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

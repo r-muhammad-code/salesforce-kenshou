@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>var_actual_gross_profit__c</fullName>
+    <externalId>false</externalId>
+    <formula>hanamaru_gross_profit__c +  sococara_trading_adjusted_gross_profit__c</formula>
+    <inlineHelpText>はなまる台帳粗利 + ソコトレ調整粗利</inlineHelpText>
+    <label>実績粗利</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

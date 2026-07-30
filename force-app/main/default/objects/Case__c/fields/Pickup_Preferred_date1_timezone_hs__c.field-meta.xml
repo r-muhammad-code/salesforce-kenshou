@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pickup_Preferred_date1_timezone_hs__c</fullName>
+    <externalId>false</externalId>
+    <label>引取希望日1＿時間帯</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>指定なし</fullName>
+                <default>true</default>
+                <label>指定なし</label>
+            </value>
+            <value>
+                <fullName>午前</fullName>
+                <default>false</default>
+                <label>午前</label>
+            </value>
+            <value>
+                <fullName>午後</fullName>
+                <default>false</default>
+                <label>午後</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

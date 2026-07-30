@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>handover_date_flg__c</fullName>
+    <description>売契引継ぎフロー開始日7/14以降かを判別するフラグ
+運用が広がり次第不要になるため要削除</description>
+    <externalId>false</externalId>
+    <formula>DATEVALUE(CreatedDate  ) &gt;=  DATE(2025,7,14)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>削除予定_引継日フラグ</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

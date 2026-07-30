@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Back_order__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>佐野
+修理パーツがバックオーダーの場合にチェック</description>
+    <externalId>false</externalId>
+    <inlineHelpText>パーツの入荷が未定の案件はこちらにチェックを入れてください。</inlineHelpText>
+    <label>パーツ バックオーダー</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

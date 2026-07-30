@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TEST</fullName>
+    <booleanFilter>(1 OR 2)</booleanFilter>
+    <columns>NAME</columns>
+    <columns>VehicleClassification__c</columns>
+    <columns>CallAOpportunity__c</columns>
+    <columns>Oppotunity__c</columns>
+    <columns>WaitingOpp__c</columns>
+    <columns>WaitingCallA__c</columns>
+    <columns>IsTransfer__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>VehicleClassification__c</field>
+        <operation>equals</operation>
+        <value>はなまるオークション/他社AA（営業）,はなまるオークション/他社AA（コール）,リユースオークション,直接商談</value>
+    </filters>
+    <filters>
+        <field>VehicleClassification__c</field>
+        <operation>equals</operation>
+        <value>コールA/リユース,コールA/リユース（SMS不可）,コールA/他社AA,コールA/他社AA（SMS不可）,コールA/ソコカラ,コールA/ソコカラ（SMS不可）,B車輌,B車輌（SMS不可）,直売（SMS不可）</value>
+    </filters>
+    <label>XX_オークション連携検証</label>
+</ListView>

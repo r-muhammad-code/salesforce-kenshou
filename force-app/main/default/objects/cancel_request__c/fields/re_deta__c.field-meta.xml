@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>re_deta__c</fullName>
+    <externalId>false</externalId>
+    <label>データ再取得</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>再取得する</fullName>
+                <default>false</default>
+                <label>再取得する</label>
+            </value>
+            <value>
+                <fullName>再取得しない</fullName>
+                <default>false</default>
+                <label>再取得しない</label>
+            </value>
+            <value>
+                <fullName>対象外</fullName>
+                <default>false</default>
+                <label>対象外</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

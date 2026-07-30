@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Attention__c</fullName>
+    <defaultValue>&quot;特になし。&quot;</defaultValue>
+    <description>ここに記載があった場合、注意書きが表示。
+ロングテキストは不可。Alertが反応しなくなる。</description>
+    <externalId>false</externalId>
+    <label>注意喚起</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>TextArea</type>
+</CustomField>

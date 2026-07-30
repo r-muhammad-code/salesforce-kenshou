@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Document_set_up_Category__c</fullName>
+    <description>与儀</description>
+    <externalId>false</externalId>
+    <label>書類取付先</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>取引先と同じ</fullName>
+                <default>false</default>
+                <label>取引先と同じ</label>
+            </value>
+            <value>
+                <fullName>保管先と同じ</fullName>
+                <default>false</default>
+                <label>保管先と同じ</label>
+            </value>
+            <value>
+                <fullName>車検証 所有者と同じ</fullName>
+                <default>false</default>
+                <label>車検証 所有者と同じ</label>
+            </value>
+            <value>
+                <fullName>車検証 使用者と同じ</fullName>
+                <default>false</default>
+                <label>車検証 使用者と同じ</label>
+            </value>
+            <value>
+                <fullName>その他</fullName>
+                <default>false</default>
+                <label>その他</label>
+            </value>
+            <value>
+                <fullName>SF登録済み業者から探す</fullName>
+                <default>false</default>
+                <isActive>false</isActive>
+                <label>SF登録済み業者から探す</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

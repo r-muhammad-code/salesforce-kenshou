@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ModelYearCarName__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( ISBLANK(Mst_Models__c),
+IF( OR( ISBLANK( CarName__c ),ISBLANK(TEXT( ModelYearPickList__c ))),LEFT(TEXT(ModelYearPickList__c),4) &amp; CarName__c,LEFT(TEXT(ModelYearPickList__c),4) &amp; &apos;・&apos; &amp; CarName__c)
+,
+IF( OR( ISBLANK( Mst_Models__c ),ISBLANK(TEXT( ModelYearPickList__c))),LEFT(TEXT(ModelYearPickList__c),4) &amp; Mst_Models__r.Name ,LEFT(TEXT(ModelYearPickList__c),4) &amp; &apos;・&apos; &amp; Mst_Models__r.Name )
+)</formula>
+    <label>年式・車名</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

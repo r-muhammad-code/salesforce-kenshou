@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>buyer_member_u_cname__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <externalId>false</externalId>
+    <label>売却先会員名</label>
+    <referenceTo>Member__c</referenceTo>
+    <relationshipLabel>ワンプライス車両　申込管理 (売却先会員名)</relationshipLabel>
+    <relationshipName>buyer_member_u_cname</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

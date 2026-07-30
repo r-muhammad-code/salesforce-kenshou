@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_Channel1__c</fullName>
+    <externalId>false</externalId>
+    <label>販路1</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>オークション再販</fullName>
+                <default>false</default>
+                <label>オークション再販</label>
+            </value>
+            <value>
+                <fullName>小売</fullName>
+                <default>false</default>
+                <label>小売</label>
+            </value>
+            <value>
+                <fullName>業販</fullName>
+                <default>false</default>
+                <label>業販</label>
+            </value>
+            <value>
+                <fullName>輸出</fullName>
+                <default>false</default>
+                <label>輸出</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>request_to_sales__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(NOT(AND( carsensor_publication__c ,  goonet_publication__c ,  googlemap_publication__c ,  autoserver_publication__c ,  aucnet_publication__c ,  quickquick_publication__c )), 
+IF(NOT(ISBLANK(publication_cancel_request_date__c)), &quot;掲載取り下げ&quot;,
+    IF(NOT(ISBLANK(change_amount_request_date__c)), &quot;掲載金額変更&quot;,
+        IF(NOT(ISBLANK( publication_request_date__c )), &quot;新規掲載&quot;, &quot;&quot;)
+    )
+), &quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>販売業務課_依頼内容</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>View1754</fullName>
+    <columns>NAME</columns>
+    <columns>URL_AdditionalImage__c</columns>
+    <columns>Yard_Assessment__c</columns>
+    <columns>AssessmentDate__c</columns>
+    <columns>PurchaseDate__c</columns>
+    <columns>Phase__c</columns>
+    <columns>AssessmentMethod__c</columns>
+    <columns>State__c</columns>
+    <columns>ModelYearCarName__c</columns>
+    <columns>CarNo__c</columns>
+    <columns>Estimate__c</columns>
+    <columns>ProposedPrice__c</columns>
+    <columns>ItemManagementMemo__c</columns>
+    <columns>Owner__c</columns>
+    <columns>Account__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Phase__c</field>
+        <operation>equals</operation>
+        <value>保留,買取</value>
+    </filters>
+    <filters>
+        <field>State__c</field>
+        <operation>notEqual</operation>
+        <value>事故車,故障車,水害車,火災車,盗難車</value>
+    </filters>
+    <filters>
+        <field>Profits__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>PurchaseDate__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>1/1/2024</value>
+    </filters>
+    <filters>
+        <field>ModelYearCarName__c</field>
+        <operation>contains</operation>
+        <value>JPN TAXI</value>
+    </filters>
+    <label>☆在庫で車両検索リスト（共有）</label>
+</ListView>

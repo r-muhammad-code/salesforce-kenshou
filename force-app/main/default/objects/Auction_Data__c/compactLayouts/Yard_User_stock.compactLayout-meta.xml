@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Yard_User_stock</fullName>
+    <fields>Name</fields>
+    <fields>Lot_Number__c</fields>
+    <fields>Model__c</fields>
+    <fields>Chassis_Number__c</fields>
+    <fields>Winning_Member__c</fields>
+    <fields>auc_area__c</fields>
+    <label>ヤード・ユーザー保管</label>
+</CompactLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Pickup_Preferred_date__c</fullName>
+    <externalId>false</externalId>
+    <inlineHelpText>テイクオフは全案件、ゼロは引取希望日が3営業日以内の場合、業者への電話連絡を済ませてから依頼をしてください。</inlineHelpText>
+    <label>引取希望日1</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

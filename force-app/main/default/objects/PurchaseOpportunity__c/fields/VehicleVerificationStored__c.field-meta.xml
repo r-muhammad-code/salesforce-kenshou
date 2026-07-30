@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>VehicleVerificationStored__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>長崎営業所に車検証情報を入力してほしい場合はチェックをつける</description>
+    <externalId>false</externalId>
+    <label>車検証格納済み</label>
+    <trackFeedHistory>true</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

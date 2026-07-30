@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>toC_payment_category__c</fullName>
+    <description>toC用売契作成依頼で使用。山本</description>
+    <externalId>false</externalId>
+    <label>支払い区分（toC用）</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>振込</fullName>
+                <default>false</default>
+                <label>振込</label>
+            </value>
+            <value>
+                <fullName>相殺</fullName>
+                <default>false</default>
+                <label>相殺</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

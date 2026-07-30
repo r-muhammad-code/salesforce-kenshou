@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <description>山本</description>
+    <externalId>false</externalId>
+    <formula>IF( TEXT( PaymentProcessingCategory__c)&lt;&gt;&quot;1&quot; &amp;&amp; ISBLANK( keiri_FinalDate__c )&amp;&amp;Transfer_request_approved__c ,&quot;承認&quot;,
+IF( ISBLANK( keiri_FinalDate__c )&amp;&amp;Transfer_request_return__c ,&quot;差戻&quot;,
+IF(  Transfer_request_approved__c&lt;&gt;true &amp;&amp; Transfer_request_return__c&lt;&gt;true &amp;&amp; Unsupported__c ,&quot;承認期限超過&quot;,
+IF( NOT( ISBLANK(TEXT( PaymentProcessingCategory__c)))&amp;&amp;Transfer_request_return__c ,CASE( PaymentProcessingCategory__c ,&quot;2&quot;,&quot;口座エラー&quot;,&quot;3&quot;,&quot;口座なし&quot;,&quot;4&quot;,&quot;不整合&quot;,&quot;エラー&quot;),
+IF( NOT( ISBLANK(TEXT( PaymentProcessingCategory__c)))&amp;&amp;Transfer_request_approved__c, CASE( PaymentProcessingCategory__c ,&quot;1&quot;,&quot;確定&quot;,&quot;&quot;),
+IF( NOT( ISBLANK( keiri_FinalDate__c ))&amp;&amp;Transfer_request_approved__c&amp;&amp;NOT( ISBLANK(TEXT( PaymentProcessingCategory__c))),&quot;振込完了&quot;,&quot;&quot;))))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>状況</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

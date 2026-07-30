@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>default</fullName>
+    <fields>car_model_text__c</fields>
+    <fields>model_year__c</fields>
+    <fields>publication_total_price__c</fields>
+    <label>概要</label>
+</CompactLayout>

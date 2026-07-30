@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>torimenpo_destruction__c</fullName>
+    <description>Lightningレコードページでの「警告メッセージ」表示条件として使用。
+以下の条件をすべて満たした場合に True（表示対象）になります。
+1.フェーズが「買取」
+2.取メン保保管が「False」（チェックなし）
+3.保存期間を超過している（標準：5年 / 状態「中古車」：7年）
+※4月1日を境に基準年が自動更新される「メンテナンスフリー仕様」のため、年度ごとの数式変更は不要です。</description>
+    <externalId>false</externalId>
+    <formula>AND(
+    ISPICKVAL(Phase__c, &quot;買取&quot;),
+    NOT(Torimenho_Storage__c),
+    OR(
+        AND(
+            NOT(ISPICKVAL(State__c, &quot;中古車&quot;)),
+            VALUE(TEXT(ModelYearPickList__c)) &lt;= (IF(MONTH(TODAY()) &lt; 4, YEAR(TODAY()) - 1, YEAR(TODAY())) - 6)
+        ),
+        AND(
+            ISPICKVAL(State__c, &quot;中古車&quot;),
+            VALUE(TEXT(ModelYearPickList__c)) &lt;= (IF(MONTH(TODAY()) &lt; 4, YEAR(TODAY()) - 1, YEAR(TODAY())) - 8)
+        )
+    )
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>取メン保破棄対象</label>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

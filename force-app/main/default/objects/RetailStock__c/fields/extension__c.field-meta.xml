@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>extension__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>在庫期日の延長を承認された場合に承認者がチェックを付ける。権限セットで編集権限を付与する。山本</description>
+    <externalId>false</externalId>
+    <label>延長フラグ</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

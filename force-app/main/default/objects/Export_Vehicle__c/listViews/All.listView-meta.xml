@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>country__c</columns>
+    <columns>destination_port__c</columns>
+    <columns>auction_data__c</columns>
+    <columns>model__c</columns>
+    <columns>chassis_number__c</columns>
+    <columns>bl_number__c</columns>
+    <columns>booking_date__c</columns>
+    <columns>lot_num__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>すべて選択</label>
+</ListView>

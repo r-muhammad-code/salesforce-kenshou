@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PickupdateChange_Cancel__c</fullName>
+    <description>引取依頼作成画面に表示。引取依頼の依頼内容変更、依頼キャンセルを送る場合に入力する</description>
+    <externalId>false</externalId>
+    <label>依頼内容変更/引取依頼キャンセル</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>日程変更</fullName>
+                <default>false</default>
+                <label>依頼内容変更（希望日が未定の場合は空白に変更。伝達事項が無い場合はメモを空白に変更。）</label>
+            </value>
+            <value>
+                <fullName>引取保留</fullName>
+                <default>false</default>
+                <label>引取保留（伝達事項が無い場合はメモを空白に変更。）</label>
+            </value>
+            <value>
+                <fullName>依頼キャンセル</fullName>
+                <default>false</default>
+                <label>依頼キャンセル（基本は案件キャンセル時に送る。）</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

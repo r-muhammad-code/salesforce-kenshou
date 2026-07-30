@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>not_change_amount_content</fullName>
+    <active>true</active>
+    <errorConditionFormula>text( result__c ) &lt;&gt; &quot;&quot; &amp;&amp;  ISCHANGED( Amount_content__c )</errorConditionFormula>
+    <errorDisplayField>Amount_content__c</errorDisplayField>
+    <errorMessage>結果確定後は金額内容の変更はできません</errorMessage>
+</ValidationRule>

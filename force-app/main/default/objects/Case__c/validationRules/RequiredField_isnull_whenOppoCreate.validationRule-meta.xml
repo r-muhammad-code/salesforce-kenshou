@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RequiredField_isnull_whenOppoCreate</fullName>
+    <active>false</active>
+    <errorConditionFormula>OR( Account__r.MobilePhone__c = null , ISBLANK( TEXT( LiabilityAttachmentShipping__c ) ) /*自賠取付*/, ISBLANK( TEXT( Image_existence_hs__c ) )/*出品画像有無*/ , ISBLANK( TEXT( VehicleCondition_Supplement_hs__c ) ) /*車両状態*/, ISBLANK( TEXT( StorageStatus_hs__c ) ) /*保管状況*/, ISBLANK( LocationAddress_hs__c ) )/*保管場所住所*/ &amp;&amp; NOT( OpportunityOwner__c = null )/*買取商談の所有者*/ &amp;&amp; NOT( OR( ISPICKVAL( VehicleClassification__c , &quot;はなまるオークション/他社AA（営業）&quot; ) , ISPICKVAL( VehicleClassification__c , &quot;旧フロー&quot; ) ) )/*ABC区分*/</errorConditionFormula>
+    <errorMessage>買取商談作成時の入力必須項目に入力がありません。</errorMessage>
+</ValidationRule>

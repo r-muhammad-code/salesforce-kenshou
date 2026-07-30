@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_A_020_Tottori_PurchaseOpportunity</fullName>
+    <filterScope>Queue</filterScope>
+    <label>鳥取営業A査定キュー</label>
+    <queue>Sales_A_020_Tottori</queue>
+    <sharedTo>
+        <allInternalUsers></allInternalUsers>
+    </sharedTo>
+</ListView>

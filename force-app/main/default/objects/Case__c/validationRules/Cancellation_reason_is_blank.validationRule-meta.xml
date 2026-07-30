@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cancellation_reason_is_blank</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(DATEVALUE(CreatedDate)&gt;=DATE(2023,04,06),NOT(ISBLANK( ContactDate__c )),ISPICKVAL(  Phase__c ,&quot;キャンセル&quot;),ISBLANK( TEXT( Cancellation_reason__c )))</errorConditionFormula>
+    <errorDisplayField>Cancellation_reason__c</errorDisplayField>
+    <errorMessage>接触日が入力されている場合はキャンセル理由の入力が必要です。</errorMessage>
+</ValidationRule>

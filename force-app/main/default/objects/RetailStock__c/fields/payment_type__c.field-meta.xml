@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>payment_type__c</fullName>
+    <externalId>false</externalId>
+    <label>入金種別</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>現金</fullName>
+                <default>false</default>
+                <label>現金</label>
+            </value>
+            <value>
+                <fullName>ローン</fullName>
+                <default>false</default>
+                <label>ローン</label>
+            </value>
+            <value>
+                <fullName>頭金+ローン</fullName>
+                <default>false</default>
+                <label>頭金+ローン</label>
+            </value>
+            <value>
+                <fullName>相殺</fullName>
+                <default>false</default>
+                <label>相殺</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

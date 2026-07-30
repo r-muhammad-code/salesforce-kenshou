@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ReceiptMonthly__c</fullName>
+    <description>査定依頼日で集計を行ないたい場合に使用する、査定依頼日が2025/04/01だった場合、4が表示される</description>
+    <externalId>false</externalId>
+    <formula>MONTH( RequestDate__c )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>依頼集計月度</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

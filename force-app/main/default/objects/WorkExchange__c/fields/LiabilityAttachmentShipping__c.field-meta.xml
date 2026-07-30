@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LiabilityAttachmentShipping__c</fullName>
+    <externalId>false</externalId>
+    <label>自賠取付</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>取付要</fullName>
+                <default>false</default>
+                <label>取付要</label>
+            </value>
+            <value>
+                <fullName>取付不要</fullName>
+                <default>false</default>
+                <label>取付不要</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

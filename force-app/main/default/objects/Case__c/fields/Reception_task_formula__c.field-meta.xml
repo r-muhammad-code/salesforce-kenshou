@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Reception_task_formula__c</fullName>
+    <description>山本</description>
+    <externalId>false</externalId>
+    <formula>TRIM(
+IF(INCLUDES( task__c , &quot;至急対応&quot;), &quot;A 至急対応; &quot;, &quot;&quot;) &amp;
+IF(INCLUDES( task__c , &quot;CS戻り&quot;), &quot;B CS戻り; &quot;, &quot;&quot;) &amp;
+IF(INCLUDES( task__c , &quot;意思確認&quot;), &quot;C 意思確認; &quot;, &quot;&quot;) &amp;
+IF(INCLUDES( task__c , &quot;随時・MD受信&quot;), &quot;F 随時・MD受信; &quot;, &quot;&quot;) &amp;
+IF(INCLUDES( task__c , &quot;キャンセル関連&quot;), &quot;G キャンセル関連; &quot;, &quot;&quot;) &amp;
+IF(INCLUDES (task__c , &quot;減額対応&quot;), &quot;H 減額対応; &quot;, &quot;&quot;) &amp;
+IF(INCLUDES( task__c , &quot;車両情報確認&quot;), &quot;I 車両情報確認; &quot;, &quot;&quot;) &amp;
+IF(INCLUDES( task__c , &quot;日程関連&quot;), &quot;J 日程関連; &quot;, &quot;&quot;) &amp;
+IF(INCLUDES( task__c , &quot;S付関連&quot;), &quot;K S付関連; &quot;, &quot;&quot;) &amp;
+IF(INCLUDES( task__c,  &quot;書類関連&quot;), &quot;L 書類関連; &quot;, &quot;&quot;) &amp;
+IF(INCLUDES(task__c, &quot;状態相違関連&quot;), &quot;M 状態相違関連; &quot;, &quot;&quot;) &amp;
+IF(INCLUDES(task__c, &quot;担当対応&quot;), &quot;N 担当対応; &quot;, &quot;&quot;) &amp;
+IF(INCLUDES(task__c, &quot;状況確認&quot;), &quot;O 状況確認&quot;, &quot;&quot;) &amp;
+IF(INCLUDES(task__c, &quot;発注入力&quot;), &quot;P 発注入力&quot;, &quot;&quot;) &amp;
+IF(INCLUDES(task__c, &quot;その他&quot;), &quot;Q その他; &quot;, &quot;&quot;) 
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>受付タスク(数式)</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

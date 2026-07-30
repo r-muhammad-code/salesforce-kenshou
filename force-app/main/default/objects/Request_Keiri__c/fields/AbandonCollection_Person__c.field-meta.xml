@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AbandonCollection_Person__c</fullName>
+    <deleteConstraint>SetNull</deleteConstraint>
+    <description>長期未回収案件の回収断念 の承認フローの現在の作業者</description>
+    <externalId>false</externalId>
+    <label>回収断念_作業者</label>
+    <referenceTo>User</referenceTo>
+    <relationshipName>AbandonCollection_Person</relationshipName>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Lookup</type>
+</CustomField>

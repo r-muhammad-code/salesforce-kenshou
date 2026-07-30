@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>X06</fullName>
+    <columns>NAME</columns>
+    <columns>Media__c</columns>
+    <columns>Account__c</columns>
+    <columns>FirstRegistration_Year_hs__c</columns>
+    <columns>CarTypes__c</columns>
+    <columns>VehicleClassification__c</columns>
+    <columns>Phase__c</columns>
+    <columns>ReceptionDate__c</columns>
+    <columns>ContactDate__c</columns>
+    <columns>Owner_Fullname__c</columns>
+    <columns>InChargeOf_Pricing__c</columns>
+    <columns>Amount__c</columns>
+    <columns>Next_contact_date__c</columns>
+    <columns>PurchaseDate__c</columns>
+    <columns>Precautions__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ContactDate__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>Phase__c</field>
+        <operation>equals</operation>
+        <value>受付,保留</value>
+    </filters>
+    <filters>
+        <field>VehicleClassification__c</field>
+        <operation>equals</operation>
+        <value>はなまるオークション/他社AA（営業）,はなまるオークション/他社AA（コール）,リユースオークション,直接商談,判別不明,旧フロー,直売</value>
+    </filters>
+    <filters>
+        <field>PurchaseDate__c</field>
+        <operation>equals</operation>
+    </filters>
+    <filters>
+        <field>Account__c</field>
+        <operation>notEqual</operation>
+        <value>DIS姓 DIS名</value>
+    </filters>
+    <label>【保留】すべての保留中</label>
+</ListView>

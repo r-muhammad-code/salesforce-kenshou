@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Amount_content__c</fullName>
+    <externalId>false</externalId>
+    <label>金額内容【はなまるが入力】</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>assess_user_type__c</controllingField>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>通常査定金額</fullName>
+                <default>true</default>
+                <label>通常査定金額</label>
+            </value>
+            <value>
+                <fullName>買取保証金額</fullName>
+                <default>false</default>
+                <label>買取保証金額</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>通常ユーザ</controllingFieldValue>
+            <controllingFieldValue>オークションユーザ</controllingFieldValue>
+            <valueName>通常査定金額</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>オークションユーザ</controllingFieldValue>
+            <valueName>買取保証金額</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

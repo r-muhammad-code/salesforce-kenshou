@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sales_contract_checking</fullName>
+    <columns>NAME</columns>
+    <columns>LotNo__c</columns>
+    <columns>Role__c</columns>
+    <columns>Owner__c</columns>
+    <columns>ModelYearCarName__c</columns>
+    <columns>CarNo__c</columns>
+    <columns>Account__c</columns>
+    <columns>PurchaseDate__c</columns>
+    <columns>LeagalMemo__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LeagalCheck__c</field>
+        <operation>equals</operation>
+        <value>0</value>
+    </filters>
+    <filters>
+        <field>Phase__c</field>
+        <operation>equals</operation>
+        <value>買取</value>
+    </filters>
+    <filters>
+        <field>ippanhoujinn__c</field>
+        <operation>equals</operation>
+        <value>一般</value>
+    </filters>
+    <filters>
+        <field>PurchaseDate__c</field>
+        <operation>greaterOrEqual</operation>
+        <value>6/16/2020</value>
+    </filters>
+    <label>売契チェック（法務部）</label>
+</ListView>

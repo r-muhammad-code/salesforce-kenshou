@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>handle__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE ( TEXT ( Assessment__r.handle__c ) , &quot;1&quot;, &quot;左&quot; , &quot;2&quot;, &quot;右&quot; , &quot;&quot; )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>ハンドル</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

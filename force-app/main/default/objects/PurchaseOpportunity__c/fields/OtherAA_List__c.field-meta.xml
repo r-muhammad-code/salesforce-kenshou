@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OtherAA_List__c</fullName>
+    <description>回送依頼作成画面に表示、他社AAに搬入搬出する場合に出品リストがあるかどうかを営業が入力する</description>
+    <externalId>false</externalId>
+    <label>リスト有無</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>無し</fullName>
+                <default>false</default>
+                <label>無し</label>
+            </value>
+            <value>
+                <fullName>有り</fullName>
+                <default>false</default>
+                <label>有り</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

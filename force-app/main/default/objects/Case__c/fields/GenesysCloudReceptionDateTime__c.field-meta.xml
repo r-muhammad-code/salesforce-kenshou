@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>GenesysCloudReceptionDateTime__c</fullName>
+    <externalId>false</externalId>
+    <formula>SUBSTITUTE(MID(TEXT(ReceptionDateTime__c + (9/24)), 1,  LEN(TEXT(ReceptionDateTime__c + (9/24)))-4 ), &quot; &quot;, &quot;T&quot;) &amp; &quot;Z&quot;</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>【GenesysCloud連携用】受付日時</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

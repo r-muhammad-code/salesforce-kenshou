@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>OBIC_cancel_date__c</fullName>
+    <description>OBIC台帳作成済みで案件キャンセルになった場合、台帳のキャンセル処理がされたら日付が入力される</description>
+    <externalId>false</externalId>
+    <label>OBICキャンセル処理日</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

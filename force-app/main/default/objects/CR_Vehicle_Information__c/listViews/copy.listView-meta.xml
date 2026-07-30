@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>copy</fullName>
+    <columns>NAME</columns>
+    <columns>Model_English__c</columns>
+    <columns>Chassis_Number__c</columns>
+    <columns>Sales_Date__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Dismantling_CompanyDis_pulldown__c</field>
+        <operation>equals</operation>
+        <value>AFKトレーディング</value>
+    </filters>
+    <label>コピペ用</label>
+</ListView>

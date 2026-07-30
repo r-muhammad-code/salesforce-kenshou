@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>ss_kanri_num__c</columns>
+    <columns>maker_name__c</columns>
+    <columns>car_name__c</columns>
+    <columns>offer_price__c</columns>
+    <columns>offer_time__c</columns>
+    <columns>offer_status__c</columns>
+    <filterScope>Everything</filterScope>
+    <label>すべて選択</label>
+</ListView>

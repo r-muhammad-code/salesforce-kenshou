@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>View39</fullName>
+    <columns>ReceptionDateTime__c</columns>
+    <columns>Account__c</columns>
+    <columns>Web_Address__c</columns>
+    <columns>PersonMobilePhone__c</columns>
+    <columns>NAME</columns>
+    <columns>Season__c</columns>
+    <columns>VehicleClassification__c</columns>
+    <columns>Precautions__c</columns>
+    <columns>FirstRegistration_Year_hs__c</columns>
+    <columns>CarTypes__c</columns>
+    <columns>Mileage_hs__c</columns>
+    <columns>Media__c</columns>
+    <columns>MailSubject__c</columns>
+    <columns>MailOrigin__c</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>Phase__c</field>
+        <operation>notEqual</operation>
+        <value>キャンセル</value>
+    </filters>
+    <filters>
+        <field>utm_medium__c</field>
+        <operation>notEqual</operation>
+        <value>NOTELL</value>
+    </filters>
+    <label>【新規】メール受付未対応キュー</label>
+    <queue>NotCompatible</queue>
+</ListView>

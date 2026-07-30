@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>job_category__c</fullName>
+    <externalId>false</externalId>
+    <label>職種</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>1: 総合職</fullName>
+                <default>false</default>
+                <label>1: 総合職</label>
+            </value>
+            <value>
+                <fullName>2: 総合職（日本語）</fullName>
+                <default>false</default>
+                <label>2: 総合職（日本語）</label>
+            </value>
+            <value>
+                <fullName>3: 総合職（英語）</fullName>
+                <default>false</default>
+                <label>3: 総合職（英語）</label>
+            </value>
+            <value>
+                <fullName>4: 総合職（英語+ロシア語）</fullName>
+                <default>false</default>
+                <label>4: 総合職（英語+ロシア語）</label>
+            </value>
+            <value>
+                <fullName>5: 総合職（英語+スペイン語）</fullName>
+                <default>false</default>
+                <label>5: 総合職（英語+スペイン語）</label>
+            </value>
+            <value>
+                <fullName>7: 総合職（英語+中国語）</fullName>
+                <default>false</default>
+                <label>7: 総合職（英語+中国語）</label>
+            </value>
+            <value>
+                <fullName>11: 総合職（ロシア語）</fullName>
+                <default>false</default>
+                <label>11: 総合職（ロシア語）</label>
+            </value>
+            <value>
+                <fullName>12: 総合職（英語+韓国語）</fullName>
+                <default>false</default>
+                <label>12: 総合職（英語+韓国語）</label>
+            </value>
+            <value>
+                <fullName>13: 総合職（中国語）</fullName>
+                <default>false</default>
+                <label>13: 総合職（中国語）</label>
+            </value>
+            <value>
+                <fullName>14: 総合職（スペイン語）</fullName>
+                <default>false</default>
+                <label>14: 総合職（スペイン語）</label>
+            </value>
+            <value>
+                <fullName>15: 総合職（日本語+英語+タイ語）</fullName>
+                <default>false</default>
+                <label>15: 総合職（日本語+英語+タイ語）</label>
+            </value>
+            <value>
+                <fullName>100: 営業職</fullName>
+                <default>false</default>
+                <label>100: 営業職</label>
+            </value>
+            <value>
+                <fullName>102: 営業職（英語）</fullName>
+                <default>false</default>
+                <label>102: 営業職（英語）</label>
+            </value>
+            <value>
+                <fullName>107: 営業職（英語+ウルドゥー語）</fullName>
+                <default>false</default>
+                <label>107: 営業職（英語+ウルドゥー語）</label>
+            </value>
+            <value>
+                <fullName>109: 営業職（英語+タガログ語）</fullName>
+                <default>false</default>
+                <label>109: 営業職（英語+タガログ語）</label>
+            </value>
+            <value>
+                <fullName>110: 営業サポート</fullName>
+                <default>false</default>
+                <label>110: 営業サポート</label>
+            </value>
+            <value>
+                <fullName>200: PM</fullName>
+                <default>false</default>
+                <label>200: PM</label>
+            </value>
+            <value>
+                <fullName>201: データエンジニア</fullName>
+                <default>false</default>
+                <label>201: データエンジニア</label>
+            </value>
+            <value>
+                <fullName>202: システムエンジニア</fullName>
+                <default>false</default>
+                <label>202: システムエンジニア</label>
+            </value>
+            <value>
+                <fullName>203: FMエンジニア</fullName>
+                <default>false</default>
+                <label>203: FMエンジニア</label>
+            </value>
+            <value>
+                <fullName>204: SFエンジニア</fullName>
+                <default>false</default>
+                <label>204: SFエンジニア</label>
+            </value>
+            <value>
+                <fullName>206: IT特化</fullName>
+                <default>false</default>
+                <label>206: IT特化</label>
+            </value>
+            <value>
+                <fullName>207: デザイナー</fullName>
+                <default>false</default>
+                <label>207: デザイナー</label>
+            </value>
+            <value>
+                <fullName>208: 国内広告運用</fullName>
+                <default>false</default>
+                <label>208: 国内広告運用</label>
+            </value>
+            <value>
+                <fullName>209: 海外広告運用</fullName>
+                <default>false</default>
+                <label>209: 海外広告運用</label>
+            </value>
+            <value>
+                <fullName>210: SEO運用（ディレクション）</fullName>
+                <default>false</default>
+                <label>210: SEO運用（ディレクション）</label>
+            </value>
+            <value>
+                <fullName>211: SEO運用（システム）</fullName>
+                <default>false</default>
+                <label>211: SEO運用（システム）</label>
+            </value>
+            <value>
+                <fullName>305: 募集人</fullName>
+                <default>false</default>
+                <label>305: 募集人</label>
+            </value>
+            <value>
+                <fullName>306: 社外役員</fullName>
+                <default>false</default>
+                <label>306: 社外役員</label>
+            </value>
+            <value>
+                <fullName>400: 査定員</fullName>
+                <default>false</default>
+                <label>400: 査定員</label>
+            </value>
+            <value>
+                <fullName>401: 自動車鑑定人</fullName>
+                <default>false</default>
+                <label>401: 自動車鑑定人</label>
+            </value>
+            <value>
+                <fullName>402: 建物鑑定人</fullName>
+                <default>false</default>
+                <label>402: 建物鑑定人</label>
+            </value>
+            <value>
+                <fullName>403: 見積担当</fullName>
+                <default>false</default>
+                <label>403: 見積担当</label>
+            </value>
+            <value>
+                <fullName>500: ヤード管理者</fullName>
+                <default>false</default>
+                <label>500: ヤード管理者</label>
+            </value>
+            <value>
+                <fullName>501: 中型ドライバー</fullName>
+                <default>false</default>
+                <label>501: 中型ドライバー</label>
+            </value>
+            <value>
+                <fullName>502: 大型ドライバー</fullName>
+                <default>false</default>
+                <label>502: 大型ドライバー</label>
+            </value>
+            <value>
+                <fullName>503: 自走ドライバー</fullName>
+                <default>false</default>
+                <label>503: 自走ドライバー</label>
+            </value>
+            <value>
+                <fullName>601: ホールスタッフ</fullName>
+                <default>false</default>
+                <label>601: ホールスタッフ</label>
+            </value>
+            <value>
+                <fullName>701: 役員</fullName>
+                <default>false</default>
+                <label>701: 役員</label>
+            </value>
+            <value>
+                <fullName>702: 執行役員</fullName>
+                <default>false</default>
+                <label>702: 執行役員</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

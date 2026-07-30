@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Desired_pickup_time_format</fullName>
+    <active>true</active>
+    <description>喜多</description>
+    <errorConditionFormula>NOT( ISBLANK( Desired_pickup_time__c) ) &amp;&amp; NOT( REGEX( Desired_pickup_time__c  , &quot;[0-2][0-9]-[0-2][0-9]&quot;)) &amp;&amp; ScheduleAdjustmentRequestDate__c &gt;= DATE( 2024,05,01 )</errorConditionFormula>
+    <errorDisplayField>Desired_pickup_time__c</errorDisplayField>
+    <errorMessage>引取希望時間帯はHH-HHの形式で入力してください。（例：09-18）</errorMessage>
+</ValidationRule>

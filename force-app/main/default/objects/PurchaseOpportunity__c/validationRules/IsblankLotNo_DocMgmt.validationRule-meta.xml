@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>IsblankLotNo_DocMgmt</fullName>
+    <active>false</active>
+    <description>依頼内容がその他以外＆依頼内容未選択でロット番号が未入力の場合、エラー。11/30以降作成の買取商談から適用。実装11/29</description>
+    <errorConditionFormula>AND( DATEVALUE(CreatedDate) &gt;= DATE(2022,11,30), NOT( ISPICKVAL( Request_Detail__c,&quot;その他問い合わせ&quot; )) ,NOT( ISBLANK (TEXT(Request_Detail__c))) , ISBLANK( Lot_CorporationID__c ))</errorConditionFormula>
+    <errorMessage>その他問い合わせ以外の依頼は【ロット番号】を入力してください。</errorMessage>
+</ValidationRule>
