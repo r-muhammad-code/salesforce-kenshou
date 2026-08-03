@@ -11898,7 +11898,7 @@ LEN({!input_Document_set_up_Remarks}) &lt; 255
             <targetReference>get_POrecordId</targetReference>
         </connector>
     </start>
-    <status>Draft</status>
+    <status>Active</status>
     <textTemplates>
         <name>tt_Chattertext</name>
         <isViewedAsPlainText>true</isViewedAsPlainText>
