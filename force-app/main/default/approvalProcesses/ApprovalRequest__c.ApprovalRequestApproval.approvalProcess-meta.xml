@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <allowRecall>false</allowRecall>
+
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+
+    <approvalPageFields>
+        <field>Name</field>
+        <field>Owner</field>
+        <field>Status__c</field>
+        <field>Subject__c</field>
+        <field>application_category__c</field>
+        <field>Requester__c</field>
+        <field>PurchaseOpportunity__c</field>
+        <field>ApprovalRoute__c</field>
+        <field>AssignedApprover__c</field>
+        <field>SecondApprover__c</field>
+        <field>ThirdApprover__c</field>
+        <field>FourthApprover__c</field>
+        <field>application_reason__c</field>
+    </approvalPageFields>
+
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>AssignedApprover__c</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <label>第1承認</label>
+        <name>FirstApproval</name>
+    </approvalStep>
+
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>SecondApprover__c</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>NOT(ISBLANK(SecondApprover__c))</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>ApproveRecord</ifCriteriaNotMet>
+        <label>第2承認</label>
+        <name>SecondApproval</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>ThirdApprover__c</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>NOT(ISBLANK(ThirdApprover__c))</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>ApproveRecord</ifCriteriaNotMet>
+        <label>第3承認</label>
+        <name>ThirdApproval</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>FourthApprover__c</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>NOT(ISBLANK(FourthApprover__c))</formula>
+        </entryCriteria>
+        <label>第4承認</label>
+        <name>FourthApproval</name>
+        <rejectBehavior>
+            <type>RejectRequest</type>
+        </rejectBehavior>
+    </approvalStep>
+
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+
+    <entryCriteria>
+        <formula>ISPICKVAL(Status__c, &quot;申請中&quot;)</formula>
+    </entryCriteria>
+
+    <finalApprovalRecordLock>true</finalApprovalRecordLock>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+
+    <label>承認申請承認プロセス</label>
+    <processOrder>1</processOrder>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>
