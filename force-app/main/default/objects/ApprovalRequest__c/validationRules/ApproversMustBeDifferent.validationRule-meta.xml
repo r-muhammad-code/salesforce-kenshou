@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ApproversMustBeDifferent</fullName>
+    <active>true</active>
+    <description>第1承認者と第2承認者に同じユーザーを設定できないようにする。</description>
+    <errorConditionFormula>AND(
+        NOT(ISBLANK(AssignedApprover__c)),
+        NOT(ISBLANK(SecondApprover__c)),
+        AssignedApprover__c = SecondApprover__c
+    )</errorConditionFormula>
+    <errorMessage>第1承認者と第2承認者には異なるユーザーを指定してください。</errorMessage>
+</ValidationRule>
