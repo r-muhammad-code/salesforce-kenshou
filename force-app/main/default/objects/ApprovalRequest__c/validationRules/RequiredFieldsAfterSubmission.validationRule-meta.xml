@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>RequiredFieldsAfterSubmission</fullName>
     <active>true</active>
-    <description>下書き以外では、申請カテゴリ・申請者・第1承認者を必須とする。</description>
+    <description>下書き以外の承認申請に必要な基本項目を必須にする。</description>
     <errorConditionFormula>AND(
         NOT(ISPICKVAL(Status__c, "下書き")),
         OR(
             ISBLANK(TEXT(application_category__c)),
             ISBLANK(Requester__c),
-            ISBLANK(AssignedApprover__c)
+            ISBLANK(AssignedApprover__c),
+            ISBLANK(ApprovalRoute__c)
         )
     )</errorConditionFormula>
-    <errorMessage>申請を進めるには、申請カテゴリ、申請者、第1承認者を入力してください。</errorMessage>
+    <errorMessage>下書き以外では、申請カテゴリ・申請者・第1承認者・承認ルートが必須です。</errorMessage>
 </ValidationRule>
