@@ -4,6 +4,10 @@
     <description>承認者が第1承認者から順番に設定されていることを確認する。</description>
     <errorConditionFormula>OR(
         AND(
+            ISBLANK(AssignedApprover__c),
+            NOT(ISBLANK(SecondApprover__c))
+        ),
+        AND(
             ISBLANK(SecondApprover__c),
             NOT(ISBLANK(ThirdApprover__c))
         ),

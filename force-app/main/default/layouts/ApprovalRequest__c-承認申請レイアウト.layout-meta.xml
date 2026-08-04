@@ -60,16 +60,28 @@
 
         <layoutColumns>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Readonly</behavior>
+                <field>ApprovalRoute__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
                 <field>AssignedApprover__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
+                <behavior>Readonly</behavior>
                 <field>SecondApprover__c</field>
             </layoutItems>
         </layoutColumns>
 
         <layoutColumns>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>ThirdApprover__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>FourthApprover__c</field>
+            </layoutItems>
             <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>SubmittedAt__c</field>
@@ -233,6 +245,7 @@
         <fields>application_category__c</fields>
         <fields>AssignedApprover__c</fields>
         <fields>PurchaseOpportunity__c</fields>
+        <fields>ApprovalRoute__c</fields>
     </miniLayout>
 
     <showEmailCheckbox>false</showEmailCheckbox>
