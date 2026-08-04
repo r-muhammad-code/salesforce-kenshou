@@ -3,48 +3,60 @@
     <fullName>application_category__c</fullName>
     <label>申請カテゴリ</label>
     <required>false</required>
-    <trackHistory>false</trackHistory>
-    <trackTrending>false</trackTrending>
     <type>Picklist</type>
     <valueSet>
         <restricted>true</restricted>
         <valueSetDefinition>
             <sorted>false</sorted>
+
             <value>
-                <fullName>所有権・残あり先振込承認</fullName>
+                <fullName>所有権、残あり先振込承認</fullName>
                 <default>false</default>
-                <label>所有権・残あり先振込承認</label>
+                <label>所有権、残あり先振込承認</label>
             </value>
+
             <value>
                 <fullName>所有権付き解除前引き上げ</fullName>
                 <default>false</default>
                 <label>所有権付き解除前引き上げ</label>
             </value>
+
             <value>
                 <fullName>封印申請</fullName>
                 <default>false</default>
                 <label>封印申請</label>
             </value>
+
             <value>
                 <fullName>書類OK前出品</fullName>
                 <default>false</default>
                 <label>書類OK前出品</label>
             </value>
+
             <value>
-                <fullName>永久抹消条件または書類なし案件の買取</fullName>
+                <fullName>永久抹消条件での買取</fullName>
                 <default>false</default>
-                <label>永久抹消条件または書類なし案件の買取</label>
+                <label>永久抹消条件での買取</label>
             </value>
+
+            <value>
+                <fullName>書類なし案件の買取</fullName>
+                <default>false</default>
+                <label>書類なし案件の買取</label>
+            </value>
+
             <value>
                 <fullName>先売り申請</fullName>
                 <default>false</default>
                 <label>先売り申請</label>
             </value>
+
             <value>
                 <fullName>台帳作成済みキャンセル・在庫削除</fullName>
                 <default>false</default>
                 <label>台帳作成済みキャンセル・在庫削除</label>
             </value>
+
         </valueSetDefinition>
     </valueSet>
 </CustomField>
