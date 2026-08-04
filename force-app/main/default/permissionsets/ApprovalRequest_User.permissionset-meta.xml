@@ -136,6 +136,21 @@
         <field>ApprovalRequest__c.ownership_company__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ApprovalRequest__c.ApprovalRoute__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ApprovalRequest__c.ThirdApprover__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ApprovalRequest__c.FourthApprover__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
     <label>承認申請ユーザー</label>
     <objectPermissions>
@@ -152,21 +167,6 @@
         <visibility>Visible</visibility>
     </tabSettings>
 
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>ApprovalRequest__c.ApprovalRoute__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
 
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>ApprovalRequest__c.ThirdApprover__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
 
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>ApprovalRequest__c.FourthApprover__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
 </PermissionSet>

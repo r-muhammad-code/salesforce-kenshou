@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ApproverSequenceMustBeContinuous</fullName>
     <active>true</active>
     <description>承認者が第1承認者から順番に設定されていることを確認する。</description>
     <errorConditionFormula>OR(
