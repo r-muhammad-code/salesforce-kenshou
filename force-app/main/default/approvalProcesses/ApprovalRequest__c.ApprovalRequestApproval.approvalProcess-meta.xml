@@ -101,7 +101,27 @@
         <formula>ISPICKVAL(Status__c, &quot;申請中&quot;)</formula>
     </entryCriteria>
 
+    <finalApprovalActions>
+        <action>
+            <name>SetStatusApproved</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>SetCompletedAtNow</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
     <finalApprovalRecordLock>true</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>SetStatusRejected</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>SetCompletedAtNow</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalRejectionActions>
     <finalRejectionRecordLock>false</finalRejectionRecordLock>
 
     <label>承認申請承認プロセス</label>
