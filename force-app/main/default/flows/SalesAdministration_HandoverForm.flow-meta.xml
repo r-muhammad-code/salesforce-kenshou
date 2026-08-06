@@ -5,7 +5,7 @@
         <name>chatter_listingteam</name>
         <label>出品チームへChatterを投稿</label>
         <locationX>1562</locationX>
-        <locationY>8702</locationY>
+        <locationY>8318</locationY>
         <actionName>chatterPost</actionName>
         <actionType>chatterPost</actionType>
         <connector>
@@ -32,7 +32,7 @@
         <name>chatter_ToPurchaseOpportunity_Update</name>
         <label>買取商談にChatter</label>
         <locationX>1232</locationX>
-        <locationY>7670</locationY>
+        <locationY>7286</locationY>
         <actionName>chatterPost</actionName>
         <actionType>chatterPost</actionType>
         <connector>
@@ -59,7 +59,7 @@
         <name>chatter_ToSalesManagement_Update</name>
         <label>営業管理にChatter</label>
         <locationX>1232</locationX>
-        <locationY>7778</locationY>
+        <locationY>7394</locationY>
         <actionName>chatterPost</actionName>
         <actionType>chatterPost</actionType>
         <connector>
@@ -86,7 +86,7 @@
         <name>createSM_Chatter_to_PO</name>
         <label>買取商談にChatter</label>
         <locationX>2288</locationX>
-        <locationY>8102</locationY>
+        <locationY>7718</locationY>
         <actionName>chatterPost</actionName>
         <actionType>chatterPost</actionType>
         <connector>
@@ -113,7 +113,7 @@
         <name>X2_Chatter</name>
         <label>営業管理にChatter</label>
         <locationX>2288</locationX>
-        <locationY>8210</locationY>
+        <locationY>7826</locationY>
         <actionName>chatterPost</actionName>
         <actionType>chatterPost</actionType>
         <connector>
@@ -142,7 +142,7 @@
         <name>assign_Case_Task</name>
         <label>対応タスクに割り当て</label>
         <locationX>1562</locationX>
-        <locationY>8810</locationY>
+        <locationY>8426</locationY>
         <assignmentItems>
             <assignToReference>var_Case_Task.Title__c</assignToReference>
             <operator>Assign</operator>
@@ -200,7 +200,7 @@
         <name>assign_DocumentInfo_to_PurchaseOpportunity</name>
         <label>書類取付情報を買取商談に割り当て</label>
         <locationX>1364</locationX>
-        <locationY>6446</locationY>
+        <locationY>6062</locationY>
         <assignmentItems>
             <assignToReference>var_PurchaseOpportunityRecord.CollectionDate__c</assignToReference>
             <operator>Assign</operator>
@@ -222,7 +222,7 @@
     <assignments>
         <name>assign_flgTransfered_toTrue</name>
         <label>引継ぎ済みフラグをTrueに</label>
-        <locationX>762</locationX>
+        <locationX>872</locationX>
         <locationY>890</locationY>
         <assignmentItems>
             <assignToReference>var_flg_Transfered</assignToReference>
@@ -236,26 +236,10 @@
         </connector>
     </assignments>
     <assignments>
-        <name>assign_IncrementExistingActiveCount</name>
-        <label>進行中営業管理件数を1増やす</label>
-        <locationX>1202</locationX>
-        <locationY>998</locationY>
-        <assignmentItems>
-            <assignToReference>var_ExistingActiveCount</assignToReference>
-            <operator>Add</operator>
-            <value>
-                <numberValue>1.0</numberValue>
-            </value>
-        </assignmentItems>
-        <connector>
-            <targetReference>loop_CountActiveSalesManagement</targetReference>
-        </connector>
-    </assignments>
-    <assignments>
         <name>assign_InvoicePerson</name>
         <label>請求書取付担当を割り当て</label>
         <locationX>1891</locationX>
-        <locationY>2930</locationY>
+        <locationY>2546</locationY>
         <assignmentItems>
             <assignToReference>var_SalesManagementRecord.invoice_setup__c</assignToReference>
             <operator>Assign</operator>
@@ -271,7 +255,7 @@
         <name>assign_PickupInfo_to_PurchaseOpportunity</name>
         <label>引取情報を買取商談に割り当て</label>
         <locationX>1226</locationX>
-        <locationY>3998</locationY>
+        <locationY>3614</locationY>
         <assignmentItems>
             <assignToReference>var_PurchaseOpportunityRecord.RequestDestination__c</assignToReference>
             <operator>Assign</operator>
@@ -518,7 +502,7 @@
         <name>assign_PruchaseOpportunity_ContractFields</name>
         <label>買取商談の売契項目割り当て</label>
         <locationX>1661</locationX>
-        <locationY>2546</locationY>
+        <locationY>2162</locationY>
         <assignmentItems>
             <assignToReference>var_PurchaseOpportunityRecord.AssessmentDate__c</assignToReference>
             <operator>Assign</operator>
@@ -590,7 +574,7 @@
         <name>assign_PurchaseOpportuity_OtherAA</name>
         <label>他社オクにチェックを付ける</label>
         <locationX>754</locationX>
-        <locationY>5870</locationY>
+        <locationY>5486</locationY>
         <assignmentItems>
             <assignToReference>var_PurchaseOpportunityRecord.OtherAA__c</assignToReference>
             <operator>Assign</operator>
@@ -606,7 +590,7 @@
         <name>assign_PurchaseOpportunity_InputField</name>
         <label>初回入力内容を買取商談に割り当て</label>
         <locationX>2112</locationX>
-        <locationY>1790</locationY>
+        <locationY>1406</locationY>
         <assignmentItems>
             <assignToReference>var_PurchaseOpportunityRecord.Phase__c</assignToReference>
             <operator>Assign</operator>
@@ -650,7 +634,7 @@
         <name>assign_PurchaseOpportunity_ListingInfo</name>
         <label>買取商談に出品情報を反映</label>
         <locationX>446</locationX>
-        <locationY>5546</locationY>
+        <locationY>5162</locationY>
         <assignmentItems>
             <assignToReference>var_PurchaseOpportunityRecord.YardData__c</assignToReference>
             <operator>Assign</operator>
@@ -722,7 +706,7 @@
         <name>assign_PurchaseOpportunity_MVRB</name>
         <label>提携B割り当て</label>
         <locationX>1458</locationX>
-        <locationY>5138</locationY>
+        <locationY>4754</locationY>
         <assignmentItems>
             <assignToReference>var_PurchaseOpportunityRecord.BC__c</assignToReference>
             <operator>Assign</operator>
@@ -752,7 +736,7 @@
         <name>assign_PurchaseOpportunity_MVRC</name>
         <label>提携C割り当て</label>
         <locationX>1722</locationX>
-        <locationY>5138</locationY>
+        <locationY>4754</locationY>
         <assignmentItems>
             <assignToReference>var_PurchaseOpportunityRecord.BC__c</assignToReference>
             <operator>Assign</operator>
@@ -782,7 +766,7 @@
         <name>assign_PurchaseOpportunity_ProposedAmount</name>
         <label>買取商談の提示金額に割り当て</label>
         <locationX>1451</locationX>
-        <locationY>3146</locationY>
+        <locationY>2762</locationY>
         <assignmentItems>
             <assignToReference>var_PurchaseOpportunityRecord.ProposedPrice__c</assignToReference>
             <operator>Assign</operator>
@@ -814,7 +798,7 @@
         <name>assign_PurchaseOpportunity_Repair</name>
         <label>修理車両とヤードデータを割り当て</label>
         <locationX>1194</locationX>
-        <locationY>5138</locationY>
+        <locationY>4754</locationY>
         <assignmentItems>
             <assignToReference>var_PurchaseOpportunityRecord.RepairCar__c</assignToReference>
             <operator>Assign</operator>
@@ -837,7 +821,7 @@
         <name>assign_PurchaseOpportunity_SalesManagementID</name>
         <label>買取商談に営業管理のIDをセット</label>
         <locationX>2288</locationX>
-        <locationY>7886</locationY>
+        <locationY>7502</locationY>
         <assignmentItems>
             <assignToReference>var_PurchaseOpportunityRecord.SalesManagement__c</assignToReference>
             <operator>Assign</operator>
@@ -853,7 +837,7 @@
         <name>assign_PurchaseOpportunity_StorageInfo</name>
         <label>買取商談に保管先を割り当て</label>
         <locationX>698</locationX>
-        <locationY>4322</locationY>
+        <locationY>3938</locationY>
         <assignmentItems>
             <assignToReference>var_PurchaseOpportunityRecord.RegularHoliday__c</assignToReference>
             <operator>Assign</operator>
@@ -904,7 +888,7 @@
         <name>assign_PurchaseOpportunity_StorageInfo2</name>
         <label>買取商談に保管先を割り当て</label>
         <locationX>962</locationX>
-        <locationY>4538</locationY>
+        <locationY>4154</locationY>
         <assignmentItems>
             <assignToReference>var_PurchaseOpportunityRecord.RegularHoliday__c</assignToReference>
             <operator>Assign</operator>
@@ -955,7 +939,7 @@
         <name>assign_PurchaseOpportunity_StorageInfo3</name>
         <label>買取商談に保管先を割り当て</label>
         <locationX>1226</locationX>
-        <locationY>4646</locationY>
+        <locationY>4262</locationY>
         <assignmentItems>
             <assignToReference>var_PurchaseOpportunityRecord.RegularHoliday__c</assignToReference>
             <operator>Assign</operator>
@@ -1006,7 +990,7 @@
         <name>assign_PurchaseOpportunity_StorageInfo4</name>
         <label>買取商談に保管先を割り当て</label>
         <locationX>1490</locationX>
-        <locationY>4322</locationY>
+        <locationY>3938</locationY>
         <assignmentItems>
             <assignToReference>var_PurchaseOpportunityRecord.RegularHoliday__c</assignToReference>
             <operator>Assign</operator>
@@ -1036,7 +1020,7 @@
         <name>assign_PurchaseOpportunity_StorageInfo5</name>
         <label>買取商談に保管先を割り当て</label>
         <locationX>1754</locationX>
-        <locationY>4322</locationY>
+        <locationY>3938</locationY>
         <assignmentItems>
             <assignToReference>var_PurchaseOpportunityRecord.RegularHoliday__c</assignToReference>
             <operator>Assign</operator>
@@ -1087,7 +1071,7 @@
         <name>assign_PurchaseOpportunity_TorimenhoTrue</name>
         <label>取メン保保管をTrueに</label>
         <locationX>314</locationX>
-        <locationY>5354</locationY>
+        <locationY>4970</locationY>
         <assignmentItems>
             <assignToReference>var_PurchaseOpportunityRecord.Torimenho_Storage__c</assignToReference>
             <operator>Assign</operator>
@@ -1103,7 +1087,7 @@
         <name>assign_PurchaseOpportunity_YardData</name>
         <label>買取商談のヤードデータを選択</label>
         <locationX>886</locationX>
-        <locationY>6062</locationY>
+        <locationY>5678</locationY>
         <assignmentItems>
             <assignToReference>var_PurchaseOpportunityRecord.YardData__c</assignToReference>
             <operator>Assign</operator>
@@ -1119,7 +1103,7 @@
         <name>assign_run_dist_contract</name>
         <label>走行距離を保存</label>
         <locationX>1661</locationX>
-        <locationY>2330</locationY>
+        <locationY>1946</locationY>
         <assignmentItems>
             <assignToReference>var_run_dist_final</assignToReference>
             <operator>Assign</operator>
@@ -1135,7 +1119,7 @@
         <name>assign_run_dist_Mileagesystemrequest</name>
         <label>走行距離を保存</label>
         <locationX>754</locationX>
-        <locationY>5354</locationY>
+        <locationY>4970</locationY>
         <assignmentItems>
             <assignToReference>var_run_dist_final</assignToReference>
             <operator>Assign</operator>
@@ -1151,7 +1135,7 @@
         <name>assign_SalesManagement</name>
         <label>初回入力内容を営業管理割り当て</label>
         <locationX>2112</locationX>
-        <locationY>1898</locationY>
+        <locationY>1514</locationY>
         <assignmentItems>
             <assignToReference>var_SalesManagementRecord.Account__c</assignToReference>
             <operator>Assign</operator>
@@ -1328,7 +1312,7 @@
         <name>assign_SalesManagement_ContractFields</name>
         <label>営業管理の売契項目割り当て</label>
         <locationX>1661</locationX>
-        <locationY>2438</locationY>
+        <locationY>2054</locationY>
         <assignmentItems>
             <assignToReference>var_SalesManagementRecord.AW__c</assignToReference>
             <operator>Assign</operator>
@@ -1505,7 +1489,7 @@
         <name>assign_SalesManagement_ContractFieldsPO</name>
         <label>営業管理に買取商談の売契項目割り当て</label>
         <locationX>2057</locationX>
-        <locationY>2330</locationY>
+        <locationY>1946</locationY>
         <assignmentItems>
             <assignToReference>var_SalesManagementRecord.AW__c</assignToReference>
             <operator>Assign</operator>
@@ -1591,7 +1575,7 @@
         <name>assign_SalesManagement_ContractPrepareDate</name>
         <label>営業管理の取付日を更新</label>
         <locationX>1925</locationX>
-        <locationY>2546</locationY>
+        <locationY>2162</locationY>
         <assignmentItems>
             <assignToReference>var_SalesManagementRecord.ContractPrepareDate__c</assignToReference>
             <operator>Assign</operator>
@@ -1607,7 +1591,7 @@
         <name>assign_SalesManagement_DocPersonPhone</name>
         <label>書類取付先電話番号に保管先電話番号を割り当て</label>
         <locationX>968</locationX>
-        <locationY>6770</locationY>
+        <locationY>6386</locationY>
         <assignmentItems>
             <assignToReference>var_SalesManagementRecord.StorageLocationTell__c</assignToReference>
             <operator>Assign</operator>
@@ -1623,7 +1607,7 @@
         <name>assign_SalesManagement_DocPhoneHoliday</name>
         <label>書類取付先電話番号・定休日←保管先電話番号・定休日</label>
         <locationX>1496</locationX>
-        <locationY>6770</locationY>
+        <locationY>6386</locationY>
         <assignmentItems>
             <assignToReference>var_SalesManagementRecord.Document_set_up_phone__c</assignToReference>
             <operator>Assign</operator>
@@ -1646,7 +1630,7 @@
         <name>assign_SalesManagement_DocumentInfo</name>
         <label>書類取付情報を営業管理に割り当て</label>
         <locationX>1364</locationX>
-        <locationY>6554</locationY>
+        <locationY>6170</locationY>
         <assignmentItems>
             <assignToReference>var_SalesManagementRecord.DocSetUp_Contact_Timezone__c</assignToReference>
             <operator>Assign</operator>
@@ -1711,7 +1695,7 @@
         <name>assign_SalesManagement_MVRB</name>
         <label>営業管理にMVR_Bを反映</label>
         <locationX>1458</locationX>
-        <locationY>5246</locationY>
+        <locationY>4862</locationY>
         <assignmentItems>
             <assignToReference>var_SalesManagementRecord.BC__c</assignToReference>
             <operator>Assign</operator>
@@ -1734,7 +1718,7 @@
         <name>assign_SalesManagement_MVRC</name>
         <label>営業管理にMVR_Cを割り当て</label>
         <locationX>1722</locationX>
-        <locationY>5246</locationY>
+        <locationY>4862</locationY>
         <assignmentItems>
             <assignToReference>var_SalesManagementRecord.BC__c</assignToReference>
             <operator>Assign</operator>
@@ -1757,7 +1741,7 @@
         <name>assign_SalesManagement_Phone1Holiday</name>
         <label>書類取付先電話番号にPhone1を割り当て</label>
         <locationX>1760</locationX>
-        <locationY>6770</locationY>
+        <locationY>6386</locationY>
         <assignmentItems>
             <assignToReference>var_SalesManagementRecord.Document_set_up_phone__c</assignToReference>
             <operator>Assign</operator>
@@ -1780,7 +1764,7 @@
         <name>assign_SalesManagement_PickupInfo</name>
         <label>引取情報を営業管理割り当て</label>
         <locationX>1226</locationX>
-        <locationY>4106</locationY>
+        <locationY>3722</locationY>
         <assignmentItems>
             <assignToReference>var_SalesManagementRecord.CollectDocument__c</assignToReference>
             <operator>Assign</operator>
@@ -2020,7 +2004,7 @@
         <name>assign_SalesManagement_StorageHoliday</name>
         <label>取付先の定休日に保管先定休日を割り当て</label>
         <locationX>1232</locationX>
-        <locationY>6770</locationY>
+        <locationY>6386</locationY>
         <assignmentItems>
             <assignToReference>var_SalesManagementRecord.Mailing_RegularHoliday__c</assignToReference>
             <operator>Assign</operator>
@@ -2036,7 +2020,7 @@
         <name>assign_SalesManagement_StorageInfo</name>
         <label>営業管理に保管先を割り当て</label>
         <locationX>698</locationX>
-        <locationY>4430</locationY>
+        <locationY>4046</locationY>
         <assignmentItems>
             <assignToReference>var_SalesManagementRecord.Pickup_RegularHoliday__c</assignToReference>
             <operator>Assign</operator>
@@ -2087,7 +2071,7 @@
         <name>assign_SalesManagement_StorageInfo2</name>
         <label>営業管理に保管先を割り当て</label>
         <locationX>962</locationX>
-        <locationY>4646</locationY>
+        <locationY>4262</locationY>
         <assignmentItems>
             <assignToReference>var_SalesManagementRecord.Pickup_RegularHoliday__c</assignToReference>
             <operator>Assign</operator>
@@ -2138,7 +2122,7 @@
         <name>assign_SalesManagement_StorageInfo3</name>
         <label>営業管理に保管先を割り当て</label>
         <locationX>1226</locationX>
-        <locationY>4754</locationY>
+        <locationY>4370</locationY>
         <assignmentItems>
             <assignToReference>var_SalesManagementRecord.Pickup_RegularHoliday__c</assignToReference>
             <operator>Assign</operator>
@@ -2189,7 +2173,7 @@
         <name>assign_SalesManagement_StorageInfo4</name>
         <label>営業管理に保管先を割り当て</label>
         <locationX>1490</locationX>
-        <locationY>4430</locationY>
+        <locationY>4046</locationY>
         <assignmentItems>
             <assignToReference>var_SalesManagementRecord.Pickup_RegularHoliday__c</assignToReference>
             <operator>Assign</operator>
@@ -2219,7 +2203,7 @@
         <name>assign_SalesManagement_StorageInfo5</name>
         <label>営業管理に保管先を割り当て</label>
         <locationX>1754</locationX>
-        <locationY>4430</locationY>
+        <locationY>4046</locationY>
         <assignmentItems>
             <assignToReference>var_SalesManagementRecord.Pickup_RegularHoliday__c</assignToReference>
             <operator>Assign</operator>
@@ -2264,7 +2248,7 @@
         <name>assign_Shakensho_Abnormality_run</name>
         <label>買取商談に走行距離システム依頼の情報を割り当て</label>
         <locationX>754</locationX>
-        <locationY>5462</locationY>
+        <locationY>5078</locationY>
         <assignmentItems>
             <assignToReference>var_PurchaseOpportunityRecord.Shakensho_Abnormality_run__c</assignToReference>
             <operator>Assign</operator>
@@ -2330,7 +2314,7 @@
         <name>assign_Storenecessaryitems</name>
         <label>チャターに必要な項目を格納</label>
         <locationX>754</locationX>
-        <locationY>5570</locationY>
+        <locationY>5186</locationY>
         <assignmentItems>
             <assignToReference>var_Run_Dist1</assignToReference>
             <operator>Add</operator>
@@ -2373,7 +2357,7 @@
     <assignments>
         <name>assign_VarSalesManagement</name>
         <label>営業管理変数に割り当て</label>
-        <locationX>762</locationX>
+        <locationX>872</locationX>
         <locationY>782</locationY>
         <assignmentItems>
             <assignToReference>var_SalesManagementRecord</assignToReference>
@@ -2390,7 +2374,7 @@
         <name>Assingment_holiday2</name>
         <label>Assingment_holiday2</label>
         <locationX>1226</locationX>
-        <locationY>4538</locationY>
+        <locationY>4154</locationY>
         <assignmentItems>
             <assignToReference>holiday_multiPicklistText</assignToReference>
             <operator>Add</operator>
@@ -2406,7 +2390,7 @@
         <name>decision_InvoiceInfo</name>
         <label>請求書情報を割り当て</label>
         <locationX>1583</locationX>
-        <locationY>2930</locationY>
+        <locationY>2546</locationY>
         <assignmentItems>
             <assignToReference>var_SalesManagementRecord.invoice_setup__c</assignToReference>
             <operator>Assign</operator>
@@ -2836,7 +2820,7 @@
         <name>CheckSalesPersonalDelivery</name>
         <label>引継画面で送付方法：営業手渡しが選択された</label>
         <locationX>2057</locationX>
-        <locationY>2438</locationY>
+        <locationY>2054</locationY>
         <defaultConnector>
             <targetReference>decision_EnteredInvoiceInfo</targetReference>
         </defaultConnector>
@@ -2863,7 +2847,7 @@
         <locationX>872</locationX>
         <locationY>566</locationY>
         <defaultConnector>
-            <targetReference>get_ActiveSalesManagementSameAccount</targetReference>
+            <targetReference>SalesManagement_Handover_Screen</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>デフォルトの結果</defaultConnectorLabel>
         <rules>
@@ -2929,7 +2913,7 @@
         <name>decision_ChangedProposedAmount</name>
         <label>提示金額が変更された</label>
         <locationX>1583</locationX>
-        <locationY>3038</locationY>
+        <locationY>2654</locationY>
         <defaultConnector>
             <targetReference>decision_UpdateAccountContactEmail</targetReference>
         </defaultConnector>
@@ -2954,7 +2938,7 @@
         <name>decision_contract_or_invoice</name>
         <label>売契or請求書の情報を入力するか</label>
         <locationX>2112</locationX>
-        <locationY>2006</locationY>
+        <locationY>1622</locationY>
         <defaultConnector>
             <targetReference>decision_UpdateAccountContactEmail</targetReference>
         </defaultConnector>
@@ -2986,7 +2970,7 @@
         <name>decision_CreatedSalesManagement</name>
         <label>営業管理が作成済みか</label>
         <locationX>2156</locationX>
-        <locationY>7562</locationY>
+        <locationY>7178</locationY>
         <defaultConnector>
             <targetReference>update_PurchaseOpportunity</targetReference>
         </defaultConnector>
@@ -3011,7 +2995,7 @@
         <name>decision_EnterDocumentInfo</name>
         <label>書類取付情報が入力されたか</label>
         <locationX>1694</locationX>
-        <locationY>6338</locationY>
+        <locationY>5954</locationY>
         <defaultConnector>
             <targetReference>decision_SalesManagementTransfered</targetReference>
         </defaultConnector>
@@ -3036,7 +3020,7 @@
         <name>decision_EnteredInvoiceInfo</name>
         <label>請求書情報が入力されたか</label>
         <locationX>1859</locationX>
-        <locationY>2822</locationY>
+        <locationY>2438</locationY>
         <defaultConnector>
             <targetReference>decision_UpdateAccountContactEmail</targetReference>
         </defaultConnector>
@@ -3090,7 +3074,7 @@
         <name>decision_EnterPickupInfo</name>
         <label>引取情報が入力されたか</label>
         <locationX>1694</locationX>
-        <locationY>3890</locationY>
+        <locationY>3506</locationY>
         <defaultConnector>
             <targetReference>decision_EnterDocumentInfo</targetReference>
         </defaultConnector>
@@ -3112,36 +3096,11 @@
         </rules>
     </decisions>
     <decisions>
-        <name>decision_HasActiveSalesManagement</name>
-        <label>進行中営業管理の有無を判定</label>
-        <locationX>1246</locationX>
-        <locationY>782</locationY>
-        <defaultConnector>
-            <targetReference>SalesManagement_Handover_Screen</targetReference>
-        </defaultConnector>
-        <defaultConnectorLabel>進行中営業管理なし</defaultConnectorLabel>
-        <rules>
-            <name>has_ActiveSalesManagement</name>
-            <conditionLogic>and</conditionLogic>
-            <conditions>
-                <leftValueReference>get_ActiveSalesManagementSameAccount</leftValueReference>
-                <operator>IsNull</operator>
-                <rightValue>
-                    <booleanValue>false</booleanValue>
-                </rightValue>
-            </conditions>
-            <connector>
-                <targetReference>loop_CountActiveSalesManagement</targetReference>
-            </connector>
-            <label>進行中営業管理あり</label>
-        </rules>
-    </decisions>
-    <decisions>
         <description>スキップするチェックボックスではなく必須項目で判断。与儀</description>
         <name>decision_Mileagesystemrequest</name>
         <label>走行距離システム依頼が出されたか</label>
         <locationX>1694</locationX>
-        <locationY>8486</locationY>
+        <locationY>8102</locationY>
         <defaultConnectorLabel>デフォルトの結果</defaultConnectorLabel>
         <rules>
             <name>is_Mileagesystemrequest_true</name>
@@ -3164,7 +3123,7 @@
         <name>decision_Mst_Types</name>
         <label>型式チェック</label>
         <locationX>872</locationX>
-        <locationY>1574</locationY>
+        <locationY>1190</locationY>
         <defaultConnector>
             <targetReference>decision_Tranfered</targetReference>
         </defaultConnector>
@@ -3210,7 +3169,7 @@
         <name>decision_Repair</name>
         <label>修理車両判断</label>
         <locationX>886</locationX>
-        <locationY>5762</locationY>
+        <locationY>5378</locationY>
         <defaultConnector>
             <targetReference>assign_PurchaseOpportunity_YardData</targetReference>
         </defaultConnector>
@@ -3235,7 +3194,7 @@
         <name>decision_SalesManagementTransfered</name>
         <label>営業管理引継ぎ済みか</label>
         <locationX>1694</locationX>
-        <locationY>7346</locationY>
+        <locationY>6962</locationY>
         <defaultConnector>
             <targetReference>get_PurchaseOpportunity_BeforeCreateSM</targetReference>
         </defaultConnector>
@@ -3262,7 +3221,7 @@
         <name>decision_Shakensho_Abnormality_run</name>
         <label>車検証上の走行距離の異常の有無が入力されたか</label>
         <locationX>886</locationX>
-        <locationY>5246</locationY>
+        <locationY>4862</locationY>
         <defaultConnector>
             <targetReference>decision_Repair</targetReference>
         </defaultConnector>
@@ -3287,7 +3246,7 @@
         <name>decision_Tranfered</name>
         <label>引継ぎ済み</label>
         <locationX>1694</locationX>
-        <locationY>1682</locationY>
+        <locationY>1298</locationY>
         <defaultConnector>
             <targetReference>assign_PurchaseOpportunity_InputField</targetReference>
         </defaultConnector>
@@ -3312,7 +3271,7 @@
         <name>decision_UpdateAccountContactEmail</name>
         <label>取引先or取引先担当者のメールアドレスを更新するか</label>
         <locationX>2112</locationX>
-        <locationY>3506</locationY>
+        <locationY>3122</locationY>
         <defaultConnector>
             <targetReference>decision_EnterPickupInfo</targetReference>
         </defaultConnector>
@@ -3366,7 +3325,7 @@
         <name>decision_UpdateAccountEmai_ForPostProcessing</name>
         <label>取引先のメールアドレス(後処理送付)を更新するか</label>
         <locationX>1364</locationX>
-        <locationY>6962</locationY>
+        <locationY>6578</locationY>
         <defaultConnector>
             <targetReference>decision_SalesManagementTransfered</targetReference>
         </defaultConnector>
@@ -3391,7 +3350,7 @@
         <name>Destination_judge</name>
         <label>行先区分の判断</label>
         <locationX>1226</locationX>
-        <locationY>5030</locationY>
+        <locationY>4646</locationY>
         <defaultConnector>
             <targetReference>decision_EnterDocumentInfo</targetReference>
         </defaultConnector>
@@ -3476,7 +3435,7 @@
         <name>Document_set_up_Category_judge</name>
         <label>書類取付先で判断</label>
         <locationX>1364</locationX>
-        <locationY>6662</locationY>
+        <locationY>6278</locationY>
         <defaultConnector>
             <targetReference>assign_SalesManagement_Phone1Holiday</targetReference>
         </defaultConnector>
@@ -3573,7 +3532,7 @@
         <name>Is_input_contract_info</name>
         <label>売買契約書の情報が入力されたか</label>
         <locationX>1859</locationX>
-        <locationY>2222</locationY>
+        <locationY>1838</locationY>
         <defaultConnector>
             <targetReference>assign_SalesManagement_ContractFieldsPO</targetReference>
         </defaultConnector>
@@ -3605,7 +3564,7 @@
         <name>sococara_auc_setting_content_1_judge</name>
         <label>自社出品で取メン保が絶対必要か判断</label>
         <locationX>446</locationX>
-        <locationY>5246</locationY>
+        <locationY>4862</locationY>
         <defaultConnector>
             <targetReference>assign_PurchaseOpportunity_ListingInfo</targetReference>
         </defaultConnector>
@@ -3630,7 +3589,7 @@
         <name>Storage_holiday_input_judge</name>
         <label>保管先定休日が入力されているかどうか判断</label>
         <locationX>1094</locationX>
-        <locationY>4430</locationY>
+        <locationY>4046</locationY>
         <defaultConnector>
             <targetReference>Assingment_holiday2</targetReference>
         </defaultConnector>
@@ -3655,7 +3614,7 @@
         <name>StorageLocation_judge</name>
         <label>保管先カテゴリ判断</label>
         <locationX>1226</locationX>
-        <locationY>4214</locationY>
+        <locationY>3830</locationY>
         <defaultConnector>
             <targetReference>assign_PurchaseOpportunity_StorageInfo5</targetReference>
         </defaultConnector>
@@ -3706,8 +3665,8 @@
             <label>車検証と同じ</label>
         </rules>
     </decisions>
-    <description>同一取引先に進行中の営業管理がある場合、
-引継ぎ前に警告画面と関連レコード一覧を表示する処理を追加</description>
+    <description>重複警告追加前のバージョン115をベースに復元。
+営業管理レコードページ側での対応へ変更するため。</description>
     <dynamicChoiceSets>
         <name>auc_area</name>
         <dataType>Picklist</dataType>
@@ -4729,20 +4688,6 @@ IF (TEXT({!get_POrecordId.Assessment__r.run_dist_unit__c}) = &quot;2&quot;, &quo
     </formulas>
     <interviewLabel>営業管理へ引継ぎ {!$Flow.CurrentDateTime}</interviewLabel>
     <label>営業管理へ引継ぎ</label>
-    <loops>
-        <name>loop_CountActiveSalesManagement</name>
-        <label>進行中営業管理をカウント</label>
-        <locationX>1114</locationX>
-        <locationY>890</locationY>
-        <collectionReference>get_ActiveSalesManagementSameAccount</collectionReference>
-        <iterationOrder>Asc</iterationOrder>
-        <nextValueConnector>
-            <targetReference>assign_IncrementExistingActiveCount</targetReference>
-        </nextValueConnector>
-        <noMoreValuesConnector>
-            <targetReference>screen_DuplicateSalesManagementWarning</targetReference>
-        </noMoreValuesConnector>
-    </loops>
     <processMetadataValues>
         <name>BuilderType</name>
         <value>
@@ -4766,14 +4711,14 @@ IF (TEXT({!get_POrecordId.Assessment__r.run_dist_unit__c}) = &quot;2&quot;, &quo
         <name>create_Case_Task</name>
         <label>対応タスクを作成</label>
         <locationX>1562</locationX>
-        <locationY>8918</locationY>
+        <locationY>8534</locationY>
         <inputReference>var_Case_Task</inputReference>
     </recordCreates>
     <recordCreates>
         <name>create_SalesManagementFromVariable</name>
         <label>営業管理レコードを作成</label>
         <locationX>2288</locationX>
-        <locationY>7778</locationY>
+        <locationY>7394</locationY>
         <connector>
             <targetReference>assign_PurchaseOpportunity_SalesManagementID</targetReference>
         </connector>
@@ -4801,34 +4746,6 @@ IF (TEXT({!get_POrecordId.Assessment__r.run_dist_unit__c}) = &quot;2&quot;, &quo
         </filters>
         <getFirstRecordOnly>true</getFirstRecordOnly>
         <object>Account</object>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
-    </recordLookups>
-    <recordLookups>
-        <name>get_ActiveSalesManagementSameAccount</name>
-        <label>同一取引先の進行中営業管理を取得</label>
-        <locationX>1246</locationX>
-        <locationY>674</locationY>
-        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
-        <connector>
-            <targetReference>decision_HasActiveSalesManagement</targetReference>
-        </connector>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>Account__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>get_POrecordId.Account__r.Id</elementReference>
-            </value>
-        </filters>
-        <filters>
-            <field>InProgress__c</field>
-            <operator>EqualTo</operator>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </filters>
-        <getFirstRecordOnly>false</getFirstRecordOnly>
-        <object>SalesManagement__c</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordLookups>
@@ -4877,7 +4794,7 @@ IF (TEXT({!get_POrecordId.Assessment__r.run_dist_unit__c}) = &quot;2&quot;, &quo
         <name>get_PurchaseOpportunity_BeforeCreateSM</name>
         <label>再度買取商談を取得</label>
         <locationX>2156</locationX>
-        <locationY>7454</locationY>
+        <locationY>7070</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>decision_CreatedSalesManagement</targetReference>
@@ -4897,7 +4814,7 @@ IF (TEXT({!get_POrecordId.Assessment__r.run_dist_unit__c}) = &quot;2&quot;, &quo
     <recordLookups>
         <name>get_SalesManagement</name>
         <label>営業管理を取得</label>
-        <locationX>762</locationX>
+        <locationX>872</locationX>
         <locationY>674</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
@@ -4919,7 +4836,7 @@ IF (TEXT({!get_POrecordId.Assessment__r.run_dist_unit__c}) = &quot;2&quot;, &quo
         <name>get_shuppinteamID</name>
         <label>出品チームのIDを取得</label>
         <locationX>1562</locationX>
-        <locationY>8594</locationY>
+        <locationY>8210</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>chatter_listingteam</targetReference>
@@ -4947,7 +4864,7 @@ IF (TEXT({!get_POrecordId.Assessment__r.run_dist_unit__c}) = &quot;2&quot;, &quo
         <name>get_Storage</name>
         <label>保管先を取得</label>
         <locationX>1094</locationX>
-        <locationY>4322</locationY>
+        <locationY>3938</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
             <targetReference>Storage_holiday_input_judge</targetReference>
@@ -4975,7 +4892,7 @@ IF (TEXT({!get_POrecordId.Assessment__r.run_dist_unit__c}) = &quot;2&quot;, &quo
         <name>rollback_UpdateError</name>
         <label>買取商談の更新を取り消し</label>
         <locationX>2552</locationX>
-        <locationY>7886</locationY>
+        <locationY>7502</locationY>
         <connector>
             <targetReference>screen_ValidationError1</targetReference>
         </connector>
@@ -4984,7 +4901,7 @@ IF (TEXT({!get_POrecordId.Assessment__r.run_dist_unit__c}) = &quot;2&quot;, &quo
         <name>update_AccountEmai_ForPostProcessing</name>
         <label>取引先のメールアドレス(後処理送付)を更新</label>
         <locationX>1232</locationX>
-        <locationY>7070</locationY>
+        <locationY>6686</locationY>
         <connector>
             <targetReference>decision_SalesManagementTransfered</targetReference>
         </connector>
@@ -5008,7 +4925,7 @@ IF (TEXT({!get_POrecordId.Assessment__r.run_dist_unit__c}) = &quot;2&quot;, &quo
         <name>update_AccountEmail</name>
         <label>取引先のメールアドレスを更新</label>
         <locationX>1848</locationX>
-        <locationY>3614</locationY>
+        <locationY>3230</locationY>
         <connector>
             <targetReference>decision_EnterPickupInfo</targetReference>
         </connector>
@@ -5032,7 +4949,7 @@ IF (TEXT({!get_POrecordId.Assessment__r.run_dist_unit__c}) = &quot;2&quot;, &quo
         <name>update_ContactEmail</name>
         <label>取引先担当者のメールアドレスを更新</label>
         <locationX>2112</locationX>
-        <locationY>3614</locationY>
+        <locationY>3230</locationY>
         <connector>
             <targetReference>decision_EnterPickupInfo</targetReference>
         </connector>
@@ -5056,7 +4973,7 @@ IF (TEXT({!get_POrecordId.Assessment__r.run_dist_unit__c}) = &quot;2&quot;, &quo
         <name>update_PurchaseOpportunity</name>
         <label>買取商談レコードを更新</label>
         <locationX>2288</locationX>
-        <locationY>7670</locationY>
+        <locationY>7286</locationY>
         <connector>
             <targetReference>create_SalesManagementFromVariable</targetReference>
         </connector>
@@ -5070,7 +4987,7 @@ IF (TEXT({!get_POrecordId.Assessment__r.run_dist_unit__c}) = &quot;2&quot;, &quo
         <name>update_PurchaseOpportunity_SalesManagement</name>
         <label>買取商談に営業管理IDをセット</label>
         <locationX>2288</locationX>
-        <locationY>7994</locationY>
+        <locationY>7610</locationY>
         <connector>
             <targetReference>createSM_Chatter_to_PO</targetReference>
         </connector>
@@ -5080,7 +4997,7 @@ IF (TEXT({!get_POrecordId.Assessment__r.run_dist_unit__c}) = &quot;2&quot;, &quo
         <name>update_PurchaseOpportunity_Transfered</name>
         <label>買取商談レコードを更新</label>
         <locationX>1232</locationX>
-        <locationY>7454</locationY>
+        <locationY>7070</locationY>
         <connector>
             <targetReference>update_SalesManagement</targetReference>
         </connector>
@@ -5094,7 +5011,7 @@ IF (TEXT({!get_POrecordId.Assessment__r.run_dist_unit__c}) = &quot;2&quot;, &quo
         <name>update_SalesManagement</name>
         <label>営業管理レコードを更新</label>
         <locationX>1232</locationX>
-        <locationY>7562</locationY>
+        <locationY>7178</locationY>
         <connector>
             <targetReference>chatter_ToPurchaseOpportunity_Update</targetReference>
         </connector>
@@ -5108,7 +5025,7 @@ IF (TEXT({!get_POrecordId.Assessment__r.run_dist_unit__c}) = &quot;2&quot;, &quo
         <name>Form_contract_info</name>
         <label>売買契約書の情報を入力</label>
         <locationX>1859</locationX>
-        <locationY>2114</locationY>
+        <locationY>1730</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
@@ -6684,7 +6601,7 @@ IF (TEXT({!get_POrecordId.Assessment__r.run_dist_unit__c}) = &quot;2&quot;, &quo
         <name>Listing_Data_Screen</name>
         <label>出品情報入力</label>
         <locationX>446</locationX>
-        <locationY>5138</locationY>
+        <locationY>4754</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
@@ -7204,7 +7121,7 @@ IF (TEXT({!get_POrecordId.Assessment__r.run_dist_unit__c}) = &quot;2&quot;, &quo
         <name>SalesManagement_Handover_Screen</name>
         <label>営業管理へ引継ぎ画面</label>
         <locationX>872</locationX>
-        <locationY>1466</locationY>
+        <locationY>1082</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
@@ -11303,94 +11220,10 @@ LEN({!input_Document_set_up_Remarks}) &lt; 255
         <showHeader>true</showHeader>
     </screens>
     <screens>
-        <name>screen_DuplicateSalesManagementWarning</name>
-        <label>同一取引先の進行中営業管理を確認</label>
-        <locationX>1114</locationX>
-        <locationY>1190</locationY>
-        <allowBack>false</allowBack>
-        <allowFinish>true</allowFinish>
-        <allowPause>false</allowPause>
-        <connector>
-            <targetReference>SalesManagement_Handover_Screen</targetReference>
-        </connector>
-        <fields>
-            <name>display_DuplicateWarning</name>
-            <fieldText>&lt;p&gt;&lt;strong style=&quot;color: rgb(255, 0, 0); font-size: 18px;&quot;&gt;⚠ 同一取引先で進行中の営業管理があります&lt;/strong&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;同じ取引先で進行中の営業管理が&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;{!var_ExistingActiveCount}&lt;/span&gt;件あります。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;既存の担当者と対応状況を確認したうえで、&lt;/p&gt;&lt;p&gt;営業管理への引継ぎを続行してください。&lt;/p&gt;</fieldText>
-            <fieldType>DisplayText</fieldType>
-            <styleProperties>
-                <verticalAlignment>
-                    <stringValue>top</stringValue>
-                </verticalAlignment>
-                <width>
-                    <stringValue>12</stringValue>
-                </width>
-            </styleProperties>
-        </fields>
-        <fields>
-            <name>table_ActiveSalesManagement</name>
-            <dataTypeMappings>
-                <typeName>T</typeName>
-                <typeValue>SalesManagement__c</typeValue>
-            </dataTypeMappings>
-            <extensionName>flowruntime:datatable</extensionName>
-            <fieldType>ComponentInstance</fieldType>
-            <inputParameters>
-                <name>label</name>
-                <value>
-                    <stringValue>Data Table</stringValue>
-                </value>
-            </inputParameters>
-            <inputParameters>
-                <name>selectionMode</name>
-                <value>
-                    <stringValue>NO_SELECTION</stringValue>
-                </value>
-            </inputParameters>
-            <inputParameters>
-                <name>minRowSelection</name>
-                <value>
-                    <numberValue>0.0</numberValue>
-                </value>
-            </inputParameters>
-            <inputParameters>
-                <name>tableData</name>
-                <value>
-                    <elementReference>get_ActiveSalesManagementSameAccount</elementReference>
-                </value>
-            </inputParameters>
-            <inputParameters>
-                <name>columns</name>
-                <value>
-                    <stringValue>[{&quot;apiName&quot;:&quot;Name&quot;,&quot;guid&quot;:&quot;column-0e8f&quot;,&quot;editable&quot;:false,&quot;hasCustomHeaderLabel&quot;:false,&quot;customHeaderLabel&quot;:&quot;&quot;,&quot;wrapText&quot;:false,&quot;order&quot;:0,&quot;sortable&quot;:false,&quot;label&quot;:&quot;営業管理No&quot;,&quot;type&quot;:&quot;text&quot;},{&quot;apiName&quot;:&quot;Owner__c&quot;,&quot;guid&quot;:&quot;column-bc5c&quot;,&quot;editable&quot;:false,&quot;hasCustomHeaderLabel&quot;:false,&quot;customHeaderLabel&quot;:&quot;&quot;,&quot;wrapText&quot;:true,&quot;order&quot;:1,&quot;sortable&quot;:false,&quot;label&quot;:&quot;所有者&quot;,&quot;type&quot;:&quot;customRichText&quot;,&quot;referenceLabelConfigs&quot;:{&quot;User&quot;:{&quot;keyPrefix&quot;:&quot;005&quot;,&quot;nameFieldApiName&quot;:&quot;Name&quot;,&quot;nameFieldLabel&quot;:&quot;氏名&quot;}},&quot;linkToRecord&quot;:true},{&quot;apiName&quot;:&quot;PO_Owner__c&quot;,&quot;guid&quot;:&quot;column-18dd&quot;,&quot;editable&quot;:false,&quot;hasCustomHeaderLabel&quot;:false,&quot;customHeaderLabel&quot;:&quot;&quot;,&quot;wrapText&quot;:true,&quot;order&quot;:2,&quot;sortable&quot;:false,&quot;type&quot;:&quot;customReferenceLabel&quot;,&quot;referenceLabelConfigs&quot;:{&quot;User&quot;:{&quot;keyPrefix&quot;:&quot;005&quot;,&quot;nameFieldApiName&quot;:&quot;Name&quot;,&quot;nameFieldLabel&quot;:&quot;氏名&quot;}},&quot;linkToRecord&quot;:true,&quot;label&quot;:&quot;営業担当&quot;},{&quot;apiName&quot;:&quot;PurchaseOpportunity__c&quot;,&quot;guid&quot;:&quot;column-a46e&quot;,&quot;editable&quot;:false,&quot;hasCustomHeaderLabel&quot;:false,&quot;customHeaderLabel&quot;:&quot;&quot;,&quot;wrapText&quot;:true,&quot;order&quot;:3,&quot;sortable&quot;:false,&quot;label&quot;:&quot;買取商談&quot;,&quot;type&quot;:&quot;customReferenceLabel&quot;,&quot;referenceLabelConfigs&quot;:{&quot;PurchaseOpportunity__c&quot;:{&quot;keyPrefix&quot;:&quot;&quot;,&quot;nameFieldApiName&quot;:&quot;Name&quot;,&quot;nameFieldLabel&quot;:&quot;買取商談No.&quot;}},&quot;linkToRecord&quot;:true},{&quot;apiName&quot;:&quot;Pickup_status__c&quot;,&quot;guid&quot;:&quot;column-b363&quot;,&quot;editable&quot;:false,&quot;hasCustomHeaderLabel&quot;:false,&quot;customHeaderLabel&quot;:&quot;&quot;,&quot;wrapText&quot;:false,&quot;order&quot;:4,&quot;sortable&quot;:false,&quot;label&quot;:&quot;引取ステータス&quot;,&quot;type&quot;:&quot;text&quot;},{&quot;apiName&quot;:&quot;Document_status__c&quot;,&quot;guid&quot;:&quot;column-cb5a&quot;,&quot;editable&quot;:false,&quot;hasCustomHeaderLabel&quot;:false,&quot;customHeaderLabel&quot;:&quot;&quot;,&quot;wrapText&quot;:false,&quot;order&quot;:5,&quot;sortable&quot;:false,&quot;label&quot;:&quot;書類ステータス&quot;,&quot;type&quot;:&quot;text&quot;},{&quot;apiName&quot;:&quot;Transfer_status__c&quot;,&quot;guid&quot;:&quot;column-91dd&quot;,&quot;editable&quot;:false,&quot;hasCustomHeaderLabel&quot;:false,&quot;customHeaderLabel&quot;:&quot;&quot;,&quot;wrapText&quot;:false,&quot;order&quot;:6,&quot;sortable&quot;:false,&quot;label&quot;:&quot;振込ステータス&quot;,&quot;type&quot;:&quot;text&quot;}]</stringValue>
-                </value>
-            </inputParameters>
-            <inputParameters>
-                <name>maxRowSelection</name>
-                <value>
-                    <numberValue>0.0</numberValue>
-                </value>
-            </inputParameters>
-            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
-            <isRequired>true</isRequired>
-            <storeOutputAutomatically>true</storeOutputAutomatically>
-            <styleProperties>
-                <verticalAlignment>
-                    <stringValue>top</stringValue>
-                </verticalAlignment>
-                <width>
-                    <stringValue>12</stringValue>
-                </width>
-            </styleProperties>
-        </fields>
-        <nextOrFinishButtonLabel>内容を確認して引継ぎを続行</nextOrFinishButtonLabel>
-        <showFooter>true</showFooter>
-        <showHeader>false</showHeader>
-    </screens>
-    <screens>
         <name>screen_Error_CannotCreateSalesManagement</name>
         <label>エラー画面</label>
         <locationX>2024</locationX>
-        <locationY>7670</locationY>
+        <locationY>7286</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
@@ -11414,7 +11247,7 @@ LEN({!input_Document_set_up_Remarks}) &lt; 255
         <name>screen_Mileagesystemrequest</name>
         <label>走行距離システム依頼</label>
         <locationX>886</locationX>
-        <locationY>5138</locationY>
+        <locationY>4754</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
@@ -11799,7 +11632,7 @@ LEN({!input_Document_set_up_Remarks}) &lt; 255
         <name>screen_typeError</name>
         <label>型式エラー</label>
         <locationX>50</locationX>
-        <locationY>1682</locationY>
+        <locationY>1298</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
@@ -11823,7 +11656,7 @@ LEN({!input_Document_set_up_Remarks}) &lt; 255
         <name>screen_ValidationError1</name>
         <label>エラーを表示</label>
         <locationX>2552</locationX>
-        <locationY>7994</locationY>
+        <locationY>7610</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
@@ -11869,7 +11702,7 @@ LEN({!input_Document_set_up_Remarks}) &lt; 255
     <screens>
         <name>Transferred_screen</name>
         <label>引継ぎ済み</label>
-        <locationX>498</locationX>
+        <locationX>608</locationX>
         <locationY>674</locationY>
         <allowBack>false</allowBack>
         <allowFinish>true</allowFinish>
@@ -11996,17 +11829,6 @@ LEN({!input_Document_set_up_Remarks}) &lt; 255
         <isInput>false</isInput>
         <isOutput>false</isOutput>
         <objectType>Case_Task__c</objectType>
-    </variables>
-    <variables>
-        <name>var_ExistingActiveCount</name>
-        <dataType>Number</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>false</isOutput>
-        <scale>0</scale>
-        <value>
-            <numberValue>0.0</numberValue>
-        </value>
     </variables>
     <variables>
         <name>var_flg_Transfered</name>
