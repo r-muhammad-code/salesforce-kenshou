@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>DuplicateFlag__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>同一取引先に他の進行中営業管理が存在する場合にTrueとする。</description>
+    <label>重複フラグ</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Checkbox</type>
+</CustomField>

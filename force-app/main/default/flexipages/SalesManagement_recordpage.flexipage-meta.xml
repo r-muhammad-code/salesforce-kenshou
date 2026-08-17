@@ -1902,9 +1902,9 @@
                 <identifier>lst_dynamicRelatedList7</identifier>
                 <visibilityRule>
                     <criteria>
-                        <leftValue>{!Record.DuplicateCount__c}</leftValue>
-                        <operator>GT</operator>
-                        <rightValue>0</rightValue>
+                        <leftValue>{!Record.DuplicateFlag__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>true</rightValue>
                     </criteria>
                 </visibilityRule>
             </componentInstance>
@@ -5692,9 +5692,9 @@
                 <identifier>lm_alerts_Alert2</identifier>
                 <visibilityRule>
                     <criteria>
-                        <leftValue>{!Record.DuplicateCount__c}</leftValue>
-                        <operator>GT</operator>
-                        <rightValue>0</rightValue>
+                        <leftValue>{!Record.DuplicateFlag__c}</leftValue>
+                        <operator>EQUAL</operator>
+                        <rightValue>true</rightValue>
                     </criteria>
                 </visibilityRule>
             </componentInstance>
