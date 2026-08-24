@@ -60,7 +60,7 @@
         </defaultConnector>
         <defaultConnectorLabel>0件または2件以上</defaultConnectorLabel>
         <rules>
-            <name>cleanup_OnlyOneActive</name>
+            <name>is_OnlyOneActiveSalesManagement</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
                 <leftValueReference>var_CleanupActiveCount</leftValueReference>
@@ -70,7 +70,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>update_ClearSingleActiveDuplicateFlag</targetReference>
+                <targetReference>update_SalesManagementSingleDuplicateFlagFalse</targetReference>
             </connector>
             <label>進行中営業管理が1件のみ</label>
         </rules>
@@ -82,11 +82,11 @@
         <locationY>0</locationY>
         <defaultConnector>
             <isGoTo>true</isGoTo>
-            <targetReference>update_ClearCurrentDuplicateFlag</targetReference>
+            <targetReference>update_SalesManagementCurrentDuplicateFlagFalse</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>現在レコードが進行中ではない</defaultConnectorLabel>
         <rules>
-            <name>current_RecordInProgress</name>
+            <name>is_CurrentRecordInProgress</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
                 <leftValueReference>$Record.Account__c</leftValueReference>
@@ -119,7 +119,7 @@
         </defaultConnector>
         <defaultConnectorLabel>デフォルトの結果</defaultConnectorLabel>
         <rules>
-            <name>cleanup_PriorAccount</name>
+            <name>is_PriorAccountCleanupRequired</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
                 <leftValueReference>$Record__Prior.Account__c</leftValueReference>
@@ -141,7 +141,7 @@
             <label>旧取引先を再判定</label>
         </rules>
         <rules>
-            <name>cleanup_CurrentAccount</name>
+            <name>is_CurrentAccountCleanupRequired</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
                 <leftValueReference>$Record.Account__c</leftValueReference>
@@ -169,11 +169,11 @@
         <locationX>0</locationX>
         <locationY>0</locationY>
         <defaultConnector>
-            <targetReference>update_ClearCurrentDuplicateFlag</targetReference>
+            <targetReference>update_SalesManagementCurrentDuplicateFlagFalse</targetReference>
         </defaultConnector>
         <defaultConnectorLabel>他の進行中営業管理なし</defaultConnectorLabel>
         <rules>
-            <name>has_OtherActiveSalesManagement</name>
+            <name>is_OtherActiveSalesManagementFound</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
                 <leftValueReference>get_OtherActiveSalesManagement.Id</leftValueReference>
@@ -183,13 +183,12 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>update_SetCurrentDuplicateFlagTrue</targetReference>
+                <targetReference>update_SalesManagementCurrentDuplicateFlagTrue</targetReference>
             </connector>
             <label>他の進行中営業管理あり</label>
         </rules>
     </decisions>
-    <description>営業管理の作成、取引先変更、引取・書類・振込ステータス変更時に、
-同一取引先の営業管理重複件数を再計算する</description>
+    <description>同一取引先に紐づく進行中の営業管理をもとに重複状況を判定し、各営業管理レコードの重複フラグを更新する。</description>
     <environments>Default</environments>
     <formulas>
         <name>formula_CurrentInProgress</name>
@@ -211,8 +210,8 @@
     )
 )</expression>
     </formulas>
-    <interviewLabel>営業管理重複再計算トリガー {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>営業管理重複再計算トリガー</label>
+    <interviewLabel>営業管理の重複フラグ更新 {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>営業管理の重複フラグ更新</label>
     <processMetadataValues>
         <name>BuilderType</name>
         <value>
@@ -250,7 +249,7 @@
             </value>
         </filters>
         <filters>
-            <field>InProgress__c</field>
+            <field>in_progress__c</field>
             <operator>EqualTo</operator>
             <value>
                 <booleanValue>true</booleanValue>
@@ -282,7 +281,7 @@
             </value>
         </filters>
         <filters>
-            <field>InProgress__c</field>
+            <field>in_progress__c</field>
             <operator>EqualTo</operator>
             <value>
                 <booleanValue>true</booleanValue>
@@ -300,12 +299,12 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordUpdates>
-        <name>update_ClearCurrentDuplicateFlag</name>
+        <name>update_SalesManagementCurrentDuplicateFlagFalse</name>
         <label>現在レコードの重複フラグをFalseに更新</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
         <inputAssignments>
-            <field>DuplicateFlag__c</field>
+            <field>duplicate_flag__c</field>
             <value>
                 <booleanValue>false</booleanValue>
             </value>
@@ -313,7 +312,44 @@
         <inputReference>$Record</inputReference>
     </recordUpdates>
     <recordUpdates>
-        <name>update_ClearSingleActiveDuplicateFlag</name>
+        <name>update_SalesManagementCurrentDuplicateFlagTrue</name>
+        <label>現在レコードの重複フラグをTrueに更新</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>update_SalesManagementOtherDuplicateFlagTrue</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>duplicate_flag__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>update_SalesManagementOtherDuplicateFlagTrue</name>
+        <label>他の進行中営業管理の重複フラグをTrueに更新</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>get_OtherActiveSalesManagement.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>duplicate_flag__c</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <object>SalesManagement__c</object>
+    </recordUpdates>
+    <recordUpdates>
+        <name>update_SalesManagementSingleDuplicateFlagFalse</name>
         <label>単独進行中営業管理の重複フラグを解除</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
@@ -329,60 +365,23 @@
             </value>
         </filters>
         <filters>
-            <field>InProgress__c</field>
+            <field>in_progress__c</field>
             <operator>EqualTo</operator>
             <value>
                 <booleanValue>true</booleanValue>
             </value>
         </filters>
         <filters>
-            <field>DuplicateFlag__c</field>
+            <field>duplicate_flag__c</field>
             <operator>EqualTo</operator>
             <value>
                 <booleanValue>true</booleanValue>
             </value>
         </filters>
         <inputAssignments>
-            <field>DuplicateFlag__c</field>
+            <field>duplicate_flag__c</field>
             <value>
                 <booleanValue>false</booleanValue>
-            </value>
-        </inputAssignments>
-        <object>SalesManagement__c</object>
-    </recordUpdates>
-    <recordUpdates>
-        <name>update_SetCurrentDuplicateFlagTrue</name>
-        <label>現在レコードの重複フラグをTrueに更新</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <connector>
-            <targetReference>update_SetOtherDuplicateFlagTrue</targetReference>
-        </connector>
-        <inputAssignments>
-            <field>DuplicateFlag__c</field>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </inputAssignments>
-        <inputReference>$Record</inputReference>
-    </recordUpdates>
-    <recordUpdates>
-        <name>update_SetOtherDuplicateFlagTrue</name>
-        <label>他の進行中営業管理の重複フラグをTrueに更新</label>
-        <locationX>0</locationX>
-        <locationY>0</locationY>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>Id</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>get_OtherActiveSalesManagement.Id</elementReference>
-            </value>
-        </filters>
-        <inputAssignments>
-            <field>DuplicateFlag__c</field>
-            <value>
-                <booleanValue>true</booleanValue>
             </value>
         </inputAssignments>
         <object>SalesManagement__c</object>
@@ -398,13 +397,41 @@
         ISNEW(),
         NOT(ISBLANK({!$Record.Account__c}))
     ),
+
     ISCHANGED({!$Record.Account__c}),
+
     AND(
+        NOT(ISNEW()),
         NOT(ISBLANK({!$Record.Account__c})),
-        OR(
-            ISCHANGED({!$Record.Pickup_status__c}),
-            ISCHANGED({!$Record.Document_status__c}),
-            ISCHANGED({!$Record.Transfer_status__c})
+
+        AND(
+            OR(
+                ISPICKVAL({!$Record.Pickup_status__c}, &quot;完了&quot;),
+                ISPICKVAL({!$Record.Pickup_status__c}, &quot;案件キャンセル&quot;)
+            ),
+            OR(
+                ISPICKVAL({!$Record.Document_status__c}, &quot;完了&quot;),
+                ISPICKVAL({!$Record.Document_status__c}, &quot;案件キャンセル&quot;)
+            ),
+            OR(
+                ISPICKVAL({!$Record.Transfer_status__c}, &quot;振込完了&quot;),
+                ISPICKVAL({!$Record.Transfer_status__c}, &quot;案件キャンセル&quot;)
+            )
+        )
+        &lt;&gt;
+        AND(
+            OR(
+                ISPICKVAL({!$Record__Prior.Pickup_status__c}, &quot;完了&quot;),
+                ISPICKVAL({!$Record__Prior.Pickup_status__c}, &quot;案件キャンセル&quot;)
+            ),
+            OR(
+                ISPICKVAL({!$Record__Prior.Document_status__c}, &quot;完了&quot;),
+                ISPICKVAL({!$Record__Prior.Document_status__c}, &quot;案件キャンセル&quot;)
+            ),
+            OR(
+                ISPICKVAL({!$Record__Prior.Transfer_status__c}, &quot;振込完了&quot;),
+                ISPICKVAL({!$Record__Prior.Transfer_status__c}, &quot;案件キャンセル&quot;)
+            )
         )
     )
 )</filterFormula>
@@ -413,6 +440,7 @@
         <triggerType>RecordAfterSave</triggerType>
     </start>
     <status>Active</status>
+    <triggerOrder>1100</triggerOrder>
     <variables>
         <name>var_CleanupAccountId</name>
         <dataType>String</dataType>

@@ -1836,7 +1836,7 @@
                     <name>adminFilters</name>
                     <valueList>
                         <valueListItems>
-                            <value>InProgress__c|EQUALS|true</value>
+                            <value>in_progress__c|EQUALS|true</value>
                         </valueListItems>
                     </valueList>
                 </componentInstanceProperties>
@@ -1902,7 +1902,7 @@
                 <identifier>lst_dynamicRelatedList7</identifier>
                 <visibilityRule>
                     <criteria>
-                        <leftValue>{!Record.DuplicateFlag__c}</leftValue>
+                        <leftValue>{!Record.duplicate_flag__c}</leftValue>
                         <operator>EQUAL</operator>
                         <rightValue>true</rightValue>
                     </criteria>
@@ -5692,7 +5692,7 @@
                 <identifier>lm_alerts_Alert2</identifier>
                 <visibilityRule>
                     <criteria>
-                        <leftValue>{!Record.DuplicateFlag__c}</leftValue>
+                        <leftValue>{!Record.duplicate_flag__c}</leftValue>
                         <operator>EQUAL</operator>
                         <rightValue>true</rightValue>
                     </criteria>
