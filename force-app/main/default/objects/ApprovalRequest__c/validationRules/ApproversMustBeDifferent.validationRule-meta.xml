@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ApproversMustBeDifferent</fullName>
+    <active>true</active>
+    <description>同じユーザーを複数の承認段階に設定できないようにする。</description>
+    <errorConditionFormula>OR(
+        AND(
+            NOT(ISBLANK(AssignedApprover__c)),
+            NOT(ISBLANK(SecondApprover__c)),
+            AssignedApprover__c = SecondApprover__c
+        ),
+        AND(
+            NOT(ISBLANK(AssignedApprover__c)),
+            NOT(ISBLANK(ThirdApprover__c)),
+            AssignedApprover__c = ThirdApprover__c
+        ),
+        AND(
+            NOT(ISBLANK(AssignedApprover__c)),
+            NOT(ISBLANK(FourthApprover__c)),
+            AssignedApprover__c = FourthApprover__c
+        ),
+        AND(
+            NOT(ISBLANK(SecondApprover__c)),
+            NOT(ISBLANK(ThirdApprover__c)),
+            SecondApprover__c = ThirdApprover__c
+        ),
+        AND(
+            NOT(ISBLANK(SecondApprover__c)),
+            NOT(ISBLANK(FourthApprover__c)),
+            SecondApprover__c = FourthApprover__c
+        ),
+        AND(
+            NOT(ISBLANK(ThirdApprover__c)),
+            NOT(ISBLANK(FourthApprover__c)),
+            ThirdApprover__c = FourthApprover__c
+        )
+    )</errorConditionFormula>
+    <errorMessage>同じユーザーを複数の承認段階に設定できません。</errorMessage>
+</ValidationRule>

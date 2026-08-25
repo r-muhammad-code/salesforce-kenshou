@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldUpdates>
+        <fullName>SetStatusApproved</fullName>
+        <field>Status__c</field>
+        <literalValue>承認済み</literalValue>
+        <name>承認申請：ステータスを承認済みに更新</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>SetStatusRejected</fullName>
+        <field>Status__c</field>
+        <literalValue>却下</literalValue>
+        <name>承認申請：ステータスを却下に更新</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>SetCompletedAtNow</fullName>
+        <field>CompletedAt__c</field>
+        <formula>NOW()</formula>
+        <name>承認申請：完了日時を現在日時に更新</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Formula</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>

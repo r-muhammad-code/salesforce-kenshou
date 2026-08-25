@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RequesterCannotBeApprover</fullName>
+    <active>true</active>
+    <description>申請者をいずれかの承認者として設定できないようにする。</description>
+    <errorConditionFormula>AND(
+        NOT(ISBLANK(Requester__c)),
+        OR(
+            Requester__c = AssignedApprover__c,
+            Requester__c = SecondApprover__c,
+            Requester__c = ThirdApprover__c,
+            Requester__c = FourthApprover__c
+        )
+    )</errorConditionFormula>
+    <errorMessage>申請者と承認者は同じユーザーに設定できません。</errorMessage>
+</ValidationRule>

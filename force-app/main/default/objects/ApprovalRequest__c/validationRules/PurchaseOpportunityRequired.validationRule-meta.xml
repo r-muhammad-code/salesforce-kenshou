@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PurchaseOpportunityRequired</fullName>
+    <active>true</active>
+    <description>買取商談関連の申請では、下書き以外に進める際に買取商談を必須とする。</description>
+    <errorConditionFormula>AND(
+        NOT(ISPICKVAL(Status__c, "下書き")),
+        ISBLANK(PurchaseOpportunity__c),
+        OR(
+            ISPICKVAL(application_category__c, "所有権、残あり先振込承認"),
+            ISPICKVAL(application_category__c, "所有権付き解除前引き上げ"),
+            ISPICKVAL(application_category__c, "封印申請"),
+            ISPICKVAL(application_category__c, "車検証・ナンバープレート再発行時のはなまる理由書利用"),
+            ISPICKVAL(application_category__c, "現在登録事項の発行"),
+            ISPICKVAL(application_category__c, "他社AA・書類OK前出品"),
+            ISPICKVAL(application_category__c, "自社AA・月末書類OK前出品"),
+            ISPICKVAL(application_category__c, "永久抹消条件での買取"),
+            ISPICKVAL(application_category__c, "書類なし案件の買取"),
+            ISPICKVAL(application_category__c, "先売り申請"),
+            ISPICKVAL(application_category__c, "台帳作成済みキャンセル・在庫削除"),
+            ISPICKVAL(application_category__c, "赤字案件の事前買取申請")
+        )
+    )</errorConditionFormula>
+    <errorMessage>この申請カテゴリでは、関連する買取商談を指定してください。</errorMessage>
+</ValidationRule>
