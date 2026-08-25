@@ -44,6 +44,11 @@
                 <label>自社AA・月末書類OK前出品</label>
             </value>
             <value>
+                <fullName>書類OK前出品</fullName>
+                <default>false</default>
+                <label>書類OK前出品</label>
+            </value>
+            <value>
                 <fullName>永久抹消条件での買取</fullName>
                 <default>false</default>
                 <label>永久抹消条件での買取</label>
@@ -52,6 +57,11 @@
                 <fullName>書類なし案件の買取</fullName>
                 <default>false</default>
                 <label>書類なし案件の買取</label>
+            </value>
+            <value>
+                <fullName>永久抹消条件または書類なし案件の買取</fullName>
+                <default>false</default>
+                <label>永久抹消条件または書類なし案件の買取</label>
             </value>
             <value>
                 <fullName>先売り申請</fullName>

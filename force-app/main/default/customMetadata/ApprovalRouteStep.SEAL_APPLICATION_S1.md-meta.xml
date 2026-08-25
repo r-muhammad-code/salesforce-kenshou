@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>封印申請 S1</label>
+    <protected>false</protected>
+    <values>
+        <field>ApplicationCategory__c</field>
+        <value xsi:type="xsd:string">封印申請</value>
+    </values>
+    <values>
+        <field>RouteCode__c</field>
+        <value xsi:type="xsd:string">SEAL_APPLICATION</value>
+    </values>
+    <values>
+        <field>StepNumber__c</field>
+        <value xsi:type="xsd:int">1</value>
+    </values>
+    <values>
+        <field>ApproverLabel__c</field>
+        <value xsi:type="xsd:string">吉田 貴志 専務取締役</value>
+    </values>
+    <values>
+        <field>ResolverType__c</field>
+        <value xsi:type="xsd:string">FIXED_USER_KEY</value>
+    </values>
+    <values>
+        <field>ResolverKey__c</field>
+        <value xsi:type="xsd:string">h0000301@</value>
+    </values>
+    <values>
+        <field>IsActive__c</field>
+        <value xsi:type="xsd:boolean">true</value>
+    </values>
+</CustomMetadata>

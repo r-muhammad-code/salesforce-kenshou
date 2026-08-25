@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
     <description>承認申請の作成・参照・更新、および承認処理に必要な権限。</description>
+    <customMetadataTypeAccesses>
+        <enabled>true</enabled>
+        <name>ApprovalRouteStep__mdt</name>
+    </customMetadataTypeAccesses>
     <fieldPermissions>
         <editable>false</editable>
         <field>ApprovalRequest__c.AlertMemoAtSubmission__c</field>
