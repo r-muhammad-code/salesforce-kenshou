@@ -1304,6 +1304,13 @@
                 <elementReference>input_LedgerSupplierName</elementReference>
             </value>
         </assignmentItems>
+        <assignmentItems>
+            <assignToReference>var_SalesManagementRecord.Purchase_condition__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>formula_PurchaseConditionAfterApproval</elementReference>
+            </value>
+        </assignmentItems>
         <connector>
             <targetReference>decision_contract_or_invoice</targetReference>
         </connector>
@@ -1422,7 +1429,7 @@
             <assignToReference>var_SalesManagementRecord.Purchase_condition__c</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>TC_Purchase_Condition</elementReference>
+                <elementReference>formula_PurchaseConditionAfterApproval</elementReference>
             </value>
         </assignmentItems>
         <assignmentItems>
@@ -4459,6 +4466,15 @@ IF(
         <scale>0</scale>
     </formulas>
     <formulas>
+        <name>formula_PurchaseConditionAfterApproval</name>
+        <dataType>String</dataType>
+        <expression>IF(
+  NOT(ISBLANK({!get_ApprovedPermanentDeregistrationRequest.Id})),
+  &quot;永久抹消&quot;,
+  {!TC_Purchase_Condition}
+)</expression>
+    </formulas>
+    <formulas>
         <name>formula_RequestDestination_view</name>
         <dataType>Boolean</dataType>
         <expression>NOT( ISBLANK( {!get_POrecordId.ScheduleAdjustmentRequestDate__c}))</expression>
@@ -4770,13 +4786,48 @@ IF (TEXT({!get_POrecordId.Assessment__r.run_dist_unit__c}) = &quot;2&quot;, &quo
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordLookups>
+        <name>get_ApprovedPermanentDeregistrationRequest</name>
+        <label>承認済み永久抹消申請を取得</label>
+        <locationX>872</locationX>
+        <locationY>242</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>assign_PurchaseOpportunity_RecordVariable</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>PurchaseOpportunity__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>get_POrecordId.Id</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>application_category__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>永久抹消条件または書類なし案件の買取</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>承認済み</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>ApprovalRequest__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
         <name>get_POrecordId</name>
         <label>買取商談を取得</label>
         <locationX>872</locationX>
         <locationY>134</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>assign_PurchaseOpportunity_RecordVariable</targetReference>
+            <targetReference>get_ApprovedPermanentDeregistrationRequest</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
