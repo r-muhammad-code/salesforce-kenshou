@@ -66,7 +66,7 @@
         <inputParameters>
             <name>customNotifTypeId</name>
             <value>
-                <elementReference>GetCustomNotificationType.Id</elementReference>
+                <elementReference>get_CustomNotificationType.Id</elementReference>
                 <inputConfiguratorMode>Resource</inputConfiguratorMode>
             </value>
         </inputParameters>
@@ -93,7 +93,7 @@
         <inputParameters>
             <name>targetId</name>
             <value>
-                <elementReference>$Record.Id</elementReference>
+                <elementReference>$Record.PurchaseOpportunity__c</elementReference>
                 <inputConfiguratorMode>Resource</inputConfiguratorMode>
             </value>
         </inputParameters>
@@ -114,7 +114,7 @@
         <inputParameters>
             <name>customNotifTypeId</name>
             <value>
-                <elementReference>GetCustomNotificationType.Id</elementReference>
+                <elementReference>get_CustomNotificationType.Id</elementReference>
                 <inputConfiguratorMode>Resource</inputConfiguratorMode>
             </value>
         </inputParameters>
@@ -141,7 +141,7 @@
         <inputParameters>
             <name>targetId</name>
             <value>
-                <elementReference>$Record.Id</elementReference>
+                <elementReference>$Record.PurchaseOpportunity__c</elementReference>
                 <inputConfiguratorMode>Resource</inputConfiguratorMode>
             </value>
         </inputParameters>
@@ -190,6 +190,21 @@
             </connector>
             <label>永久抹消対応</label>
         </rules>
+        <rules>
+            <name>CancellationAction</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.application_category__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>台帳作成済みキャンセル・在庫削除</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>update_PurchaseOpportunityForCancellation</targetReference>
+            </connector>
+            <label>台帳作成済みキャンセル・在庫削除</label>
+        </rules>
     </decisions>
     <decisions>
         <name>DetermineApprovalResult</name>
@@ -228,7 +243,7 @@
             <label>却下</label>
         </rules>
     </decisions>
-    <description>営業の処理区分は「抹消」、営業管理の買取条件を「永久抹消」にする</description>
+    <description>フェーズキャンセルにする</description>
     <environments>Default</environments>
     <interviewLabel>営業承認申請結果通知 {!$Flow.CurrentDateTime}</interviewLabel>
     <label>営業承認申請結果通知</label>
@@ -252,7 +267,7 @@
     </processMetadataValues>
     <processType>AutoLaunchedFlow</processType>
     <recordLookups>
-        <name>GetCustomNotificationType</name>
+        <name>get_CustomNotificationType</name>
         <label>カスタム通知種別を取得</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
@@ -272,6 +287,36 @@
         <object>CustomNotificationType</object>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
+    <recordUpdates>
+        <name>update_PurchaseOpportunityForCancellation</name>
+        <label>キャンセル承認結果を買取商談へ反映</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>SendApprovalNotification</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.PurchaseOpportunity__c</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Approver__c</field>
+            <value>
+                <elementReference>$Record.AssignedApprover__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Phase__c</field>
+            <value>
+                <stringValue>キャンセル</stringValue>
+            </value>
+        </inputAssignments>
+        <object>PurchaseOpportunity__c</object>
+    </recordUpdates>
     <recordUpdates>
         <name>update_PurchaseOpportunityProcessingDivision</name>
         <label>買取商談の処理区分を抹消に更新</label>
@@ -324,7 +369,7 @@
         <locationX>0</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>GetCustomNotificationType</targetReference>
+            <targetReference>get_CustomNotificationType</targetReference>
         </connector>
         <filterLogic>1 AND (2 OR 3) AND 4</filterLogic>
         <filters>
@@ -359,7 +404,7 @@
         <recordTriggerType>Update</recordTriggerType>
         <triggerType>RecordAfterSave</triggerType>
     </start>
-    <status>Draft</status>
+    <status>Active</status>
     <textTemplates>
         <name>tt_ApprovalApprovedChatter</name>
         <isViewedAsPlainText>true</isViewedAsPlainText>

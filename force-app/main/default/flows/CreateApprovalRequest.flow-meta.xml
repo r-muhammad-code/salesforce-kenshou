@@ -21,7 +21,7 @@
         <inputParameters>
             <name>subjectNameOrId</name>
             <value>
-                <elementReference>GetCreatedApprovalRequest.PurchaseOpportunity__c</elementReference>
+                <elementReference>get_CreatedApprovalRequest.PurchaseOpportunity__c</elementReference>
                 <inputConfiguratorMode>Resource</inputConfiguratorMode>
             </value>
         </inputParameters>
@@ -37,7 +37,7 @@
         <actionName>submit</actionName>
         <actionType>submit</actionType>
         <connector>
-            <targetReference>GetCreatedApprovalRequest</targetReference>
+            <targetReference>get_CreatedApprovalRequest</targetReference>
         </connector>
         <faultConnector>
             <isGoTo>true</isGoTo>
@@ -61,7 +61,7 @@
         <inputParameters>
             <name>submitterId</name>
             <value>
-                <elementReference>GetCurrentUser.Id</elementReference>
+                <elementReference>get_CurrentUser.Id</elementReference>
                 <inputConfiguratorMode>Resource</inputConfiguratorMode>
             </value>
         </inputParameters>
@@ -87,11 +87,11 @@
             <assignToReference>ResolvedFirstApproverId</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>GetBranchManager.Id</elementReference>
+                <elementReference>get_BranchManager.Id</elementReference>
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>CreateApprovalRequestRecord</targetReference>
+            <targetReference>decision_CancelReasonCheck</targetReference>
         </connector>
     </assignments>
     <assignments>
@@ -103,11 +103,11 @@
             <assignToReference>ResolvedFirstApproverId</assignToReference>
             <operator>Assign</operator>
             <value>
-                <elementReference>GetFixedApprover.Id</elementReference>
+                <elementReference>get_FixedApprover.Id</elementReference>
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>CreateApprovalRequestRecord</targetReference>
+            <targetReference>decision_CancelReasonCheck</targetReference>
         </connector>
     </assignments>
     <assignments>
@@ -123,7 +123,7 @@
             </value>
         </assignmentItems>
         <connector>
-            <targetReference>CreateApprovalRequestRecord</targetReference>
+            <targetReference>decision_CancelReasonCheck</targetReference>
         </connector>
     </assignments>
     <customProperties>
@@ -145,7 +145,7 @@
             <name>BranchManagerFound</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>GetBranchManager.Id</leftValueReference>
+                <leftValueReference>get_BranchManager.Id</leftValueReference>
                 <operator>IsNull</operator>
                 <rightValue>
                     <booleanValue>false</booleanValue>
@@ -171,7 +171,7 @@
             <name>hasFixedApprover</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>GetFixedApprover.Id</leftValueReference>
+                <leftValueReference>get_FixedApprover.Id</leftValueReference>
                 <operator>IsNull</operator>
                 <rightValue>
                     <booleanValue>false</booleanValue>
@@ -203,7 +203,7 @@
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>GetPurchaseOpportunity</targetReference>
+                <targetReference>get_PurchaseOpportunity</targetReference>
             </connector>
             <label>買取商談から起動</label>
         </rules>
@@ -221,7 +221,7 @@
             <name>TitleApproverCandidateFound</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>GetFirstTitleApproverCandidate.Id</leftValueReference>
+                <leftValueReference>get_FirstTitleApproverCandidate.Id</leftValueReference>
                 <operator>IsNull</operator>
                 <rightValue>
                     <booleanValue>false</booleanValue>
@@ -231,6 +231,38 @@
                 <targetReference>SelectTitleApproverScreen</targetReference>
             </connector>
             <label>役職候補者あり</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>decision_CancelReasonCheck</name>
+        <label>キャンセル理由入力チェック</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>CreateApprovalRequestRecord</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>キャンセル理由入力済み</defaultConnectorLabel>
+        <rules>
+            <name>UniqueName</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>SelectedApplicationCategory</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue> 台帳作成済みキャンセル・在庫削除</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>get_PurchaseOpportunity.CancelReason__c</leftValueReference>
+                <operator>IsBlank</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>screen_CancelReasonMissing</targetReference>
+            </connector>
+            <label>キャンセル理由未入力</label>
         </rules>
     </decisions>
     <decisions>
@@ -246,14 +278,14 @@
             <name>BranchManagerResolver</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>GetSelectedApprovalRoute.ResolverType__c</leftValueReference>
+                <leftValueReference>get_SelectedApprovalRoute.ResolverType__c</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
                     <stringValue>BRANCH_MANAGER</stringValue>
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>GetBranchManager</targetReference>
+                <targetReference>get_BranchManager</targetReference>
             </connector>
             <label>支店長を自動取得</label>
         </rules>
@@ -261,14 +293,14 @@
             <name>SelectByTitleResolver</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>GetSelectedApprovalRoute.ResolverType__c</leftValueReference>
+                <leftValueReference>get_SelectedApprovalRoute.ResolverType__c</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
                     <stringValue>SELECT_BY_TITLE</stringValue>
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>GetFirstTitleApproverCandidate</targetReference>
+                <targetReference>get_FirstTitleApproverCandidate</targetReference>
             </connector>
             <label>役職候補から選択</label>
         </rules>
@@ -276,19 +308,19 @@
             <name>FixedUserResolver</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>GetSelectedApprovalRoute.ResolverType__c</leftValueReference>
+                <leftValueReference>get_SelectedApprovalRoute.ResolverType__c</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
                     <stringValue>FIXED_USER_KEY</stringValue>
                 </rightValue>
             </conditions>
             <connector>
-                <targetReference>GetFixedApprover</targetReference>
+                <targetReference>get_FixedApprover</targetReference>
             </connector>
             <label>固定ユーザー</label>
         </rules>
     </decisions>
-    <description>申請した後にChatterに追加</description>
+    <description>台帳作成済みキャンセル・在庫削除の時の処理追加</description>
     <dynamicChoiceSets>
         <description>有効な承認ルートの申請カテゴリを選択肢として表示する。</description>
         <name>ActiveApprovalCategoryChoices</name>
@@ -330,7 +362,7 @@
             <field>Title</field>
             <operator>Contains</operator>
             <value>
-                <elementReference>SelectedResolverKey</elementReference>
+                <elementReference>formula_SelectedResolverKey</elementReference>
             </value>
         </filters>
         <filters>
@@ -347,9 +379,9 @@
     </dynamicChoiceSets>
     <environments>Default</environments>
     <formulas>
-        <name>SelectedResolverKey</name>
+        <name>formula_SelectedResolverKey</name>
         <dataType>String</dataType>
-        <expression>{!GetSelectedApprovalRoute.ResolverKey__c}</expression>
+        <expression>{!get_SelectedApprovalRoute.ResolverKey__c}</expression>
     </formulas>
     <interviewLabel>承認申請作成 {!$Flow.CurrentDateTime}</interviewLabel>
     <label>営業承認申請作成</label>
@@ -387,19 +419,19 @@
         <inputAssignments>
             <field>AlertMemoAtSubmission__c</field>
             <value>
-                <elementReference>GetPurchaseOpportunity.alert_memo__c</elementReference>
+                <elementReference>get_PurchaseOpportunity.alert_memo__c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
             <field>Amount__c</field>
             <value>
-                <elementReference>GetPurchaseOpportunity.ProposedPrice__c</elementReference>
+                <elementReference>get_PurchaseOpportunity.ProposedPrice__c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
             <field>ApprovalRoute__c</field>
             <value>
-                <elementReference>GetSelectedApprovalRoute.ApproverLabel__c</elementReference>
+                <elementReference>get_SelectedApprovalRoute.ApproverLabel__c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -411,31 +443,31 @@
         <inputAssignments>
             <field>CarNoAtSubmission__c</field>
             <value>
-                <elementReference>GetPurchaseOpportunity.CarNo__c</elementReference>
+                <elementReference>get_PurchaseOpportunity.CarNo__c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
             <field>CollectedDocumentsAtSubmission__c</field>
             <value>
-                <elementReference>GetPurchaseOpportunity.Collection_documents__c</elementReference>
+                <elementReference>get_PurchaseOpportunity.Collection_documents__c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
             <field>ExpectedProfit__c</field>
             <value>
-                <elementReference>GetPurchaseOpportunity.InitialProfitForecast__c</elementReference>
+                <elementReference>get_PurchaseOpportunity.InitialProfitForecast__c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
             <field>OwnerId</field>
             <value>
-                <elementReference>GetCurrentUser.Id</elementReference>
+                <elementReference>get_CurrentUser.Id</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
             <field>OwnershipAtSubmission__c</field>
             <value>
-                <elementReference>GetPurchaseOpportunity.ownership__c</elementReference>
+                <elementReference>get_PurchaseOpportunity.ownership__c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -447,7 +479,7 @@
         <inputAssignments>
             <field>ProcessingDivisionAtSubmission__c</field>
             <value>
-                <elementReference>GetPurchaseOpportunity.ProcessingDivision__c</elementReference>
+                <elementReference>get_PurchaseOpportunity.ProcessingDivision__c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -459,19 +491,19 @@
         <inputAssignments>
             <field>RegistrationNo__c</field>
             <value>
-                <elementReference>GetPurchaseOpportunity.RegistrationNo__c</elementReference>
+                <elementReference>get_PurchaseOpportunity.RegistrationNo__c</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
             <field>RequestBranch__c</field>
             <value>
-                <elementReference>GetCurrentUser.Department</elementReference>
+                <elementReference>get_CurrentUser.Department</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
             <field>Requester__c</field>
             <value>
-                <elementReference>GetCurrentUser.Id</elementReference>
+                <elementReference>get_CurrentUser.Id</elementReference>
             </value>
         </inputAssignments>
         <inputAssignments>
@@ -540,7 +572,7 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordCreates>
     <recordLookups>
-        <name>GetBranchManager</name>
+        <name>get_BranchManager</name>
         <label>申請者所属支店の支店長を取得</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
@@ -553,7 +585,7 @@
             <field>Department</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>GetCurrentUser.Department</elementReference>
+                <elementReference>get_CurrentUser.Department</elementReference>
             </value>
         </filters>
         <filters>
@@ -582,13 +614,13 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordLookups>
-        <name>GetCreatedApprovalRequest</name>
+        <name>get_CreatedApprovalRequest</name>
         <label>作成した承認申請を取得</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
         <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
         <connector>
-            <targetReference>GetFirstApproverForCompletion</targetReference>
+            <targetReference>get_FirstApproverForCompletion</targetReference>
         </connector>
         <filterLogic>and</filterLogic>
         <filters>
@@ -603,7 +635,7 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordLookups>
-        <name>GetCurrentUser</name>
+        <name>get_CurrentUser</name>
         <label>実行ユーザーを取得</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
@@ -624,7 +656,7 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordLookups>
-        <name>GetFirstApproverForCompletion</name>
+        <name>get_FirstApproverForCompletion</name>
         <label>完了画面用の第1承認者を取得</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
@@ -637,7 +669,7 @@
             <field>Id</field>
             <operator>EqualTo</operator>
             <value>
-                <elementReference>GetCreatedApprovalRequest.AssignedApprover__r.Id</elementReference>
+                <elementReference>get_CreatedApprovalRequest.AssignedApprover__r.Id</elementReference>
             </value>
         </filters>
         <getFirstRecordOnly>true</getFirstRecordOnly>
@@ -645,7 +677,7 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordLookups>
-        <name>GetFirstTitleApproverCandidate</name>
+        <name>get_FirstTitleApproverCandidate</name>
         <label>役職候補者の存在を確認</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
@@ -665,14 +697,14 @@
             <field>Title</field>
             <operator>Contains</operator>
             <value>
-                <elementReference>SelectedResolverKey</elementReference>
+                <elementReference>formula_SelectedResolverKey</elementReference>
             </value>
         </filters>
         <filters>
             <field>Id</field>
             <operator>NotEqualTo</operator>
             <value>
-                <elementReference>GetCurrentUser.Id</elementReference>
+                <elementReference>get_CurrentUser.Id</elementReference>
             </value>
         </filters>
         <getFirstRecordOnly>true</getFirstRecordOnly>
@@ -680,7 +712,7 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordLookups>
-        <name>GetFixedApprover</name>
+        <name>get_FixedApprover</name>
         <label>固定承認者を取得</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
@@ -700,7 +732,7 @@
             <field>Username</field>
             <operator>StartsWith</operator>
             <value>
-                <elementReference>GetSelectedApprovalRoute.ResolverKey__c</elementReference>
+                <elementReference>get_SelectedApprovalRoute.ResolverKey__c</elementReference>
             </value>
         </filters>
         <getFirstRecordOnly>true</getFirstRecordOnly>
@@ -708,7 +740,7 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordLookups>
-        <name>GetPurchaseOpportunity</name>
+        <name>get_PurchaseOpportunity</name>
         <label>買取商談を取得</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
@@ -729,7 +761,7 @@
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </recordLookups>
     <recordLookups>
-        <name>GetSelectedApprovalRoute</name>
+        <name>get_SelectedApprovalRoute</name>
         <label>選択した承認ルートを取得</label>
         <locationX>0</locationX>
         <locationY>0</locationY>
@@ -782,7 +814,7 @@
         <allowPause>false</allowPause>
         <fields>
             <name>ApprovalRouteConfigurationErrorMessage</name>
-            <fieldText>&lt;p&gt;承認ルートの設定を処理できませんでした。&lt;/p&gt;&lt;p&gt;申請カテゴリ：{!SelectedApplicationCategory}&lt;/p&gt;&lt;p&gt;承認者決定方法：{!GetSelectedApprovalRoute.ResolverType__c}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;承認ルートマスタの設定を確認してください。&lt;/p&gt;</fieldText>
+            <fieldText>&lt;p&gt;承認ルートの設定を処理できませんでした。&lt;/p&gt;&lt;p&gt;申請カテゴリ：{!SelectedApplicationCategory}&lt;/p&gt;&lt;p&gt;承認者決定方法：{!get_SelectedApprovalRoute.ResolverType__c}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;承認ルートマスタの設定を確認してください。&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
             <styleProperties>
                 <verticalAlignment>
@@ -806,7 +838,7 @@
         <allowPause>false</allowPause>
         <fields>
             <name>BranchManagerErrorMessage</name>
-            <fieldText>&lt;p&gt;申請者の所属部署に対応する支店長を取得できませんでした。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;所属部署：{!GetCurrentUser.Department}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;ユーザー情報の部署または支店長の役職設定を確認してください。&lt;/p&gt;</fieldText>
+            <fieldText>&lt;p&gt;申請者の所属部署に対応する支店長を取得できませんでした。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;所属部署：{!get_CurrentUser.Department}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;ユーザー情報の部署または支店長の役職設定を確認してください。&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
             <styleProperties>
                 <verticalAlignment>
@@ -853,11 +885,11 @@
         <allowFinish>true</allowFinish>
         <allowPause>false</allowPause>
         <connector>
-            <targetReference>GetSelectedApprovalRoute</targetReference>
+            <targetReference>get_SelectedApprovalRoute</targetReference>
         </connector>
         <fields>
             <name>PurchaseOpportunitySummary</name>
-            <fieldText>&lt;p&gt;対象の買取商談&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;買取商談No：{!GetPurchaseOpportunity.Name}&lt;/p&gt;&lt;p&gt;登録番号：{!GetPurchaseOpportunity.RegistrationNo__c}&lt;/p&gt;&lt;p&gt;車台番号：{!GetPurchaseOpportunity.CarNo__c}&lt;/p&gt;</fieldText>
+            <fieldText>&lt;p&gt;対象の買取商談&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;買取商談No：{!get_PurchaseOpportunity.Name}&lt;/p&gt;&lt;p&gt;登録番号：{!get_PurchaseOpportunity.RegistrationNo__c}&lt;/p&gt;&lt;p&gt;車台番号：{!get_PurchaseOpportunity.CarNo__c}&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
             <styleProperties>
                 <verticalAlignment>
@@ -938,6 +970,30 @@
         <showHeader>true</showHeader>
     </screens>
     <screens>
+        <name>screen_CancelReasonMissing</name>
+        <label>キャンセル理由未入力</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <fields>
+            <name>tt_CancelReasonMissing</name>
+            <fieldText>&lt;p&gt;キャンセル申請を行う場合は、 買取商談の「キャンセル理由」を入力してください。 &lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;「キャンセル理由」を入力後、 再度「営業承認申請作成」から申請してください&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+            <styleProperties>
+                <verticalAlignment>
+                    <stringValue>top</stringValue>
+                </verticalAlignment>
+                <width>
+                    <stringValue>12</stringValue>
+                </width>
+            </styleProperties>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
         <name>SelectTitleApproverScreen</name>
         <label>第1承認者を選択</label>
         <locationX>0</locationX>
@@ -950,7 +1006,7 @@
         </connector>
         <fields>
             <name>TitleApproverSelectionGuide</name>
-            <fieldText>&lt;p&gt;第1承認者を選択してください。&lt;/p&gt;&lt;p&gt;対象役職：{!GetSelectedApprovalRoute.ApproverLabel__c}&lt;/p&gt;</fieldText>
+            <fieldText>&lt;p&gt;第1承認者を選択してください。&lt;/p&gt;&lt;p&gt;対象役職：{!get_SelectedApprovalRoute.ApproverLabel__c}&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
             <styleProperties>
                 <verticalAlignment>
@@ -1016,7 +1072,7 @@
         <allowPause>false</allowPause>
         <fields>
             <name>SubmissionSuccessMessage</name>
-            <fieldText>&lt;p&gt;承認申請を送信しました。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;承認申請No：{!GetCreatedApprovalRequest.Name}&lt;/p&gt;&lt;p&gt;申請状況：{!GetCreatedApprovalRequest.Status__c}&lt;/p&gt;&lt;p&gt;第1承認者：{!GetFirstApproverForCompletion.Name}&lt;/p&gt;</fieldText>
+            <fieldText>&lt;p&gt;承認申請を送信しました。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;承認申請No：{!get_CreatedApprovalRequest.Name}&lt;/p&gt;&lt;p&gt;申請状況：{!get_CreatedApprovalRequest.Status__c}&lt;/p&gt;&lt;p&gt;第1承認者：{!get_FirstApproverForCompletion.Name}&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
             <styleProperties>
                 <verticalAlignment>
@@ -1040,7 +1096,7 @@
         <allowPause>false</allowPause>
         <fields>
             <name>TitleApproverCandidateErrorMessage</name>
-            <fieldText>&lt;p&gt;承認者を特定できませんでした。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;対象承認者／役職：{!GetSelectedApprovalRoute.ApproverLabel__c}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;承認ルートの設定、または対象ユーザーの設定をご確認ください。&lt;/p&gt;</fieldText>
+            <fieldText>&lt;p&gt;承認者を特定できませんでした。&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;対象承認者／役職：{!get_SelectedApprovalRoute.ApproverLabel__c}&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;承認ルートの設定、または対象ユーザーの設定をご確認ください。&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
             <styleProperties>
                 <verticalAlignment>
@@ -1058,18 +1114,18 @@
         <locationX>0</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>GetCurrentUser</targetReference>
+            <targetReference>get_CurrentUser</targetReference>
         </connector>
     </start>
-    <status>Draft</status>
+    <status>Active</status>
     <textTemplates>
         <name>tt_ApprovalSubmittedChatter</name>
         <isViewedAsPlainText>true</isViewedAsPlainText>
         <text>営業承認申請が提出されました。
 
-申請カテゴリ：{!GetCreatedApprovalRequest.application_category__c}
+申請カテゴリ：{!get_CreatedApprovalRequest.application_category__c}
 申請者：{!$User.LastName} {!$User.FirstName}
-承認者：{!GetFirstApproverForCompletion.Name}</text>
+承認者：{!get_FirstApproverForCompletion.Name}</text>
     </textTemplates>
     <variables>
         <name>CreatedApprovalRequestId</name>

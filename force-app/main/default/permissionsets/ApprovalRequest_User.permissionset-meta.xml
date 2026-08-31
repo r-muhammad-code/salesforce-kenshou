@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
-    <description>承認申請の作成・参照・更新、および承認処理に必要な権限。</description>
     <customMetadataTypeAccesses>
         <enabled>true</enabled>
         <name>ApprovalRouteStep__mdt</name>
     </customMetadataTypeAccesses>
+    <description>承認申請の作成・参照・更新、および承認処理に必要な権限。</description>
     <fieldPermissions>
         <editable>false</editable>
         <field>ApprovalRequest__c.AlertMemoAtSubmission__c</field>
@@ -13,6 +13,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>ApprovalRequest__c.Amount__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ApprovalRequest__c.ApprovalRoute__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -38,6 +43,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>ApprovalRequest__c.ExpectedProfit__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>ApprovalRequest__c.FourthApprover__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -107,6 +117,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>ApprovalRequest__c.ThirdApprover__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>ApprovalRequest__c.application_category__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -140,21 +155,6 @@
         <field>ApprovalRequest__c.ownership_company__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>ApprovalRequest__c.ApprovalRoute__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>ApprovalRequest__c.ThirdApprover__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>ApprovalRequest__c.FourthApprover__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
     <label>承認申請ユーザー</label>
     <objectPermissions>
@@ -164,13 +164,11 @@
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>
         <object>ApprovalRequest__c</object>
+        <viewAllFields>false</viewAllFields>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
     <tabSettings>
         <tab>ApprovalRequest__c</tab>
         <visibility>Visible</visibility>
     </tabSettings>
-
-
-
 </PermissionSet>

@@ -7,27 +7,31 @@
         <value xsi:type="xsd:string">書類OK前出品</value>
     </values>
     <values>
-        <field>RouteCode__c</field>
-        <value xsi:type="xsd:string">DOCUMENT_OK_BEFORE_LISTING</value>
-    </values>
-    <values>
-        <field>StepNumber__c</field>
-        <value xsi:type="xsd:int">1</value>
-    </values>
-    <values>
         <field>ApproverLabel__c</field>
         <value xsi:type="xsd:string">森重 晃 執行役員 兼 営業本部副本部長</value>
     </values>
     <values>
-        <field>ResolverType__c</field>
-        <value xsi:type="xsd:string">FIXED_USER_KEY</value>
+        <field>IsActive__c</field>
+        <value xsi:type="xsd:boolean">false</value>
+    </values>
+    <values>
+        <field>Notes__c</field>
+        <value xsi:nil="true"/>
     </values>
     <values>
         <field>ResolverKey__c</field>
         <value xsi:type="xsd:string">h0000232@</value>
     </values>
     <values>
-        <field>IsActive__c</field>
-        <value xsi:type="xsd:boolean">true</value>
+        <field>ResolverType__c</field>
+        <value xsi:type="xsd:string">FIXED_USER_KEY</value>
+    </values>
+    <values>
+        <field>RouteCode__c</field>
+        <value xsi:type="xsd:string">DOCUMENT_OK_BEFORE_LISTING</value>
+    </values>
+    <values>
+        <field>StepNumber__c</field>
+        <value xsi:type="xsd:double">1.0</value>
     </values>
 </CustomMetadata>
